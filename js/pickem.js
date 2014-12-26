@@ -17,7 +17,7 @@ svg.call(tip);
 
 d3.tsv("picks.tsv", function(rows) {
     num_games = rows.reduce(function(running, row) { return Math.max(running, +row.Confidence_Score); }, 0);
-    num_players = rows.reduce(function(running, row) { return Math.max(running, +row.ID); }, 0);
+    num_players = rows.reduce(function(running, row) { return Math.max(running, +row.rank); }, 0);
 
     var circle_data = [];
     var cum_diameter = 0;
@@ -48,8 +48,8 @@ d3.tsv("picks.tsv", function(rows) {
         }
         p = players_map[row.name];
         p.name = row.name;
-        p.ID = +row.ID;
-        if (row.result) p.score += +row.Confidence_Score;
+        p.rank = +row.rank;
+        p.score += +row.score;
     });
 
     players = Object.keys(players_map).map(function(p) { return players_map[p]; });
@@ -59,7 +59,7 @@ d3.tsv("picks.tsv", function(rows) {
         .enter()
         .append("text")
         .attr("x", "1%")
-        .attr("y", function(d) { return height * d.ID / (num_players + 1) - 20; })
+        .attr("y", function(d) { return height * d.rank / (num_players + 1) - 20; })
         .attr("font-family", "sans-serif")
         .attr("font-size", "16px")
         .text(function(d) { return d.name + ": " + d.score; })
@@ -70,7 +70,7 @@ d3.tsv("picks.tsv", function(rows) {
         .enter()
         .append("circle")
         .attr("cx", 0)
-        .attr("cy", function(d) { return height * d.ID / (num_players + 1); })
+        .attr("cy", function(d) { return height * d.rank / (num_players + 1); })
         .attr("r", function(d) { return width / cum_diameter * d.radius; })
         .attr("stroke", "rgb(208, 208, 208)")
         .attr("stroke-width", "1")
