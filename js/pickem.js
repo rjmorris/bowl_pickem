@@ -6,6 +6,15 @@ var svg = d3.select("body")
     .attr("width", width)
     .attr("height", height);
 
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+        return "<h1>" + d.name + ": " + d.Confidence_Score + "</h2><p>" + d.MATCHUP + "</p><p>" + d.game_time + "</p>";
+    });
+
+svg.call(tip);
+
 d3.tsv("../picks.tsv", function(rows) {
     num_games = rows.reduce(function(running, row) { return Math.max(running, +row.Confidence_Score); }, 0);
     num_players = rows.reduce(function(running, row) { return Math.max(running, +row.ID); }, 0);
@@ -66,6 +75,8 @@ d3.tsv("../picks.tsv", function(rows) {
         .attr("stroke", "rgb(208, 208, 208)")
         .attr("stroke-width", "1")
         .attr("fill", "rgb(255, 255, 255)")
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
         .transition()
         .delay(500)
         .duration(2000)
@@ -79,7 +90,7 @@ d3.tsv("../picks.tsv", function(rows) {
         .attr("fill", function(d) {
             if (d.result === true) return "rgb(0, 128, 0)";
             if (d.result === false) return "rgb(144, 144, 144)";
-            return "none";
+            return "rgb(255, 255, 255)";
         })
         ;
 });

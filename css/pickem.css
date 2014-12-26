@@ -10,3 +10,24 @@ body {
     margin: 10px;
 }
 
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.d3-tip h1 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 6px 6px 10px 6px;
+}
+
+.d3-tip p {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 6px;
+}
+
