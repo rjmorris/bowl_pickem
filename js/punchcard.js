@@ -10,7 +10,12 @@ var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
     .html(function(d) {
-        return "<h1>" + d.name + ": " + d.Confidence_Score + "</h2><p>" + d.MATCHUP + "</p><p>" + d.game_time + "</p>";
+        var pick_class = "pick_future";
+        if (d.result == true) pick_class = "pick_right";
+        else if (d.result == false) pick_class = "pick_wrong";
+        var matchup = d.MATCHUP.replace("Semifinal winners", "Semifinal winners: " + d.pick);
+        matchup = matchup.replace(d.pick, "<span class=\"" + pick_class + "\">" + d.pick + "</span>");
+        return "<h1>" + d.name + ": " + d.Confidence_Score + "</h2><p>" + matchup + "</p><p>" + d.game_time + "</p>";
     });
 
 svg.call(tip);
