@@ -15,7 +15,7 @@ var tip = d3.tip()
 
 svg.call(tip);
 
-d3.tsv("../picks.tsv", function(rows) {
+d3.tsv("picks.tsv", function(rows) {
     num_games = rows.reduce(function(running, row) { return Math.max(running, +row.Confidence_Score); }, 0);
     num_players = rows.reduce(function(running, row) { return Math.max(running, +row.ID); }, 0);
 
