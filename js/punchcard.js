@@ -63,7 +63,7 @@ d3.tsv("picks.tsv", function(rows) {
         .data(players)
         .enter()
         .append("text")
-        .attr("x", "1%")
+        .attr("x", 0)
         .attr("y", function(d) { return height * d.rank / (num_players + 1) - 20; })
         .attr("font-family", "sans-serif")
         .attr("font-size", "16px")
