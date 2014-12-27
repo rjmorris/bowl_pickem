@@ -18,6 +18,8 @@ body {
   background: rgba(255, 255, 255, 0.9);
   color: rgb(0, 0, 0);
   font-family: sans-serif;
+  width: 380px;
+  text-align: center;
 }
 
 .d3-tip h1 {

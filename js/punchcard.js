@@ -1,6 +1,8 @@
 var width = window.innerWidth - 20;
 var height = window.innerHeight - 20;
 
+var tip_pad = 6;
+
 var svg = d3.select("body")
     .append("svg")
     .attr("width", width)
@@ -8,7 +10,31 @@ var svg = d3.select("body")
 
 var tip = d3.tip()
     .attr('class', 'd3-tip')
-    .offset([-10, 0])
+    .offset(function(d) {
+        var tw = parseInt(d3.select(".d3-tip").style("width"));
+        var th = parseInt(d3.select(".d3-tip").style("height"));
+
+        var cx = parseInt(d3.select(this).attr("cx"));
+        var cy = parseInt(d3.select(this).attr("cy"));
+
+        var sw = parseInt(d3.select("svg").attr("width"));
+
+        var offset_x = 0;
+        if (tw/2 > cx) offset_x = tw/2 - cx;
+        else if (cx + tw/2 > sw) offset_x = sw - (cx + tw/2);
+
+        var offset_y = -tip_pad;
+        if (th + tip_pad > cy) offset_y = tip_pad;
+       
+        return [offset_y, offset_x];
+    })
+    .direction(function(d) {
+        var th = parseInt(d3.select(".d3-tip").style("height"));
+        var cy = parseInt(d3.select(this).attr("cy"));
+
+        if (th + tip_pad > cy) return "s";
+        return "n";
+    })
     .html(function(d) {
         var pick_class = "pick_future";
         if (d.result == true) pick_class = "pick_right";
