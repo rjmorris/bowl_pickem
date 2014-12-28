@@ -125,36 +125,3 @@ d3.tsv("picks.tsv", function(rows) {
         })
         ;
 });
-/*
-svg.selectAll("circle")
-    .data(cx)
-    .enter()
-    .append("circle")
-    .attr("cx", "50%")
-    .attr("cy", "50%")
-    .attr("r", "0.5%")
-    .attr("fill", "rgb(0, 0, 192)")
-    .attr("opacity", 1)
-    .transition()
-    .delay(function(d) { return 5000 * Math.random(); })
-    .duration(2000)
-    .attr("cx", function(d) { return d + "%"; })
-    .attr("cy", "1%")
-    .attr("r", "1%")
-    .each("end", function() {
-        d3.select(this)
-            .transition()
-            .delay(function() { return 5000 + 4000 * Math.random(); })
-            .duration(2000)
-            .ease("bounce")
-            .attr("cy", "99%")
-            .each("end", function() {
-                d3.select(this)
-                    .transition()
-                    .duration(1500)
-                    .attr("opacity", 0)
-                    .remove()
-            });
-    });
-*/
-
