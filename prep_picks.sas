@@ -72,11 +72,11 @@ data picks;
         then selection = substr(selection, 1, length(selection)-1);
 
 
-    /* Some people entered "Miami" as their pick, and some entered
-     * "Miami (Fla.)". Make them consistent.
+    /* Format the "Miami (Fla.)" pick consistently.
      */
 
-    if selection eq "MIAMI" then selection = "MIAMI(FLA.)";
+         if selection eq "MIAMI"        then selection = "MIAMI(FLA.)";
+    else if selection eq "MIAMI (FLA.)" then selection = "MIAMI(FLA.)";
 
 
     /* Parse the participating team names from the matchup variable.
