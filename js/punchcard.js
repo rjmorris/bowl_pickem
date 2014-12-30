@@ -47,14 +47,14 @@ var tip = d3.tip()
 svg.call(tip);
 
 d3.tsv("picks.tsv", function(rows) {
-    num_games = rows.reduce(function(running, row) { return Math.max(running, +row.Confidence_Score); }, 0);
-    num_players = rows.reduce(function(running, row) { return Math.max(running, +row.rank); }, 0);
+    var num_games = rows.reduce(function(running, row) { return Math.max(running, +row.Confidence_Score); }, 0);
+    var num_players = rows.reduce(function(running, row) { return Math.max(running, +row.rank); }, 0);
 
     var circle_data = [];
     var cum_diameter = 0;
-    for (area in d3.range(num_games + 1)) {
+    for (var area in d3.range(num_games + 1)) {
         circle_data[area] = {};
-        d = circle_data[area];
+        var d = circle_data[area];
         d.radius = Math.sqrt(area / Math.PI);
         d.diameter = 2 * d.radius;
         cum_diameter = cum_diameter + d.diameter;
@@ -77,13 +77,13 @@ d3.tsv("picks.tsv", function(rows) {
             players_map[row.name] = {};
             players_map[row.name].score = 0;
         }
-        p = players_map[row.name];
+        var p = players_map[row.name];
         p.name = row.name;
         p.rank = +row.rank;
         p.score += +row.score;
     });
 
-    players = Object.keys(players_map).map(function(p) { return players_map[p]; });
+    var players = Object.keys(players_map).map(function(p) { return players_map[p]; });
 
     var names = svg.selectAll("text")
         .data(players)
