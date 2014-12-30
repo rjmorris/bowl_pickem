@@ -109,11 +109,12 @@ d3.tsv("picks.tsv", function(rows) {
         .on('mouseover', tip.show)
         .on('mouseout', tip.hide)
         .transition()
-        .delay(500)
-        .duration(2000)
+        .delay(250)
+        .duration(function(d) { return 1000 + d.rank / num_players * 1000; })
         .attr("cx", function(d) { return width / cum_diameter * (d.cum_diameter - d.radius); })
         .transition()
-        .duration(function(d) { return d.Confidence_Score / num_games * 3000; })
+        .delay(function(d) { return 2250 + Math.random() * 2000; })
+        .duration(0)
         .attr("stroke-width", function(d) {
             if (d.result === null) return "1";
             return "0";
