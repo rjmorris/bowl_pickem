@@ -117,7 +117,7 @@ d3.tsv("picks.tsv", function(rows) {
             var bar_data = d3.select(this).data()[0];
             highlights
                 .style("display", function(d) {
-                    if (bar_data.MATCHUP == d.MATCHUP) return "block";
+                    if (bar_data.MATCHUP == d.MATCHUP && bar_data.name != d.name) return "block";
                     return "none";
                 });
         })
