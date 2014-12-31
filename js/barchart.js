@@ -32,7 +32,7 @@ var tip = d3.tip()
         else if (d.result == false) pick_class = "pick_wrong";
         var matchup = d.MATCHUP.replace("Semifinal winners", "Semifinal winners: " + d.pick);
         matchup = matchup.replace(d.pick, "<span class=\"" + pick_class + "\">" + d.pick + "</span>");
-        return d.name + " [" + d.confidence + " ]: " + matchup + ", " + d.game_time;
+        return d.name + " [" + d.confidence + "]: " + matchup + ", " + d.game_time;
     });
 
 svg.call(tip);
