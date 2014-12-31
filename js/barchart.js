@@ -114,8 +114,8 @@ d3.tsv("picks.tsv", function(rows) {
         .on('mouseover', tip.show)
         .on('mouseout', tip.hide)
         .transition()
-        .delay(function(d) { return d.confidence / num_games * 1000; })
-        .duration(function(d) { return 1000 + d.confidence / num_games * 1000; })
+        .delay(function(d) { return 50 * d.confidence; })
+        .duration(function(d) { return 250; })
         .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height - d.confidence / num_games * max_bar_height; })
         .attr("height", function(d) { return d.confidence / num_games * max_bar_height; })
         ;
