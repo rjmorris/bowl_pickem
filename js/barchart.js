@@ -1,5 +1,5 @@
 var width = window.innerWidth - 20;
-var height = window.innerHeight - 20;
+var height = window.innerHeight - 40;
 
 var tip_pad = 6;
 var bar_pad = 4;
@@ -16,36 +16,23 @@ var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset(function(d) {
         var tw = parseInt(d3.select(".d3-tip").style("width"));
-        var th = parseInt(d3.select(".d3-tip").style("height"));
-
         var cx = parseInt(d3.select(this).attr("x")) + parseInt(d3.select(this).attr("width")) / 2;
-        var cy = parseInt(d3.select(this).attr("y"));
-
         var sw = parseInt(d3.select("svg").attr("width"));
 
         var offset_x = 0;
         if (tw/2 > cx) offset_x = tw/2 - cx;
         else if (cx + tw/2 > sw) offset_x = sw - (cx + tw/2);
 
-        var offset_y = -tip_pad;
-        if (th + tip_pad > cy) offset_y = tip_pad;
-       
-        return [offset_y, offset_x];
+        return [2, offset_x];
     })
-    .direction(function(d) {
-        var th = parseInt(d3.select(".d3-tip").style("height"));
-        var cy = parseInt(d3.select(this).attr("y"));
-
-        if (th + tip_pad > cy) return "s";
-        return "n";
-    })
+    .direction("s")
     .html(function(d) {
         var pick_class = "pick_future";
         if (d.result == true) pick_class = "pick_right";
         else if (d.result == false) pick_class = "pick_wrong";
         var matchup = d.MATCHUP.replace("Semifinal winners", "Semifinal winners: " + d.pick);
         matchup = matchup.replace(d.pick, "<span class=\"" + pick_class + "\">" + d.pick + "</span>");
-        return "<h1>" + d.name + ": " + d.Confidence_Score + "</h2><p>" + matchup + "</p><p>" + d.game_time + "</p>";
+        return d.name + " [" + d.confidence + " ]: " + matchup + ", " + d.game_time;
     });
 
 svg.call(tip);
