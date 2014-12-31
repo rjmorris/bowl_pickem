@@ -140,7 +140,7 @@ d3.tsv("picks.tsv", function(rows) {
         .attr("cx", function(d) { return (d.confidence - 1) * (width / num_games) + bar_width / 2; })
         .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 3; })
         .attr("r", 3)
-        .attr("fill", "rgb(120, 54, 0)")
+        .attr("fill", "rgb(156, 83, 22)")
         .style("display", "none")
         ;
 });
