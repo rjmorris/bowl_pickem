@@ -103,6 +103,14 @@ d3.tsv("picks.tsv", function(rows) {
         .on('mouseover.2', function() {
             var bar_data = d3.select(this).data()[0];
             highlights
+                .attr("r", function(d) {
+                    if (bar_data.pick == d.pick) return 3;
+                    return 4;
+                })
+                .attr("fill", function(d) {
+                    if (bar_data.pick == d.pick) return "rgb(120, 54, 0)";
+                    return "rgb(191, 115, 52)";
+                })
                 .style("display", function(d) {
                     if (bar_data.MATCHUP == d.MATCHUP && bar_data.name != d.name) return "block";
                     return "none";
@@ -125,9 +133,7 @@ d3.tsv("picks.tsv", function(rows) {
         .enter()
         .append("circle")
         .attr("cx", function(d) { return (d.confidence - 1) * (width / num_games) + bar_width / 2; })
-        .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 3; })
-        .attr("r", 3)
-        .attr("fill", "rgb(156, 83, 22)")
+        .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 4; })
         .style("display", "none")
         ;
 });
