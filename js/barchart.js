@@ -76,6 +76,7 @@ d3.tsv("picks.tsv", function(rows) {
     var num_players = players.length;
 
     var max_bar_height = height / num_players - row_pad;
+    var bar_width = (width - (num_games - 1) * bar_pad) / num_games;
 
     var names = svg.selectAll("text")
         .data(players)
@@ -95,7 +96,7 @@ d3.tsv("picks.tsv", function(rows) {
         .append("rect")
         .attr("x", function(d) { return (d.confidence - 1) * (width / num_games); })
         .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height; })
-        .attr("width", (width - (num_games - 1) * bar_pad) / num_games)
+        .attr("width", bar_width)
         .attr("height", 0)
         .attr("rx", 4)
         .attr("ry", 4)
@@ -111,12 +112,35 @@ d3.tsv("picks.tsv", function(rows) {
             // return "rgb(0, 0, 0)";
             return "rgb(24, 24, 24)";
         })
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide)
+        .on('mouseover.1', tip.show)
+        .on('mouseover.2', function() {
+            var bar_data = d3.select(this).data()[0];
+            highlights
+                .style("display", function(d) {
+                    if (bar_data.MATCHUP == d.MATCHUP) return "block";
+                    return "none";
+                });
+        })
+        .on('mouseout.1', tip.hide)
+        .on('mouseout', function() {
+            highlights
+                .style("display", "none");
+        })
         .transition()
         .delay(function(d) { return 50 * d.confidence; })
         .duration(function(d) { return 250; })
         .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height - d.confidence / num_games * max_bar_height; })
         .attr("height", function(d) { return d.confidence / num_games * max_bar_height; })
+        ;
+
+    var highlights = svg.selectAll("circle")
+        .data(rows)
+        .enter()
+        .append("circle")
+        .attr("cx", function(d) { return (d.confidence - 1) * (width / num_games) + bar_width / 2; })
+        .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 3; })
+        .attr("r", 3)
+        .attr("fill", "rgb(120, 54, 0)")
+        .style("display", "none")
         ;
 });
