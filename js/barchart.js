@@ -18,8 +18,8 @@ var tip = d3.tip()
         var tw = parseInt(d3.select(".d3-tip").style("width"));
         var th = parseInt(d3.select(".d3-tip").style("height"));
 
-        var cx = parseInt(d3.select(this).attr("cx"));
-        var cy = parseInt(d3.select(this).attr("cy"));
+        var cx = parseInt(d3.select(this).attr("x")) + parseInt(d3.select(this).attr("width")) / 2;
+        var cy = parseInt(d3.select(this).attr("y"));
 
         var sw = parseInt(d3.select("svg").attr("width"));
 
@@ -34,7 +34,7 @@ var tip = d3.tip()
     })
     .direction(function(d) {
         var th = parseInt(d3.select(".d3-tip").style("height"));
-        var cy = parseInt(d3.select(this).attr("cy"));
+        var cy = parseInt(d3.select(this).attr("y"));
 
         if (th + tip_pad > cy) return "s";
         return "n";
