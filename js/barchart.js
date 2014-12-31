@@ -4,7 +4,7 @@ var height = window.innerHeight - 40;
 var tip_pad = 6;
 var bar_pad = 4;
 var row_pad = 10;
-var name_pad = 14;
+var name_pad = 22;
 var axis_pad = 0;
 
 var svg = d3.select("body")
