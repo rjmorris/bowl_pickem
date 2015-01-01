@@ -11,6 +11,38 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.name {
+    font-family: sans-serif;
+    font-size: 16px;
+    fill: rgb(224, 224, 224);
+}
+
+.bar.right {
+    fill: rgb(0, 96, 0);
+}
+
+.bar.wrong {
+    fill: rgb(112, 112, 112);
+}
+
+.bar.unplayed {
+    fill: rgb(24, 24, 24);
+}
+
+.highlight {
+    display: none;
+}
+
+.highlight.matching {
+    display: block;
+    fill: rgb(120, 54, 0);
+}
+
+.highlight.nonmatching {
+    display: block;
+    fill: rgb(191, 115, 52);
+}
+
 .d3-tip {
   line-height: 1;
   padding: 4px;

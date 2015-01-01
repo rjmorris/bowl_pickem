@@ -65,40 +65,30 @@ d3.tsv("picks.tsv", function(rows) {
     var max_bar_height = height / num_players - row_pad;
     var bar_width = (width - (num_games - 1) * bar_pad) / num_games;
 
-    var names = svg.selectAll("text")
+    var names = svg.selectAll(".name")
         .data(players)
         .enter()
         .append("text")
+        .classed("name", true)
         .attr("x", 0)
         .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height - name_pad; })
-        .attr("font-family", "sans-serif")
-        .attr("font-size", "16px")
-        .attr("fill", "rgb(224, 224, 224)")
         .text(function(d) { return d.name + ": " + d.score; })
         ;
 
-    var bars = svg.selectAll("rect")
+    var bars = svg.selectAll(".bar")
         .data(rows)
         .enter()
         .append("rect")
+        .classed("bar", true)
         .attr("x", function(d) { return (d.confidence - 1) * (width / num_games); })
         .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height; })
         .attr("width", bar_width)
         .attr("height", 0)
         .attr("rx", 4)
         .attr("ry", 4)
-        .attr("fill", function(d) {
-            //if (d.result === true) return "rgb(31, 78, 121)";
-            if (d.result === true) return "rgb(0, 96, 0)";
-
-            if (d.result === false) return "rgb(112, 112, 112)";
-            // if (d.result === false) return "rgb(224, 96, 0)";
-            // if (d.result === false) return "rgb(96, 0, 0)";
-
-            // return "rgb(255, 255, 255)";
-            // return "rgb(0, 0, 0)";
-            return "rgb(24, 24, 24)";
-        })
+        .classed("right", function(d) { return d.result === true; })
+        .classed("wrong", function(d) { return d.result === false; })
+        .classed("unplayed", function(d) { return d.result === null; })
         .on('mouseover.1',
             // tip.show doesn't work when it's called inside a function.
             // Therefore, it needs to be added as a separate event handler. d3
@@ -109,27 +99,34 @@ d3.tsv("picks.tsv", function(rows) {
         )
         .on('mouseover.2', function() {
             var bar_data = d3.select(this).data()[0];
-            highlights
+            d3.selectAll(".highlight")
                 .attr("r", function(d) {
                     if (bar_data.pick == d.pick) return 3;
                     return 4;
                 })
-                .attr("fill", function(d) {
-                    if (bar_data.pick == d.pick) return "rgb(120, 54, 0)";
-                    return "rgb(191, 115, 52)";
+                .classed("matching", function(d) {
+                    return (bar_data.MATCHUP == d.MATCHUP
+                            && bar_data.pick == d.pick
+                            && bar_data.name != d.name
+                           );
                 })
-                .style("display", function(d) {
-                    if (bar_data.MATCHUP == d.MATCHUP && bar_data.name != d.name) return "block";
-                    return "none";
-                });
+                .classed("nonmatching", function(d) {
+                    return (bar_data.MATCHUP == d.MATCHUP
+                            && bar_data.pick != d.pick
+                            && bar_data.name != d.name
+                           );
+                })
+                ;
         })
         .on('mouseout.1',
             // See the comments for tip.show in mouseover.1
             tip.hide
         )
         .on('mouseout.2', function() {
-            highlights
-                .style("display", "none");
+            d3.selectAll(".highlight")
+                .classed("matching", false)
+                .classed("nonmatching", false)
+            ;
         })
         .transition()
         .delay(function(d) { return 50 * d.confidence; })
@@ -138,12 +135,12 @@ d3.tsv("picks.tsv", function(rows) {
         .attr("height", function(d) { return d.confidence / num_games * max_bar_height; })
         ;
 
-    var highlights = svg.selectAll("circle")
+    var highlights = svg.selectAll(".highlight")
         .data(rows)
         .enter()
         .append("circle")
+        .classed("highlight", true)
         .attr("cx", function(d) { return (d.confidence - 1) * (width / num_games) + bar_width / 2; })
         .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 4; })
-        .style("display", "none")
         ;
 });
