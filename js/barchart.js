@@ -99,7 +99,14 @@ d3.tsv("picks.tsv", function(rows) {
             // return "rgb(0, 0, 0)";
             return "rgb(24, 24, 24)";
         })
-        .on('mouseover.1', tip.show)
+        .on('mouseover.1',
+            // tip.show doesn't work when it's called inside a function.
+            // Therefore, it needs to be added as a separate event handler. d3
+            // lets you assign multiple handlers to an event by adding an
+            // extension to the event name. Here, we've added .1, .2 to the
+            // mouseover event name.
+            tip.show
+        )
         .on('mouseover.2', function() {
             var bar_data = d3.select(this).data()[0];
             highlights
@@ -116,8 +123,11 @@ d3.tsv("picks.tsv", function(rows) {
                     return "none";
                 });
         })
-        .on('mouseout.1', tip.hide)
-        .on('mouseout', function() {
+        .on('mouseout.1',
+            // See the comments for tip.show in mouseover.1
+            tip.hide
+        )
+        .on('mouseout.2', function() {
             highlights
                 .style("display", "none");
         })
