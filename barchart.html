@@ -8,6 +8,25 @@
         <script type="text/javascript" src="js/d3-tip-0.6.6/d3-tip.js"></script>
     </head>
     <body>
+        <div id="header">
+          <h1>Bowl Pick'em Contest, 2014-15</h1>
+          <div id="description">
+            <p>
+              Participants pick the winners of 39 bowl games. They assign a
+              confidence score to each game in the range 1-39, with every value
+              used exactly once. Standings are based on the sum of the
+              confidence scores for the correctly picked games.
+            </p>
+            <p>
+              In the graphic, the height of a bar represents the confidence
+              score assigned to the game. The color represents whether the pick
+              was correct. Hovering over a bar will highlight the corresponding
+              game for all other participants. The highlight is larger and
+              brighter when the other participant picked a different winner than
+              the participant whose bar is being hovered over.
+            </p>
+          </div>
+        </div>
         <script type="text/javascript" src="js/barchart.js"></script>
     </body>
 </html>
