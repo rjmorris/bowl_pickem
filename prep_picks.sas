@@ -220,7 +220,7 @@ data picks;
     else if matchup eq 'Kansas State (9-3) vs. UCLA (9-3)' then winner = 'UCLA';
     else if matchup eq 'Oklahoma State (6-6) vs. Washington (8-5)' then winner = 'Oklahoma State';
     else if matchup eq 'Florida (6-5) vs. East Carolina (8-4)' then winner = 'Florida';
-    else if matchup eq 'Toledo (8-4) vs. Arkansas State (7-5)' then winner = ' ';
+    else if matchup eq 'Toledo (8-4) vs. Arkansas State (7-5)' then winner = 'Toledo';
     else if matchup eq 'Semifinal winners' then winner = ' ';
     else put "***ERROR: Unexpected matchup: " matchup;
 
