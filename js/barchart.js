@@ -52,7 +52,7 @@ function redraw() {
         .offset(function(d) {
             var tw = parseInt(d3.select(".d3-tip").style("width"));
             var cx = parseInt(d3.select(this).attr("x")) + parseInt(d3.select(this).attr("width")) / 2;
-            var sw = parseInt(d3.select("svg").attr("width"));
+            var sw = parseInt(d3.select("#graphic").attr("width"));
 
             var offset_x = 0;
             if (tw/2 > cx) offset_x = tw/2 - cx;
