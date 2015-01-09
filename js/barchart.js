@@ -27,8 +27,8 @@ function resize() {
 
     var g = $("#graphic");
     var gp = g.parent();
-    g.width(gp.width());
-    g.height(gp.height());
+    g.attr("width", gp.width());
+    g.attr("height", gp.height());
 }
 
 
