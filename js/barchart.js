@@ -72,27 +72,27 @@ function redraw() {
 
     svg.call(tip);
 
-    d3.tsv("picks.tsv", function(rows) {
+    d3.tsv("picks.tsv", function(picks) {
         var players_map = {};
 
-        rows.forEach(function(row) {
-            row.confidence = +row.Confidence_Score;
+        picks.forEach(function(pick) {
+            pick.confidence = +pick.Confidence_Score;
 
-            if (row.correct === "1") row.result = true;
-            else if (row.correct === "0") row.result = false;
-            else row.result = null;
+            if (pick.correct === "1") pick.result = true;
+            else if (pick.correct === "0") pick.result = false;
+            else pick.result = null;
 
-            if (!(row.name in players_map)) {
-                players_map[row.name] = {};
-                players_map[row.name].score = 0;
+            if (!(pick.name in players_map)) {
+                players_map[pick.name] = {};
+                players_map[pick.name].score = 0;
             }
-            var p = players_map[row.name];
-            p.name = row.name;
-            p.rank = +row.rank;
-            p.score += +row.score;
+            var p = players_map[pick.name];
+            p.name = pick.name;
+            p.rank = +pick.rank;
+            p.score += +pick.score;
         });
 
-        var num_games = rows.reduce(function(running, row) { return Math.max(running, row.confidence); }, 0);
+        var num_games = picks.reduce(function(running, pick) { return Math.max(running, pick.confidence); }, 0);
 
         var players = Object.keys(players_map).map(function(p) { return players_map[p]; });
         var num_players = players.length;
@@ -111,7 +111,7 @@ function redraw() {
             ;
 
         var bars = svg.selectAll(".bar")
-            .data(rows)
+            .data(picks)
             .enter()
             .append("rect")
             .classed("bar", true)
@@ -171,7 +171,7 @@ function redraw() {
             ;
 
         var highlights = svg.selectAll(".highlight")
-            .data(rows)
+            .data(picks)
             .enter()
             .append("circle")
             .classed("highlight", true)
