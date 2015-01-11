@@ -1,3 +1,9 @@
+var num_games;
+var num_players;
+var rows;
+var cols;
+
+
 $(function() {
     resize();
     redraw();
@@ -40,10 +46,11 @@ function redraw() {
     var height = $("#graphic").innerHeight();
 
     var tip_pad = 6;
-    var bar_pad = 4;
+    var col_pad = 4;
     var row_pad = 10;
     var name_pad = 22;
     var axis_pad = 0;
+    var bottom_pad = 14;
 
     var svg = d3.select("#graphic");
 
@@ -92,21 +99,55 @@ function redraw() {
             p.score += +pick.score;
         });
 
-        var num_games = picks.reduce(function(running, pick) { return Math.max(running, pick.confidence); }, 0);
+        num_games = picks.reduce(function(running, pick) { return Math.max(running, pick.confidence); }, 0);
 
         var players = Object.keys(players_map).map(function(p) { return players_map[p]; });
-        var num_players = players.length;
+        num_players = players.length;
 
-        var max_bar_height = height / num_players - row_pad;
-        var bar_width = (width - (num_games - 1) * bar_pad) / num_games;
+        // Compute the positions for each row and column. There will be one row
+        // per player and one column per game. They will maximize the available
+        // space, with the exception of a little extra space at the bottom to
+        // fit the tooltip on the bottom row.
 
+        var row_height = (height - bottom_pad - (num_players - 1) * row_pad) / num_players;
+        var col_width = (width - (num_games - 1) * col_pad) / num_games;
+
+        rows = [];
+        rows.push({});  // dummy element to support 1-based indexing later
+        d3.range(num_players).forEach(function(i) {
+            var row = {};
+            row.height = row_height;
+            row.top = i * (row_height + row_pad);
+            row.bottom = row.top + row.height;
+            row.middle = (row.top + row.bottom) / 2;
+            rows.push(row);
+        });
+
+        cols = [];
+        cols.push({});  // dummy element to support 1-based indexing later
+        d3.range(num_games).forEach(function(i) {
+            var col = {};
+            col.width = col_width;
+            col.left = i * (col_width + col_pad);
+            col.right = col.left + col.width;
+            col.middle = (col.left + col.right) / 2;
+            cols.push(col);
+        });
+
+        // Assign the initial bar dimensions for each pick.
+
+        picks.forEach(function(pick) {
+            assign_bar_dimensions(pick, pick.rank, pick.confidence);
+        });
+
+        
         var names = svg.selectAll(".name")
             .data(players)
             .enter()
             .append("text")
             .classed("name", true)
             .attr("x", 0)
-            .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height - name_pad; })
+            .attr("y", function(d) { return rows[d.rank].bottom - name_pad; })
             .text(function(d) { return d.name + ": " + d.score; })
             ;
 
@@ -115,9 +156,9 @@ function redraw() {
             .enter()
             .append("rect")
             .classed("bar", true)
-            .attr("x", function(d) { return (d.confidence - 1) * (width / num_games); })
-            .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height; })
-            .attr("width", bar_width)
+            .attr("x", function(d) { return d.bar_left; })
+            .attr("y", function(d) { return rows[d.rank].bottom; })
+            .attr("width", function(d) { return d.bar_width; })
             .attr("height", 0)
             .attr("rx", 4)
             .attr("ry", 4)
@@ -166,8 +207,8 @@ function redraw() {
             .transition()
             .delay(function(d) { return 50 * d.confidence; })
             .duration(function(d) { return 250; })
-            .attr("y", function(d) { return height * (d.rank - 1) / num_players + max_bar_height - d.confidence / num_games * max_bar_height; })
-            .attr("height", function(d) { return d.confidence / num_games * max_bar_height; })
+            .attr("y", function(d) { return d.bar_top; })
+            .attr("height", function(d) { return d.bar_height; })
             ;
 
         var highlights = svg.selectAll(".highlight")
@@ -175,8 +216,21 @@ function redraw() {
             .enter()
             .append("circle")
             .classed("highlight", true)
-            .attr("cx", function(d) { return (d.confidence - 1) * (width / num_games) + bar_width / 2; })
-            .attr("cy", function(d) { return height * (d.rank - 1) / num_players + max_bar_height + 4; })
+            .attr("cx", function(d) { return d.bar_hcenter; })
+            .attr("cy", function(d) { return d.bar_bottom + 4; })
             ;
     });
+}
+
+
+function assign_bar_dimensions(pick, row, col) {    
+    pick.bar_left = cols[col].left;
+    pick.bar_right = cols[col].right;
+    pick.bar_width = cols[col].width;
+    pick.bar_hcenter = cols[col].middle;
+
+    pick.bar_height = (pick.confidence / num_games) * rows[row].height;
+    pick.bar_top = rows[row].bottom - pick.bar_height;
+    pick.bar_bottom = rows[row].bottom;
+    pick.bar_vcenter = rows[row].middle;
 }
