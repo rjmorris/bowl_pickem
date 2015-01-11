@@ -18,15 +18,15 @@ body {
 }
 
 .bar.right {
-    fill: rgb(0, 96, 0);
+    fill: rgb(0, 112, 0);
 }
 
 .bar.wrong {
-    fill: rgb(112, 112, 112);
+    fill: rgb(128, 128, 128);
 }
 
 .bar.unplayed {
-    fill: rgb(24, 24, 24);
+    fill: rgb(32, 32, 32);
 }
 
 .highlight {
