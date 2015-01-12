@@ -31,10 +31,11 @@ function resize() {
              - parseInt(b.css("padding-bottom"))
             );
 
+    var h = $("#header");
+
     var g = $("#graphic");
-    var gp = g.parent();
-    g.attr("width", gp.width());
-    g.attr("height", gp.height());
+    g.attr("width", b.width());
+    g.attr("height", b.height() - h.outerHeight(true));
 }
 
 
