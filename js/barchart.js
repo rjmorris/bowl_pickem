@@ -224,11 +224,32 @@ function redraw() {
         var names = svg.selectAll(".name")
             .data(players)
             .enter()
+            .append("g")
+            .classed("name_group", true)
             .append("text")
             .classed("name", true)
             .attr("x", 0)
             .attr("y", function(d) { return rows[d.rank].bottom - name_pad; })
             .text(function(d) { return d.name + ": " + d.score; })
+            ;
+
+        // Place a rectangle behind the names to give them some contrast when
+        // they overlap bars. This must be defined after the names, because it
+        // uses the names variable. However, the background rect element must be
+        // defined before the the name text element in the svg, because
+        // otherwise the background would be displayed on top of the name. Use
+        // the d3.insert function to insert the background rect elements before
+        // the name text elements. For the d3.insert function to work, we need
+        // the name and its background to be defined within a group (which is
+        // probably a good idea anyway).
+
+        var name_bgs = svg.selectAll(".name_group")
+            .insert("rect", ".name")
+            .classed("name_bg", true)
+            .attr("x", function(d, i) { return names[0][i].getBBox().x - 2; })
+            .attr("y", function(d, i) { return names[0][i].getBBox().y - 2; })
+            .attr("width", function(d, i) { return names[0][i].getBBox().width + 4; })
+            .attr("height", function(d, i) { return names[0][i].getBBox().height + 4; })
             ;
     });
 
