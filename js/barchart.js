@@ -152,16 +152,6 @@ function redraw() {
         });
 
         
-        var names = svg.selectAll(".name")
-            .data(players)
-            .enter()
-            .append("text")
-            .classed("name", true)
-            .attr("x", 0)
-            .attr("y", function(d) { return rows[d.rank].bottom - name_pad; })
-            .text(function(d) { return d.name + ": " + d.score; })
-            ;
-
         var bars = svg.selectAll(".bar")
             .data(picks)
             .enter()
@@ -229,6 +219,16 @@ function redraw() {
             .classed("highlight", true)
             .attr("cx", function(d) { return d.bar_hcenter; })
             .attr("cy", function(d) { return d.bar_bottom + 4; })
+            ;
+
+        var names = svg.selectAll(".name")
+            .data(players)
+            .enter()
+            .append("text")
+            .classed("name", true)
+            .attr("x", 0)
+            .attr("y", function(d) { return rows[d.rank].bottom - name_pad; })
+            .text(function(d) { return d.name + ": " + d.score; })
             ;
     });
 
