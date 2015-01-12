@@ -269,7 +269,39 @@ data picks;
           scores(keep = name rank);
     by name;
     run;
-    
+
+
+/*****
+ * Assign a sort order to the games based on when the game was played.
+ */
+
+proc sort data=picks(keep = game game_time) out=games nodupkey;
+    by game;
+    run;
+
+proc sort data=games;
+    by game_time;
+    run;
+
+data games;
+    set games;
+    game_order = _n_;
+    run;
+
+proc sort data=picks;
+    by game;
+    run;
+
+proc sort data=games;
+    by game;
+    run;
+
+data picks;
+    merge picks
+          games(keep = game game_order);
+    by game;
+    run;
+
 
 /*****
  * Output to a TSV file, sorted by rank.

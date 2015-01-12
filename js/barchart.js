@@ -1,7 +1,10 @@
+var picks;
 var num_games;
 var num_players;
 var rows;
 var cols;
+
+var sort_method = "confidence";
 
 
 $(function() {
@@ -80,11 +83,13 @@ function redraw() {
 
     svg.call(tip);
 
-    d3.tsv("picks.tsv", function(picks) {
+    d3.tsv("picks.tsv", function(pick_data) {
+        picks = pick_data;
         var players_map = {};
 
         picks.forEach(function(pick) {
             pick.confidence = +pick.Confidence_Score;
+            pick.game_order = +pick.game_order;
 
             if (pick.correct === "1") pick.result = true;
             else if (pick.correct === "0") pick.result = false;
@@ -138,7 +143,12 @@ function redraw() {
         // Assign the initial bar dimensions for each pick.
 
         picks.forEach(function(pick) {
-            assign_bar_dimensions(pick, pick.rank, pick.confidence);
+            if (sort_method == "game") {
+                assign_bar_dimensions(pick, pick.rank, pick.game_order);
+            }
+            else {
+                assign_bar_dimensions(pick, pick.rank, pick.confidence);
+            }
         });
 
         
@@ -221,6 +231,28 @@ function redraw() {
             .attr("cy", function(d) { return d.bar_bottom + 4; })
             ;
     });
+
+    $("#sort-confidence").click(function() {
+        if (sort_method == "confidence") return;
+        sort_method = "confidence";
+
+        picks.forEach(function(pick) {
+            assign_bar_dimensions(pick, pick.rank, pick.confidence);
+        });
+
+        reposition_bars();
+    });
+
+    $("#sort-game").click(function() {
+        if (sort_method == "game") return;
+        sort_method = "game";
+
+        picks.forEach(function(pick) {
+            assign_bar_dimensions(pick, pick.rank, pick.game_order);
+        });
+
+        reposition_bars();
+    });
 }
 
 
@@ -234,4 +266,22 @@ function assign_bar_dimensions(pick, row, col) {
     pick.bar_top = rows[row].bottom - pick.bar_height;
     pick.bar_bottom = rows[row].bottom;
     pick.bar_vcenter = rows[row].middle;
+}
+
+function reposition_bars() {
+    d3.selectAll(".bar")
+        .data(picks)
+        .transition()
+        .delay(function(d) { return 1000 * (d.rank - 1) / num_players; })
+        .duration(function(d) { return 1000; })
+        .attr("x", function(d) { return d.bar_left; })
+    ;
+
+    d3.selectAll(".highlight")
+        .data(picks)
+        .transition()
+        .delay(2000)
+        .duration(0)
+        .attr("cx", function(d) { return d.bar_hcenter; })
+    ;
 }
