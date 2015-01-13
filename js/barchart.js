@@ -4,8 +4,8 @@ var num_players;
 var rows;
 var cols;
 
-var sort_method = "confidence";
-var color_scheme = "none";
+var sort_method;
+var color_scheme;
 
 
 $(function() {
@@ -56,7 +56,10 @@ function redraw() {
     var name_pad = 22;
     var bottom_pad = 14;
 
-    set_color_scheme("dark");
+    var default_sort_method = "confidence";
+    var default_color_scheme = "dark";
+
+    set_color_scheme(default_color_scheme);
     
     var svg = d3.select("#graphic");
 
@@ -145,7 +148,7 @@ function redraw() {
         // Assign the initial bar dimensions for each pick.
 
         picks.forEach(function(pick) {
-            if (sort_method == "game") {
+            if (default_sort_method == "game") {
                 assign_bar_dimensions(pick, pick.rank, pick.game_order);
             }
             else {
