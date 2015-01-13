@@ -5,6 +5,7 @@ var rows;
 var cols;
 
 var sort_method = "confidence";
+var color_scheme = "none";
 
 
 $(function() {
@@ -56,6 +57,8 @@ function redraw() {
     var axis_pad = 0;
     var bottom_pad = 14;
 
+    set_color_scheme("dark");
+    
     var svg = d3.select("#graphic");
 
     var tip = d3.tip()
@@ -274,6 +277,14 @@ function redraw() {
 
         reposition_bars();
     });
+
+    $("#color-light").click(function() {
+        set_color_scheme("light");
+    });
+
+    $("#color-dark").click(function() {
+        set_color_scheme("dark");
+    });
 }
 
 
@@ -306,3 +317,13 @@ function reposition_bars() {
         .attr("cx", function(d) { return d.bar_hcenter; })
     ;
 }
+
+function set_color_scheme(scheme) {
+    if (color_scheme == scheme) return;
+    color_scheme = scheme;
+
+    d3.select("body")
+        .classed("color-light", color_scheme == "light")
+        .classed("color-dark", color_scheme == "dark")
+    ;
+};

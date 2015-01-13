@@ -8,16 +8,36 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 10px;
+}
+
+body.color-dark {
     background-color: rgb(0, 0, 0);
 }
 
+body.color-light {
+    background-color: rgb(255, 255, 255);
+}
+
 #header {
-    color: rgb(224, 224, 224);
     border-style: none none solid none;
     border-width: 1px;
-    border-color: rgb(224, 224, 224);
     padding-bottom: 5px;
     margin-bottom: 10px;
+
+    /* One of many hacks to make this container element's height expand to contain
+     * its floated elements.
+     */
+    overflow: auto;
+}
+
+body.color-dark #header {
+    color: rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
+}
+
+body.color-light #header {
+    color: rgb(48, 48, 48);
+    border-color: rgb(48, 48, 48);
 }
 
 #header h1 {
@@ -32,31 +52,72 @@ body {
     font-size: 12px;
 }
 
+#sort-control {
+    float: left;
+    width: 45%;
+}
+
+#color-control {
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+
 span.controller:hover {
-    color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+body.color-dark span.controller:hover {
+    color: rgb(255, 255, 255);
+}
+
+body.color-light span.controller:hover {
+    color: rgb(0, 0, 0);
 }
 
 .name {
     font-family: sans-serif;
     font-size: 16px;
+}
+
+body.color-dark .name {
     fill: rgb(224, 224, 224);
 }
 
-.name_bg {
+body.color-light .name {
+    fill: rgb(48, 48, 48);
+}
+
+body.color-dark .name_bg {
     fill: rgba(0, 0, 0, 0.4);
 }
 
-.bar.right {
+body.color-light .name_bg {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+body.color-dark .bar.right {
     fill: rgb(0, 112, 0);
 }
 
-.bar.wrong {
+body.color-light .bar.right {
+    fill: rgb(0, 128, 0);
+}
+
+body.color-dark .bar.wrong {
     fill: rgb(128, 128, 128);
 }
 
-.bar.unplayed {
+body.color-light .bar.wrong {
+    fill: rgb(128, 128, 128);
+}
+
+body.color-dark .bar.unplayed {
     fill: rgb(32, 32, 32);
+}
+
+body.color-light .bar.unplayed {
+    fill: rgb(236, 236, 236);
 }
 
 .highlight {
@@ -65,38 +126,96 @@ span.controller:hover {
 
 .highlight.matching {
     display: block;
+}
+
+body.color-dark .highlight.matching {
     fill: rgb(120, 54, 0);
+}
+
+body.color-light .highlight.matching {
+    fill: rgb(160, 72, 0);
 }
 
 .highlight.nonmatching {
     display: block;
+}
+
+body.color-dark .highlight.nonmatching {
     fill: rgb(191, 115, 52);
+}
+
+body.color-light .highlight.nonmatching {
+    fill: rgb(224, 132, 55);
 }
 
 .d3-tip {
   line-height: 1;
   padding: 4px;
-  border: 1px solid #444444;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.9);
-  color: rgb(0, 0, 0);
   font-family: sans-serif;
   font-size: 12px;
   width: 500px;
   text-align: center;
 }
 
+body.color-dark .d3-tip {
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(48, 48, 48);
+}
+
+body.color-light .d3-tip {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(68, 68, 68);
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(0, 0, 0);
+}
+
 .d3-tip span.pick_right {
     font-weight: bold;
+    color: rgb(0, 120, 0);
+}
+
+/* Splitting this up by body.color-dark and body.color-light doesn't work for
+   some reason. We'll have to settle for the same colors under both color
+   schemes.
+
+body.color-dark .d3-tip span.pick_right
+    color: rgb(0, 112, 0);
+}
+
+body.color-light .d3-tip span.pick_right
     color: rgb(0, 128, 0);
 }
+*/
 
 .d3-tip span.pick_wrong {
     font-weight: bold;
-    color: rgb(160, 160, 160);
+    color: rgb(144, 144, 144);
 }
+
+/*
+body.color-dark .d3-tip span.pick_wrong
+    color: rgb(144, 144, 144);
+}
+
+body.color-light .d3-tip span.pick_wrong
+    color: rgb(144, 144, 144);
+}
+*/
 
 .d3-tip span.pick_future {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
+
+/*
+body.color-dark .d3-tip span.pick_future
+    color: rgb(0, 0, 0);
+}
+
+body.color-light .d3-tip span.pick_future
+    color: rgb(0, 0, 0);
+}
+*/
