@@ -54,7 +54,6 @@ function redraw() {
     var col_pad = 4;
     var row_pad = 10;
     var name_pad = 22;
-    var axis_pad = 0;
     var bottom_pad = 14;
 
     set_color_scheme("dark");
