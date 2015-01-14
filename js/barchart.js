@@ -44,7 +44,7 @@ function redraw() {
     var width = $("#graphic").innerWidth();
     var height = $("#graphic").innerHeight();
 
-    var tip_pad = 6;
+    var tip_offset_y = 2;
     var col_pad = 4;
     var row_pad = 10;
     var name_pad = 22;
@@ -68,7 +68,7 @@ function redraw() {
             if (tw/2 > cx) offset_x = tw/2 - cx;
             else if (cx + tw/2 > sw) offset_x = sw - (cx + tw/2);
 
-            return [2, offset_x];
+            return [tip_offset_y, offset_x];
         })
         .direction("s")
         .html(function(d) {
