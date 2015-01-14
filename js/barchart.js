@@ -47,8 +47,8 @@ function redraw() {
     var tip_offset_y = 2;
     var col_pad = 4;
     var row_pad = 10;
-    var name_pad = 22;
-    var bottom_pad = 14;
+    var name_offset_y = 22;
+    var bottom_margin = 14;
 
     var default_sort_method = "confidence";
     var default_color_scheme = "dark";
@@ -114,7 +114,7 @@ function redraw() {
         // space, with the exception of a little extra space at the bottom to
         // fit the tooltip on the bottom row.
 
-        var row_height = (height - bottom_pad - (num_players - 1) * row_pad) / num_players;
+        var row_height = (height - bottom_margin - (num_players - 1) * row_pad) / num_players;
         var col_width = (width - (num_games - 1) * col_pad) / num_games;
 
         rows = [];
@@ -228,7 +228,7 @@ function redraw() {
             .append("text")
             .classed("name", true)
             .attr("x", 0)
-            .attr("y", function(d) { return rows[d.rank].bottom - name_pad; })
+            .attr("y", function(d) { return rows[d.rank].bottom - name_offset_y; })
             .text(function(d) { return d.name + ": " + d.score; })
             ;
 
