@@ -22,12 +22,6 @@ $(function() {
 function resize() {
     var w = $(window);
     var b = $("body");
-    b.width(w.width()
-            - parseInt(b.css("margin-left"))
-            - parseInt(b.css("margin-right"))
-            - parseInt(b.css("padding-left"))
-            - parseInt(b.css("padding-right"))
-           );
     b.height(w.height()
              - parseInt(b.css("margin-top"))
              - parseInt(b.css("margin-bottom"))
