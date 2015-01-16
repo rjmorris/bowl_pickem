@@ -47,7 +47,7 @@ function redraw() {
     var tip_offset_y = 2;
     var col_pad = 4;
     var row_pad = 10;
-    var name_offset_y = 22;
+    var name_offset_y = -15;
     var bottom_margin = 14;
 
     var default_sort_method = "confidence";
@@ -228,7 +228,9 @@ function redraw() {
             .append("text")
             .classed("name", true)
             .attr("x", 0)
-            .attr("y", function(d) { return rows[d.rank].bottom - name_offset_y; })
+            .attr("y", function(d) { return rows[d.rank].middle + name_offset_y; })
+            // dominant-baseline=hanging puts the top of the text at the y-coord.
+            //.attr("dominant-baseline", "hanging")
             .text(function(d) { return d.name + ": " + d.score; })
             ;
 
@@ -291,8 +293,8 @@ function assign_bar_dimensions(pick, row, col) {
     pick.bar_hcenter = cols[col].middle;
 
     pick.bar_height = (pick.confidence / num_games) * rows[row].height;
-    pick.bar_top = rows[row].bottom - pick.bar_height;
-    pick.bar_bottom = rows[row].bottom;
+    pick.bar_top = rows[row].middle - pick.bar_height / 2;
+    pick.bar_bottom = rows[row].middle + pick.bar_height / 2;
     pick.bar_vcenter = rows[row].middle;
 }
 
