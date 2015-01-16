@@ -154,7 +154,7 @@ function redraw() {
             .append("rect")
             .classed("bar", true)
             .attr("x", function(d) { return d.bar_left; })
-            .attr("y", function(d) { return rows[d.rank].bottom; })
+            .attr("y", function(d) { return rows[d.rank].middle; })
             .attr("width", function(d) { return d.bar_width; })
             .attr("height", 0)
             .attr("rx", 4)
