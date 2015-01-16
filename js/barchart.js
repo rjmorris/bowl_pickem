@@ -202,7 +202,7 @@ function redraw() {
                 ;
             })
             .transition()
-            .delay(function(d) { return 50 * (sort_method == "game" ? d.game_order : d.confidence); })
+            .delay(function(d) { return 1000 * (d.rank - 1) / num_players + 25 * (sort_method == "game" ? d.game_order : d.confidence); })
             .duration(function(d) { return 250; })
             .attr("y", function(d) { return d.bar_top; })
             .attr("height", function(d) { return d.bar_height; })
