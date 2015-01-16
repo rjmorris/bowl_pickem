@@ -4,8 +4,8 @@ var num_players;
 var rows;
 var cols;
 
-var sort_method;
-var color_scheme;
+var sort_method = "confidence";
+var color_scheme = "dark";
 
 
 $(function() {
@@ -50,10 +50,7 @@ function redraw() {
     var name_offset_y = -15;
     var bottom_margin = 14;
 
-    var default_sort_method = "confidence";
-    var default_color_scheme = "dark";
-
-    set_color_scheme(default_color_scheme);
+    set_color_scheme();
     
     var svg = d3.select("#graphic");
 
@@ -142,7 +139,7 @@ function redraw() {
         // Assign the initial bar dimensions for each pick.
 
         picks.forEach(function(pick) {
-            if (default_sort_method == "game") {
+            if (sort_method == "game") {
                 assign_bar_dimensions(pick, pick.rank, pick.game_order);
             }
             else {
@@ -277,10 +274,14 @@ function redraw() {
     });
 
     $("#color-light").click(function() {
+        if (color_scheme == "light") return;
+        color_scheme = "light";
         set_color_scheme("light");
     });
 
     $("#color-dark").click(function() {
+        if (color_scheme == "dark") return;
+        color_scheme = "dark";
         set_color_scheme("dark");
     });
 }
@@ -317,9 +318,6 @@ function reposition_bars() {
 }
 
 function set_color_scheme(scheme) {
-    if (color_scheme == scheme) return;
-    color_scheme = scheme;
-
     d3.select("body")
         .classed("color-light", color_scheme == "light")
         .classed("color-dark", color_scheme == "dark")
