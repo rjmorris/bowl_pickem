@@ -82,13 +82,11 @@
 
         $("#color-light").click(function() {
             if (color_scheme == "light") return;
-            color_scheme = "light";
             set_color_scheme("light");
         });
 
         $("#color-dark").click(function() {
             if (color_scheme == "dark") return;
-            color_scheme = "dark";
             set_color_scheme("dark");
         });
     });
@@ -322,6 +320,7 @@
     }
 
     function set_color_scheme(scheme) {
+        color_scheme = scheme;
         d3.select("body")
             .classed("color-light", scheme == "light")
             .classed("color-dark", scheme == "dark")
