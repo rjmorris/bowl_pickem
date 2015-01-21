@@ -60,23 +60,13 @@
 
         $("#sort-confidence").click(function() {
             if (sort_method == "confidence") return;
-            sort_method = "confidence";
-
-            picks.forEach(function(pick) {
-                assign_bar_dimensions(pick, pick.rank, pick.confidence);
-            });
-
+            set_sort_method("confidence");
             reposition_bars();
         });
 
         $("#sort-game").click(function() {
             if (sort_method == "game") return;
-            sort_method = "game";
-
-            picks.forEach(function(pick) {
-                assign_bar_dimensions(pick, pick.rank, pick.game_order);
-            });
-
+            set_sort_method("game");
             reposition_bars();
         });
 
@@ -147,17 +137,6 @@
             cols.push(col);
         });
 
-        // Assign the bar dimensions for each pick.
-
-        picks.forEach(function(pick) {
-            if (sort_method == "game") {
-                assign_bar_dimensions(pick, pick.rank, pick.game_order);
-            }
-            else {
-                assign_bar_dimensions(pick, pick.rank, pick.confidence);
-            }
-        });
-
         var svg = d3.select("#graphic");
 
         var tip = d3.tip()
@@ -184,6 +163,8 @@
             });
 
         svg.call(tip);
+
+        set_sort_method(sort_method);
 
         var bars = svg.selectAll(".bar")
             .data(picks)
@@ -317,6 +298,19 @@
             .duration(0)
             .attr("cx", function(d) { return d.bar_hcenter; })
         ;
+    }
+
+    function set_sort_method(method) {
+        sort_method = method;
+
+        picks.forEach(function(pick) {
+            if (method == "game") {
+                assign_bar_dimensions(pick, pick.rank, pick.game_order);
+            }
+            else {
+                assign_bar_dimensions(pick, pick.rank, pick.confidence);
+            }
+        });
     }
 
     function set_color_scheme(scheme) {
