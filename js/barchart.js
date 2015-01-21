@@ -21,7 +21,7 @@
 
     $(function() {
         set_layout_sizes();
-        set_color_scheme();
+        set_color_scheme(color_scheme);
 
         d3.tsv("picks.tsv", function(pick_data) {
             picks = pick_data;
@@ -323,8 +323,8 @@
 
     function set_color_scheme(scheme) {
         d3.select("body")
-            .classed("color-light", color_scheme == "light")
-            .classed("color-dark", color_scheme == "dark")
+            .classed("color-light", scheme == "light")
+            .classed("color-dark", scheme == "dark")
         ;
     };
 
