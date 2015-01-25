@@ -303,6 +303,15 @@
     function set_sort_method(method) {
         sort_method = method;
 
+        if (method == "game") {
+            d3.select("#sort-game").classed("active", true);
+            d3.select("#sort-confidence").classed("active", false);
+        }
+        else {
+            d3.select("#sort-confidence").classed("active", true);
+            d3.select("#sort-game").classed("active", false);
+        }
+
         picks.forEach(function(pick) {
             if (method == "game") {
                 assign_bar_dimensions(pick, pick.rank, pick.game_order);
@@ -315,6 +324,16 @@
 
     function set_color_scheme(scheme) {
         color_scheme = scheme;
+
+        if (scheme == "light") {
+            d3.select("#color-light").classed("active", true);
+            d3.select("#color-dark").classed("active", false);
+        }
+        else {
+            d3.select("#color-dark").classed("active", true);
+            d3.select("#color-light").classed("active", false);
+        }
+
         d3.select("body")
             .classed("color-light", scheme == "light")
             .classed("color-dark", scheme == "dark")
