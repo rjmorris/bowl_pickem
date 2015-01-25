@@ -64,16 +64,28 @@ body.color-light #header {
     text-align: right;
 }
 
-span.controller:hover {
+span.controller {
     cursor: pointer;
 }
 
-body.color-dark span.controller:hover {
-    color: rgb(255, 255, 255);
+span.controller.active:hover {
+    cursor: text;
 }
 
-body.color-light span.controller:hover {
-    color: rgb(0, 0, 0);
+body.color-dark span.controller:hover,
+body.color-dark span.controller.active
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(224, 224, 224);
+}
+
+body.color-light span.controller:hover,
+body.color-light span.controller.active
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(48, 48, 48);
 }
 
 .name {
