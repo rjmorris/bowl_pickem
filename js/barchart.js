@@ -79,6 +79,14 @@
             if (color_scheme == "dark") return;
             set_color_scheme("dark");
         });
+
+        $("#help-control").click(function() {
+            $("#help").fadeToggle();
+        });
+
+        $("#help #close").click(function() {
+            $("#help").fadeOut();
+        });
     });
 
 

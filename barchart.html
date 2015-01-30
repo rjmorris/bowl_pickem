@@ -14,6 +14,22 @@
         <h1>Bowl Pick'em 2014-15</h1>
         <p id="sort-control">sorted by: <span id="sort-confidence" class="controller">confidence</span> | <span id="sort-game" class="controller">date</span></p>
         <p id="color-control">color scheme: <span id="color-light" class="controller">light</span> | <span id="color-dark" class="controller">dark</span></p>
+        <p id="help-control">description</p>
+      </div>
+      <div id="help">
+        <p>
+          Participants pick the winners of 39 bowl games. For each game, they
+          assign a confidence score in the range 1-39, with every score used
+          exactly once. Standings are based on the sum of the confidence scores
+          for the correctly picked games.
+        </p>
+        <p>
+          In the graphic, the height of a bar represents the confidence
+          score assigned to the game. The color represents whether the pick
+          was correct. Hovering over a bar will highlight the corresponding
+          game for all other participants.
+        </p>
+        <p id="close">close</p>
       </div>
       <div id="graphic-container">
         <svg id="graphic"></svg>
