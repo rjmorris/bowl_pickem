@@ -106,6 +106,18 @@ body.color-light #help {
     border-color: rgb(48, 48, 48);
 }
 
+#legend {
+    width: 100%;
+}
+
+body.color-dark #legend .label {
+    fill: rgb(224, 224, 224);
+}
+
+body.color-light #legend .label {
+    fill: rgb(48, 48, 48);
+}
+
 span.controller {
     cursor: pointer;
 }
@@ -175,11 +187,11 @@ body.color-light .bar.unplayed {
     fill: rgb(236, 236, 236);
 }
 
-.highlight {
+#graphic .highlight {
     display: none;
 }
 
-.highlight.matching {
+#graphic .highlight.matching {
     display: block;
 }
 
@@ -191,7 +203,7 @@ body.color-light .highlight.matching {
     fill: rgb(160, 72, 0);
 }
 
-.highlight.nonmatching {
+#graphic .highlight.nonmatching {
     display: block;
 }
 

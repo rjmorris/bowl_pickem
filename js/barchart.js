@@ -14,6 +14,10 @@
     var row_pad = 10;
     var name_offset_y = -15;
     var bottom_margin = 14;
+    var highlight_size_matching = 3;
+    var highlight_size_nonmatching = 4;
+    var legend_label_offset = 10;
+    var legend_symbol_pad = 4;
 
     var sort_method = "confidence";
     var color_scheme = "dark";
@@ -198,10 +202,10 @@
                )
             .on('mouseover.2', function() {
                 var bar_data = d3.select(this).data()[0];
-                d3.selectAll(".highlight")
+                d3.selectAll("#graphic .highlight")
                     .attr("r", function(d) {
-                        if (bar_data.pick == d.pick) return 3;
-                        return 4;
+                        if (bar_data.pick == d.pick) return highlight_size_matching;
+                        return highlight_size_nonmatching;
                     })
                     .classed("matching", function(d) {
                         return (bar_data.MATCHUP == d.MATCHUP
@@ -222,7 +226,7 @@
                 tip.hide
                )
             .on('mouseout.2', function() {
-                d3.selectAll(".highlight")
+                d3.selectAll("#graphic .highlight")
                     .classed("matching", false)
                     .classed("nonmatching", false)
                 ;
@@ -274,6 +278,48 @@
             .attr("y", function(d, i) { return names[0][i].getBBox().y - 2; })
             .attr("width", function(d, i) { return names[0][i].getBBox().width + 4; })
             .attr("height", function(d, i) { return names[0][i].getBBox().height + 4; })
+        ;
+
+        // Make the elements in the legend look like the ones in the graphic.
+
+        var legend_symbol_width = cols[1].width
+        var legend_symbol_height = rows[1].height / 2
+
+        var legend = d3.select("#legend");
+
+        legend.attr("height", 5 * legend_symbol_height);
+
+        legend.selectAll(".bar")
+            .attr("x", 0)
+            .attr("y", function(d, i) { return i * legend_symbol_height + legend_symbol_pad/2 })
+            .attr("width", legend_symbol_width)
+            .attr("height", legend_symbol_height - legend_symbol_pad)
+            .attr("rx", 4)
+            .attr("ry", 4)
+        ;
+
+        legend.selectAll(".highlight")
+            .attr("cx", legend_symbol_width/2)
+        ;
+
+        // The cy attribute assumes the matching highlight symbol is the 4th one
+        // in the list.
+        legend.select(".highlight.matching")
+            .attr("cy", (3 + 1/2) * legend_symbol_height)
+            .attr("r", highlight_size_matching)
+        ;
+
+        // The cy attribute assumes the nonmatching highlight symbol is the 5th
+        // one in the list.
+        legend.select(".highlight.nonmatching")
+            .attr("cy", (4 + 1/2) * legend_symbol_height)
+            .attr("r", highlight_size_nonmatching)
+        ;
+
+        legend.selectAll(".label")
+            .attr("x", legend_symbol_width + legend_label_offset)
+            .attr("y", function(d, i) { return (i + 1/2) * legend_symbol_height })
+            .attr("dominant-baseline", "central")
         ;
     }
 

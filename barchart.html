@@ -29,6 +29,18 @@
           was correct. Hovering over a bar will highlight the corresponding
           game for all other participants.
         </p>
+        <svg id="legend">
+          <rect class="bar right" />
+          <rect class="bar wrong" />
+          <rect class="bar unplayed" />
+          <circle class="highlight matching" />
+          <circle class="highlight nonmatching" />
+          <text class="label">correct</text>
+          <text class="label">incorrect</text>
+          <text class="label">unplayed</text>
+          <text class="label">corresponding game, same pick</text>
+          <text class="label">corresponding game, different pick</text>
+        </svg>
         <p id="close">close</p>
       </div>
       <div id="graphic-container">
