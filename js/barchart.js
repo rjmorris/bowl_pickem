@@ -337,7 +337,7 @@
     }
 
     function reposition_bars() {
-        d3.selectAll(".bar")
+        d3.selectAll("#graphic .bar")
             .data(picks)
             .transition()
             .delay(function(d) { return 1000 * (d.rank - 1) / num_players; })
@@ -345,7 +345,7 @@
             .attr("x", function(d) { return d.bar_left; })
         ;
 
-        d3.selectAll(".highlight")
+        d3.selectAll("#graphic .highlight")
             .data(picks)
             .transition()
             .delay(2000)
