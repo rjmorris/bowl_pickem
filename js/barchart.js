@@ -84,12 +84,24 @@
             set_color_scheme("dark");
         });
 
-        $("#help-control").click(function() {
-            $("#help").fadeToggle();
+        $("#help-show").click(function() {
+            $("#help").fadeIn();
+            $("#help-show").hide();
+            $("#help-hide").show();
+        });
+
+        $("#help-hide").hide();
+
+        $("#help-hide").click(function() {
+            $("#help").fadeOut();
+            $("#help-hide").hide();
+            $("#help-show").show();
         });
 
         $("#help #close").click(function() {
             $("#help").fadeOut();
+            $("#help-hide").hide();
+            $("#help-show").show();
         });
     });
 
@@ -358,12 +370,12 @@
         sort_method = method;
 
         if (method == "game") {
-            d3.select("#sort-game").classed("active", true);
-            d3.select("#sort-confidence").classed("active", false);
+            $("#sort-game").hide();
+            $("#sort-confidence").show();
         }
         else {
-            d3.select("#sort-confidence").classed("active", true);
-            d3.select("#sort-game").classed("active", false);
+            $("#sort-confidence").hide();
+            $("#sort-game").show();
         }
 
         picks.forEach(function(pick) {
@@ -380,12 +392,12 @@
         color_scheme = scheme;
 
         if (scheme == "light") {
-            d3.select("#color-light").classed("active", true);
-            d3.select("#color-dark").classed("active", false);
+            $("#color-light").hide();
+            $("#color-dark").show();
         }
         else {
-            d3.select("#color-dark").classed("active", true);
-            d3.select("#color-light").classed("active", false);
+            $("#color-dark").hide();
+            $("#color-light").show();
         }
 
         d3.select("body")

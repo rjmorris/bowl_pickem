@@ -53,6 +53,10 @@ body.color-light #header {
     font-size: 12px;
 }
 
+.control {
+    cursor: pointer;
+}
+
 #sort-control {
     float: left;
     width: 45%;
@@ -68,7 +72,6 @@ body.color-light #header {
     float: left;
     width: 9%;
     text-align: center;
-    cursor: pointer;
 }
 
 #help {
@@ -116,30 +119,6 @@ body.color-dark #legend .label {
 
 body.color-light #legend .label {
     fill: rgb(48, 48, 48);
-}
-
-span.controller {
-    cursor: pointer;
-}
-
-span.controller.active:hover {
-    cursor: text;
-}
-
-body.color-dark span.controller:hover,
-body.color-dark span.controller.active
-{
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(224, 224, 224);
-}
-
-body.color-light span.controller:hover,
-body.color-light span.controller.active
-{
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(48, 48, 48);
 }
 
 .name {
