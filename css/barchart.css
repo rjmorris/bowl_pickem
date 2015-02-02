@@ -9,6 +9,7 @@ body {
     height: 100%;
     overflow: hidden;
     padding: 10px;
+    font-family: sans-serif;
 }
 
 body.color-dark {
@@ -42,14 +43,12 @@ body.color-light #header {
 }
 
 #header h1 {
-    font-family: sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
 
 #header p {
-    font-family: sans-serif;
     font-size: 12px;
 }
 
@@ -81,7 +80,6 @@ body.color-light #header {
     width: 40em;
     margin-left: -20em;
     padding: 15px;
-    font-family: sans-serif;
     font-size: 12px;
     border-style: solid;
     border-width: 1px;
@@ -122,7 +120,6 @@ body.color-light #legend .label {
 }
 
 .name {
-    font-family: sans-serif;
     font-size: 14px;
 }
 
@@ -198,7 +195,6 @@ body.color-light .highlight.nonmatching {
   line-height: 1;
   padding: 4px;
   border-radius: 4px;
-  font-family: sans-serif;
   font-size: 12px;
   width: 500px;
   text-align: center;
