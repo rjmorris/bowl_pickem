@@ -49,9 +49,9 @@
                 p.score += +pick.score;
             });
 
-            num_games = picks.reduce(function(running, pick) { return Math.max(running, pick.confidence); }, 0);
+            num_games = d3.max(picks, function(p) { return p.confidence; });
 
-            players = Object.keys(players_map).map(function(p) { return players_map[p]; });
+            players = d3.values(players_map);
             num_players = players.length;
 
             draw_graphic();
