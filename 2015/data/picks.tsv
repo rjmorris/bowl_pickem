@@ -1,0 +1,352 @@
+name	GAME	LOCATION	MATCHUP	Confidence_Score	team1	team2	team3	team4	pick	game_time	winner	correct	score	rank	game_order
+Jeremy	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	21	UL Lafayette	Nevada			UL Lafayette	12/20/2014 11:00 AM	UL Lafayette	1	21	1	1
+Jeremy	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	31	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	31	1	2
+Jeremy	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	30	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	30	1	3
+Jeremy	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	6	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	6	1	4
+Jeremy	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	22	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	1	5
+Jeremy	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	7	Memphis	BYU			BYU	12/22/2014  2:00 PM	Memphis	0	0	1	6
+Jeremy	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	29	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	29	1	7
+Jeremy	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	8	San Diego State	Navy			Navy	12/23/2014  9:30 PM	Navy	1	8	1	8
+Jeremy	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	9	Western Kentucky	Central Michigan			Central Michigan	12/24/2014 12:00 PM	Western Kentucky	0	0	1	9
+Jeremy	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	10	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	10	1	10
+Jeremy	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	28	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	28	1	11
+Jeremy	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	11	Rutgers	North Carolina			Rutgers	12/26/2014  4:30 PM	Rutgers	1	11	1	12
+Jeremy	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	23	NC State	UCF			NC State	12/26/2014  8:00 PM	NC State	1	23	1	13
+Jeremy	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	12	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	1	14
+Jeremy	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	39	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	39	1	15
+Jeremy	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	5	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	1	16
+Jeremy	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	13	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	1	17
+Jeremy	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	38	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	38	1	18
+Jeremy	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	24	West Virginia	Texas A&M			Texas A&M	12/29/2014  2:00 PM	Texas A&M	1	24	1	19
+Jeremy	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	25	Clemson	Oklahoma			Clemson	12/29/2014  5:30 PM	Clemson	1	25	1	20
+Jeremy	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	37	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	37	1	21
+Jeremy	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	36	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	1	22
+Jeremy	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	14	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	14	1	23
+Jeremy	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	35	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	35	1	24
+Jeremy	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	17	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	17	1	25
+Jeremy	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	16	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	1	26
+Jeremy	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	26	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	1	27
+Jeremy	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	20	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	1	28
+Jeremy	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	34	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	34	1	29
+Jeremy	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	15	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	1	30
+Jeremy	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	32	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	32	1	31
+Jeremy	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	33	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	1	32
+Jeremy	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	4	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	1	33
+Jeremy	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	3	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	3	1	34
+Jeremy	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	19	Kansas State	UCLA			UCLA	1/2/2015  6:45 PM	UCLA	1	19	1	35
+Jeremy	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	27	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	1	36
+Jeremy	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	18	Florida	East Carolina			Florida	1/3/2015 12:00 PM	Florida	1	18	1	37
+Jeremy	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	2	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	2	1	38
+Jeremy	Championship	Arlington, Texas	Semifinal winners	1	Alabama	Oregon	Florida State	Ohio State	Florida State	1/12/2015  8:30 PM	Ohio State	0	0	1	39
+Liz	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	5	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	2	1
+Liz	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	7	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	7	2	2
+Liz	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	9	Colorado State	Utah			Colorado State	12/20/2014  3:30 PM	Utah	0	0	2	3
+Liz	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	10	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	10	2	4
+Liz	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	11	Bowling Green	South Alabama			Bowling Green	12/20/2014  9:15 PM	Bowling Green	1	11	2	5
+Liz	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	20	Memphis	BYU			BYU	12/22/2014  2:00 PM	Memphis	0	0	2	6
+Liz	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	17	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	17	2	7
+Liz	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	18	San Diego State	Navy			Navy	12/23/2014  9:30 PM	Navy	1	18	2	8
+Liz	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	21	Western Kentucky	Central Michigan			Central Michigan	12/24/2014 12:00 PM	Western Kentucky	0	0	2	9
+Liz	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	6	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	6	2	10
+Liz	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	4	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	4	2	11
+Liz	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	25	Rutgers	North Carolina			Rutgers	12/26/2014  4:30 PM	Rutgers	1	25	2	12
+Liz	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	19	NC State	UCF			NC State	12/26/2014  8:00 PM	NC State	1	19	2	13
+Liz	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	24	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	2	14
+Liz	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	13	Duke	Arizona State			Duke	12/27/2014  2:00 PM	Arizona State	0	0	2	15
+Liz	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	2	Miami (Fla.)	South Carolina			South Carolina	12/27/2014  4:00 PM	South Carolina	1	2	2	16
+Liz	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	8	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	2	17
+Liz	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	1	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	1	2	18
+Liz	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	22	West Virginia	Texas A&M			Texas A&M	12/29/2014  2:00 PM	Texas A&M	1	22	2	19
+Liz	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	37	Clemson	Oklahoma			Clemson	12/29/2014  5:30 PM	Clemson	1	37	2	20
+Liz	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	3	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	3	2	21
+Liz	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	36	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	2	22
+Liz	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	12	Louisville	Georgia			Louisville	12/30/2014  6:45 PM	Georgia	0	0	2	23
+Liz	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	23	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	23	2	24
+Liz	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	32	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	32	2	25
+Liz	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	34	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	2	26
+Liz	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	35	Georgia Tech	Mississippi State			Georgia Tech	12/31/2014  8:00 PM	Georgia Tech	1	35	2	27
+Liz	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	26	Wisconsin	Auburn			Wisconsin	1/1/2015 12:00 PM	Wisconsin	1	26	2	28
+Liz	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	14	Minnesota	Missouri			Minnesota	1/1/2015 12:30 PM	Missouri	0	0	2	29
+Liz	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	27	Baylor	Michigan State			Michigan State	1/1/2015 12:30 PM	Michigan State	1	27	2	30
+Liz	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	38	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	38	2	31
+Liz	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	28	Alabama	Ohio State			Ohio State	1/1/2015  8:30 PM	Ohio State	1	28	2	32
+Liz	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	15	Houston	Pittsburgh			Houston	1/2/2015 12:00 PM	Houston	1	15	2	33
+Liz	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	30	Iowa	Tennessee			Iowa	1/2/2015  3:20 PM	Tennessee	0	0	2	34
+Liz	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	29	Kansas State	UCLA			UCLA	1/2/2015  6:45 PM	UCLA	1	29	2	35
+Liz	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	16	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	2	36
+Liz	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	31	Florida	East Carolina			East Carolina	1/3/2015 12:00 PM	Florida	0	0	2	37
+Liz	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	33	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	33	2	38
+Liz	Championship	Arlington, Texas	Semifinal winners	39	Alabama	Oregon	Florida State	Ohio State	Ohio State	1/12/2015  8:30 PM	Ohio State	1	39	2	39
+John	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	7	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	3	1
+John	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	39	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	39	3	2
+John	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	22	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	22	3	3
+John	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	21	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	21	3	4
+John	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	19	Bowling Green	South Alabama			Bowling Green	12/20/2014  9:15 PM	Bowling Green	1	19	3	5
+John	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	1	Memphis	BYU			BYU	12/22/2014  2:00 PM	Memphis	0	0	3	6
+John	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	14	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	14	3	7
+John	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	20	San Diego State	Navy			Navy	12/23/2014  9:30 PM	Navy	1	20	3	8
+John	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	35	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	35	3	9
+John	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	12	Fresno State	Rice			Fresno State	12/24/2014  8:00 PM	Rice	0	0	3	10
+John	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	9	Illinois	Louisiana Tech			Illinois	12/26/2014  1:00 PM	Louisiana Tech	0	0	3	11
+John	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	4	Rutgers	North Carolina			Rutgers	12/26/2014  4:30 PM	Rutgers	1	4	3	12
+John	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	6	NC State	UCF			NC State	12/26/2014  8:00 PM	NC State	1	6	3	13
+John	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	25	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	3	14
+John	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	33	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	33	3	15
+John	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	18	Miami (Fla.)	South Carolina			South Carolina	12/27/2014  4:00 PM	South Carolina	1	18	3	16
+John	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	8	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	3	17
+John	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	27	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	27	3	18
+John	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	11	West Virginia	Texas A&M			West Virginia	12/29/2014  2:00 PM	Texas A&M	0	0	3	19
+John	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	10	Clemson	Oklahoma			Clemson	12/29/2014  5:30 PM	Clemson	1	10	3	20
+John	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	26	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	26	3	21
+John	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	37	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	3	22
+John	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	36	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	36	3	23
+John	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	38	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	38	3	24
+John	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	28	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	28	3	25
+John	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	13	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	3	26
+John	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	32	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	3	27
+John	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	31	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	3	28
+John	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	17	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	17	3	29
+John	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	15	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	3	30
+John	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	30	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	30	3	31
+John	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	29	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	3	32
+John	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	16	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	3	33
+John	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	3	Iowa	Tennessee			Iowa	1/2/2015  3:20 PM	Tennessee	0	0	3	34
+John	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	24	Kansas State	UCLA			UCLA	1/2/2015  6:45 PM	UCLA	1	24	3	35
+John	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	34	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	3	36
+John	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	2	Florida	East Carolina			East Carolina	1/3/2015 12:00 PM	Florida	0	0	3	37
+John	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	23	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	23	3	38
+John	Championship	Arlington, Texas	Semifinal winners	5	Alabama	Oregon	Florida State	Ohio State	Alabama	1/12/2015  8:30 PM	Ohio State	0	0	3	39
+Joey	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	4	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	4	1
+Joey	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	37	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	37	4	2
+Joey	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	14	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	14	4	3
+Joey	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	1	Air Force	Western Michigan			Western Michigan	12/20/2014  5:45 PM	Air Force	0	0	4	4
+Joey	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	10	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	4	5
+Joey	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	3	Memphis	BYU			Memphis	12/22/2014  2:00 PM	Memphis	1	3	4	6
+Joey	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	39	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	39	4	7
+Joey	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	9	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	4	8
+Joey	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	17	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	17	4	9
+Joey	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	7	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	7	4	10
+Joey	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	27	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	27	4	11
+Joey	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	18	Rutgers	North Carolina			North Carolina	12/26/2014  4:30 PM	Rutgers	0	0	4	12
+Joey	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	5	NC State	UCF			UCF	12/26/2014  8:00 PM	NC State	0	0	4	13
+Joey	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	12	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	4	14
+Joey	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	33	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	33	4	15
+Joey	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	22	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	4	16
+Joey	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	6	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	4	17
+Joey	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	29	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	29	4	18
+Joey	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	21	West Virginia	Texas A&M			West Virginia	12/29/2014  2:00 PM	Texas A&M	0	0	4	19
+Joey	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	16	Clemson	Oklahoma			Oklahoma	12/29/2014  5:30 PM	Clemson	0	0	4	20
+Joey	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	26	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	26	4	21
+Joey	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	31	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	4	22
+Joey	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	28	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	28	4	23
+Joey	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	38	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	38	4	24
+Joey	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	15	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	15	4	25
+Joey	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	19	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	4	26
+Joey	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	34	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	4	27
+Joey	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	30	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	4	28
+Joey	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	24	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	24	4	29
+Joey	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	11	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	4	30
+Joey	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	35	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	35	4	31
+Joey	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	36	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	4	32
+Joey	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	13	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	4	33
+Joey	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	20	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	20	4	34
+Joey	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	8	Kansas State	UCLA			UCLA	1/2/2015  6:45 PM	UCLA	1	8	4	35
+Joey	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	25	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	4	36
+Joey	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	32	Florida	East Carolina			Florida	1/3/2015 12:00 PM	Florida	1	32	4	37
+Joey	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	23	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	23	4	38
+Joey	Championship	Arlington, Texas	Semifinal winners	2	Alabama	Oregon	Florida State	Ohio State	Alabama	1/12/2015  8:30 PM	Ohio State	0	0	4	39
+Joe	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	11	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	5	1
+Joe	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	38	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	38	5	2
+Joe	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	2	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	2	5	3
+Joe	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	6	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	6	5	4
+Joe	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	1	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	5	5
+Joe	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	13	Memphis	BYU			Memphis	12/22/2014  2:00 PM	Memphis	1	13	5	6
+Joe	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	36	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	36	5	7
+Joe	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	7	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	5	8
+Joe	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	21	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	21	5	9
+Joe	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	8	Fresno State	Rice			Fresno State	12/24/2014  8:00 PM	Rice	0	0	5	10
+Joe	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	30	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	30	5	11
+Joe	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	18	Rutgers	North Carolina			North Carolina	12/26/2014  4:30 PM	Rutgers	0	0	5	12
+Joe	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	14	NC State	UCF			NC State	12/26/2014  8:00 PM	NC State	1	14	5	13
+Joe	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	19	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	5	14
+Joe	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	35	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	35	5	15
+Joe	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	9	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	5	16
+Joe	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	17	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	5	17
+Joe	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	31	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	31	5	18
+Joe	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	20	West Virginia	Texas A&M			West Virginia	12/29/2014  2:00 PM	Texas A&M	0	0	5	19
+Joe	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	10	Clemson	Oklahoma			Oklahoma	12/29/2014  5:30 PM	Clemson	0	0	5	20
+Joe	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	27	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	27	5	21
+Joe	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	26	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	5	22
+Joe	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	24	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	24	5	23
+Joe	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	39	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	39	5	24
+Joe	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	4	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	4	5	25
+Joe	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	22	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	5	26
+Joe	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	33	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	5	27
+Joe	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	32	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	5	28
+Joe	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	29	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	29	5	29
+Joe	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	5	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	5	30
+Joe	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	37	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	37	5	31
+Joe	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	34	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	5	32
+Joe	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	16	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	5	33
+Joe	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	23	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	23	5	34
+Joe	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	12	Kansas State	UCLA			Kansas State	1/2/2015  6:45 PM	UCLA	0	0	5	35
+Joe	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	25	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	5	36
+Joe	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	28	Florida	East Carolina			Florida	1/3/2015 12:00 PM	Florida	1	28	5	37
+Joe	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	3	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	3	5	38
+Joe	Championship	Arlington, Texas	Semifinal winners	15	Alabama	Oregon	Florida State	Ohio State	Oregon	1/12/2015  8:30 PM	Ohio State	0	0	5	39
+Bostwick	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	2	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	6	1
+Bostwick	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	38	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	38	6	2
+Bostwick	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	18	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	18	6	3
+Bostwick	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	3	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	3	6	4
+Bostwick	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	5	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	6	5
+Bostwick	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	4	Memphis	BYU			Memphis	12/22/2014  2:00 PM	Memphis	1	4	6	6
+Bostwick	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	24	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	24	6	7
+Bostwick	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	6	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	6	8
+Bostwick	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	7	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	7	6	9
+Bostwick	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	8	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	8	6	10
+Bostwick	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	33	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	33	6	11
+Bostwick	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	19	Rutgers	North Carolina			North Carolina	12/26/2014  4:30 PM	Rutgers	0	0	6	12
+Bostwick	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	20	NC State	UCF			UCF	12/26/2014  8:00 PM	NC State	0	0	6	13
+Bostwick	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	9	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	6	14
+Bostwick	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	34	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	34	6	15
+Bostwick	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	25	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	6	16
+Bostwick	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	14	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	6	17
+Bostwick	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	36	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	36	6	18
+Bostwick	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	17	West Virginia	Texas A&M			West Virginia	12/29/2014  2:00 PM	Texas A&M	0	0	6	19
+Bostwick	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	16	Clemson	Oklahoma			Oklahoma	12/29/2014  5:30 PM	Clemson	0	0	6	20
+Bostwick	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	26	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	26	6	21
+Bostwick	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	35	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	6	22
+Bostwick	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	32	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	32	6	23
+Bostwick	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	39	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	39	6	24
+Bostwick	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	11	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	11	6	25
+Bostwick	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	28	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	6	26
+Bostwick	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	30	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	6	27
+Bostwick	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	29	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	6	28
+Bostwick	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	23	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	23	6	29
+Bostwick	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	10	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	6	30
+Bostwick	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	31	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	31	6	31
+Bostwick	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	37	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	6	32
+Bostwick	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	13	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	6	33
+Bostwick	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	12	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	12	6	34
+Bostwick	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	15	Kansas State	UCLA			Kansas State	1/2/2015  6:45 PM	UCLA	0	0	6	35
+Bostwick	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	21	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	6	36
+Bostwick	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	27	Florida	East Carolina			Florida	1/3/2015 12:00 PM	Florida	1	27	6	37
+Bostwick	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	22	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	22	6	38
+Bostwick	Championship	Arlington, Texas	Semifinal winners	1	Alabama	Oregon	Florida State	Ohio State	Oregon	1/12/2015  8:30 PM	Ohio State	0	0	6	39
+Jess	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	14	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	7	1
+Jess	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	31	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	31	7	2
+Jess	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	34	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	34	7	3
+Jess	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	12	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	12	7	4
+Jess	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	32	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	7	5
+Jess	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	20	Memphis	BYU			BYU	12/22/2014  2:00 PM	Memphis	0	0	7	6
+Jess	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	36	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	36	7	7
+Jess	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	27	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	7	8
+Jess	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	18	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	18	7	9
+Jess	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	3	Fresno State	Rice			Fresno State	12/24/2014  8:00 PM	Rice	0	0	7	10
+Jess	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	21	Illinois	Louisiana Tech			Illinois	12/26/2014  1:00 PM	Louisiana Tech	0	0	7	11
+Jess	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	2	Rutgers	North Carolina			Rutgers	12/26/2014  4:30 PM	Rutgers	1	2	7	12
+Jess	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	15	NC State	UCF			UCF	12/26/2014  8:00 PM	NC State	0	0	7	13
+Jess	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	13	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	7	14
+Jess	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	4	Duke	Arizona State			Duke	12/27/2014  2:00 PM	Arizona State	0	0	7	15
+Jess	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	5	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	7	16
+Jess	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	17	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	7	17
+Jess	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	33	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	33	7	18
+Jess	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	6	West Virginia	Texas A&M			Texas A&M	12/29/2014  2:00 PM	Texas A&M	1	6	7	19
+Jess	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	22	Clemson	Oklahoma			Oklahoma	12/29/2014  5:30 PM	Clemson	0	0	7	20
+Jess	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	7	Texas	Arkansas			Texas	12/29/2014  9:00 PM	Arkansas	0	0	7	21
+Jess	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	38	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	7	22
+Jess	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	37	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	37	7	23
+Jess	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	28	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	28	7	24
+Jess	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	35	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	35	7	25
+Jess	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	26	Arizona	Boise State			Boise State	12/31/2014  4:00 PM	Boise State	1	26	7	26
+Jess	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	11	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	7	27
+Jess	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	23	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	7	28
+Jess	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	10	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	10	7	29
+Jess	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	29	Baylor	Michigan State			Michigan State	1/1/2015 12:30 PM	Michigan State	1	29	7	30
+Jess	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	1	Oregon	Florida State			Florida State	1/1/2015  5:00 PM	Oregon	0	0	7	31
+Jess	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	39	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	7	32
+Jess	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	8	Houston	Pittsburgh			Pittsburgh	1/2/2015 12:00 PM	Houston	0	0	7	33
+Jess	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	24	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	24	7	34
+Jess	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	16	Kansas State	UCLA			Kansas State	1/2/2015  6:45 PM	UCLA	0	0	7	35
+Jess	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	19	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	7	36
+Jess	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	25	Florida	East Carolina			Florida	1/3/2015 12:00 PM	Florida	1	25	7	37
+Jess	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	9	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	9	7	38
+Jess	Championship	Arlington, Texas	Semifinal winners	30	Alabama	Oregon	Florida State	Ohio State	Alabama	1/12/2015  8:30 PM	Ohio State	0	0	7	39
+Hieronymus	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	9	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	8	1
+Hieronymus	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	30	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	30	8	2
+Hieronymus	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	27	Colorado State	Utah			Colorado State	12/20/2014  3:30 PM	Utah	0	0	8	3
+Hieronymus	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	32	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	32	8	4
+Hieronymus	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	25	Bowling Green	South Alabama			Bowling Green	12/20/2014  9:15 PM	Bowling Green	1	25	8	5
+Hieronymus	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	22	Memphis	BYU			Memphis	12/22/2014  2:00 PM	Memphis	1	22	8	6
+Hieronymus	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	15	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	15	8	7
+Hieronymus	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	14	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	8	8
+Hieronymus	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	12	Western Kentucky	Central Michigan			Central Michigan	12/24/2014 12:00 PM	Western Kentucky	0	0	8	9
+Hieronymus	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	7	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	7	8	10
+Hieronymus	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	13	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	13	8	11
+Hieronymus	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	38	Rutgers	North Carolina			North Carolina	12/26/2014  4:30 PM	Rutgers	0	0	8	12
+Hieronymus	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	39	NC State	UCF			UCF	12/26/2014  8:00 PM	NC State	0	0	8	13
+Hieronymus	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	37	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	8	14
+Hieronymus	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	23	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	23	8	15
+Hieronymus	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	5	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	8	16
+Hieronymus	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	6	Boston College	Penn State			Penn State	12/27/2014  4:30 PM	Penn State	1	6	8	17
+Hieronymus	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	19	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	19	8	18
+Hieronymus	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	26	West Virginia	Texas A&M			Texas A&M	12/29/2014  2:00 PM	Texas A&M	1	26	8	19
+Hieronymus	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	4	Clemson	Oklahoma			Clemson	12/29/2014  5:30 PM	Clemson	1	4	8	20
+Hieronymus	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	33	Texas	Arkansas			Texas	12/29/2014  9:00 PM	Arkansas	0	0	8	21
+Hieronymus	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	8	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	8	22
+Hieronymus	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	10	Louisville	Georgia			Louisville	12/30/2014  6:45 PM	Georgia	0	0	8	23
+Hieronymus	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	31	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	31	8	24
+Hieronymus	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	34	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	34	8	25
+Hieronymus	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	24	Arizona	Boise State			Boise State	12/31/2014  4:00 PM	Boise State	1	24	8	26
+Hieronymus	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	11	Georgia Tech	Mississippi State			Georgia Tech	12/31/2014  8:00 PM	Georgia Tech	1	11	8	27
+Hieronymus	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	16	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	8	28
+Hieronymus	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	17	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	17	8	29
+Hieronymus	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	36	Baylor	Michigan State			Baylor	1/1/2015 12:30 PM	Michigan State	0	0	8	30
+Hieronymus	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	18	Oregon	Florida State			Oregon	1/1/2015  5:00 PM	Oregon	1	18	8	31
+Hieronymus	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	35	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	8	32
+Hieronymus	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	21	Houston	Pittsburgh			Houston	1/2/2015 12:00 PM	Houston	1	21	8	33
+Hieronymus	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	2	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	2	8	34
+Hieronymus	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	20	Kansas State	UCLA			Kansas State	1/2/2015  6:45 PM	UCLA	0	0	8	35
+Hieronymus	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	3	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	8	36
+Hieronymus	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	28	Florida	East Carolina			East Carolina	1/3/2015 12:00 PM	Florida	0	0	8	37
+Hieronymus	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	29	Toledo	Arkansas State			Arkansas State	1/4/2015  9:00 PM	Toledo	0	0	8	38
+Hieronymus	Championship	Arlington, Texas	Semifinal winners	1	Alabama	Oregon	Florida State	Ohio State	Oregon	1/12/2015  8:30 PM	Ohio State	0	0	8	39
+Derick	New Orleans	New Orleans, La.	UL Lafayette (8-4) vs. Nevada (7-5)	16	UL Lafayette	Nevada			Nevada	12/20/2014 11:00 AM	UL Lafayette	0	0	9	1
+Derick	New Mexico	Albuquerque, N.M.	Utah State (9-4) vs. UTEP (7-5)	12	Utah State	UTEP			Utah State	12/20/2014  2:20 PM	Utah State	1	12	9	2
+Derick	Royal Purple	Las Vegas, Nev.	Colorado State (10-2) vs. Utah (8-4)	3	Colorado State	Utah			Utah	12/20/2014  3:30 PM	Utah	1	3	9	3
+Derick	Idaho Potato	Boise, Idaho	Air Force (9-3) vs. Western Michigan (8-4)	17	Air Force	Western Michigan			Air Force	12/20/2014  5:45 PM	Air Force	1	17	9	4
+Derick	Camellia	Montgomery, Ala.	Bowling Green (7-6) vs. South Alabama (6-6)	4	Bowling Green	South Alabama			South Alabama	12/20/2014  9:15 PM	Bowling Green	0	0	9	5
+Derick	Miami Beach	Miami, Fla.	Memphis (9-3) vs. BYU (8-4)	10	Memphis	BYU			BYU	12/22/2014  2:00 PM	Memphis	0	0	9	6
+Derick	Boca Raton	Boca Raton, Fla.	Marshall (12-1) vs. Northern Illinois (11-2)	25	Marshall	Northern Illinois			Marshall	12/23/2014  6:00 PM	Marshall	1	25	9	7
+Derick	Poinsettia	San Diego, Calif.	San Diego State (7-5) vs. Navy (6-5)	27	San Diego State	Navy			San Diego State	12/23/2014  9:30 PM	Navy	0	0	9	8
+Derick	Bahamas	Nassau, Bahamas	Western Kentucky (7-5) vs. Central Michigan (7-5)	2	Western Kentucky	Central Michigan			Western Kentucky	12/24/2014 12:00 PM	Western Kentucky	1	2	9	9
+Derick	Hawaii	Honolulu, Hawaii	Fresno State (6-7) vs. Rice (7-5)	5	Fresno State	Rice			Rice	12/24/2014  8:00 PM	Rice	1	5	9	10
+Derick	Heart of Dallas	Dallas, Texas	Illinois (6-6) vs. Louisiana Tech (8-5)	13	Illinois	Louisiana Tech			Louisiana Tech	12/26/2014  1:00 PM	Louisiana Tech	1	13	9	11
+Derick	Quick Lane	Detroit, Mich.	Rutgers (7-5) vs. North Carolina (6-6)	31	Rutgers	North Carolina			Rutgers	12/26/2014  4:30 PM	Rutgers	1	31	9	12
+Derick	Bitcoin	St. Petersburg, Fla.	NC State (7-5) vs. UCF (9-3)	7	NC State	UCF			NC State	12/26/2014  8:00 PM	NC State	1	7	9	13
+Derick	Military	Annapolis, Md.	Virginia Tech (6-6) vs. Cincinnati (9-3)	22	Virginia Tech	Cincinnati			Cincinnati	12/27/2014  1:00 PM	Virginia Tech	0	0	9	14
+Derick	Sun	El Paso, Texas	Duke (9-3) vs. Arizona State (9-3)	23	Duke	Arizona State			Arizona State	12/27/2014  2:00 PM	Arizona State	1	23	9	15
+Derick	Independence	Shreveport, La.	Miami (Fla.) (6-6) vs. South Carolina (6-6)	24	Miami (Fla.)	South Carolina			Miami (Fla.)	12/27/2014  4:00 PM	South Carolina	0	0	9	16
+Derick	Pinstripe	Bronx, N.Y.	Boston College (7-5) vs. Penn State (6-6)	6	Boston College	Penn State			Boston College	12/27/2014  4:30 PM	Penn State	0	0	9	17
+Derick	Holiday	San Diego, Calif.	Nebraska (9-3) vs. USC (8-4)	11	Nebraska	USC			USC	12/27/2014  8:00 PM	USC	1	11	9	18
+Derick	Liberty	Memphis, Tenn.	West Virginia (7-5) vs. Texas A&M (7-5)	20	West Virginia	Texas A&M			West Virginia	12/29/2014  2:00 PM	Texas A&M	0	0	9	19
+Derick	Russell Athletic	Orlando, Fla.	Clemson (9-3) vs. Oklahoma (8-4)	30	Clemson	Oklahoma			Oklahoma	12/29/2014  5:30 PM	Clemson	0	0	9	20
+Derick	Texas	Houston, Texas	Texas (6-6) vs. Arkansas (6-6)	28	Texas	Arkansas			Arkansas	12/29/2014  9:00 PM	Arkansas	1	28	9	21
+Derick	Music City	Nashville, Tenn.	Notre Dame (7-5) vs. LSU (8-4)	36	Notre Dame	LSU			LSU	12/30/2014  3:00 PM	Notre Dame	0	0	9	22
+Derick	Belk	Charlotte, N.C.	Louisville (9-3) vs. Georgia (9-3)	38	Louisville	Georgia			Georgia	12/30/2014  6:45 PM	Georgia	1	38	9	23
+Derick	Foster Farms	Santa Clara, Calif.	Maryland (7-5) vs. Stanford (7-5)	19	Maryland	Stanford			Stanford	12/30/2014 10:00 PM	Stanford	1	19	9	24
+Derick	Peach	Atlanta, Ga.	TCU (11-1) vs. Ole Miss (9-3)	33	TCU	Ole Miss			TCU	12/31/2014 12:30 PM	TCU	1	33	9	25
+Derick	Fiesta	Glendale, Ariz.	Arizona (10-3) vs. Boise State (11-2)	35	Arizona	Boise State			Arizona	12/31/2014  4:00 PM	Boise State	0	0	9	26
+Derick	Orange	Miami, Fla.	Georgia Tech (10-3) vs. Mississippi State (10-2)	39	Georgia Tech	Mississippi State			Mississippi State	12/31/2014  8:00 PM	Georgia Tech	0	0	9	27
+Derick	Outback	Tampa, Fla.	Wisconsin (10-3) vs. Auburn (8-4)	18	Wisconsin	Auburn			Auburn	1/1/2015 12:00 PM	Wisconsin	0	0	9	28
+Derick	Citrus	Orlando, Fla.	Minnesota (8-4) vs. Missouri (10-3)	29	Minnesota	Missouri			Missouri	1/1/2015 12:30 PM	Missouri	1	29	9	29
+Derick	Cotton	Arlington, Texas	Baylor (11-1) vs. Michigan State (10-2)	32	Baylor	Michigan State			Michigan State	1/1/2015 12:30 PM	Michigan State	1	32	9	30
+Derick	Rose	Pasadena, Calif.	No. 2 Oregon (12-1) vs. No. 3 Florida State (13-0)	8	Oregon	Florida State			Florida State	1/1/2015  5:00 PM	Oregon	0	0	9	31
+Derick	Sugar	New Orleans, La.	No. 1 Alabama (12-1) vs. No. 4 Ohio State (12-1)	34	Alabama	Ohio State			Alabama	1/1/2015  8:30 PM	Ohio State	0	0	9	32
+Derick	Armed Forces	Fort Worth, Texas	Houston (7-5) vs. Pittsburgh (6-6)	1	Houston	Pittsburgh			Houston	1/2/2015 12:00 PM	Houston	1	1	9	33
+Derick	TaxSlayer	Jacksonville, Fla.	Iowa (7-5) vs. Tennessee (6-6)	9	Iowa	Tennessee			Tennessee	1/2/2015  3:20 PM	Tennessee	1	9	9	34
+Derick	Alamo	San Antonio, Texas	Kansas State (9-3) vs. UCLA (9-3)	37	Kansas State	UCLA			Kansas State	1/2/2015  6:45 PM	UCLA	0	0	9	35
+Derick	Cactus	Tempe, Ariz.	Oklahoma State (6-6) vs. Washington (8-5)	14	Oklahoma State	Washington			Washington	1/2/2015 10:15 PM	Oklahoma State	0	0	9	36
+Derick	Birmingham	Birmingham, Ala.	Florida (6-5) vs. East Carolina (8-4)	21	Florida	East Carolina			East Carolina	1/3/2015 12:00 PM	Florida	0	0	9	37
+Derick	GoDaddy	Mobile, Ala.	Toledo (8-4) vs. Arkansas State (7-5)	15	Toledo	Arkansas State			Toledo	1/4/2015  9:00 PM	Toledo	1	15	9	38
+Derick	Championship	Arlington, Texas	Semifinal winners	26	Alabama	Oregon	Florida State	Ohio State	Alabama	1/12/2015  8:30 PM	Ohio State	0	0	9	39

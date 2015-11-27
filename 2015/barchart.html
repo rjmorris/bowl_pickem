@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pickem Results</title>
+        <link rel="stylesheet" type="text/css" href="css/barchart.css">
+        <script type="text/javascript" src="lib/d3-3.5.9/d3.min.js"></script>
+        <script type="text/javascript" src="lib/d3-tip-rtidatascience-a1d0490-20151017/index.js"></script>
+        <script type="text/javascript" src="lib/jquery-2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/barchart.js"></script>
+    </head>
+    <body>
+      <div id="header">
+        <h1>Bowl Pick'em 2015-16</h1>
+        <div id="sort-control">
+          <p id="sort-confidence" class="control">sort by confidence</p>
+          <p id="sort-game" class="control">sort by date</p>
+        </div>
+        <div id="color-control">
+          <p id="color-light" class="control">use light color scheme</p>
+          <p id="color-dark" class="control">use dark color scheme</p>
+        </div>
+        <div id="help-control">
+          <p id="help-show" class="control">show description</p>
+          <p id="help-hide" class="control">hide description</p>
+        </div>
+      </div>
+      <div id="help">
+        <p>
+          Participants pick the winners of 39 bowl games. For each game, they
+          assign a confidence score in the range 1-39, with every score used
+          exactly once. Standings are based on the sum of the confidence scores
+          for the correctly picked games.
+        </p>
+        <p>
+          In the graphic, the height of a bar represents the confidence
+          score assigned to the game. The color represents whether the pick
+          was correct. Hovering over a bar will highlight the corresponding
+          game for all other participants.
+        </p>
+        <svg id="legend">
+          <rect class="bar right" />
+          <rect class="bar wrong" />
+          <rect class="bar unplayed" />
+          <circle class="highlight matching" />
+          <circle class="highlight nonmatching" />
+          <text class="label">correct</text>
+          <text class="label">incorrect</text>
+          <text class="label">unplayed</text>
+          <text class="label">corresponding game, same pick</text>
+          <text class="label">corresponding game, different pick</text>
+        </svg>
+        <p id="close">close</p>
+      </div>
+      <div id="graphic-container">
+        <svg id="graphic"></svg>
+      </div>
+    </body>
+</html>
