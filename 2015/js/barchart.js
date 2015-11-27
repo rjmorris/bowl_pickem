@@ -197,30 +197,43 @@ d3.tsv("data/picks.tsv", function(pick_data) {
             .classed("wrong", function(d) { return d.result === false; })
             .classed("unplayed", function(d) { return d.result === null; })
             .on('mouseover.1',
-                // tip.show doesn't work when it's called inside a function.
-                // Therefore, it needs to be added as a separate event handler. d3
-                // lets you assign multiple handlers to an event by adding an
-                // extension to the event name. Here, we've added .1, .2 to the
-                // mouseover event name.
+                // We want to let d3 handle the call to tip.show, because it
+                // passes certain arguments to it and sets up the /this/ context
+                // appropriately. Because we have additional code to run on
+                // mouseover, we'll need to assign two event handlers: one where
+                // we pass the tip.show function, and one where we define a
+                // function for our additional code. d3 lets you assign multiple
+                // handlers to an event by adding an extension to the event
+                // name. Here, we've added .1, .2 to the mouseover event name.
+                //
+                // We could do this in a single handler by calling tip.show
+                // explicitly in the same way d3 does. This seems to work
+                // currently:
+                //
+                //   tip.show.call(this, d)
+                //
+                // However, we don't want to be responsible for updating this to
+                // match any changes to what d3 is doing internally.
                 tip.show
                )
-            .on('mouseover.2', function() {
-                var bar_data = d3.select(this).data()[0];
+            .on('mouseover.2', function(d) {
+                var thisBar = d;
+
                 d3.selectAll("#graphic .highlight")
-                    .attr("r", function(d) {
-                        if (bar_data.pick == d.pick) return highlight_size_matching;
+                    .attr("r", function(otherBar) {
+                        if (thisBar.pick == otherBar.pick) return highlight_size_matching;
                         return highlight_size_nonmatching;
                     })
-                    .classed("matching", function(d) {
-                        return (bar_data.MATCHUP == d.MATCHUP
-                                && bar_data.pick == d.pick
-                                && bar_data.name != d.name
+                    .classed("matching", function(otherBar) {
+                        return (thisBar.MATCHUP == otherBar.MATCHUP
+                                && thisBar.pick == otherBar.pick
+                                && thisBar.name != otherBar.name
                                );
                     })
-                    .classed("nonmatching", function(d) {
-                        return (bar_data.MATCHUP == d.MATCHUP
-                                && bar_data.pick != d.pick
-                                && bar_data.name != d.name
+                    .classed("nonmatching", function(otherBar) {
+                        return (thisBar.MATCHUP == otherBar.MATCHUP
+                                && thisBar.pick != otherBar.pick
+                                && thisBar.name != otherBar.name
                                );
                     })
                 ;
