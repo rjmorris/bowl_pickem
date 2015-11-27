@@ -1,7 +1,4 @@
-// Wrap everything in an IIFE (immediately-invokde function expression) to avoid
-// polluting the global namespace.
-(function() {
-
+d3.tsv("data/picks.tsv", function(pick_data) {
     var picks;
     var players;
     var num_games;
@@ -22,87 +19,82 @@
     var sort_method = "confidence";
     var color_scheme = "dark";
 
+    set_layout_sizes();
+    set_color_scheme(color_scheme);
 
-    $(function() {
+    picks = pick_data;
+    var players_map = {};
+
+    picks.forEach(function(pick) {
+        pick.confidence = +pick.Confidence_Score;
+        pick.game_order = +pick.game_order;
+
+        if (pick.correct === "1") pick.result = true;
+        else if (pick.correct === "0") pick.result = false;
+        else pick.result = null;
+
+        if (!(pick.name in players_map)) {
+            players_map[pick.name] = {};
+            players_map[pick.name].score = 0;
+        }
+        var p = players_map[pick.name];
+        p.name = pick.name;
+        p.rank = +pick.rank;
+        p.score += +pick.score;
+    });
+
+    num_games = d3.max(picks, function(p) { return p.confidence; });
+
+    players = d3.values(players_map);
+    num_players = players.length;
+
+    draw_graphic();
+
+    $(window).resize(function() {
         set_layout_sizes();
-        set_color_scheme(color_scheme);
+        draw_graphic();
+    });
 
-        d3.tsv("data/picks.tsv", function(pick_data) {
-            picks = pick_data;
-            var players_map = {};
+    $("#sort-confidence").click(function() {
+        if (sort_method == "confidence") return;
+        set_sort_method("confidence");
+        reposition_bars();
+    });
 
-            picks.forEach(function(pick) {
-                pick.confidence = +pick.Confidence_Score;
-                pick.game_order = +pick.game_order;
+    $("#sort-game").click(function() {
+        if (sort_method == "game") return;
+        set_sort_method("game");
+        reposition_bars();
+    });
 
-                if (pick.correct === "1") pick.result = true;
-                else if (pick.correct === "0") pick.result = false;
-                else pick.result = null;
+    $("#color-light").click(function() {
+        if (color_scheme == "light") return;
+        set_color_scheme("light");
+    });
 
-                if (!(pick.name in players_map)) {
-                    players_map[pick.name] = {};
-                    players_map[pick.name].score = 0;
-                }
-                var p = players_map[pick.name];
-                p.name = pick.name;
-                p.rank = +pick.rank;
-                p.score += +pick.score;
-            });
+    $("#color-dark").click(function() {
+        if (color_scheme == "dark") return;
+        set_color_scheme("dark");
+    });
 
-            num_games = d3.max(picks, function(p) { return p.confidence; });
+    $("#help-show").click(function() {
+        $("#help").fadeIn();
+        $("#help-show").hide();
+        $("#help-hide").show();
+    });
 
-            players = d3.values(players_map);
-            num_players = players.length;
+    $("#help-hide").hide();
 
-            draw_graphic();
-        });
-
-        $(window).resize(function() {
-            set_layout_sizes();
-            draw_graphic();
-        });
-
-        $("#sort-confidence").click(function() {
-            if (sort_method == "confidence") return;
-            set_sort_method("confidence");
-            reposition_bars();
-        });
-
-        $("#sort-game").click(function() {
-            if (sort_method == "game") return;
-            set_sort_method("game");
-            reposition_bars();
-        });
-
-        $("#color-light").click(function() {
-            if (color_scheme == "light") return;
-            set_color_scheme("light");
-        });
-
-        $("#color-dark").click(function() {
-            if (color_scheme == "dark") return;
-            set_color_scheme("dark");
-        });
-
-        $("#help-show").click(function() {
-            $("#help").fadeIn();
-            $("#help-show").hide();
-            $("#help-hide").show();
-        });
-
+    $("#help-hide").click(function() {
+        $("#help").fadeOut();
         $("#help-hide").hide();
+        $("#help-show").show();
+    });
 
-        $("#help-hide").click(function() {
-            $("#help").fadeOut();
-            $("#help-hide").hide();
-            $("#help-show").show();
-        });
-
-        $("#help #close").click(function() {
-            $("#help").fadeOut();
-            $("#help-hide").hide();
-            $("#help-show").show();
-        });
+    $("#help #close").click(function() {
+        $("#help").fadeOut();
+        $("#help-hide").hide();
+        $("#help-show").show();
     });
 
 
@@ -406,4 +398,4 @@
         ;
     };
 
-})();
+});
