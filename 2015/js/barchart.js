@@ -1,4 +1,29 @@
 d3.tsv("data/picks.tsv", function(pick_data) {
+    $("#help-hide").hide();
+
+    $('body').height($(window).height()
+                     - parseInt($('body').css('margin-top'))
+                     - parseInt($('body').css('margin-bottom'))
+                     - parseInt($('body').css('padding-top'))
+                     - parseInt($('body').css('padding-bottom'))
+                    );
+
+    var width = $('body').width();
+    var height = $('body').height() - $('#header').outerHeight(true);
+    var margin = {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    };
+
+    var svg = d3.select('#graphic')
+        .attr('width', width - margin.left - margin.right)
+        .attr('height', height - margin.top - margin.bottom)
+        .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    ;
+
     var picks;
     var players;
     var num_games;
@@ -19,7 +44,6 @@ d3.tsv("data/picks.tsv", function(pick_data) {
     var sort_method = "confidence";
     var color_scheme = "dark";
 
-    set_layout_sizes();
     set_color_scheme(color_scheme);
 
     picks = pick_data;
@@ -78,8 +102,6 @@ d3.tsv("data/picks.tsv", function(pick_data) {
         $("#help-hide").show();
     });
 
-    $("#help-hide").hide();
-
     $("#help-hide").click(function() {
         $("#help").fadeOut();
         $("#help-hide").hide();
@@ -93,30 +115,9 @@ d3.tsv("data/picks.tsv", function(pick_data) {
     });
 
 
-    function set_layout_sizes() {
-        var w = $(window);
-        var b = $("body");
-        b.height(w.height()
-                 - parseInt(b.css("margin-top"))
-                 - parseInt(b.css("margin-bottom"))
-                 - parseInt(b.css("padding-top"))
-                 - parseInt(b.css("padding-bottom"))
-                );
-
-        var h = $("#header");
-
-        var g = $("#graphic");
-        g.attr("width", b.width());
-        g.attr("height", b.height() - h.outerHeight(true));
-    }
-
-
     function draw_graphic() {
-        $("#graphic").empty();
+        svg.selectAll('*').remove();
         $(".d3-tip").remove();
-
-        var width = $("#graphic").innerWidth();
-        var height = $("#graphic").innerHeight();
 
         // Compute the positions for each row and column. There will be one row
         // per player and one column per game. They will maximize the available
@@ -147,8 +148,6 @@ d3.tsv("data/picks.tsv", function(pick_data) {
             col.middle = (col.left + col.right) / 2;
             cols.push(col);
         });
-
-        var svg = d3.select("#graphic");
 
         var tip = d3.tip()
             .attr('class', 'd3-tip')
