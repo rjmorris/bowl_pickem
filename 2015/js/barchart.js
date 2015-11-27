@@ -50,11 +50,6 @@ d3.tsv("data/picks.tsv", function(pick_data) {
 
     draw_graphic();
 
-    $(window).resize(function() {
-        set_layout_sizes();
-        draw_graphic();
-    });
-
     $("#sort-confidence").click(function() {
         if (sort_method == "confidence") return;
         set_sort_method("confidence");
