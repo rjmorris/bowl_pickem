@@ -1,52 +1,7 @@
-d3.tsv("data/picks.tsv", function(pick_data) {
-    $("#help-hide").hide();
+d3.tsv("data/picks.tsv", function(picks) {
+    //--------------------------------------------------------------------------
+    // Prep the data.
 
-    $('body').height($(window).height()
-                     - parseInt($('body').css('margin-top'))
-                     - parseInt($('body').css('margin-bottom'))
-                     - parseInt($('body').css('padding-top'))
-                     - parseInt($('body').css('padding-bottom'))
-                    );
-
-    var width = $('body').width();
-    var height = $('body').height() - $('#header').outerHeight(true);
-    var margin = {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0
-    };
-
-    var svg = d3.select('#graphic')
-        .attr('width', width - margin.left - margin.right)
-        .attr('height', height - margin.top - margin.bottom)
-        .append('g')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-    ;
-
-    var picks;
-    var players;
-    var num_games;
-    var num_players;
-    var rows;
-    var cols;
-
-    var tip_offset_y = 2;
-    var col_pad = 4;
-    var row_pad = 10;
-    var name_offset_y = -15;
-    var bottom_margin = 14;
-    var highlight_size_matching = 3;
-    var highlight_size_nonmatching = 4;
-    var legend_label_offset = 10;
-    var legend_symbol_pad = 4;
-
-    var sort_method = "confidence";
-    var color_scheme = "light";
-
-    set_color_scheme(color_scheme);
-
-    picks = pick_data;
     var players_map = {};
 
     picks.forEach(function(pick) {
@@ -67,53 +22,71 @@ d3.tsv("data/picks.tsv", function(pick_data) {
         p.score += +pick.score;
     });
 
-    num_games = d3.max(picks, function(p) { return p.confidence; });
+    var players = d3.values(players_map);
+    var num_players = players.length;
+    var num_games = d3.max(picks, function(p) { return p.confidence; });
 
-    players = d3.values(players_map);
-    num_players = players.length;
+
+    //--------------------------------------------------------------------------
+    // Set the sizes of layout elements.
+
+    $("#help-hide").hide();
+
+    $('body').height($(window).height()
+                     - parseInt($('body').css('margin-top'))
+                     - parseInt($('body').css('margin-bottom'))
+                     - parseInt($('body').css('padding-top'))
+                     - parseInt($('body').css('padding-bottom'))
+                    );
+
+
+    //--------------------------------------------------------------------------
+    // Create the SVG using the margin convention for sizing/positioning.
+
+    var width = $('body').width();
+    var height = $('body').height() - $('#header').outerHeight(true);
+    var margin = {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+    };
+
+    var svg = d3.select('#graphic')
+        .attr('width', width - margin.left - margin.right)
+        .attr('height', height - margin.top - margin.bottom)
+        .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    ;
+
+
+    //--------------------------------------------------------------------------
+    // Define UI options.
+
+    var tip_offset_y = 2;
+    var col_pad = 4;
+    var row_pad = 10;
+    var name_offset_y = -15;
+    var bottom_margin = 14;
+    var highlight_size_matching = 3;
+    var highlight_size_nonmatching = 4;
+    var legend_label_offset = 10;
+    var legend_symbol_pad = 4;
+
+    var sort_method = "confidence";
+    var color_scheme = "light";
+
+
+    //--------------------------------------------------------------------------
+    // Draw the visualization.
+
+    set_color_scheme(color_scheme);
+
+    // Define these outside draw_graphic() so that other functions can use them.
+    var rows;
+    var cols;
 
     draw_graphic();
-
-    $("#sort-confidence").click(function() {
-        if (sort_method == "confidence") return;
-        set_sort_method("confidence");
-        reposition_bars();
-    });
-
-    $("#sort-game").click(function() {
-        if (sort_method == "game") return;
-        set_sort_method("game");
-        reposition_bars();
-    });
-
-    $("#color-light").click(function() {
-        if (color_scheme == "light") return;
-        set_color_scheme("light");
-    });
-
-    $("#color-dark").click(function() {
-        if (color_scheme == "dark") return;
-        set_color_scheme("dark");
-    });
-
-    $("#help-show").click(function() {
-        $("#help").fadeIn();
-        $("#help-show").hide();
-        $("#help-hide").show();
-    });
-
-    $("#help-hide").click(function() {
-        $("#help").fadeOut();
-        $("#help-hide").hide();
-        $("#help-show").show();
-    });
-
-    $("#help #close").click(function() {
-        $("#help").fadeOut();
-        $("#help-hide").hide();
-        $("#help-show").show();
-    });
-
 
     function draw_graphic() {
         svg.selectAll('*').remove();
@@ -334,6 +307,53 @@ d3.tsv("data/picks.tsv", function(pick_data) {
         ;
     }
 
+
+    //--------------------------------------------------------------------------
+    // Define event handlers.
+
+    $("#sort-confidence").click(function() {
+        if (sort_method == "confidence") return;
+        set_sort_method("confidence");
+        reposition_bars();
+    });
+
+    $("#sort-game").click(function() {
+        if (sort_method == "game") return;
+        set_sort_method("game");
+        reposition_bars();
+    });
+
+    $("#color-light").click(function() {
+        if (color_scheme == "light") return;
+        set_color_scheme("light");
+    });
+
+    $("#color-dark").click(function() {
+        if (color_scheme == "dark") return;
+        set_color_scheme("dark");
+    });
+
+    $("#help-show").click(function() {
+        $("#help").fadeIn();
+        $("#help-show").hide();
+        $("#help-hide").show();
+    });
+
+    $("#help-hide").click(function() {
+        $("#help").fadeOut();
+        $("#help-hide").hide();
+        $("#help-show").show();
+    });
+
+    $("#help #close").click(function() {
+        $("#help").fadeOut();
+        $("#help-hide").hide();
+        $("#help-show").show();
+    });
+
+
+    //--------------------------------------------------------------------------
+    // Function definitions.
 
     function assign_bar_dimensions(pick, row, col) {    
         pick.bar_left = cols[col].left;
