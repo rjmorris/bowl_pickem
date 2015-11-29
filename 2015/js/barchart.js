@@ -42,7 +42,7 @@ d3.tsv("data/picks.tsv", function(pick_data) {
     var legend_symbol_pad = 4;
 
     var sort_method = "confidence";
-    var color_scheme = "dark";
+    var color_scheme = "light";
 
     set_color_scheme(color_scheme);
 
