@@ -28,9 +28,24 @@ d3.tsv("data/picks.tsv", function(picks) {
 
 
     //--------------------------------------------------------------------------
-    // Set the sizes of layout elements.
+    // Define UI options.
 
-    $("#help-hide").hide();
+    var tip_offset_y = 2;
+    var col_pad = 4;
+    var row_pad = 10;
+    var name_offset_y = -15;
+    var bottom_margin = 14;
+    var highlight_size_matching = 3;
+    var highlight_size_nonmatching = 4;
+    var legend_label_offset = 10;
+    var legend_symbol_pad = 4;
+
+    var sort_method = "confidence";
+    var color_scheme = "light";
+
+
+    //--------------------------------------------------------------------------
+    // Make the body occupy the entire window height.
 
     $('body').height($(window).height()
                      - parseInt($('body').css('margin-top'))
@@ -41,7 +56,14 @@ d3.tsv("data/picks.tsv", function(picks) {
 
 
     //--------------------------------------------------------------------------
-    // Create the SVG using the margin convention for sizing/positioning.
+    // Create the SVG using the margin convention for sizing/positioning. We
+    // want the SVG to occupy all the space on screen below the header.
+
+    // Initialize the state of the header elements. Their presence/absence could
+    // affect the height of the header.
+    $("#help-hide").hide();
+    update_sort_method_selector();
+    update_color_scheme_selector();
 
     var width = $('body').width();
     var height = $('body').height() - $('#header').outerHeight(true);
@@ -58,23 +80,6 @@ d3.tsv("data/picks.tsv", function(picks) {
         .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
     ;
-
-
-    //--------------------------------------------------------------------------
-    // Define UI options.
-
-    var tip_offset_y = 2;
-    var col_pad = 4;
-    var row_pad = 10;
-    var name_offset_y = -15;
-    var bottom_margin = 14;
-    var highlight_size_matching = 3;
-    var highlight_size_nonmatching = 4;
-    var legend_label_offset = 10;
-    var legend_symbol_pad = 4;
-
-    var sort_method = "confidence";
-    var color_scheme = "light";
 
 
     //--------------------------------------------------------------------------
@@ -314,23 +319,27 @@ d3.tsv("data/picks.tsv", function(picks) {
     $("#sort-confidence").click(function() {
         if (sort_method == "confidence") return;
         set_sort_method("confidence");
+        update_sort_method_selector();
         reposition_bars();
     });
 
     $("#sort-game").click(function() {
         if (sort_method == "game") return;
         set_sort_method("game");
+        update_sort_method_selector();
         reposition_bars();
     });
 
     $("#color-light").click(function() {
         if (color_scheme == "light") return;
         set_color_scheme("light");
+        update_color_scheme_selector();
     });
 
     $("#color-dark").click(function() {
         if (color_scheme == "dark") return;
         set_color_scheme("dark");
+        update_color_scheme_selector();
     });
 
     $("#help-show").click(function() {
@@ -388,15 +397,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     function set_sort_method(method) {
         sort_method = method;
 
-        if (method == "game") {
-            $("#sort-game").hide();
-            $("#sort-confidence").show();
-        }
-        else {
-            $("#sort-confidence").hide();
-            $("#sort-game").show();
-        }
-
         picks.forEach(function(pick) {
             if (method == "game") {
                 assign_bar_dimensions(pick, pick.rank, pick.game_order);
@@ -407,17 +407,19 @@ d3.tsv("data/picks.tsv", function(picks) {
         });
     }
 
-    function set_color_scheme(scheme) {
-        color_scheme = scheme;
-
-        if (scheme == "light") {
-            $("#color-light").hide();
-            $("#color-dark").show();
+    function update_sort_method_selector() {
+        if (sort_method == "game") {
+            $("#sort-game").hide();
+            $("#sort-confidence").show();
         }
         else {
-            $("#color-dark").hide();
-            $("#color-light").show();
+            $("#sort-confidence").hide();
+            $("#sort-game").show();
         }
+    }
+
+    function set_color_scheme(scheme) {
+        color_scheme = scheme;
 
         d3.select("body")
             .classed("color-light", scheme == "light")
@@ -425,4 +427,14 @@ d3.tsv("data/picks.tsv", function(picks) {
         ;
     }
 
+    function update_color_scheme_selector() {
+        if (color_scheme == "light") {
+            $("#color-light").hide();
+            $("#color-dark").show();
+        }
+        else {
+            $("#color-dark").hide();
+            $("#color-light").show();
+        }
+    }
 });
