@@ -138,8 +138,8 @@ d3.tsv("data/picks.tsv", function(picks) {
             .direction("s")
             .html(function(d) {
                 var pick_class = "pick_future";
-                if (d.result == true) pick_class = "pick_right";
-                else if (d.result == false) pick_class = "pick_wrong";
+                if (d.result === true) pick_class = "pick_right";
+                else if (d.result === false) pick_class = "pick_wrong";
                 var matchup = d.MATCHUP.replace("Semifinal winners", "Semifinal winners: " + d.pick);
                 matchup = matchup.replace(d.pick, "<span class=\"" + pick_class + "\">" + d.pick + "</span>");
                 return d.name + " [" + d.confidence + "]: " + matchup + ", " + d.game_time;
@@ -266,8 +266,8 @@ d3.tsv("data/picks.tsv", function(picks) {
 
         // Make the elements in the legend look like the ones in the graphic.
 
-        var legend_symbol_width = cols[1].width
-        var legend_symbol_height = rows[1].height / 2
+        var legend_symbol_width = cols[1].width;
+        var legend_symbol_height = rows[1].height / 2;
 
         var legend = d3.select("#legend");
 
@@ -275,7 +275,7 @@ d3.tsv("data/picks.tsv", function(picks) {
 
         legend.selectAll(".bar")
             .attr("x", 0)
-            .attr("y", function(d, i) { return i * legend_symbol_height + legend_symbol_pad/2 })
+            .attr("y", function(d, i) { return i * legend_symbol_height + legend_symbol_pad/2; })
             .attr("width", legend_symbol_width)
             .attr("height", legend_symbol_height - legend_symbol_pad)
             .attr("rx", 4)
@@ -302,7 +302,7 @@ d3.tsv("data/picks.tsv", function(picks) {
 
         legend.selectAll(".label")
             .attr("x", legend_symbol_width + legend_label_offset)
-            .attr("y", function(d, i) { return (i + 1/2) * legend_symbol_height })
+            .attr("y", function(d, i) { return (i + 1/2) * legend_symbol_height; })
             .attr("dominant-baseline", "central")
         ;
     }
@@ -423,6 +423,6 @@ d3.tsv("data/picks.tsv", function(picks) {
             .classed("color-light", scheme == "light")
             .classed("color-dark", scheme == "dark")
         ;
-    };
+    }
 
 });
