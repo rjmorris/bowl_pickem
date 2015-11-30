@@ -34,7 +34,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     var col_pad = 4;
     var row_pad = 10;
     var name_offset_y = -15;
-    var bottom_margin = 14;
     var highlight_size_matching = 3;
     var highlight_size_nonmatching = 4;
     var legend_label_offset = 10;
@@ -65,18 +64,22 @@ d3.tsv("data/picks.tsv", function(picks) {
     update_sort_method_selector();
     update_color_scheme_selector();
 
-    var width = $('body').width();
-    var height = $('body').height() - $('#header').outerHeight(true);
     var margin = {
         top: 0,
         right: 0,
-        bottom: 0,
+        bottom: 14,
         left: 0
     };
 
+    var svgWidth = $('body').width();
+    var svgHeight = $('body').height() - $('#header').outerHeight(true);
+
+    var width = svgWidth - margin.left - margin.right;
+    var height = svgHeight - margin.top - margin.bottom;
+
     var svg = d3.select('#graphic')
-        .attr('width', width - margin.left - margin.right)
-        .attr('height', height - margin.top - margin.bottom)
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
         .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
     ;
@@ -102,7 +105,7 @@ d3.tsv("data/picks.tsv", function(picks) {
         // space, with the exception of a little extra space at the bottom to
         // fit the tooltip on the bottom row.
 
-        var row_height = (height - bottom_margin - (num_players - 1) * row_pad) / num_players;
+        var row_height = (height - margin.bottom - (num_players - 1) * row_pad) / num_players;
         var col_width = (width - (num_games - 1) * col_pad) / num_games;
 
         rows = [];
