@@ -44,17 +44,6 @@ d3.tsv("data/picks.tsv", function(picks) {
 
 
     //--------------------------------------------------------------------------
-    // Make the body occupy the entire window height.
-
-    $('body').height($(window).height()
-                     - parseInt($('body').css('margin-top'))
-                     - parseInt($('body').css('margin-bottom'))
-                     - parseInt($('body').css('padding-top'))
-                     - parseInt($('body').css('padding-bottom'))
-                    );
-
-
-    //--------------------------------------------------------------------------
     // Create the SVG using the margin convention for sizing/positioning. We
     // want the SVG to occupy all the space on screen below the header.
 
