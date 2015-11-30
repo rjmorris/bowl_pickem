@@ -58,18 +58,18 @@ body.color-light #header {
 
 #sort-control {
     float: left;
-    width: 45%;
+    width: 33%;
 }
 
 #color-control {
     float: right;
-    width: 45%;
+    width: 33%;
     text-align: right;
 }
 
 #help-control {
     float: left;
-    width: 9%;
+    width: 33%;
     text-align: center;
 }
 
