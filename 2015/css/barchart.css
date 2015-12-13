@@ -119,6 +119,27 @@ body.color-light #legend .label {
     fill: rgb(48, 48, 48);
 }
 
+#game-finder {
+    float: left;
+    width: 12em;
+    height: 100%;
+    margin-right: 8px;
+    padding-right: 10px;
+    border-right: solid 1px #000000;
+}
+
+#game-finder h1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#graphic-container {
+    float: left;
+    width: calc(100% - 12em - 8px);
+    height: 100%;
+}
+
 .name {
     font-size: 14px;
 }

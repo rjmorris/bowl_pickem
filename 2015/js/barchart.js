@@ -53,6 +53,10 @@ d3.tsv("data/picks.tsv", function(picks) {
     update_sort_method_selector();
     update_color_scheme_selector();
 
+    // Set the sizes of some layout elements programmatically. These are too
+    // complicated to get right in CSS only.
+    $('#graphic-container').height($('body').height() - $('#header').outerHeight(true));
+
     var margin = {
         top: 0,
         right: 0,
@@ -60,8 +64,8 @@ d3.tsv("data/picks.tsv", function(picks) {
         left: 0
     };
 
-    var svgWidth = $('body').width();
-    var svgHeight = $('body').height() - $('#header').outerHeight(true);
+    var svgWidth = $('#graphic-container').width();
+    var svgHeight = $('#graphic-container').height();
 
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
