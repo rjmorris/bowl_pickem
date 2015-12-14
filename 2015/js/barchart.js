@@ -3,6 +3,7 @@ d3.tsv("data/picks.tsv", function(picks) {
     // Prep the data.
 
     var players_map = {};
+    var games_map = {};
 
     picks.forEach(function(pick) {
         pick.confidence = +pick.Confidence_Score;
@@ -20,11 +21,29 @@ d3.tsv("data/picks.tsv", function(picks) {
         p.name = pick.name;
         p.rank = +pick.rank;
         p.score += +pick.score;
+
+        if (!(pick.GAME in games_map)) {
+            var g = {};
+            g.bowl = pick.GAME;
+            g.game_time = pick.game_time;
+            g.game_order = pick.game_order;
+            g.matchup = pick.MATCHUP;
+            g.team1 = pick.team1;
+            g.team2 = pick.team2;
+            g.team3 = pick.team3;
+            g.team4 = pick.team4;
+            g.winner = pick.winner;
+            games_map[pick.GAME] = g;
+        }
     });
 
     var players = d3.values(players_map);
     var num_players = players.length;
-    var num_games = d3.max(picks, function(p) { return p.confidence; });
+
+    var games = d3.values(games_map).sort(function(a, b) {
+        return d3.ascending(a.game_order, b.game_order);
+    });
+    var num_games = games.length;
 
 
     //--------------------------------------------------------------------------
@@ -326,6 +345,34 @@ d3.tsv("data/picks.tsv", function(picks) {
         .attr("x", legend_symbol_width + legend_label_offset)
         .attr("y", function(d, i) { return (i + 1/2) * legend_symbol_height; })
         .attr("dominant-baseline", "central")
+    ;
+
+
+    //--------------------------------------------------------------------------
+    // Add games to the game finder panel.
+
+    d3.select('#game-list').selectAll('.game-item')
+        .data(games)
+        .enter()
+        .append('li')
+        .text(function(d) {
+            if (d.bowl === 'Championship') return 'Championship';
+            return d.team1 + ' / ' + d.team2;
+        })
+        .on('mouseover', function(game) {
+            svg.selectAll(".highlight")
+                .filter(function(highlight) {
+                    return game.game_order === highlight.game_order;
+                })
+                .attr("r", highlight_size_matching)
+                .classed("matching", true)
+            ;            
+        })
+        .on('mouseout', function(game) {
+            svg.selectAll(".highlight")
+                .classed("matching", false)
+            ;            
+        })
     ;
 
 

@@ -125,13 +125,60 @@ body.color-light #legend .label {
     height: 100%;
     margin-right: 8px;
     padding-right: 10px;
-    border-right: solid 1px #000000;
+    overflow: auto;
+}
+body.color-dark #game-finder {
+    color: rgb(224, 224, 224);
+    border-right: solid 1px rgb(224, 224, 224);
+}
+
+body.color-light #game-finder {
+    color: rgb(48, 48, 48);
+    border-right: solid 1px rgb(48, 48, 48);
 }
 
 #game-finder h1 {
+    padding-bottom: 6px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+}
+
+body.color-dark #game-finder h1 {
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+body.color-light #game-finder h1 {
+    border-bottom: solid 1px rgb(48, 48, 48);
+}
+
+#game-finder ul {
+    list-style-type: none;
+}
+
+#game-finder li {
+    margin: 0;
+    padding: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+body.color-dark #game-finder li {
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+body.color-light #game-finder li {
+    border-bottom: solid 1px rgb(48, 48, 48);
+}
+
+body.color-dark #game-finder li:hover {
+    background-color: rgb(191, 115, 52);
+    color: rgb(0, 0, 0);
+}
+
+body.color-light #game-finder li:hover {
+    background-color: rgb(224, 132, 55);
+    color: rgb(0, 0, 0);
 }
 
 #graphic-container {
