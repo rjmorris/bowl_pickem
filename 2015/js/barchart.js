@@ -49,10 +49,8 @@ d3.tsv("data/picks.tsv", function(picks) {
     //--------------------------------------------------------------------------
     // Define UI options.
 
-    var tip_offset_y = 2;
+    var tip_offset_x = 8;
     var name_offset_y = -15;
-    var highlight_size_matching = 3;
-    var highlight_size_nonmatching = 4;
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
 
@@ -100,39 +98,26 @@ d3.tsv("data/picks.tsv", function(picks) {
     //--------------------------------------------------------------------------
     // Define the tooltips.
 
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .offset(function(d) {
-            var svgBoundingBox = svg.node().getBoundingClientRect();
-            var targetBoundingBox = this.getBoundingClientRect();
+    picks.forEach(function(pick) {
+        pick.quickTip = d3.tip()
+            .attr('class', 'highlight-tip')
+            .offset(function(d) {
+                if (d[sort_method] < num_games / 2) return [0, tip_offset_x];
+                return [0, -tip_offset_x];
+            })
+            .direction(function(d) {
+                if (d[sort_method] < num_games / 2) return 'e';
+                return 'w';
+            })
+            .html(function(d) {
+                var pick_class = 'pick_future';
+                if (d.result === true) pick_class = 'pick_right';
+                else if (d.result === false) pick_class = 'pick_wrong';
 
-            var tipWidth = parseInt(d3.select(".d3-tip").style("width"));
-            var tipCenterX = targetBoundingBox.left + targetBoundingBox.width/2;
-            var tipMinX = svgBoundingBox.left;
-            var tipMaxX = svgBoundingBox.right;
-
-            var offset_x = 0;
-
-            if (tipCenterX - tipWidth / 2 < tipMinX) {
-                offset_x = tipMinX + tipWidth / 2 - tipCenterX;
-            }
-            else if (tipCenterX + tipWidth / 2 > tipMaxX) {
-                offset_x = tipMaxX - (tipCenterX + tipWidth / 2);
-            }
-
-            return [tip_offset_y, offset_x];
-        })
-        .direction("s")
-        .html(function(d) {
-            var pick_class = "pick_future";
-            if (d.result === true) pick_class = "pick_right";
-            else if (d.result === false) pick_class = "pick_wrong";
-            var matchup = d.MATCHUP.replace("Semifinal winners", "Semifinal winners: " + d.pick);
-            matchup = matchup.replace(d.pick, "<span class=\"" + pick_class + "\">" + d.pick + "</span>");
-            return d.name + " [" + d.confidence + "]: " + matchup + ", " + d.game_time;
-        });
-
-    svg.call(tip);
+                return d.name + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.pick + '</span>';
+            })
+        ;
+    });
 
 
     //--------------------------------------------------------------------------
@@ -195,65 +180,14 @@ d3.tsv("data/picks.tsv", function(picks) {
         })
         .attr("rx", 4)
         .attr("ry", 4)
-        .on('mouseover.1',
-            // We want to let d3 handle the call to tip.show, because it
-            // passes certain arguments to it and sets up the /this/ context
-            // appropriately. Because we have additional code to run on
-            // mouseover, we'll need to assign two event handlers: one where
-            // we pass the tip.show function, and one where we define a
-            // function for our additional code. d3 lets you assign multiple
-            // handlers to an event by adding an extension to the event
-            // name. Here, we've added .1, .2 to the mouseover event name.
-            //
-            // We could do this in a single handler by calling tip.show
-            // explicitly in the same way d3 does. This seems to work
-            // currently:
-            //
-            //   tip.show.call(this, d)
-            //
-            // However, we don't want to be responsible for updating this to
-            // match any changes to what d3 is doing internally.
-            tip.show
-           )
-        .on('mouseover.2', function(d) {
-            var thisBar = d;
-
-            d3.selectAll("#graphic .highlight")
-                .attr("r", function(otherBar) {
-                    if (thisBar.pick == otherBar.pick) return highlight_size_matching;
-                    return highlight_size_nonmatching;
-                })
-                .classed("matching", function(otherBar) {
-                    return (thisBar.MATCHUP == otherBar.MATCHUP
-                            && thisBar.pick == otherBar.pick
-                            && thisBar.name != otherBar.name
-                           );
-                })
-                .classed("nonmatching", function(otherBar) {
-                    return (thisBar.MATCHUP == otherBar.MATCHUP
-                            && thisBar.pick != otherBar.pick
-                            && thisBar.name != otherBar.name
-                           );
-                })
-            ;
+        .on('mouseover', function(d) {
+            highlightBars(d.game_order);
         })
-        .on('mouseout.1',
-            // See the comments for tip.show in mouseover.1
-            tip.hide
-           )
-        .on('mouseout.2', function() {
-            d3.selectAll("#graphic .highlight")
-                .classed("matching", false)
-                .classed("nonmatching", false)
-            ;
+        .on('mouseout', function() {
+            unhighlightBars();
         })
-    ;
-
-    barGroups.append('circle')
-        .classed('highlight', true)
-        .attr('cx', xScale.rangeBand()/2)
-        .attr('cy', function(d) {
-            return yScale.rangeBand()/2 + barHeightScale(d.confidence)/2 + 4;
+        .each(function(d) {
+            d3.select(this).call(d.quickTip);
         })
     ;
 
@@ -312,7 +246,7 @@ d3.tsv("data/picks.tsv", function(picks) {
 
     var legend = d3.select("#legend");
 
-    legend.attr("height", 5 * legend_symbol_height);
+    legend.attr("height", 3 * legend_symbol_height);
 
     legend.selectAll(".bar")
         .attr("x", 0)
@@ -321,24 +255,6 @@ d3.tsv("data/picks.tsv", function(picks) {
         .attr("height", legend_symbol_height - legend_symbol_pad)
         .attr("rx", 4)
         .attr("ry", 4)
-    ;
-
-    legend.selectAll(".highlight")
-        .attr("cx", legend_symbol_width/2)
-    ;
-
-    // The cy attribute assumes the matching highlight symbol is the 4th one
-    // in the list.
-    legend.select(".highlight.matching")
-        .attr("cy", (3 + 1/2) * legend_symbol_height)
-        .attr("r", highlight_size_matching)
-    ;
-
-    // The cy attribute assumes the nonmatching highlight symbol is the 5th
-    // one in the list.
-    legend.select(".highlight.nonmatching")
-        .attr("cy", (4 + 1/2) * legend_symbol_height)
-        .attr("r", highlight_size_nonmatching)
     ;
 
     legend.selectAll(".label")
@@ -360,18 +276,10 @@ d3.tsv("data/picks.tsv", function(picks) {
             return d.team1 + ' / ' + d.team2;
         })
         .on('mouseover', function(game) {
-            svg.selectAll(".highlight")
-                .filter(function(highlight) {
-                    return game.game_order === highlight.game_order;
-                })
-                .attr("r", highlight_size_matching)
-                .classed("matching", true)
-            ;            
+            highlightBars(game.game_order);
         })
         .on('mouseout', function(game) {
-            svg.selectAll(".highlight")
-                .classed("matching", false)
-            ;            
+            unhighlightBars();
         })
     ;
 
@@ -475,5 +383,31 @@ d3.tsv("data/picks.tsv", function(picks) {
             $("#color-dark").hide();
             $("#color-light").show();
         }
+    }
+
+    function highlightBars(game_order) {
+        svg.selectAll('.bar')
+            .filter(function(bar) {
+                return bar.game_order === game_order;
+            })
+            .classed('highlight', true)
+            .each(function(bar) {
+                bar.quickTip.show.call(this, bar, this);
+            })
+                ;
+
+        svg.selectAll('.bar:not(.highlight)')
+            .classed('lowlight', true)
+        ;
+    }
+
+    function unhighlightBars() {
+        svg.selectAll('.bar')
+            .classed('highlight', false)
+            .classed('lowlight', false)
+            .each(function(bar) {
+                bar.quickTip.hide.call(this, bar);
+            })
+                ;
     }
 });
