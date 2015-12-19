@@ -73,7 +73,7 @@ d3.tsv("data/picks.tsv", function(picks) {
     var margin = {
         top: 0,
         right: 0,
-        bottom: 14,
+        bottom: 0,
         left: 0
     };
 
