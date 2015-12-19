@@ -10,14 +10,7 @@ body {
     overflow: hidden;
     padding: 10px;
     font-family: sans-serif;
-}
-
-body.color-dark {
     background-color: rgb(0, 0, 0);
-}
-
-body.color-light {
-    background-color: rgb(255, 255, 255);
 }
 
 #header {
@@ -25,21 +18,13 @@ body.color-light {
     border-width: 1px;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    color: rgb(224, 224, 224);
+    border-color: rgb(224, 224, 224);
 
     /* One of many hacks to make this container element's height expand to contain
      * its floated elements.
      */
     overflow: auto;
-}
-
-body.color-dark #header {
-    color: rgb(224, 224, 224);
-    border-color: rgb(224, 224, 224);
-}
-
-body.color-light #header {
-    color: rgb(48, 48, 48);
-    border-color: rgb(48, 48, 48);
 }
 
 #header h1 {
@@ -81,8 +66,9 @@ body.color-light #header {
     margin-left: -20em;
     padding: 15px;
     font-size: 12px;
-    border-style: solid;
-    border-width: 1px;
+    background-color: rgba(0, 0, 0, 1.0);
+    color: rgb(224, 224, 224);
+    border: solid 1px rgb(224, 224, 224);
 }
 
 #help p {
@@ -95,28 +81,12 @@ body.color-light #header {
     margin-bottom: 0px;
 }
 
-body.color-dark #help {
-    background-color: rgba(0, 0, 0, 1.0);
-    color: rgb(224, 224, 224);
-    border-color: rgb(224, 224, 224);
-}
-
-body.color-light #help {
-    background-color: rgba(255, 255, 255, 1.0);
-    color: rgb(48, 48, 48);
-    border-color: rgb(48, 48, 48);
-}
-
 #legend {
     width: 100%;
 }
 
-body.color-dark #legend .label {
+#legend .label {
     fill: rgb(224, 224, 224);
-}
-
-body.color-light #legend .label {
-    fill: rgb(48, 48, 48);
 }
 
 #game-finder {
@@ -125,16 +95,9 @@ body.color-light #legend .label {
     height: 100%;
     margin-right: 8px;
     padding-right: 10px;
-    overflow: auto;
-}
-body.color-dark #game-finder {
     color: rgb(224, 224, 224);
     border-right: solid 1px rgb(224, 224, 224);
-}
-
-body.color-light #game-finder {
-    color: rgb(48, 48, 48);
-    border-right: solid 1px rgb(48, 48, 48);
+    overflow: auto;
 }
 
 #game-finder h1 {
@@ -142,14 +105,7 @@ body.color-light #game-finder {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-}
-
-body.color-dark #game-finder h1 {
     border-bottom: solid 1px rgb(224, 224, 224);
-}
-
-body.color-light #game-finder h1 {
-    border-bottom: solid 1px rgb(48, 48, 48);
 }
 
 #game-finder ul {
@@ -160,24 +116,12 @@ body.color-light #game-finder h1 {
     margin: 0;
     padding: 2px;
     font-size: 12px;
+    border-bottom: solid 1px rgb(224, 224, 224);
     cursor: pointer;
 }
 
-body.color-dark #game-finder li {
-    border-bottom: solid 1px rgb(224, 224, 224);
-}
-
-body.color-light #game-finder li {
-    border-bottom: solid 1px rgb(48, 48, 48);
-}
-
-body.color-dark #game-finder li:hover {
+#game-finder li:hover {
     background-color: rgb(191, 115, 52);
-    color: rgb(0, 0, 0);
-}
-
-body.color-light #game-finder li:hover {
-    background-color: rgb(224, 132, 55);
     color: rgb(0, 0, 0);
 }
 
@@ -189,91 +133,52 @@ body.color-light #game-finder li:hover {
 
 .name {
     font-size: 14px;
-}
-
-body.color-dark .name {
     fill: rgb(224, 224, 224);
 }
 
-body.color-light .name {
-    fill: rgb(48, 48, 48);
-}
-
-body.color-dark .name_bg {
+.name_bg {
     fill: rgba(0, 0, 0, 0.4);
 }
 
-body.color-light .name_bg {
-    fill: rgba(255, 255, 255, 0.5);
-}
-
-body.color-dark .bar.right {
+.bar.right {
     transition: fill 0.25s;
     fill: rgb(0, 112, 0);
 }
 
-body.color-dark .bar.right.lowlight {
+.bar.right.lowlight {
     fill: rgb(0, 50, 0);
 }
 
-body.color-light .bar.right {
-    transition: fill 0.25s;
-    fill: rgb(0, 128, 0);
-}
-
-body.color-light .bar.right.lowlight {
-    fill: rgb(204, 226, 204);
-}
-
-body.color-dark .bar.wrong {
+.bar.wrong {
     transition: fill 0.25s;
     fill: rgb(128, 128, 128);
 }
 
-body.color-dark .bar.wrong.lowlight {
+.bar.wrong.lowlight {
     fill: rgb(48, 48, 48);
 }
 
-body.color-light .bar.wrong {
-    transition: fill 0.25s;
-    fill: rgb(128, 128, 128);
-}
-
-body.color-light .bar.wrong.lowlight {
-    fill: rgb(208, 208, 208);
-}
-
-body.color-dark .bar.unplayed {
+.bar.unplayed {
     transition: fill 0.25s;
     fill: rgb(32, 32, 32);
 }
 
-body.color-dark .bar.unplayed.highlight {
+.bar.unplayed.highlight {
     fill: rgb(191, 115, 52);
 }
 
-body.color-dark .bar.unplayed.lowlight {
+.bar.unplayed.lowlight {
     fill: rgb(24, 24, 24);
-}
-
-body.color-light .bar.unplayed {
-    transition: fill 0.25s;
-    fill: rgb(236, 236, 236);
-}
-
-body.color-light .bar.unplayed.highlight {
-    fill: rgb(224, 132, 55);
-}
-
-body.color-light .bar.unplayed.lowlight {
-    fill: rgb(244, 244, 244);
 }
 
 .highlight-tip {
     line-height: 1;
     padding: 4px;
+    border: none;
     border-radius: 4px;
     font-size: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(48, 48, 48);
 }
 
 .highlight-tip:after {
@@ -285,12 +190,8 @@ body.color-light .bar.unplayed.lowlight {
     pointer-events: none;
 }
 
-body.color-dark .highlight-tip:after {
+.highlight-tip:after {
     color: rgba(255, 255, 255, 0.8);
-}
-
-body.color-light .highlight-tip:after {
-    color: rgba(0, 0, 0, 0.8);
 }
 
 .highlight-tip.e:after {
@@ -307,62 +208,17 @@ body.color-light .highlight-tip:after {
     left: 100%;
 }
 
-body.color-dark .highlight-tip {
-  border: none;
-  background: rgba(255, 255, 255, 0.8);
-  color: rgb(48, 48, 48);
-}
-
-body.color-light .highlight-tip {
-  border: solid 1px rgb(68, 68, 68);
-  background: rgba(255, 255, 255, 0.8);
-  color: rgb(0, 0, 0);
-}
-
 .highlight-tip span.pick_right {
     font-weight: bold;
-    color: rgb(0, 120, 0);
-}
-
-/* Splitting this up by body.color-dark and body.color-light doesn't work for
-   some reason. We'll have to settle for the same colors under both color
-   schemes.
-
-body.color-dark .highlight-tip span.pick_right
     color: rgb(0, 112, 0);
 }
-
-body.color-light .highlight-tip span.pick_right
-    color: rgb(0, 128, 0);
-}
-*/
 
 .highlight-tip span.pick_wrong {
     font-weight: bold;
     color: rgb(144, 144, 144);
 }
 
-/*
-body.color-dark .highlight-tip span.pick_wrong
-    color: rgb(144, 144, 144);
-}
-
-body.color-light .highlight-tip span.pick_wrong
-    color: rgb(144, 144, 144);
-}
-*/
-
 .highlight-tip span.pick_future {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-
-/*
-body.color-dark .highlight-tip span.pick_future
-    color: rgb(0, 0, 0);
-}
-
-body.color-light .highlight-tip span.pick_future
-    color: rgb(0, 0, 0);
-}
-*/

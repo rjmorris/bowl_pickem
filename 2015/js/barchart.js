@@ -55,9 +55,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     var legend_symbol_pad = 4;
 
     var sort_method = "confidence";
-    var color_scheme = "light";
-
-    set_color_scheme(color_scheme);
 
 
     //--------------------------------------------------------------------------
@@ -68,7 +65,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     // affect the height of the header.
     $("#help-hide").hide();
     update_sort_method_selector();
-    update_color_scheme_selector();
 
     // Set the sizes of some layout elements programmatically. These are too
     // complicated to get right in CSS only.
@@ -301,18 +297,6 @@ d3.tsv("data/picks.tsv", function(picks) {
         reposition_bars();
     });
 
-    $("#color-light").click(function() {
-        if (color_scheme == "light") return;
-        set_color_scheme("light");
-        update_color_scheme_selector();
-    });
-
-    $("#color-dark").click(function() {
-        if (color_scheme == "dark") return;
-        set_color_scheme("dark");
-        update_color_scheme_selector();
-    });
-
     $("#help-show").click(function() {
         $("#help").fadeIn();
         $("#help-show").hide();
@@ -362,26 +346,6 @@ d3.tsv("data/picks.tsv", function(picks) {
         else {
             $("#sort-confidence").hide();
             $("#sort-game").show();
-        }
-    }
-
-    function set_color_scheme(scheme) {
-        color_scheme = scheme;
-
-        d3.select("body")
-            .classed("color-light", scheme == "light")
-            .classed("color-dark", scheme == "dark")
-        ;
-    }
-
-    function update_color_scheme_selector() {
-        if (color_scheme == "light") {
-            $("#color-light").hide();
-            $("#color-dark").show();
-        }
-        else {
-            $("#color-dark").hide();
-            $("#color-light").show();
         }
     }
 
