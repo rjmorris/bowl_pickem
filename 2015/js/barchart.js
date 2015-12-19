@@ -55,6 +55,7 @@ d3.tsv("data/picks.tsv", function(picks) {
     var legend_symbol_pad = 4;
 
     var sort_method = "confidence";
+    update_sort_method_selector();
 
 
     //--------------------------------------------------------------------------
@@ -64,7 +65,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     // Initialize the state of the header elements. Their presence/absence could
     // affect the height of the header.
     $("#help-hide").hide();
-    update_sort_method_selector();
 
     // Set the sizes of some layout elements programmatically. These are too
     // complicated to get right in CSS only.
@@ -339,13 +339,12 @@ d3.tsv("data/picks.tsv", function(picks) {
     }
 
     function update_sort_method_selector() {
+        $('.sort-option').removeClass('active');
         if (sort_method == "game_order") {
-            $("#sort-game").hide();
-            $("#sort-confidence").show();
+            $('#sort-game').addClass('active');
         }
         else {
-            $("#sort-confidence").hide();
-            $("#sort-game").show();
+            $('#sort-confidence').addClass('active');
         }
     }
 

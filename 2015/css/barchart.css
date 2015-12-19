@@ -37,10 +37,6 @@ body {
     font-size: 12px;
 }
 
-.control {
-    cursor: pointer;
-}
-
 #sort-control {
     float: left;
     width: 33%;
@@ -50,6 +46,42 @@ body {
     float: left;
     width: 33%;
     text-align: center;
+}
+
+.control-group {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.control-group .header {
+    display: inline;
+}
+
+.control-group .header:after {
+    content: ":";
+}
+
+.control-group ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.control-group li {
+    display: inline;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.control-group li.active {
+    background-color: rgb(191, 115, 52);
+}
+
+.control {
+    cursor: pointer;
 }
 
 #help {
