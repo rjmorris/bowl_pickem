@@ -117,7 +117,7 @@ body {
     padding: 2px;
     font-size: 12px;
     border-bottom: solid 1px rgb(224, 224, 224);
-    cursor: pointer;
+    cursor: default;
 }
 
 #game-finder li:hover {
