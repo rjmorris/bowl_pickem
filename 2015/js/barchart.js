@@ -82,7 +82,7 @@ q.await(function(err, picks, games) {
     // Define UI options.
 
     var tip_offset_x = 8;
-    var name_offset_y = -15;
+    var name_offset_y = -10;
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
 
