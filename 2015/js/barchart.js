@@ -1,49 +1,81 @@
-d3.tsv("data/picks.tsv", function(picks) {
+var q = queue()
+    .defer(d3.tsv, 'data/picks.tsv')
+    .defer(d3.tsv, 'data/games.tsv')
+;
+
+q.await(function(err, picks, games) {
+
     //--------------------------------------------------------------------------
     // Prep the data.
 
     var players_map = {};
     var games_map = {};
+    var teams_map = {};
+
+    games.forEach(function(game) {
+        games_map[game.bowl] = game;
+
+        game.datetime = moment(game.datetime, "YYYYMMDDHHmmss");
+        game.spread = +game.spread;
+        game.order = +game.order;
+
+        var team = {};
+        team.team = game.favorite;
+        team.abbrev = game.favorite_abbrev;
+        teams_map[game.favorite] = team;
+
+        var team = {};
+        team.team = game.underdog;
+        team.abbrev = game.underdog_abbrev;
+        teams_map[game.underdog] = team;
+    });
 
     picks.forEach(function(pick) {
-        pick.confidence = +pick.Confidence_Score;
-        pick.game_order = +pick.game_order;
+        pick.confidence = +pick.confidence;
 
-        if (pick.correct === "1") pick.result = true;
-        else if (pick.correct === "0") pick.result = false;
-        else pick.result = null;
+        // Create pick variables using the games metadata.
 
-        if (!(pick.name in players_map)) {
-            players_map[pick.name] = {};
-            players_map[pick.name].score = 0;
+        var game = games_map[pick.bowl];
+
+        pick.game_order = game.order;
+
+        pick.selection_abbrev = teams_map[pick.selection].abbrev;
+
+        if (game.winner === '') pick.result = null;
+        else if (game.winner === pick.selection) pick.result = true;
+        else pick.result = false;
+
+        // Store player-specific data.
+
+        if (!(pick.player in players_map)) {
+            players_map[pick.player] = {};
+            players_map[pick.player].score_count = 0;
+            players_map[pick.player].score_confidence = 0;
         }
-        var p = players_map[pick.name];
-        p.name = pick.name;
-        p.rank = +pick.rank;
-        p.score += +pick.score;
 
-        if (!(pick.GAME in games_map)) {
-            var g = {};
-            g.bowl = pick.GAME;
-            g.game_time = pick.game_time;
-            g.game_order = pick.game_order;
-            g.matchup = pick.MATCHUP;
-            g.team1 = pick.team1;
-            g.team2 = pick.team2;
-            g.team3 = pick.team3;
-            g.team4 = pick.team4;
-            g.winner = pick.winner;
-            games_map[pick.GAME] = g;
+        var player = players_map[pick.player];
+
+        player.player = pick.player;
+
+        if (pick.result === true) {
+            player.score_count += 1;
+            player.score_confidence += pick.confidence;
         }
     });
 
     var players = d3.values(players_map);
     var num_players = players.length;
 
-    var games = d3.values(games_map).sort(function(a, b) {
-        return d3.ascending(a.game_order, b.game_order);
-    });
     var num_games = games.length;
+
+    players = players.sort(function(a, b) {
+        return d3.descending(a['score_confidence'], b['score_confidence']) ||
+            d3.descending(a['score_count'], b['score_count']) ||
+            d3.ascending(a['player'], b['player']);
+    });
+    players.forEach(function(player, index) {
+        player.rank = index + 1;
+    });
 
 
     //--------------------------------------------------------------------------
@@ -106,7 +138,7 @@ d3.tsv("data/picks.tsv", function(picks) {
                 if (d.result === true) pick_class = 'pick_right';
                 else if (d.result === false) pick_class = 'pick_wrong';
 
-                return d.name + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.pick + '</span>';
+                return d.player + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.selection_abbrev + '</span>';
             })
         ;
     });
@@ -136,14 +168,14 @@ d3.tsv("data/picks.tsv", function(picks) {
         .append('g')
         .classed('bar-group', true)
         .attr('transform', function(d) {
-            return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.name].rank) + ')';
+            return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.player].rank) + ')';
         })
         .attr('opacity', 0)
     ;
 
     barGroups.transition()
         .delay(function(d) {
-            return 1000 * (d.rank - 1) / num_players + 25 * (sort_method == "game_order" ? d.game_order : d.confidence);
+            return 1000 * (players_map[d.player].rank - 1) / num_players + 25 * d[sort_method];
         })
         .duration(function(d) {
             return 250;
@@ -194,12 +226,12 @@ d3.tsv("data/picks.tsv", function(picks) {
         .classed("name", true)
         .attr("x", 0)
         .attr("y", function(d) {
-            return yScale(players_map[d.name].rank) + yScale.rangeBand()/2 + name_offset_y;
+            return yScale(players_map[d.player].rank) + yScale.rangeBand()/2 + name_offset_y;
         })
         // dominant-baseline=hanging puts the top of the text at the y-coord.
         //.attr("dominant-baseline", "hanging")
         .text(function(d) {
-            return d.name + ": " + d.score;
+            return d.player + ": " + d.score_confidence;
         })
     ;
 
@@ -264,11 +296,10 @@ d3.tsv("data/picks.tsv", function(picks) {
         .enter()
         .append('li')
         .text(function(d) {
-            if (d.bowl === 'Championship') return 'Championship';
-            return d.team1 + ' / ' + d.team2;
+            return d.matchup;
         })
         .on('mouseover', function(game) {
-            highlightBars(game.game_order);
+            highlightBars(game.order);
         })
         .on('mouseout', function(game) {
             unhighlightBars();
@@ -311,13 +342,13 @@ d3.tsv("data/picks.tsv", function(picks) {
         d3.selectAll('#graphic .bar-group')
             .transition()
             .delay(function(d) {
-                return 1000 * (d.rank - 1) / num_players;
+                return 1000 * (players_map[d.player].rank - 1) / num_players;
             })
             .duration(function(d) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.name].rank) + ')';
+                return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.player].rank) + ')';
             })
         ;
     }
