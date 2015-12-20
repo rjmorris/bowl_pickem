@@ -27,34 +27,23 @@ body {
     overflow: auto;
 }
 
-#header h1 {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-
-#header p {
+.control-group {
+    display: inline-block;
     font-size: 12px;
+    font-weight: normal;
+    margin-left: 40px;
 }
 
-#sort-control {
-    float: left;
-    width: 33%;
+.control-group:first-child {
+    margin-left: 0;
 }
 
 #help-control {
-    float: left;
-    width: 33%;
-    text-align: center;
-}
-
-.control-group {
-    font-size: 12px;
-    font-weight: normal;
+    float: right;
 }
 
 .control-group .header {
-    display: inline;
+    display: inline-block;
 }
 
 .control-group .header:after {
@@ -62,13 +51,13 @@ body {
 }
 
 .control-group ul {
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     padding-left: 0;
 }
 
 .control-group li {
-    display: inline;
+    display: inline-block;
     padding: 2px 4px;
     border-radius: 4px;
     background-color: rgb(128, 128, 128);
@@ -111,9 +100,9 @@ body {
     fill: rgb(224, 224, 224);
 }
 
-#game-finder {
+#side-panel {
     float: left;
-    width: 12em;
+    width: 18em;
     height: 100%;
     margin-right: 8px;
     padding-right: 10px;
@@ -122,12 +111,20 @@ body {
     overflow: auto;
 }
 
-#game-finder h1 {
+.side-section {
+    margin-bottom: 20px;
+}
+
+.side-section h1 {
     padding-bottom: 6px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
     border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+#contest-title h1 {
+    font-size: 16px;
 }
 
 #game-finder ul {
@@ -149,7 +146,7 @@ body {
 
 #graphic-container {
     float: left;
-    width: calc(100% - 12em - 8px);
+    width: calc(100% - 18em - 8px);
     height: 100%;
 }
 
