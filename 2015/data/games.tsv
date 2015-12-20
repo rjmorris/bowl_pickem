@@ -1,42 +1,42 @@
-key	bowl	year	month	day	hour	minute	location	team1	spread	team2	abbrev1	abbrev2	matchup	winner
-Appalachian State	Camellia	2015	12	19	17	30	Montgomery, AL	Appalachian State	-8.5	Ohio	Appalachian St	Ohio	Appalachian St / Ohio	
-San Jose State	Cure	2015	12	19	19	0	Orlando	San Jose State	-3.5	Georgia State	San Jose St	Georgia St	San Jose St / Georgia St	
-Louisiana Tech	New Orleans	2015	12	19	21	0	New Orleans	Louisiana Tech	-2	Arkansas State	La. Tech	Arkansas St	La. Tech / Arkansas St	
-Utah	Las Vegas	2015	12	19	15	30	Las Vegas	Utah	-2	BYU	Utah	BYU	Utah / BYU	
-Arizona	New Mexico	2015	12	19	14	0	Albuquerque	Arizona	-10	New Mexico	Arizona	New Mexico	Arizona / New Mexico	
-Western Kentucky	Miami Beach	2015	12	21	14	30	Miami	Western Kentucky	-3	South Florida	Western Ky.	South Fla.	Western Ky. / South Fla.	
-Utah State	Potato	2015	12	22	15	30	Boise, ID	Utah State	-6.5	Akron	Utah St	Akron	Utah St / Akron	
-Temple	Boca Raton	2015	12	22	19	0	Boca Raton, FL	Temple	-2	Toledo	Temple	Toledo	Temple / Toledo	
-Boise State	Poinsettia	2015	12	23	16	30	San Diego	Boise State	-9	Northern Illinois	Boise St	Northern Illinois	Boise St / Northern Illinois	
-Bowling Green	GoDaddy	2015	12	23	20	0	Mobile, AL	Bowling Green	-7	Georgia Southern	Bowling Green	Ga. Southern	Bowling Green / Ga. Southern	
-Western Michigan	Bahamas	2015	12	24	12	0	Nassau, Bahamas	Western Michigan	-2.5	Middle Tennessee	Western Mich.	Middle Tenn.	Western Mich. / Middle Tenn.	
-Cincinnati	Hawaii	2015	12	24	20	0	Honolulu	Cincinnati	-2	San Diego State	Cincinnati	San Diego St	Cincinnati / San Diego St	
-Virginia Tech	Independence	2015	12	26	17	45	Shreveport, LA	Virginia Tech	-13	Tulsa	Virginia Tech	Tulsa	Virginia Tech / Tulsa	
-Miami	Sun	2015	12	26	14	0	El Paso	Miami (Fla.)	-1.5	Washington State	Miami	Washington St	Miami / Washington St	
-Washington	Heart of Dallas	2015	12	26	14	20	Dallas	Washington	-8	Southern Mississippi	Washington	Southern Miss.	Washington / Southern Miss.	
-Marshall	St. Petersburg	2015	12	26	11	0	St. Petersburg, FL	Marshall	-3.5	Connecticut	Marshall	UConn	Marshall / UConn	
-UCLA	Foster Farms	2015	12	26	21	15	Santa Clara, CA	UCLA	-6	Nebraska	UCLA	Nebraska	UCLA / Nebraska	
-Duke	Pinstripe	2015	12	26	15	30	New York City	Duke	-2.5	Indiana	Duke	Indiana	Duke / Indiana	
-Minnesota	Quick Lane	2015	12	28	17	0	Detroit	Minnesota	-6	Central Michigan	Minnesota	Central Mich.	Minnesota / Central Mich.	
-Navy	Military	2015	12	28	14	30	Annapolis, MD	Navy	-3.5	Pittsburgh	Navy	Pitt	Navy / Pitt	
-LSU	Texas	2015	12	29	21	0	Houston	LSU	-6.5	Texas Tech	LSU	Texas Tech	LSU / Texas Tech	
-Cal	Armed Forces	2015	12	29	14	0	Fort Worth, TX	California	-5.5	Air Force	California	Air Force	California / Air Force	
-North Carolina	Russell Athletic	2015	12	29	17	30	Orlando	North Carolina	-3	Baylor	North Carolina	Baylor	North Carolina / Baylor	
-Colorado State	Arizona	2015	12	29	19	30	Tucson	Colorado State	-3	Nevada	Colorado St	Nevada	Colorado St / Nevada	
-Texas A&M	Music City	2015	12	30	19	0	Nashville	Texas A&M	-2.5	Louisville	Texas A&M	Louisville	Texas A&M / Louisville	
-Auburn	Birmingham	2015	12	30	12	0	Birmingham, AL	Auburn	-2	Memphis	Auburn	Memphis	Auburn / Memphis	
-USC	Holiday	2015	12	30	22	30	San Diego	Southern California	-3	Wisconsin	Southern Cal	Wisconsin	Southern Cal / Wisconsin	
-Mississippi State	Belk	2015	12	30	15	30	Charlotte	Mississippi State	-5.5	North Carolina State	Mississippi St	NC St	Mississippi St / NC St	
-Florida State	Peach	2015	12	31	12	0	Atlanta	Florida State	-6.5	Houston	Florida St	Houston	Florida St / Houston	
-Alabama	Cotton	2015	12	31	20	0	Arlington, TX	Alabama	-9.5	Michigan State	Alabama	Michigan St	Alabama / Michigan St	
-Oklahoma	Orange	2015	12	31	16	0	Miami	Oklahoma	-2.5	Clemson	Oklahoma	Clemson	Oklahoma / Clemson	
-Tennessee	Outback	2016	1	1	12	0	Tampa	Tennessee	-9.5	Northwestern	Tennessee	Northwestern	Tennessee / Northwestern	
-Ole Miss	Sugar	2016	1	1	20	30	New Orleans	Ole Miss	-6.5	Oklahoma State	Ole Miss	Oklahoma St	Ole Miss / Oklahoma St	
-Michigan	Citrus	2016	1	1	13	0	Orlando	Michigan	-4	Florida	Michigan	Florida	Michigan / Florida	
-Ohio State	Fiesta	2016	1	1	13	0	Glendale, AZ	Ohio State	-6.5	Notre Dame	Ohio St	Notre Dame	Ohio St / Notre Dame	
-Stanford	Rose	2016	1	1	17	0	Pasadena, CA	Stanford	-6.5	Iowa	Stanford	Iowa	Stanford / Iowa	
-Arkansas	Liberty	2016	1	2	15	20	Memphis	Arkansas	-11.5	Kansas State	Arkansas	Kansas St	Arkansas / Kansas St	
-Georgia	TaxSlayer	2016	1	2	12	0	Jacksonville, FL	Georgia	-6.5	Penn State	Georgia	Penn St	Georgia / Penn St	
-Arizona State	Cactus	2016	1	2	22	15	Tempe, AZ	Arizona State	-1	West Virginia	Arizona St	West Virginia	Arizona St / West Virginia	
-TCU	Alamo	2016	1	2	18	45	San Antonio	TCU	-1	Oregon	TCU	Oregon	TCU / Oregon	
-Winner of Cotton	Championship	2016	1	11	20	30	Glendale, AZ	Winner of Cotton	0	Winner of Orange	Winner of Cotton	Winner of Orange	National Championship	
+favorite_orig	underdog_orig	bowl_orig	bowl	year	month	day	hour	minute	datetime	order	location	favorite	spread	underdog	favorite_abbrev	underdog_abbrev	matchup	winner
+Arizona	New Mexico	New Mexico	New Mexico	2015	12	19	14	0	20151219140000	1	Albuquerque	Arizona	-10	New Mexico	Arizona	New Mexico	Arizona / New Mexico	
+Utah	BYU	Las Vegas	Las Vegas	2015	12	19	15	30	20151219153000	2	Las Vegas	Utah	-2	BYU	Utah	BYU	Utah / BYU	
+Appalachian State	Ohio	Camelia	Camellia	2015	12	19	17	30	20151219173000	3	Montgomery, AL	Appalachian State	-8.5	Ohio	Appalachian St	Ohio	Appalachian St / Ohio	
+San Jose State	Georgia State	Cure	Cure	2015	12	19	19	0	20151219190000	4	Orlando	San Jose State	-3.5	Georgia State	San Jose St	Georgia St	San Jose St / Georgia St	
+Louisiana Tech	Arkansas State	New Orleans	New Orleans	2015	12	19	21	0	20151219210000	5	New Orleans	Louisiana Tech	-2	Arkansas State	La. Tech	Arkansas St	La. Tech / Arkansas St	
+Western Kentucky	USF	Miami Beach	Miami Beach	2015	12	21	14	30	20151221143000	6	Miami	Western Kentucky	-3	South Florida	Western Ky.	South Fla.	Western Ky. / South Fla.	
+Utah State	Akron	Potato	Potato	2015	12	22	15	30	20151222153000	7	Boise, ID	Utah State	-6.5	Akron	Utah St	Akron	Utah St / Akron	
+Temple	Toledo	Boca Raton	Boca Raton	2015	12	22	19	0	20151222190000	8	Boca Raton, FL	Temple	-2	Toledo	Temple	Toledo	Temple / Toledo	
+Boise State	Northern Illinois	Poinsettia	Poinsettia	2015	12	23	16	30	20151223163000	9	San Diego	Boise State	-9	Northern Illinois	Boise St	Northern Illinois	Boise St / Northern Illinois	
+Bowling Green	Georgia Southern	GoDaddy	GoDaddy	2015	12	23	20	0	20151223200000	10	Mobile, AL	Bowling Green	-7	Georgia Southern	Bowling Green	Ga. Southern	Bowling Green / Ga. Southern	
+Western Michigan	Middle Tennessee	Bahamas	Bahamas	2015	12	24	12	0	20151224120000	11	Nassau, Bahamas	Western Michigan	-2.5	Middle Tennessee	Western Mich.	Middle Tenn.	Western Mich. / Middle Tenn.	
+Cincinnati	San Diego State	Hawaii	Hawaii	2015	12	24	20	0	20151224200000	12	Honolulu	Cincinnati	-2	San Diego State	Cincinnati	San Diego St	Cincinnati / San Diego St	
+Marshall	UConn	St. Petersburg	St. Petersburg	2015	12	26	11	0	20151226110000	13	St. Petersburg, FL	Marshall	-3.5	Connecticut	Marshall	UConn	Marshall / UConn	
+Miami	Washington State	Sun	Sun	2015	12	26	14	0	20151226140000	14	El Paso	Miami (Fla.)	-1.5	Washington State	Miami	Washington St	Miami / Washington St	
+Washington	Southern Miss	Heart of Dallas	Heart of Dallas	2015	12	26	14	20	20151226142000	15	Dallas	Washington	-8	Southern Mississippi	Washington	Southern Miss.	Washington / Southern Miss.	
+Duke	Indiana	Pinstripe	Pinstripe	2015	12	26	15	30	20151226153000	16	New York City	Duke	-2.5	Indiana	Duke	Indiana	Duke / Indiana	
+Virginia Tech	Tulsa	Independence	Independence	2015	12	26	17	45	20151226174500	17	Shreveport, LA	Virginia Tech	-13	Tulsa	Virginia Tech	Tulsa	Virginia Tech / Tulsa	
+UCLA	Nebraska	Foster Farms	Foster Farms	2015	12	26	21	15	20151226211500	18	Santa Clara, CA	UCLA	-6	Nebraska	UCLA	Nebraska	UCLA / Nebraska	
+Navy	Pitt	Military	Military	2015	12	28	14	30	20151228143000	19	Annapolis, MD	Navy	-3.5	Pittsburgh	Navy	Pitt	Navy / Pitt	
+Minnesota	Central Michigan	Quick Lane	Quick Lane	2015	12	28	17	0	20151228170000	20	Detroit	Minnesota	-6	Central Michigan	Minnesota	Central Mich.	Minnesota / Central Mich.	
+Cal	Air Force	Armed Forces	Armed Forces	2015	12	29	14	0	20151229140000	21	Fort Worth, TX	California	-5.5	Air Force	California	Air Force	California / Air Force	
+North Carolina	Baylor	Russell Athletic	Russell Athletic	2015	12	29	17	30	20151229173000	22	Orlando	North Carolina	-3	Baylor	North Carolina	Baylor	North Carolina / Baylor	
+Colorado State	Nevada	Arizona	Arizona	2015	12	29	19	30	20151229193000	23	Tucson	Colorado State	-3	Nevada	Colorado St	Nevada	Colorado St / Nevada	
+LSU	Texas Tech	Texas	Texas	2015	12	29	21	0	20151229210000	24	Houston	LSU	-6.5	Texas Tech	LSU	Texas Tech	LSU / Texas Tech	
+Auburn	Memphis	Birmingham	Birmingham	2015	12	30	12	0	20151230120000	25	Birmingham, AL	Auburn	-2	Memphis	Auburn	Memphis	Auburn / Memphis	
+Mississippi State	NC State	Belk	Belk	2015	12	30	15	30	20151230153000	26	Charlotte	Mississippi State	-5.5	North Carolina State	Mississippi St	NC St	Mississippi St / NC St	
+Texas A&M	Louisville	Music City	Music City	2015	12	30	19	0	20151230190000	27	Nashville	Texas A&M	-2.5	Louisville	Texas A&M	Louisville	Texas A&M / Louisville	
+USC	Wisconsin	Holiday	Holiday	2015	12	30	22	30	20151230223000	28	San Diego	Southern California	-3	Wisconsin	Southern Cal	Wisconsin	Southern Cal / Wisconsin	
+Florida State	Houston	Peach	Peach	2015	12	31	12	0	20151231120000	29	Atlanta	Florida State	-6.5	Houston	Florida St	Houston	Florida St / Houston	
+Oklahoma	Clemson	Orange	Orange	2015	12	31	16	0	20151231160000	30	Miami	Oklahoma	-2.5	Clemson	Oklahoma	Clemson	Oklahoma / Clemson	
+Alabama	Michigan State	Cotton	Cotton	2015	12	31	20	0	20151231200000	31	Arlington, TX	Alabama	-9.5	Michigan State	Alabama	Michigan St	Alabama / Michigan St	
+Tennessee	Northwestern	Outback	Outback	2016	1	1	12	0	20160101120000	32	Tampa	Tennessee	-9.5	Northwestern	Tennessee	Northwestern	Tennessee / Northwestern	
+Michigan	Florida	Citrus	Citrus	2016	1	1	13	0	20160101130000	33	Orlando	Michigan	-4	Florida	Michigan	Florida	Michigan / Florida	
+Ohio State	Notre Dame	Fiesta	Fiesta	2016	1	1	13	0	20160101130000	34	Glendale, AZ	Ohio State	-6.5	Notre Dame	Ohio St	Notre Dame	Ohio St / Notre Dame	
+Stanford	Iowa	Rose	Rose	2016	1	1	17	0	20160101170000	35	Pasadena, CA	Stanford	-6.5	Iowa	Stanford	Iowa	Stanford / Iowa	
+Ole Miss	Oklahoma State	Sugar	Sugar	2016	1	1	20	30	20160101203000	36	New Orleans	Ole Miss	-6.5	Oklahoma State	Ole Miss	Oklahoma St	Ole Miss / Oklahoma St	
+Georgia	Penn State	TaxSlayer	TaxSlayer	2016	1	2	12	0	20160102120000	37	Jacksonville, FL	Georgia	-6.5	Penn State	Georgia	Penn St	Georgia / Penn St	
+Arkansas	Kansas State	Liberty	Liberty	2016	1	2	15	20	20160102152000	38	Memphis	Arkansas	-11.5	Kansas State	Arkansas	Kansas St	Arkansas / Kansas St	
+TCU	Oregon	Alamo	Alamo	2016	1	2	18	45	20160102184500	39	San Antonio	TCU	-1	Oregon	TCU	Oregon	TCU / Oregon	
+Arizona State	West Virginia	Cactus	Cactus	2016	1	2	22	15	20160102221500	40	Tempe, AZ	Arizona State	-1	West Virginia	Arizona St	West Virginia	Arizona St / West Virginia	
+Winner of Cotton	Winner of Orange	National Championship	Championship	2016	1	11	20	30	20160111203000	41	Glendale, AZ	Winner of Cotton	0	Winner of Orange	Winner of Cotton	Winner of Orange	National Championship	
