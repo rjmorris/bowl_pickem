@@ -296,7 +296,7 @@ q.await(function(err, picks, games) {
         .enter()
         .append('li')
         .text(function(d) {
-            return d.matchup;
+            return d.datetime.format('MMM D') + ': ' + d.matchup;
         })
         .on('mouseover', function(game) {
             highlightBars(game.order);
