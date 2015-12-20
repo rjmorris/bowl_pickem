@@ -80,10 +80,6 @@ body {
     background-color: rgb(191, 115, 52);
 }
 
-.control {
-    cursor: pointer;
-}
-
 #help {
     display: none;
     position: absolute;

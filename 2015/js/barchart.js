@@ -62,10 +62,6 @@ d3.tsv("data/picks.tsv", function(picks) {
     // Create the SVG using the margin convention for sizing/positioning. We
     // want the SVG to occupy all the space on screen below the header.
 
-    // Initialize the state of the header elements. Their presence/absence could
-    // affect the height of the header.
-    $("#help-hide").hide();
-
     // Set the sizes of some layout elements programmatically. These are too
     // complicated to get right in CSS only.
     $('#graphic-container').height($('body').height() - $('#header').outerHeight(true));
@@ -298,21 +294,13 @@ d3.tsv("data/picks.tsv", function(picks) {
     });
 
     $("#help-show").click(function() {
-        $("#help").fadeIn();
-        $("#help-show").hide();
-        $("#help-hide").show();
-    });
-
-    $("#help-hide").click(function() {
-        $("#help").fadeOut();
-        $("#help-hide").hide();
-        $("#help-show").show();
+        $("#help").fadeToggle();
+        $("#help-show").toggleClass('active');
     });
 
     $("#help #close").click(function() {
-        $("#help").fadeOut();
-        $("#help-hide").hide();
-        $("#help-show").show();
+        $("#help").fadeToggle();
+        $("#help-show").removeClass('active');
     });
 
 
