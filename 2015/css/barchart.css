@@ -134,12 +134,16 @@ body {
     padding-bottom: 6px;
     font-size: 0.875rem;
     font-weight: bold;
-    text-align: center;
-    border-bottom: solid 1px rgb(224, 224, 224);
 }
 
 #contest-title h1 {
+    border-bottom: solid 1px rgb(224, 224, 224);
     font-size: 1rem;
+    text-align: center;
+}
+
+#game-details h1 {
+    border-bottom: none;
 }
 
 #game-details ul {
@@ -173,6 +177,10 @@ body {
     font-size: 0.75rem;
     border-bottom: solid 1px rgb(224, 224, 224);
     cursor: default;
+}
+
+#game-finder li:first-child {
+    border-top: solid 1px rgb(224, 224, 224);
 }
 
 #game-finder li:hover {
