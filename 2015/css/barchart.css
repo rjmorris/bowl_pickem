@@ -201,7 +201,7 @@ body {
 }
 
 .bar.right.lowlight {
-    fill: rgb(0, 50, 0);
+    fill: rgb(0, 40, 0);
 }
 
 .bar.wrong {
@@ -210,7 +210,7 @@ body {
 }
 
 .bar.wrong.lowlight {
-    fill: rgb(48, 48, 48);
+    fill: rgb(40, 40, 40);
 }
 
 .bar.unplayed {
@@ -223,7 +223,7 @@ body {
 }
 
 .bar.unplayed.lowlight {
-    fill: rgb(24, 24, 24);
+    fill: rgb(16, 16, 16);
 }
 
 .highlight-tip {
