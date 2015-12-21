@@ -301,7 +301,7 @@ q.await(function(err, picks, games) {
         .enter()
         .append('li')
         .text(function(d) {
-            return d.datetime.format('MMM D') + ': ' + d.matchup;
+            return d.datetime.format('MMM D') + ': ' + d.favorite_abbrev + ' / ' + d.underdog_abbrev;
         })
         .on('mouseover', function(game) {
             highlightBars(game.order);
