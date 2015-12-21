@@ -301,7 +301,15 @@ q.await(function(err, picks, games) {
         .enter()
         .append('li')
         .text(function(d) {
-            return d.datetime.format('MMM D') + ': ' + d.favorite_abbrev + ' / ' + d.underdog_abbrev;
+            var matchup = '';
+            matchup += d.datetime.format('MMM D') + ': ';
+            if (d.bowl === 'Championship') {
+                matchup += 'Championship';
+            }
+            else {
+                matchup += d.favorite_abbrev + ' / ' + d.underdog_abbrev;
+            }
+            return matchup;
         })
         .on('mouseover', function(game) {
             highlightBars(game.order);
