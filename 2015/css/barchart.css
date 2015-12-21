@@ -35,8 +35,8 @@ body {
     border-width: 1px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    color: rgb(224, 224, 224);
-    border-color: rgb(224, 224, 224);
+    color: rgb(192, 192, 192);
+    border-color: rgb(160, 160, 160);
 
     /* One of many hacks to make this container element's height expand to contain
      * its floated elements.
@@ -95,8 +95,8 @@ body {
     padding: 15px;
     font-size: 0.75rem;
     background-color: rgba(0, 0, 0, 1.0);
-    color: rgb(224, 224, 224);
-    border: solid 1px rgb(224, 224, 224);
+    color: rgb(192, 192, 192);
+    border: solid 1px rgb(160, 160, 160);
 }
 
 #help p {
@@ -114,7 +114,7 @@ body {
 }
 
 #legend .label {
-    fill: rgb(224, 224, 224);
+    fill: rgb(192, 192, 192);
 }
 
 #side-panel {
@@ -123,8 +123,8 @@ body {
     height: 100%;
     margin-right: 8px;
     padding-right: 10px;
-    color: rgb(224, 224, 224);
-    border-right: solid 1px rgb(224, 224, 224);
+    color: rgb(192, 192, 192);
+    border-right: solid 1px rgb(160, 160, 160);
 }
 
 .side-section {
@@ -138,7 +138,7 @@ body {
 }
 
 #contest-title h1 {
-    border-bottom: solid 1px rgb(224, 224, 224);
+    border-bottom: solid 1px rgb(160, 160, 160);
     font-size: 1rem;
     text-align: center;
 }
@@ -176,12 +176,12 @@ body {
     margin: 0;
     padding: 2px;
     font-size: 0.75rem;
-    border-bottom: solid 1px rgb(224, 224, 224);
+    border-bottom: solid 1px rgb(160, 160, 160);
     cursor: default;
 }
 
 #game-finder li:first-child {
-    border-top: solid 1px rgb(224, 224, 224);
+    border-top: solid 1px rgb(160, 160, 160);
 }
 
 #game-finder li:hover {
@@ -197,7 +197,7 @@ body {
 
 .name {
     font-size: 0.75rem;
-    fill: rgb(224, 224, 224);
+    fill: rgb(192, 192, 192);
 }
 
 .name_bg {
