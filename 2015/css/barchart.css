@@ -12,6 +12,7 @@ html {
 
 body {
     width: 100%;
+    max-width: 1600px;
     height: 100vh;
     overflow: hidden;
     padding: 10px;
