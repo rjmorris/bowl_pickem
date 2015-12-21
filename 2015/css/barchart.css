@@ -88,9 +88,9 @@ body {
 #help {
     display: none;
     position: absolute;
-    left: 50%;
+    top: auto;
+    right: 10px;
     width: 40em;
-    margin-left: -20em;
     padding: 15px;
     font-size: 0.75rem;
     background-color: rgba(0, 0, 0, 1.0);
