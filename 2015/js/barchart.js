@@ -98,6 +98,11 @@ q.await(function(err, picks, games) {
     // complicated to get right in CSS only.
     $('#graphic-container').height($('body').height() - $('#header').outerHeight(true));
 
+    $('#game-finder').height($('body').height() -
+                             $('#contest-title').outerHeight(true) -
+                             $('#game-details').outerHeight(true)
+                            );
+
     var margin = {
         top: 0,
         right: 0,
@@ -381,6 +386,17 @@ q.await(function(err, picks, games) {
         svg.selectAll('.bar:not(.highlight)')
             .classed('lowlight', true)
         ;
+
+        var game = games.filter(function(d) {
+            return d.order === game_order;
+        })[0];
+
+        $('#highlighted-bowl').text(game.bowl);
+        $('#highlighted-favorite').text(game.favorite);
+        $('#highlighted-underdog').text(game.underdog);
+        $('#highlighted-spread').text(game.spread);
+        $('#highlighted-datetime').text(game.datetime.format('MMM DD, h:mm a'));
+        $('#highlighted-location').text(game.location);
     }
 
     function unhighlightBars() {
@@ -391,5 +407,7 @@ q.await(function(err, picks, games) {
                 bar.quickTip.hide.call(this, bar);
             })
                 ;
+
+        $('.game-value').text('');
     }
 });
