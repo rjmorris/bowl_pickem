@@ -238,7 +238,7 @@ q.await(function(err, picks, games) {
         // dominant-baseline=hanging puts the top of the text at the y-coord.
         //.attr("dominant-baseline", "hanging")
         .text(function(d) {
-            return d.player + ": " + d.score_confidence;
+            return d.player + ": " + d.score_count + ' / ' + d.score_confidence;
         })
     ;
 
