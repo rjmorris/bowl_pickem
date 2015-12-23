@@ -204,26 +204,23 @@ body {
     fill: rgba(0, 0, 0, 0.4);
 }
 
+.bar {
+    /* I'd prefer to transition to a different fill color instead of changing
+     * the opacity, but IE has limited support for transitions on SVG elements. It
+     * supports opacity but not fill.
+     */
+    transition: opacity 0.25s linear;
+}
+
 .bar.right {
-    transition: fill 0.25s;
     fill: rgb(0, 112, 0);
 }
 
-.bar.right.lowlight {
-    fill: rgb(0, 40, 0);
-}
-
 .bar.wrong {
-    transition: fill 0.25s;
     fill: rgb(128, 128, 128);
 }
 
-.bar.wrong.lowlight {
-    fill: rgb(40, 40, 40);
-}
-
 .bar.unplayed {
-    transition: fill 0.25s;
     fill: rgb(32, 32, 32);
 }
 
@@ -231,8 +228,10 @@ body {
     fill: rgb(191, 115, 52);
 }
 
+.bar.right.lowlight,
+.bar.wrong.lowlight,
 .bar.unplayed.lowlight {
-    fill: rgb(16, 16, 16);
+    opacity: 0.33;
 }
 
 .highlight-tip {
