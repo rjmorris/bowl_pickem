@@ -38,7 +38,7 @@ q.await(function(err, picks, games) {
 
         var game = games_map[pick.bowl];
 
-        pick.game_order = game.date_order;
+        pick.date_order = game.date_order;
         pick.spread_order = game.spread_order;
 
         pick.selection_abbrev = teams_map[pick.selection].abbrev;
@@ -51,8 +51,8 @@ q.await(function(err, picks, games) {
 
         if (!(pick.player in players_map)) {
             players_map[pick.player] = {};
-            players_map[pick.player].score_count = 0;
-            players_map[pick.player].score_confidence = 0;
+            players_map[pick.player].score_games = 0;
+            players_map[pick.player].score_points = 0;
         }
 
         var player = players_map[pick.player];
@@ -60,8 +60,8 @@ q.await(function(err, picks, games) {
         player.player = pick.player;
 
         if (pick.result === true) {
-            player.score_count += 1;
-            player.score_confidence += pick.confidence;
+            player.score_games += 1;
+            player.score_points += pick.confidence;
         }
     });
 
@@ -70,13 +70,33 @@ q.await(function(err, picks, games) {
 
     var num_games = games.length;
 
-    players = players.sort(function(a, b) {
-        return d3.descending(a['score_confidence'], b['score_confidence']) ||
-            d3.descending(a['score_count'], b['score_count']) ||
-            d3.ascending(a['player'], b['player']);
+    function rank_players(rank_var, comparison) {
+        players = players.sort(comparison);
+        players.forEach(function(player, index) {
+            player[rank_var] = index + 1;
+        });
+    }
+
+    rank_players('rank_points', function(a, b) {
+        return d3.descending(a.score_points, b.score_points) ||
+            d3.descending(a.score_games, b.score_games) ||
+            d3.ascending(a.player, b.player);
     });
-    players.forEach(function(player, index) {
-        player.rank = index + 1;
+
+    rank_players('rank_games', function(a, b) {
+        return d3.descending(a.score_games, b.score_games) ||
+            d3.descending(a.score_points, b.score_points) ||
+            d3.ascending(a.player, b.player);
+    });
+
+    rank_players('rank_name', function(a, b) {
+        return d3.ascending(a.player, b.player);
+    });
+
+    picks.forEach(function(pick) {
+        pick.rank_points = players_map[pick.player].rank_points;
+        pick.rank_games = players_map[pick.player].rank_games;
+        pick.rank_name = players_map[pick.player].rank_name;
     });
 
 
@@ -88,8 +108,11 @@ q.await(function(err, picks, games) {
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
 
-    var sort_method = "confidence";
-    update_sort_method_selector();
+    var sort_game_method = "confidence";
+    update_sort_game_method_selector();
+
+    var sort_player_method = "rank_points";
+    update_sort_player_method_selector();
 
 
     //--------------------------------------------------------------------------
@@ -133,11 +156,11 @@ q.await(function(err, picks, games) {
         pick.quickTip = d3.tip()
             .attr('class', 'highlight-tip')
             .offset(function(d) {
-                if (d[sort_method] < num_games / 2) return [0, tip_offset_x];
+                if (d[sort_game_method] < num_games / 2) return [0, tip_offset_x];
                 return [0, -tip_offset_x];
             })
             .direction(function(d) {
-                if (d[sort_method] < num_games / 2) return 'e';
+                if (d[sort_game_method] < num_games / 2) return 'e';
                 return 'w';
             })
             .html(function(d) {
@@ -175,14 +198,14 @@ q.await(function(err, picks, games) {
         .append('g')
         .classed('bar-group', true)
         .attr('transform', function(d) {
-            return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.player].rank) + ')';
+            return 'translate(' + xScale(d[sort_game_method]) + ',' + yScale(d[sort_player_method]) + ')';
         })
         .attr('opacity', 0)
     ;
 
     barGroups.transition()
         .delay(function(d) {
-            return 1000 * (players_map[d.player].rank - 1) / num_players + 25 * d[sort_method];
+            return 1000 * (d[sort_player_method] - 1) / num_players + 25 * d[sort_game_method];
         })
         .duration(function(d) {
             return 250;
@@ -212,7 +235,7 @@ q.await(function(err, picks, games) {
         .attr("rx", 4)
         .attr("ry", 4)
         .on('mouseover', function(d) {
-            highlightBars(d.game_order);
+            highlightBars(d.date_order);
         })
         .on('mouseout', function() {
             unhighlightBars();
@@ -222,23 +245,24 @@ q.await(function(err, picks, games) {
         })
     ;
 
-    var nameGroups = svg.selectAll(".name")
+    var nameGroups = svg.selectAll(".name-group")
         .data(players)
         .enter()
         .append("g")
         .classed("name-group", true)
+        .attr('transform', function(d) {
+            return 'translate(0,' + (yScale(d[sort_player_method]) + yScale.rangeBand()/2 + name_offset_y) + ')';
+        })
     ;
 
     var names = nameGroups.append("text")
         .classed("name", true)
         .attr("x", 0)
-        .attr("y", function(d) {
-            return yScale(players_map[d.player].rank) + yScale.rangeBand()/2 + name_offset_y;
-        })
+        .attr("y", 0)
         // dominant-baseline=hanging puts the top of the text at the y-coord.
         //.attr("dominant-baseline", "hanging")
         .text(function(d) {
-            return d.player + ": " + d.score_count + ' / ' + d.score_confidence;
+            return d.player + ": " + d.score_games + ' / ' + d.score_points;
         })
     ;
 
@@ -340,25 +364,49 @@ q.await(function(err, picks, games) {
     //--------------------------------------------------------------------------
     // Define event handlers.
 
-    $("#sort-confidence").click(function() {
-        if (sort_method == "confidence") return;
-        set_sort_method("confidence");
-        update_sort_method_selector();
+    $("#sort-game-confidence").click(function() {
+        if (sort_game_method == "confidence") return;
+        set_sort_game_method("confidence");
+        update_sort_game_method_selector();
         reposition_bars();
     });
 
-    $("#sort-game").click(function() {
-        if (sort_method == "game_order") return;
-        set_sort_method("game_order");
-        update_sort_method_selector();
+    $("#sort-game-date").click(function() {
+        if (sort_game_method == "date_order") return;
+        set_sort_game_method("date_order");
+        update_sort_game_method_selector();
         reposition_bars();
     });
 
-    $("#sort-spread").click(function() {
-        if (sort_method == "spread_order") return;
-        set_sort_method("spread_order");
-        update_sort_method_selector();
+    $("#sort-game-spread").click(function() {
+        if (sort_game_method == "spread_order") return;
+        set_sort_game_method("spread_order");
+        update_sort_game_method_selector();
         reposition_bars();
+    });
+
+    $("#sort-player-points").click(function() {
+        if (sort_player_method == "rank_points") return;
+        set_sort_player_method("rank_points");
+        update_sort_player_method_selector();
+        reposition_bars();
+        reposition_names();
+    });
+
+    $("#sort-player-games").click(function() {
+        if (sort_player_method == "rank_games") return;
+        set_sort_player_method("rank_games");
+        update_sort_player_method_selector();
+        reposition_bars();
+        reposition_names();
+    });
+
+    $("#sort-player-name").click(function() {
+        if (sort_player_method == "rank_name") return;
+        set_sort_player_method("rank_name");
+        update_sort_player_method_selector();
+        reposition_bars();
+        reposition_names();
     });
 
     $("#help-show").click(function() {
@@ -379,38 +427,70 @@ q.await(function(err, picks, games) {
         d3.selectAll('#graphic .bar-group')
             .transition()
             .delay(function(d) {
-                return 1000 * (players_map[d.player].rank - 1) / num_players;
+                return 1000 * (d[sort_player_method] - 1) / num_players;
             })
             .duration(function(d) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(' + xScale(d[sort_method]) + ',' + yScale(players_map[d.player].rank) + ')';
+                return 'translate(' + xScale(d[sort_game_method]) + ',' + yScale(d[sort_player_method]) + ')';
             })
         ;
     }
 
-    function set_sort_method(method) {
-        sort_method = method;
+    function reposition_names() {
+        svg.selectAll('.name-group')
+            .transition()
+            .delay(function(d) {
+                return 1000 * (d[sort_player_method] - 1) / num_players;
+            })
+            .duration(function(d) {
+                return 1000;
+            })
+            .attr('transform', function(d) {
+                return 'translate(0,' + (yScale(d[sort_player_method]) + yScale.rangeBand()/2 + name_offset_y) + ')';
+            })
+        ;
     }
 
-    function update_sort_method_selector() {
-        $('.sort-option').removeClass('active');
-        if (sort_method == "game_order") {
-            $('#sort-game').addClass('active');
+    function set_sort_game_method(method) {
+        sort_game_method = method;
+    }
+
+    function update_sort_game_method_selector() {
+        $('.sort-game-option').removeClass('active');
+        if (sort_game_method === "date_order") {
+            $('#sort-game-date').addClass('active');
         }
-        else if (sort_method == "confidence") {
-            $('#sort-confidence').addClass('active');
+        else if (sort_game_method === "confidence") {
+            $('#sort-game-confidence').addClass('active');
         }
         else {
-            $('#sort-spread').addClass('active');
+            $('#sort-game-spread').addClass('active');
         }
     }
 
-    function highlightBars(game_order) {
+    function set_sort_player_method(method) {
+        sort_player_method = method;
+    }
+
+    function update_sort_player_method_selector() {
+        $('.sort-player-option').removeClass('active');
+        if (sort_player_method === "rank_points") {
+            $('#sort-player-points').addClass('active');
+        }
+        else if (sort_player_method === "rank_games") {
+            $('#sort-player-games').addClass('active');
+        }
+        else {
+            $('#sort-player-name').addClass('active');
+        }
+    }
+
+    function highlightBars(date_order) {
         svg.selectAll('.bar')
             .filter(function(bar) {
-                return bar.game_order === game_order;
+                return bar.date_order === date_order;
             })
             .classed('highlight', true)
             .each(function(bar) {
@@ -423,7 +503,7 @@ q.await(function(err, picks, games) {
         ;
 
         var game = games.filter(function(d) {
-            return d.date_order === game_order;
+            return d.date_order === date_order;
         })[0];
 
         $('#highlighted-bowl').text(game.bowl);
