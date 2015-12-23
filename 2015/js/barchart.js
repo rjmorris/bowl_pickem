@@ -24,7 +24,7 @@ q.await(function(err, picks, games) {
         team.abbrev = game.favorite_abbrev;
         teams_map[game.favorite] = team;
 
-        var team = {};
+        team = {};
         team.team = game.underdog;
         team.abbrev = game.underdog_abbrev;
         teams_map[game.underdog] = team;
