@@ -300,14 +300,29 @@ q.await(function(err, picks, games) {
         .data(games)
         .enter()
         .append('li')
-        .text(function(d) {
+        .classed('game-item', true)
+        .html(function(d) {
             var matchup = '';
-            matchup += d.datetime.format('MMM D') + ': ';
+            matchup += '<span class="game-date">' + d.datetime.format('MMM D') + '</span>';
             if (d.bowl === 'Championship') {
                 matchup += 'Championship';
             }
             else {
-                matchup += d.favorite_abbrev + ' / ' + d.underdog_abbrev;
+                if (d.winner === d.favorite) {
+                    matchup += '<span class="pick_right">' + d.favorite_abbrev + '</span>';
+                    matchup += ' / ';
+                    matchup += '<span class="pick_wrong">' + d.underdog_abbrev + '</span>';
+                }
+                else if (d.winner === d.underdog) {
+                    matchup += '<span class="pick_wrong">' + d.favorite_abbrev + '</span>';
+                    matchup += ' / ';
+                    matchup += '<span class="pick_right">' + d.underdog_abbrev + '</span>';
+                }
+                else {
+                    matchup += '<span class="pick_future">' + d.favorite_abbrev + '</span>';
+                    matchup += ' / ';
+                    matchup += '<span class="pick_future">' + d.underdog_abbrev + '</span>';
+                }
             }
             return matchup;
         })
@@ -400,11 +415,22 @@ q.await(function(err, picks, games) {
         })[0];
 
         $('#highlighted-bowl').text(game.bowl);
-        $('#highlighted-favorite').text(game.favorite);
-        $('#highlighted-underdog').text(game.underdog);
         $('#highlighted-spread').text(game.spread);
         $('#highlighted-datetime').text(game.datetime.format('MMM DD, h:mm a'));
         $('#highlighted-location').text(game.location);
+
+        if (game.winner === game.favorite) {
+            $('#highlighted-favorite').html('<span class="pick_right">' + game.favorite + '</span>');
+            $('#highlighted-underdog').html('<span class="pick_wrong">' + game.underdog + '</span>');
+        }
+        else if (game.winner === game.underdog) {
+            $('#highlighted-favorite').html('<span class="pick_wrong">' + game.favorite + '</span>');
+            $('#highlighted-underdog').html('<span class="pick_right">' + game.underdog + '</span>');
+        }
+        else {
+            $('#highlighted-favorite').html('<span class="pick_future">' + game.favorite + '</span>');
+            $('#highlighted-underdog').html('<span class="pick_future">' + game.underdog + '</span>');
+        }
     }
 
     function unhighlightBars() {

@@ -164,6 +164,11 @@ body {
     content: ':';
 }
 
+#game-details li span.pick_right {
+    font-weight: bold;
+    color: rgb(0, 144, 0);
+}
+
 #game-finder {
     overflow: auto;
 }
@@ -187,6 +192,19 @@ body {
 #game-finder li:hover {
     background-color: rgb(191, 115, 52);
     color: rgb(0, 0, 0);
+}
+
+#game-finder li span.game-date:after {
+    content: ': ';
+}
+
+#game-finder li span.pick_right {
+    font-weight: bold;
+    color: rgb(0, 144, 0);
+}
+
+#game-finder li:hover span.pick_right {
+    color: rgb(0, 64, 0);
 }
 
 #graphic-container {
