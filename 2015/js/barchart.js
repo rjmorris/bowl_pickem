@@ -17,7 +17,8 @@ q.await(function(err, picks, games) {
 
         game.datetime = moment(game.datetime, "YYYYMMDDHHmmss");
         game.spread = +game.spread;
-        game.order = +game.order;
+        game.date_order = +game.date_order;
+        game.spread_order = +game.spread_order;
 
         var team = {};
         team.team = game.favorite;
@@ -37,7 +38,8 @@ q.await(function(err, picks, games) {
 
         var game = games_map[pick.bowl];
 
-        pick.game_order = game.order;
+        pick.game_order = game.date_order;
+        pick.spread_order = game.spread_order;
 
         pick.selection_abbrev = teams_map[pick.selection].abbrev;
 
@@ -327,7 +329,7 @@ q.await(function(err, picks, games) {
             return matchup;
         })
         .on('mouseover', function(game) {
-            highlightBars(game.order);
+            highlightBars(game.date_order);
         })
         .on('mouseout', function(game) {
             unhighlightBars();
@@ -348,6 +350,13 @@ q.await(function(err, picks, games) {
     $("#sort-game").click(function() {
         if (sort_method == "game_order") return;
         set_sort_method("game_order");
+        update_sort_method_selector();
+        reposition_bars();
+    });
+
+    $("#sort-spread").click(function() {
+        if (sort_method == "spread_order") return;
+        set_sort_method("spread_order");
         update_sort_method_selector();
         reposition_bars();
     });
@@ -390,8 +399,11 @@ q.await(function(err, picks, games) {
         if (sort_method == "game_order") {
             $('#sort-game').addClass('active');
         }
-        else {
+        else if (sort_method == "confidence") {
             $('#sort-confidence').addClass('active');
+        }
+        else {
+            $('#sort-spread').addClass('active');
         }
     }
 
@@ -411,7 +423,7 @@ q.await(function(err, picks, games) {
         ;
 
         var game = games.filter(function(d) {
-            return d.order === game_order;
+            return d.date_order === game_order;
         })[0];
 
         $('#highlighted-bowl').text(game.bowl);
