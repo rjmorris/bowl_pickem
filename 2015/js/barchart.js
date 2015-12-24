@@ -513,21 +513,24 @@ q.await(function(err, picks, games) {
         })[0];
 
         $('#highlighted-bowl').text(game.bowl);
-        $('#highlighted-spread').text(game.spread);
+        $('#highlighted-favorite').text(game.favorite);
+        $('#highlighted-underdog').text(game.underdog);
+        $('#highlighted-spread').text('(' + game.spread + ')');
         $('#highlighted-datetime').text(game.datetime.format('MMM DD, h:mm a'));
         $('#highlighted-location').text(game.location);
 
-        if (game.winner === game.favorite) {
-            $('#highlighted-favorite').html('<span class="pick_right">' + game.favorite + '</span>');
-            $('#highlighted-underdog').html('<span class="pick_wrong">' + game.underdog + '</span>');
-        }
-        else if (game.winner === game.underdog) {
-            $('#highlighted-favorite').html('<span class="pick_wrong">' + game.favorite + '</span>');
-            $('#highlighted-underdog').html('<span class="pick_right">' + game.underdog + '</span>');
+        if (game.winner === '') {
+            $('#highlighted-result').text('unplayed');
         }
         else {
-            $('#highlighted-favorite').html('<span class="pick_future">' + game.favorite + '</span>');
-            $('#highlighted-underdog').html('<span class="pick_future">' + game.underdog + '</span>');
+            $('#highlighted-result').html(
+                '<span class="pick_right">' +
+                    game.winner +
+                    '</span> ' +
+                    game.winner_score +
+                    '-' +
+                    game.loser_score
+            );
         }
     }
 
