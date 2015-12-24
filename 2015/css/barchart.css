@@ -83,7 +83,7 @@ body {
 }
 
 .control-group li.active {
-    background-color: rgb(191, 115, 52);
+    background-color: #ce874c;
 }
 
 #help {
@@ -190,7 +190,7 @@ body {
 }
 
 #game-finder li:hover {
-    background-color: rgb(191, 115, 52);
+    background-color: #ce874c;
     color: rgb(0, 0, 0);
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 #game-finder li:hover span.pick_right {
-    color: rgb(0, 64, 0);
+    color: rgb(0, 88, 0);
 }
 
 #graphic-container {
@@ -242,8 +242,12 @@ body {
     fill: rgb(32, 32, 32);
 }
 
-.bar.unplayed.highlight {
-    fill: rgb(191, 115, 52);
+.bar.unplayed.favorite.highlight {
+    fill: #873d00;
+}
+
+.bar.unplayed.underdog.highlight {
+    fill: #ce874c;
 }
 
 .bar.right.lowlight,

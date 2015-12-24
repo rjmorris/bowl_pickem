@@ -224,6 +224,12 @@ q.await(function(err, picks, games) {
         .classed("unplayed", function(d) {
             return d.result === null;
         })
+        .classed("favorite", function(d) {
+            return d.selection === games_map[d.bowl].favorite;
+        })
+        .classed("underdog", function(d) {
+            return d.selection === games_map[d.bowl].underdog;
+        })
         .attr('x', 0)
         .attr('y', function(d) {
             return yScale.rangeBand()/2 - barHeightScale(d.confidence)/2;
