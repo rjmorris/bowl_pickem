@@ -109,9 +109,15 @@ q.await(function(err, picks, games) {
     var legend_symbol_pad = 4;
 
     var sort_game_method = "confidence";
+    if (localStorage.getItem('sort_game_method') !== null) {
+        sort_game_method = localStorage.getItem('sort_game_method');
+    }
     update_sort_game_method_selector();
 
     var sort_player_method = "rank_points";
+    if (localStorage.getItem('sort_player_method') !== null) {
+        sort_player_method = localStorage.getItem('sort_player_method');
+    }
     update_sort_player_method_selector();
 
 
@@ -461,6 +467,7 @@ q.await(function(err, picks, games) {
 
     function set_sort_game_method(method) {
         sort_game_method = method;
+        localStorage.setItem('sort_game_method', method);
     }
 
     function update_sort_game_method_selector() {
@@ -478,6 +485,7 @@ q.await(function(err, picks, games) {
 
     function set_sort_player_method(method) {
         sort_player_method = method;
+        localStorage.setItem('sort_player_method', method);
     }
 
     function update_sort_player_method_selector() {
