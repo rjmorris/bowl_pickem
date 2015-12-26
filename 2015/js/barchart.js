@@ -198,13 +198,27 @@ q.await(function(err, picks, games) {
         .range([0, yScale.rangeBand()])
     ;
 
-    var barGroups = svg.selectAll('.bar-group')
-        .data(picks)
+    var rows = svg.selectAll('.player-row')
+        .data(players)
+        .enter()
+        .append('g')
+        .classed('player-row', true)
+        .attr('transform', function(d) {
+            return 'translate(0,' + yScale(d[sort_player_method]) + ')';
+        })
+    ;
+
+    var barGroups = rows.selectAll('.bar-group')
+        .data(function(d) {
+            return picks.filter(function(pick) {
+                return d.player === pick.player;
+            });
+        })
         .enter()
         .append('g')
         .classed('bar-group', true)
         .attr('transform', function(d) {
-            return 'translate(' + xScale(d[sort_game_method]) + ',' + yScale(d[sort_player_method]) + ')';
+            return 'translate(' + xScale(d[sort_game_method]) + ',0)';
         })
         .attr('opacity', 0)
     ;
@@ -257,13 +271,10 @@ q.await(function(err, picks, games) {
         })
     ;
 
-    var nameGroups = svg.selectAll(".name-group")
-        .data(players)
-        .enter()
-        .append("g")
+    var nameGroups = rows.append("g")
         .classed("name-group", true)
         .attr('transform', function(d) {
-            return 'translate(0,' + (yScale(d[sort_player_method]) + yScale.rangeBand()/2 + name_offset_y) + ')';
+            return 'translate(0,' + (yScale.rangeBand()/2 + name_offset_y) + ')';
         })
     ;
 
@@ -380,45 +391,42 @@ q.await(function(err, picks, games) {
         if (sort_game_method == "confidence") return;
         set_sort_game_method("confidence");
         update_sort_game_method_selector();
-        reposition_bars();
+        sort_games();
     });
 
     $("#sort-game-date").click(function() {
         if (sort_game_method == "date_order") return;
         set_sort_game_method("date_order");
         update_sort_game_method_selector();
-        reposition_bars();
+        sort_games();
     });
 
     $("#sort-game-spread").click(function() {
         if (sort_game_method == "spread_order") return;
         set_sort_game_method("spread_order");
         update_sort_game_method_selector();
-        reposition_bars();
+        sort_games();
     });
 
     $("#sort-player-points").click(function() {
         if (sort_player_method == "rank_points") return;
         set_sort_player_method("rank_points");
         update_sort_player_method_selector();
-        reposition_bars();
-        reposition_names();
+        sort_players();
     });
 
     $("#sort-player-games").click(function() {
         if (sort_player_method == "rank_games") return;
         set_sort_player_method("rank_games");
         update_sort_player_method_selector();
-        reposition_bars();
-        reposition_names();
+        sort_players();
     });
 
     $("#sort-player-name").click(function() {
         if (sort_player_method == "rank_name") return;
         set_sort_player_method("rank_name");
         update_sort_player_method_selector();
-        reposition_bars();
-        reposition_names();
+        sort_players();
     });
 
     $("#help-show").click(function() {
@@ -435,8 +443,8 @@ q.await(function(err, picks, games) {
     //--------------------------------------------------------------------------
     // Function definitions.
 
-    function reposition_bars() {
-        d3.selectAll('#graphic .bar-group')
+    function sort_games() {
+        svg.selectAll('.bar-group')
             .transition()
             .delay(function(d) {
                 return 1000 * (d[sort_player_method] - 1) / num_players;
@@ -445,13 +453,13 @@ q.await(function(err, picks, games) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(' + xScale(d[sort_game_method]) + ',' + yScale(d[sort_player_method]) + ')';
+                return 'translate(' + xScale(d[sort_game_method]) + ',0)';
             })
         ;
     }
 
-    function reposition_names() {
-        svg.selectAll('.name-group')
+    function sort_players() {
+        svg.selectAll('.player-row')
             .transition()
             .delay(function(d) {
                 return 1000 * (d[sort_player_method] - 1) / num_players;
@@ -460,7 +468,7 @@ q.await(function(err, picks, games) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(0,' + (yScale(d[sort_player_method]) + yScale.rangeBand()/2 + name_offset_y) + ')';
+                return 'translate(0,' + yScale(d[sort_player_method]) + ')';
             })
         ;
     }
