@@ -36,16 +36,18 @@ q.await(function(err, picks, games) {
 
         // Create pick variables using the games metadata.
 
-        var game = games_map[pick.bowl];
+        pick.game = games_map[pick.bowl];
 
-        pick.date_order = game.date_order;
-        pick.spread_order = game.spread_order;
+        pick.date_order = pick.game.date_order;
+        pick.spread_order = pick.game.spread_order;
+
+        if (pick.game.winner === '') pick.result = null;
+        else if (pick.game.winner === pick.selection) pick.result = true;
+        else pick.result = false;
+
+        // Create pick variables using the teams metadata.
 
         pick.selection_abbrev = teams_map[pick.selection].abbrev;
-
-        if (game.winner === '') pick.result = null;
-        else if (game.winner === pick.selection) pick.result = true;
-        else pick.result = false;
 
         // Store player-specific data.
 
@@ -245,10 +247,10 @@ q.await(function(err, picks, games) {
             return d.result === null;
         })
         .classed("favorite", function(d) {
-            return d.selection === games_map[d.bowl].favorite || games_map[d.bowl].spread === 0;
+            return d.selection === d.game.favorite || d.game.spread === 0;
         })
         .classed("underdog", function(d) {
-            return d.selection === games_map[d.bowl].underdog;
+            return d.selection === d.game.underdog;
         })
         .attr('x', 0)
         .attr('y', function(d) {
@@ -261,7 +263,7 @@ q.await(function(err, picks, games) {
         .attr("rx", 4)
         .attr("ry", 4)
         .on('mouseover', function(d) {
-            highlightBars(d.date_order);
+            highlightBars(d.game);
         })
         .on('mouseout', function() {
             unhighlightBars();
@@ -376,7 +378,7 @@ q.await(function(err, picks, games) {
             return matchup;
         })
         .on('mouseover', function(game) {
-            highlightBars(game.date_order);
+            highlightBars(game);
         })
         .on('mouseout', function(game) {
             unhighlightBars();
@@ -509,10 +511,10 @@ q.await(function(err, picks, games) {
         }
     }
 
-    function highlightBars(date_order) {
+    function highlightBars(game) {
         svg.selectAll('.bar')
             .filter(function(bar) {
-                return bar.date_order === date_order;
+                return bar.game === game;
             })
             .classed('highlight', true)
             .each(function(bar) {
@@ -523,10 +525,6 @@ q.await(function(err, picks, games) {
         svg.selectAll('.bar:not(.highlight)')
             .classed('lowlight', true)
         ;
-
-        var game = games.filter(function(d) {
-            return d.date_order === date_order;
-        })[0];
 
         $('#highlighted-bowl').text(game.bowl);
         $('#highlighted-favorite').text(game.favorite);
