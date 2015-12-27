@@ -245,7 +245,7 @@ q.await(function(err, picks, games) {
             return d.result === null;
         })
         .classed("favorite", function(d) {
-            return d.selection === games_map[d.bowl].favorite;
+            return d.selection === games_map[d.bowl].favorite || games_map[d.bowl].spread === 0;
         })
         .classed("underdog", function(d) {
             return d.selection === games_map[d.bowl].underdog;
