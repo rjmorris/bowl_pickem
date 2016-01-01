@@ -530,7 +530,7 @@ q.await(function(err, picks, games) {
         $('#highlighted-favorite').text(game.favorite);
         $('#highlighted-underdog').text(game.underdog);
         $('#highlighted-spread').text('(' + game.spread + ')');
-        $('#highlighted-datetime').text(game.datetime.format('MMM DD, h:mm a'));
+        $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
         $('#highlighted-location').text(game.location);
 
         if (game.winner === '') {
