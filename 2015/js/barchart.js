@@ -347,6 +347,21 @@ q.await(function(err, picks, games) {
     //--------------------------------------------------------------------------
     // Add games to the game finder panel.
 
+    var num_played_games = games.filter(function(d) {
+        return d.winner !== '';
+    }).length;
+
+    if (num_played_games / num_games < 0.67) {
+        games.sort(function(a, b) {
+            return d3.ascending(a.date_order, b.date_order);
+        });
+    }
+    else {
+        games.sort(function(a, b) {
+            return d3.descending(a.date_order, b.date_order);
+        });
+    }
+
     d3.select('#game-list').selectAll('.game-item')
         .data(games)
         .enter()
