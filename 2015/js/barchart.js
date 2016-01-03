@@ -544,7 +544,7 @@ q.await(function(err, picks, games) {
         $('#highlighted-bowl').text(game.bowl);
         $('#highlighted-favorite').text(game.favorite);
         $('#highlighted-underdog').text(game.underdog);
-        $('#highlighted-spread').text('(' + game.spread + ')');
+        $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
         $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
         $('#highlighted-location').text(game.location);
 
