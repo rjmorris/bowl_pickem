@@ -1,0 +1,309 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+    /* Force the baseline font size to match the user's browser preference. All
+       other font sizes should be defined relative to this, no pixel units. */
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+    /* Set the page's default font size under the assumption that the vast majority
+       of users have their preferred font size set to the browser default of
+       16px. For the users who have changed the default, or those who explicitly
+       want 16px, we will be scaling the font size away from the their
+       preference. This isn't ideal. However, because most websites make this
+       same assumption of a 16px default and change the font accordingly, those
+       users should be accustomed to this behavior. */
+    font-size: 87.5%;
+
+    background-color: rgb(0, 0, 0);
+}
+
+#header {
+    border-style: none none solid none;
+    border-width: 1px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: rgb(192, 192, 192);
+    border-color: rgb(160, 160, 160);
+
+    /* One of many hacks to make this container element's height expand to contain
+     * its floated elements.
+     */
+    overflow: auto;
+}
+
+.control-group {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.control-group:first-child {
+    margin-left: 0;
+}
+
+#help-control {
+    float: right;
+}
+
+.control-group .header {
+    display: inline-block;
+}
+
+.control-group .header:after {
+    content: ":";
+}
+
+.control-group ul {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.control-group li {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.control-group li.active {
+    background-color: #ce874c;
+}
+
+#help {
+    display: none;
+    position: absolute;
+    top: auto;
+    right: 10px;
+    width: 40em;
+    padding: 15px;
+    font-size: 0.75rem;
+    background-color: rgba(0, 0, 0, 1.0);
+    color: rgb(192, 192, 192);
+    border: solid 1px rgb(160, 160, 160);
+}
+
+#help p {
+    margin-bottom: 8px;
+}
+
+#help #close {
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+#legend {
+    width: 100%;
+}
+
+#legend .label {
+    fill: rgb(192, 192, 192);
+}
+
+#side-panel {
+    float: left;
+    width: 18em;
+    height: 100%;
+    margin-right: 8px;
+    padding-right: 10px;
+    color: rgb(192, 192, 192);
+    border-right: solid 1px rgb(160, 160, 160);
+}
+
+.side-section {
+    margin-bottom: 20px;
+}
+
+.side-section h1 {
+    padding-bottom: 6px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+#contest-title h1 {
+    border-bottom: solid 1px rgb(160, 160, 160);
+    font-size: 1rem;
+    text-align: center;
+}
+
+#game-details h1 {
+    border-bottom: none;
+}
+
+#game-details ul {
+    list-style-type: none;
+}
+
+#game-details li {
+    padding: 2px 0;
+    font-size: 0.75rem;
+}
+
+#game-details .game-attribute {
+    padding-right: 0.5em;
+}
+
+#game-details .game-attribute:after {
+    content: ':';
+}
+
+#game-details li span.pick_right {
+    font-weight: bold;
+    color: rgb(0, 144, 0);
+}
+
+#game-finder {
+    overflow: auto;
+}
+
+#game-finder ul {
+    list-style-type: none;
+}
+
+#game-finder li {
+    margin: 0;
+    padding: 2px;
+    font-size: 0.75rem;
+    border-bottom: solid 1px rgb(160, 160, 160);
+    cursor: default;
+}
+
+#game-finder li:first-child {
+    border-top: solid 1px rgb(160, 160, 160);
+}
+
+#game-finder li:hover {
+    background-color: #ce874c;
+    color: rgb(0, 0, 0);
+}
+
+#game-finder li span.game-date:after {
+    content: ': ';
+}
+
+#game-finder li span.pick_right {
+    font-weight: bold;
+    color: rgb(0, 144, 0);
+}
+
+#game-finder li:hover span.pick_right {
+    color: rgb(0, 88, 0);
+}
+
+#graphic-container {
+    float: left;
+    width: calc(100% - 18em - 8px);
+    height: 100%;
+}
+
+.name {
+    font-size: 0.75rem;
+    fill: rgb(192, 192, 192);
+}
+
+.name_bg {
+    fill: rgba(0, 0, 0, 0.4);
+}
+
+.bar {
+    /* I'd prefer to transition to a different fill color instead of changing
+     * the opacity, but IE has limited support for transitions on SVG elements. It
+     * supports opacity but not fill.
+     */
+    transition: opacity 0.25s linear;
+}
+
+.bar.right {
+    fill: rgb(0, 112, 0);
+}
+
+.bar.wrong {
+    fill: rgb(128, 128, 128);
+}
+
+.bar.unplayed {
+    fill: rgb(32, 32, 32);
+}
+
+.bar.unplayed.favorite.highlight {
+    fill: #873d00;
+}
+
+.bar.unplayed.underdog.highlight {
+    fill: #ce874c;
+}
+
+.bar.right.lowlight,
+.bar.wrong.lowlight,
+.bar.unplayed.lowlight {
+    opacity: 0.33;
+}
+
+.highlight-tip {
+    line-height: 1;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(48, 48, 48);
+}
+
+.highlight-tip:after {
+    display: inline;
+    font-size: 0.625rem;
+    width: 100%;
+    line-height: 1;
+    position: absolute;
+    pointer-events: none;
+}
+
+.highlight-tip:after {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-tip.e:after {
+    content: "\25C0";
+    margin-top: -5px;
+    top: 50%;
+    left: -8px;
+}
+
+.highlight-tip.w:after {
+    content: "\25B6";
+    margin-top: -5px;
+    top: 50%;
+    left: 100%;
+}
+
+.highlight-tip span.pick_right {
+    font-weight: bold;
+    color: rgb(0, 112, 0);
+}
+
+.highlight-tip span.pick_wrong {
+    font-weight: bold;
+    color: rgb(144, 144, 144);
+}
+
+.highlight-tip span.pick_future {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
