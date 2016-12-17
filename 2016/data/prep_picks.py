@@ -14,13 +14,13 @@ with open('games.tsv', mode = 'rt', newline = '') as f:
         teams[row['underdog_orig']] = row['underdog']
 
 picks = []
-with open('picks_raw.tsv', mode = 'rt', newline = '') as f:
-    reader = csv.DictReader(f, delimiter = '\t')
+with open('picks_raw.csv', mode = 'rt', newline = '', encoding = 'latin') as f:
+    reader = csv.DictReader(f)
     for row in reader:
-        row['bowl'] = bowls[row['bowl']]
-        row['favorite'] = teams[row['favorite']]
-        row['underdog'] = teams[row['underdog']]
-        row['selection'] = teams[row['selection']]
+        row['player'] = row['name']
+        row['bowl'] = bowls[row['Bowl']]
+        row['selection'] = teams[row['Selection']]
+        row['confidence'] = row['Confidence_Score']
         picks.append(row)
 
 with open('picks.tsv', mode = 'wt' , newline = '') as f:
