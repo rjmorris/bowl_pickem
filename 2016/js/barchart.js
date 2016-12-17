@@ -176,7 +176,7 @@ q.await(function(err, picks, games) {
                 if (d.result === true) pick_class = 'pick_right';
                 else if (d.result === false) pick_class = 'pick_wrong';
 
-                return d.player + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.selection_abbrev + '</span>';
+                return d.player + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.selection + '</span>';
             })
         ;
     });
