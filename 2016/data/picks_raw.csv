@@ -1,0 +1,247 @@
+name,Selection,Bowl,Favorite,Underdog,Confidence_Score
+Darryl,Oklahoma State,Alamo,Colorado,Oklahoma State,12
+Darryl,Air Force,Arizona,Air Force,South Alabama,35
+Darryl,Navy,Armed Forces,Navy,Louisiana Tech,23
+Darryl,Eastern Michigan,Bahamas,Old Dominion,Eastern Michigan,6
+Darryl,Virginia Tech,Belk,Virginia Tech,Arkansas,26
+Darryl,South Florida,Birmingham,South Florida,South Carolina,39
+Darryl,Memphis,Boca Raton,Western Kentucky,Memphis,3
+Darryl,Boise State,Cactus,Boise State,Baylor,30
+Darryl,Toledo,Camellia,Toledo,Appalachian State,19
+Darryl,Louisville,Citrus,LSU,Louisville,15
+Darryl,Wisconsin,Cotton,Wisconsin,Western Michigan,34
+Darryl,UCF,Cure,UCF,Arkansas State,25
+Darryl,Troy,Dollar General,Troy,Ohio,24
+Darryl,Ohio State,Fiesta,Ohio State,Clemson,22
+Darryl,Utah,Foster Farms,Utah,Indiana,28
+Darryl,Hawai段,Hawaii,Hawai段,Middle Tennessee,20
+Darryl,North Texas,Heart of Dallas,Army,North Texas,1
+Darryl,Minnesota,Holiday,Washington State,Minnesota,4
+Darryl,NC State,Independence,NC State,Vanderbilt,32
+Darryl,San Diego State,Las Vegas,Houston,San Diego State,5
+Darryl,Georgia,Liberty,TCU,Georgia,13
+Darryl,Tulsa,Miami Beach,Tulsa,Central Michigan,37
+Darryl,Temple,Military,Temple,Wake Forest,33
+Darryl,Nebraska,Music City,Tennessee,Nebraska,9
+Darryl,Ohio State,National Championship,Winner of Peach,Winner of Fiesta,21
+Darryl,New Mexico,New Mexico,New Mexico,Texas San Antonio,36
+Darryl,Louisiana Lafayette,New Orleans,Southern Mississippi,Louisiana Lafayette,7
+Darryl,Michigan,Orange,Michigan,Florida State,27
+Darryl,Florida,Outback,Florida,Iowa,18
+Darryl,Alabama,Peach,Alabama,Washington,38
+Darryl,Pittsburgh,Pinstripe,Pittsburgh,Northwestern,31
+Darryl,Wyoming,Poinsettia,BYU,Wyoming,2
+Darryl,Colorado State,Potato,Colorado State,Idaho,40
+Darryl,Maryland,Quick Lane,Boston College,Maryland,8
+Darryl,Penn State,Rose,USC,Penn State,10
+Darryl,Miami,Russell Athletic,West Virginia,Miami,16
+Darryl,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),41
+Darryl,Auburn,Sugar,Oklahoma,Auburn,11
+Darryl,Stanford,Sun,North Carolina,Stanford,14
+Darryl,Georgia Tech,Taxslayer,Georgia Tech,Kentucky,29
+Darryl,Texas A&M,Texas,Texas A&M,Kansas State,17
+Derick,Colorado,Alamo,Colorado,Oklahoma State,7
+Derick,Air Force,Arizona,Air Force,South Alabama,22
+Derick,Louisiana Tech,Armed Forces,Navy,Louisiana Tech,21
+Derick,Old Dominion,Bahamas,Old Dominion,Eastern Michigan,20
+Derick,Virginia Tech,Belk,Virginia Tech,Arkansas,35
+Derick,South Carolina,Birmingham,South Florida,South Carolina,1
+Derick,Western Kentucky,Boca Raton,Western Kentucky,Memphis,25
+Derick,Boise State,Cactus,Boise State,Baylor,41
+Derick,Toledo,Camellia,Toledo,Appalachian State,31
+Derick,LSU,Citrus,LSU,Louisville,19
+Derick,Wisconsin,Cotton,Wisconsin,Western Michigan,32
+Derick,UCF,Cure,UCF,Arkansas State,8
+Derick,Ohio,Dollar General,Troy,Ohio,3
+Derick,Ohio State,Fiesta,Ohio State,Clemson,5
+Derick,Utah,Foster Farms,Utah,Indiana,18
+Derick,Middle Tennessee,Hawaii,Hawai段,Middle Tennessee,30
+Derick,North Texas,Heart of Dallas,Army,North Texas,11
+Derick,Washington State,Holiday,Washington State,Minnesota,29
+Derick,Vanderbilt,Independence,NC State,Vanderbilt,13
+Derick,San Diego State,Las Vegas,Houston,San Diego State,4
+Derick,Georgia,Liberty,TCU,Georgia,9
+Derick,Tulsa,Miami Beach,Tulsa,Central Michigan,37
+Derick,Wake Forest,Military,Temple,Wake Forest,12
+Derick,Nebraska,Music City,Tennessee,Nebraska,16
+Derick,Alabama,National Championship,Winner of Peach,Winner of Fiesta,33
+Derick,New Mexico,New Mexico,New Mexico,Texas San Antonio,23
+Derick,Louisiana Lafayette,New Orleans,Southern Mississippi,Louisiana Lafayette,2
+Derick,Michigan,Orange,Michigan,Florida State,38
+Derick,Florida,Outback,Florida,Iowa,27
+Derick,Alabama,Peach,Alabama,Washington,34
+Derick,Pittsburgh,Pinstripe,Pittsburgh,Northwestern,28
+Derick,BYU,Poinsettia,BYU,Wyoming,24
+Derick,Colorado State,Potato,Colorado State,Idaho,36
+Derick,Maryland,Quick Lane,Boston College,Maryland,14
+Derick,USC,Rose,USC,Penn State,17
+Derick,West Virginia,Russell Athletic,West Virginia,Miami,26
+Derick,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),40
+Derick,Oklahoma,Sugar,Oklahoma,Auburn,39
+Derick,North Carolina,Sun,North Carolina,Stanford,15
+Derick,Kentucky,Taxslayer,Georgia Tech,Kentucky,6
+Derick,Kansas State,Texas,Texas A&M,Kansas State,10
+JHajdin,Colorado,Alamo,Colorado,Oklahoma State,11
+JHajdin,Air Force,Arizona,Air Force,South Alabama,41
+JHajdin,Louisiana Tech,Armed Forces,Navy,Louisiana Tech,5
+JHajdin,Old Dominion,Bahamas,Old Dominion,Eastern Michigan,17
+JHajdin,Virginia Tech,Belk,Virginia Tech,Arkansas,26
+JHajdin,South Florida,Birmingham,South Florida,South Carolina,33
+JHajdin,Western Kentucky,Boca Raton,Western Kentucky,Memphis,25
+JHajdin,Boise State,Cactus,Boise State,Baylor,38
+JHajdin,Appalachian State,Camellia,Toledo,Appalachian State,15
+JHajdin,Louisville,Citrus,LSU,Louisville,1
+JHajdin,Wisconsin,Cotton,Wisconsin,Western Michigan,7
+JHajdin,Arkansas State,Cure,UCF,Arkansas State,28
+JHajdin,Ohio,Dollar General,Troy,Ohio,23
+JHajdin,Ohio State,Fiesta,Ohio State,Clemson,14
+JHajdin,Utah,Foster Farms,Utah,Indiana,27
+JHajdin,Hawai段,Hawaii,Hawai段,Middle Tennessee,3
+JHajdin,Army,Heart of Dallas,Army,North Texas,30
+JHajdin,Minnesota,Holiday,Washington State,Minnesota,21
+JHajdin,Vanderbilt,Independence,NC State,Vanderbilt,19
+JHajdin,Houston,Las Vegas,Houston,San Diego State,20
+JHajdin,TCU,Liberty,TCU,Georgia,8
+JHajdin,Tulsa,Miami Beach,Tulsa,Central Michigan,34
+JHajdin,Temple,Military,Temple,Wake Forest,40
+JHajdin,Tennessee,Music City,Tennessee,Nebraska,16
+JHajdin,Alabama,National Championship,Winner of Peach,Winner of Fiesta,10
+JHajdin,Texas San Antonio,New Mexico,New Mexico,Texas San Antonio,32
+JHajdin,Louisiana Lafayette,New Orleans,Southern Mississippi,Louisiana Lafayette,13
+JHajdin,Michigan,Orange,Michigan,Florida State,24
+JHajdin,Florida,Outback,Florida,Iowa,9
+JHajdin,Alabama,Peach,Alabama,Washington,39
+JHajdin,Pittsburgh,Pinstripe,Pittsburgh,Northwestern,18
+JHajdin,BYU,Poinsettia,BYU,Wyoming,29
+JHajdin,Idaho,Potato,Colorado State,Idaho,35
+JHajdin,Maryland,Quick Lane,Boston College,Maryland,4
+JHajdin,Penn State,Rose,USC,Penn State,2
+JHajdin,West Virginia,Russell Athletic,West Virginia,Miami,36
+JHajdin,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),37
+JHajdin,Oklahoma,Sugar,Oklahoma,Auburn,31
+JHajdin,Stanford,Sun,North Carolina,Stanford,6
+JHajdin,Georgia Tech,Taxslayer,Georgia Tech,Kentucky,22
+JHajdin,Kansas State,Texas,Texas A&M,Kansas State,12
+Joel,Oklahoma State,Alamo,Colorado,Oklahoma State,27
+Joel,South Alabama,Arizona,Air Force,South Alabama,5
+Joel,Navy,Armed Forces,Navy,Louisiana Tech,14
+Joel,Eastern Michigan,Bahamas,Old Dominion,Eastern Michigan,2
+Joel,Virginia Tech,Belk,Virginia Tech,Arkansas,33
+Joel,South Florida,Birmingham,South Florida,South Carolina,11
+Joel,Western Kentucky,Boca Raton,Western Kentucky,Memphis,29
+Joel,Baylor,Cactus,Boise State,Baylor,6
+Joel,Toledo,Camellia,Toledo,Appalachian State,23
+Joel,LSU,Citrus,LSU,Louisville,26
+Joel,Wisconsin,Cotton,Wisconsin,Western Michigan,39
+Joel,UCF,Cure,UCF,Arkansas State,22
+Joel,Troy,Dollar General,Troy,Ohio,21
+Joel,Ohio State,Fiesta,Ohio State,Clemson,24
+Joel,Utah,Foster Farms,Utah,Indiana,4
+Joel,Middle Tennessee,Hawaii,Hawai段,Middle Tennessee,15
+Joel,Army,Heart of Dallas,Army,North Texas,36
+Joel,Minnesota,Holiday,Washington State,Minnesota,12
+Joel,NC State,Independence,NC State,Vanderbilt,3
+Joel,San Diego State,Las Vegas,Houston,San Diego State,16
+Joel,TCU,Liberty,TCU,Georgia,18
+Joel,Tulsa,Miami Beach,Tulsa,Central Michigan,37
+Joel,Temple,Military,Temple,Wake Forest,28
+Joel,Nebraska,Music City,Tennessee,Nebraska,41
+Joel,Alabama,National Championship,Winner of Peach,Winner of Fiesta,1
+Joel,New Mexico,New Mexico,New Mexico,Texas San Antonio,38
+Joel,Southern Mississippi,New Orleans,Southern Mississippi,Louisiana Lafayette,13
+Joel,Michigan,Orange,Michigan,Florida State,8
+Joel,Florida,Outback,Florida,Iowa,34
+Joel,Alabama,Peach,Alabama,Washington,40
+Joel,Northwestern,Pinstripe,Pittsburgh,Northwestern,20
+Joel,Wyoming,Poinsettia,BYU,Wyoming,7
+Joel,Colorado State,Potato,Colorado State,Idaho,30
+Joel,Boston College,Quick Lane,Boston College,Maryland,32
+Joel,Penn State,Rose,USC,Penn State,9
+Joel,West Virginia,Russell Athletic,West Virginia,Miami,19
+Joel,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),31
+Joel,Auburn,Sugar,Oklahoma,Auburn,17
+Joel,Stanford,Sun,North Carolina,Stanford,10
+Joel,Georgia Tech,Taxslayer,Georgia Tech,Kentucky,25
+Joel,Texas A&M,Texas,Texas A&M,Kansas State,35
+Joey,Oklahoma State,Alamo,Colorado,Oklahoma State,20
+Joey,Air Force,Arizona,Air Force,South Alabama,39
+Joey,Louisiana Tech,Armed Forces,Navy,Louisiana Tech,14
+Joey,Eastern Michigan,Bahamas,Old Dominion,Eastern Michigan,13
+Joey,Arkansas,Belk,Virginia Tech,Arkansas,5
+Joey,South Florida,Birmingham,South Florida,South Carolina,36
+Joey,Memphis,Boca Raton,Western Kentucky,Memphis,6
+Joey,Boise State,Cactus,Boise State,Baylor,32
+Joey,Appalachian State,Camellia,Toledo,Appalachian State,9
+Joey,LSU,Citrus,LSU,Louisville,12
+Joey,Wisconsin,Cotton,Wisconsin,Western Michigan,31
+Joey,Arkansas State,Cure,UCF,Arkansas State,4
+Joey,Troy,Dollar General,Troy,Ohio,19
+Joey,Ohio State,Fiesta,Ohio State,Clemson,22
+Joey,Utah,Foster Farms,Utah,Indiana,29
+Joey,Hawai段,Hawaii,Hawai段,Middle Tennessee,23
+Joey,Army,Heart of Dallas,Army,North Texas,26
+Joey,Washington State,Holiday,Washington State,Minnesota,33
+Joey,NC State,Independence,NC State,Vanderbilt,21
+Joey,Houston,Las Vegas,Houston,San Diego State,24
+Joey,TCU,Liberty,TCU,Georgia,18
+Joey,Tulsa,Miami Beach,Tulsa,Central Michigan,34
+Joey,Temple,Military,Temple,Wake Forest,35
+Joey,Nebraska,Music City,Tennessee,Nebraska,8
+Joey,Alabama,National Championship,Winner of Peach,Winner of Fiesta,40
+Joey,Texas San Antonio,New Mexico,New Mexico,Texas San Antonio,10
+Joey,Louisiana Lafayette,New Orleans,Southern Mississippi,Louisiana Lafayette,3
+Joey,Michigan,Orange,Michigan,Florida State,17
+Joey,Iowa,Outback,Florida,Iowa,7
+Joey,Alabama,Peach,Alabama,Washington,41
+Joey,Pittsburgh,Pinstripe,Pittsburgh,Northwestern,16
+Joey,BYU,Poinsettia,BYU,Wyoming,27
+Joey,Colorado State,Potato,Colorado State,Idaho,38
+Joey,Maryland,Quick Lane,Boston College,Maryland,11
+Joey,Penn State,Rose,USC,Penn State,2
+Joey,West Virginia,Russell Athletic,West Virginia,Miami,30
+Joey,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),37
+Joey,Auburn,Sugar,Oklahoma,Auburn,1
+Joey,Stanford,Sun,North Carolina,Stanford,15
+Joey,Georgia Tech,Taxslayer,Georgia Tech,Kentucky,28
+Joey,Texas A&M,Texas,Texas A&M,Kansas State,25
+JPearce,Oklahoma State,Alamo,Colorado,Oklahoma State,12
+JPearce,Air Force,Arizona,Air Force,South Alabama,39
+JPearce,Louisiana Tech,Armed Forces,Navy,Louisiana Tech,13
+JPearce,Old Dominion,Bahamas,Old Dominion,Eastern Michigan,31
+JPearce,Virginia Tech,Belk,Virginia Tech,Arkansas,25
+JPearce,South Carolina,Birmingham,South Florida,South Carolina,8
+JPearce,Memphis,Boca Raton,Western Kentucky,Memphis,14
+JPearce,Boise State,Cactus,Boise State,Baylor,36
+JPearce,Appalachian State,Camellia,Toledo,Appalachian State,15
+JPearce,Louisville,Citrus,LSU,Louisville,16
+JPearce,Wisconsin,Cotton,Wisconsin,Western Michigan,37
+JPearce,UCF,Cure,UCF,Arkansas State,26
+JPearce,Ohio,Dollar General,Troy,Ohio,4
+JPearce,Ohio State,Fiesta,Ohio State,Clemson,22
+JPearce,Utah,Foster Farms,Utah,Indiana,30
+JPearce,Middle Tennessee,Hawaii,Hawai段,Middle Tennessee,3
+JPearce,Army,Heart of Dallas,Army,North Texas,29
+JPearce,Washington State,Holiday,Washington State,Minnesota,38
+JPearce,NC State,Independence,NC State,Vanderbilt,11
+JPearce,San Diego State,Las Vegas,Houston,San Diego State,10
+JPearce,Georgia,Liberty,TCU,Georgia,17
+JPearce,Tulsa,Miami Beach,Tulsa,Central Michigan,35
+JPearce,Temple,Military,Temple,Wake Forest,33
+JPearce,Nebraska,Music City,Tennessee,Nebraska,20
+JPearce,Alabama,National Championship,Winner of Peach,Winner of Fiesta,18
+JPearce,New Mexico,New Mexico,New Mexico,Texas San Antonio,32
+JPearce,Southern Mississippi,New Orleans,Southern Mississippi,Louisiana Lafayette,23
+JPearce,Florida State,Orange,Michigan,Florida State,1
+JPearce,Iowa,Outback,Florida,Iowa,9
+JPearce,Alabama,Peach,Alabama,Washington,41
+JPearce,Pittsburgh,Pinstripe,Pittsburgh,Northwestern,28
+JPearce,BYU,Poinsettia,BYU,Wyoming,27
+JPearce,Colorado State,Potato,Colorado State,Idaho,34
+JPearce,Maryland,Quick Lane,Boston College,Maryland,6
+JPearce,Penn State,Rose,USC,Penn State,7
+JPearce,Miami,Russell Athletic,West Virginia,Miami,19
+JPearce,Mississippi State,St. Petersburg,Mississippi State,Miami (OH),40
+JPearce,Auburn,Sugar,Oklahoma,Auburn,2
+JPearce,Stanford,Sun,North Carolina,Stanford,24
+JPearce,Georgia Tech,Taxslayer,Georgia Tech,Kentucky,21
+JPearce,Kansas State,Texas,Texas A&M,Kansas State,5
