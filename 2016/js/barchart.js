@@ -8,9 +8,35 @@ q.await(function(err, picks, games) {
     //--------------------------------------------------------------------------
     // Prep the data.
 
-    var players_map = {};
-    var games_map = {};
+    // Extract all the team objects from the game data.
+
     var teams_map = {};
+
+    games.forEach(function(game) {
+        if (!(game.favorite in teams_map)) {
+            var team = {};
+            team.name = game.favorite;
+            team.abbrev = game.favorite_abbrev;
+            teams_map[game.favorite] = team;
+        }
+        game.favorite = teams_map[game.favorite];
+        delete game.favorite_abbrev;
+        delete game.favorite_orig;
+
+        if (!(game.underdog in teams_map)) {
+            var team = {};
+            team.name = game.underdog;
+            team.abbrev = game.underdog_abbrev;
+            teams_map[game.underdog] = team;
+        }
+        game.underdog = teams_map[game.underdog];
+        delete game.underdog_abbrev;
+        delete game.underdog_orig;
+    });
+
+    // Prep the game data.
+
+    var games_map = {};
 
     games.forEach(function(game) {
         games_map[game.bowl] = game;
@@ -20,50 +46,41 @@ q.await(function(err, picks, games) {
         game.date_order = +game.date_order;
         game.spread_order = +game.spread_order;
 
-        var team = {};
-        team.team = game.favorite;
-        team.abbrev = game.favorite_abbrev;
-        teams_map[game.favorite] = team;
-
-        team = {};
-        team.team = game.underdog;
-        team.abbrev = game.underdog_abbrev;
-        teams_map[game.underdog] = team;
+        game.winner = teams_map[game.winner];
     });
+
+    // Extract all the player objects from the pick data.
+
+    var players_map = {};
+
+    picks.forEach(function(pick) {
+        if (!(pick.player in players_map)) {
+            var player = {};
+            player.score_games = 0;
+            player.score_points = 0;
+            player.name = pick.player;
+            players_map[pick.player] = player;
+        }
+        pick.player = players_map[pick.player];
+    });
+
+    // Prep the pick data.
 
     picks.forEach(function(pick) {
         pick.confidence = +pick.confidence;
 
-        // Create pick variables using the games metadata.
-
         pick.game = games_map[pick.bowl];
+        delete pick.bowl;
 
-        pick.date_order = pick.game.date_order;
-        pick.spread_order = pick.game.spread_order;
+        pick.selection = teams_map[pick.selection];
 
-        if (pick.game.winner === '') pick.result = null;
+        if (pick.game.winner === undefined) pick.result = null;
         else if (pick.game.winner === pick.selection) pick.result = true;
         else pick.result = false;
 
-        // Create pick variables using the teams metadata.
-
-        pick.selection_abbrev = teams_map[pick.selection].abbrev;
-
-        // Store player-specific data.
-
-        if (!(pick.player in players_map)) {
-            players_map[pick.player] = {};
-            players_map[pick.player].score_games = 0;
-            players_map[pick.player].score_points = 0;
-        }
-
-        var player = players_map[pick.player];
-
-        player.player = pick.player;
-
         if (pick.result === true) {
-            player.score_games += 1;
-            player.score_points += pick.confidence;
+            pick.player.score_games += 1;
+            pick.player.score_points += pick.confidence;
         }
     });
 
@@ -82,23 +99,17 @@ q.await(function(err, picks, games) {
     rank_players('rank_points', function(a, b) {
         return d3.descending(a.score_points, b.score_points) ||
             d3.descending(a.score_games, b.score_games) ||
-            d3.ascending(a.player, b.player);
+            d3.ascending(a.name, b.name);
     });
 
     rank_players('rank_games', function(a, b) {
         return d3.descending(a.score_games, b.score_games) ||
             d3.descending(a.score_points, b.score_points) ||
-            d3.ascending(a.player, b.player);
+            d3.ascending(a.name, b.name);
     });
 
     rank_players('rank_name', function(a, b) {
-        return d3.ascending(a.player, b.player);
-    });
-
-    picks.forEach(function(pick) {
-        pick.rank_points = players_map[pick.player].rank_points;
-        pick.rank_games = players_map[pick.player].rank_games;
-        pick.rank_name = players_map[pick.player].rank_name;
+        return d3.ascending(a.name, b.name);
     });
 
 
@@ -164,11 +175,11 @@ q.await(function(err, picks, games) {
         pick.quickTip = d3.tip()
             .attr('class', 'highlight-tip')
             .offset(function(d) {
-                if (d[sort_game_method] < num_games / 2) return [0, tip_offset_x];
+                if (get_sort_game_order(d) < num_games / 2) return [0, tip_offset_x];
                 return [0, -tip_offset_x];
             })
             .direction(function(d) {
-                if (d[sort_game_method] < num_games / 2) return 'e';
+                if (get_sort_game_order(d) < num_games / 2) return 'e';
                 return 'w';
             })
             .html(function(d) {
@@ -176,7 +187,7 @@ q.await(function(err, picks, games) {
                 if (d.result === true) pick_class = 'pick_right';
                 else if (d.result === false) pick_class = 'pick_wrong';
 
-                return d.player + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.selection + '</span>';
+                return d.player.name + ' [' + d.confidence + ']: <span class="' + pick_class + '">' + d.selection.name + '</span>';
             })
         ;
     });
@@ -206,28 +217,28 @@ q.await(function(err, picks, games) {
         .append('g')
         .classed('player-row', true)
         .attr('transform', function(d) {
-            return 'translate(0,' + yScale(d[sort_player_method]) + ')';
+            return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
         })
     ;
 
     var barGroups = rows.selectAll('.bar-group')
         .data(function(d) {
             return picks.filter(function(pick) {
-                return d.player === pick.player;
+                return d === pick.player;
             });
         })
         .enter()
         .append('g')
         .classed('bar-group', true)
         .attr('transform', function(d) {
-            return 'translate(' + xScale(d[sort_game_method]) + ',0)';
+            return 'translate(' + xScale(get_sort_game_order(d)) + ',0)';
         })
         .attr('opacity', 0)
     ;
 
     barGroups.transition()
         .delay(function(d) {
-            return 1000 * (d[sort_player_method] - 1) / num_players + 25 * d[sort_game_method];
+            return 1000 * (get_sort_player_order(d) - 1) / num_players + 25 * get_sort_game_order(d);
         })
         .duration(function(d) {
             return 250;
@@ -287,7 +298,7 @@ q.await(function(err, picks, games) {
         // dominant-baseline=hanging puts the top of the text at the y-coord.
         //.attr("dominant-baseline", "hanging")
         .text(function(d) {
-            return d.player + ": " + d.score_games + ' / ' + d.score_points;
+            return d.name + ": " + d.score_games + ' / ' + d.score_points;
         })
     ;
 
@@ -348,7 +359,7 @@ q.await(function(err, picks, games) {
     // Add games to the game finder panel.
 
     var num_played_games = games.filter(function(d) {
-        return d.winner !== '';
+        return d.winner !== undefined;
     }).length;
 
     if (num_played_games / num_games < 0.67) {
@@ -375,19 +386,19 @@ q.await(function(err, picks, games) {
             }
             else {
                 if (d.winner === d.favorite) {
-                    matchup += '<span class="pick_right">' + d.favorite_abbrev + '</span>';
+                    matchup += '<span class="pick_right">' + d.favorite.abbrev + '</span>';
                     matchup += ' / ';
-                    matchup += '<span class="pick_wrong">' + d.underdog_abbrev + '</span>';
+                    matchup += '<span class="pick_wrong">' + d.underdog.abbrev + '</span>';
                 }
                 else if (d.winner === d.underdog) {
-                    matchup += '<span class="pick_wrong">' + d.favorite_abbrev + '</span>';
+                    matchup += '<span class="pick_wrong">' + d.favorite.abbrev + '</span>';
                     matchup += ' / ';
-                    matchup += '<span class="pick_right">' + d.underdog_abbrev + '</span>';
+                    matchup += '<span class="pick_right">' + d.underdog.abbrev + '</span>';
                 }
                 else {
-                    matchup += '<span class="pick_future">' + d.favorite_abbrev + '</span>';
+                    matchup += '<span class="pick_future">' + d.favorite.abbrev + '</span>';
                     matchup += ' / ';
-                    matchup += '<span class="pick_future">' + d.underdog_abbrev + '</span>';
+                    matchup += '<span class="pick_future">' + d.underdog.abbrev + '</span>';
                 }
             }
             return matchup;
@@ -464,30 +475,40 @@ q.await(function(err, picks, games) {
         svg.selectAll('.bar-group')
             .transition()
             .delay(function(d) {
-                return 1000 * (d[sort_player_method] - 1) / num_players;
+                return 1000 * (get_sort_player_order(d) - 1) / num_players;
             })
             .duration(function(d) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(' + xScale(d[sort_game_method]) + ',0)';
+                return 'translate(' + xScale(get_sort_game_order(d)) + ',0)';
             })
         ;
+    }
+
+    function get_sort_game_order(d) {
+        if (sort_game_method in d) return d[sort_game_method];
+        else return d.game[sort_game_method];
     }
 
     function sort_players() {
         svg.selectAll('.player-row')
             .transition()
             .delay(function(d) {
-                return 1000 * (d[sort_player_method] - 1) / num_players;
+                return 1000 * (get_sort_player_order(d) - 1) / num_players;
             })
             .duration(function(d) {
                 return 1000;
             })
             .attr('transform', function(d) {
-                return 'translate(0,' + yScale(d[sort_player_method]) + ')';
+                return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
             })
         ;
+    }
+
+    function get_sort_player_order(d) {
+        if (sort_player_method in d) return d[sort_player_method];
+        else return d.player[sort_player_method];
     }
 
     function set_sort_game_method(method) {
@@ -542,19 +563,19 @@ q.await(function(err, picks, games) {
         ;
 
         $('#highlighted-bowl').text(game.bowl);
-        $('#highlighted-favorite').text(game.favorite);
-        $('#highlighted-underdog').text(game.underdog);
+        $('#highlighted-favorite').text(game.favorite.name);
+        $('#highlighted-underdog').text(game.underdog.name);
         $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
         $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
         $('#highlighted-location').text(game.location);
 
-        if (game.winner === '') {
+        if (game.winner === undefined) {
             $('#highlighted-result').text('unplayed');
         }
         else {
             $('#highlighted-result').html(
                 '<span class="pick_right">' +
-                    game.winner +
+                    game.winner.name +
                     '</span> ' +
                     game.winner_score +
                     '-' +
