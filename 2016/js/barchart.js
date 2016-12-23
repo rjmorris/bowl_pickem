@@ -257,9 +257,7 @@ q.await(function(err, picks, games) {
         .attr("y", 0)
         // dominant-baseline=hanging puts the top of the text at the y-coord.
         //.attr("dominant-baseline", "hanging")
-        .text(function(d) {
-            return d.name + ": " + d.score_games + ' / ' + d.score_points;
-        })
+        .call(assign_name_text)
     ;
 
     // Place a rectangle behind the names to give them some contrast when
@@ -628,6 +626,7 @@ q.await(function(err, picks, games) {
         compute_player_ranks();
 
         svg.selectAll(".bar").call(assign_bar_styles);
+        svg.selectAll(".name").call(assign_name_text);
 
         sort_players();
     }
@@ -654,6 +653,14 @@ q.await(function(err, picks, games) {
                     return 'url(#mask-what-if)';
                 }
                 return undefined;
+            })
+        ;
+    }
+
+    function assign_name_text(selection) {
+        selection
+            .text(function(d) {
+                return d.name + ": " + d.score_games + ' / ' + d.score_points;
             })
         ;
     }
