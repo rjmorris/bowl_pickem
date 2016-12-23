@@ -47,7 +47,10 @@ q.await(function(err, picks, games) {
         game.spread_order = +game.spread_order;
 
         game.winner = teams_map[game.winner];
+        game.winner_real = game.winner;
     });
+
+    var num_games = games.length;
 
     // Extract all the player objects from the pick data.
 
@@ -56,13 +59,14 @@ q.await(function(err, picks, games) {
     picks.forEach(function(pick) {
         if (!(pick.player in players_map)) {
             var player = {};
-            player.score_games = 0;
-            player.score_points = 0;
             player.name = pick.player;
             players_map[pick.player] = player;
         }
         pick.player = players_map[pick.player];
     });
+
+    var players = d3.values(players_map);
+    var num_players = players.length;
 
     // Prep the pick data.
 
@@ -73,44 +77,11 @@ q.await(function(err, picks, games) {
         delete pick.bowl;
 
         pick.selection = teams_map[pick.selection];
-
-        if (pick.game.winner === undefined) pick.result = null;
-        else if (pick.game.winner === pick.selection) pick.result = true;
-        else pick.result = false;
-
-        if (pick.result === true) {
-            pick.player.score_games += 1;
-            pick.player.score_points += pick.confidence;
-        }
     });
 
-    var players = d3.values(players_map);
-    var num_players = players.length;
-
-    var num_games = games.length;
-
-    function rank_players(rank_var, comparison) {
-        players = players.sort(comparison);
-        players.forEach(function(player, index) {
-            player[rank_var] = index + 1;
-        });
-    }
-
-    rank_players('rank_points', function(a, b) {
-        return d3.descending(a.score_points, b.score_points) ||
-            d3.descending(a.score_games, b.score_games) ||
-            d3.ascending(a.name, b.name);
-    });
-
-    rank_players('rank_games', function(a, b) {
-        return d3.descending(a.score_games, b.score_games) ||
-            d3.descending(a.score_points, b.score_points) ||
-            d3.ascending(a.name, b.name);
-    });
-
-    rank_players('rank_name', function(a, b) {
-        return d3.ascending(a.name, b.name);
-    });
+    compute_pick_results();
+    compute_player_scores();
+    compute_player_ranks();
 
 
     //--------------------------------------------------------------------------
@@ -248,21 +219,7 @@ q.await(function(err, picks, games) {
 
     barGroups.append('rect')
         .classed("bar", true)
-        .classed("right", function(d) {
-            return d.result === true;
-        })
-        .classed("wrong", function(d) {
-            return d.result === false;
-        })
-        .classed("unplayed", function(d) {
-            return d.result === null;
-        })
-        .classed("favorite", function(d) {
-            return d.selection === d.game.favorite || d.game.spread === 0;
-        })
-        .classed("underdog", function(d) {
-            return d.selection === d.game.underdog;
-        })
+        .call(assign_bar_styles)
         .attr('x', 0)
         .attr('y', function(d) {
             return yScale.rangeBand()/2 - barHeightScale(d.confidence)/2;
@@ -278,6 +235,9 @@ q.await(function(err, picks, games) {
         })
         .on('mouseout', function() {
             unhighlightBars();
+        })
+        .on('click', function(d) {
+            cycle_game_result(d);
         })
         .each(function(d) {
             d3.select(this).call(d.quickTip);
@@ -471,6 +431,53 @@ q.await(function(err, picks, games) {
     //--------------------------------------------------------------------------
     // Function definitions.
 
+    function compute_pick_results() {
+        picks.forEach(function(pick) {
+            if (pick.game.winner === undefined) pick.result = null;
+            else if (pick.game.winner === pick.selection) pick.result = true;
+            else pick.result = false;
+        });
+    }
+
+    function compute_player_scores() {
+        players.forEach(function(player) {
+            player.score_games = 0;
+            player.score_points = 0;
+        });
+
+        picks.forEach(function(pick) {
+            if (pick.result === true) {
+                pick.player.score_games += 1;
+                pick.player.score_points += pick.confidence;
+            }
+        });
+    }
+
+    function rank_players(rank_var, comparison) {
+        players = players.sort(comparison);
+        players.forEach(function(player, index) {
+            player[rank_var] = index + 1;
+        });
+    }
+
+    function compute_player_ranks() {
+        rank_players('rank_points', function(a, b) {
+            return d3.descending(a.score_points, b.score_points) ||
+                d3.descending(a.score_games, b.score_games) ||
+                d3.ascending(a.name, b.name);
+        });
+
+        rank_players('rank_games', function(a, b) {
+            return d3.descending(a.score_games, b.score_games) ||
+                d3.descending(a.score_points, b.score_points) ||
+                d3.ascending(a.name, b.name);
+        });
+
+        rank_players('rank_name', function(a, b) {
+            return d3.ascending(a.name, b.name);
+        });
+    }
+
     function sort_games() {
         svg.selectAll('.bar-group')
             .transition()
@@ -594,5 +601,60 @@ q.await(function(err, picks, games) {
                 ;
 
         $('.game-value').text('');
+    }
+
+    function cycle_game_result(pick) {
+        var game = pick.game;
+        var winner = undefined;
+
+        if (pick.result === null) {
+            winner = pick.selection;
+        }
+        else if (pick.result === true) {
+            winner = (pick.selection === game.favorite ? game.underdog : game.favorite);
+        }
+        else {
+            winner = undefined;
+        }
+
+        what_if(game, winner);
+    }
+
+    function what_if(game, winner) {
+        game.winner = winner;
+
+        compute_pick_results();
+        compute_player_scores();
+        compute_player_ranks();
+
+        svg.selectAll(".bar").call(assign_bar_styles);
+
+        sort_players();
+    }
+
+    function assign_bar_styles(selection) {
+        selection
+            .classed("right", function(d) {
+                return d.result === true;
+            })
+            .classed("wrong", function(d) {
+                return d.result === false;
+            })
+            .classed("unplayed", function(d) {
+                return d.result === null;
+            })
+            .classed("favorite", function(d) {
+                return d.selection === d.game.favorite || d.game.spread === 0;
+            })
+            .classed("underdog", function(d) {
+                return d.selection === d.game.underdog;
+            })
+            .style("mask", function(d) {
+                if (d.game.winner != d.game.winner_real) {
+                    return 'url(#mask-what-if)';
+                }
+                return undefined;
+            })
+        ;
     }
 });

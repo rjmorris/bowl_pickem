@@ -250,6 +250,10 @@ body {
     fill: #ce874c;
 }
 
+.bar.what-if {
+    mask: url(#mask-what-if);
+}
+
 .bar.right.lowlight,
 .bar.wrong.lowlight,
 .bar.unplayed.lowlight {
