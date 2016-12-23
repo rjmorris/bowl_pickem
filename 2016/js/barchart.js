@@ -336,31 +336,7 @@ q.await(function(err, picks, games) {
         .enter()
         .append('li')
         .classed('game-item', true)
-        .html(function(d) {
-            var matchup = '';
-            matchup += '<span class="game-date">' + d.datetime.format('MMM D') + '</span>';
-            if (d.bowl === 'Championship') {
-                matchup += 'Championship';
-            }
-            else {
-                if (d.winner === d.favorite) {
-                    matchup += '<span class="pick_right">' + d.favorite.abbrev + '</span>';
-                    matchup += ' / ';
-                    matchup += '<span class="pick_wrong">' + d.underdog.abbrev + '</span>';
-                }
-                else if (d.winner === d.underdog) {
-                    matchup += '<span class="pick_wrong">' + d.favorite.abbrev + '</span>';
-                    matchup += ' / ';
-                    matchup += '<span class="pick_right">' + d.underdog.abbrev + '</span>';
-                }
-                else {
-                    matchup += '<span class="pick_future">' + d.favorite.abbrev + '</span>';
-                    matchup += ' / ';
-                    matchup += '<span class="pick_future">' + d.underdog.abbrev + '</span>';
-                }
-            }
-            return matchup;
-        })
+        .call(assign_game_finder_item_text)
         .on('mouseover', function(game) {
             highlightBars(game);
         })
@@ -627,6 +603,7 @@ q.await(function(err, picks, games) {
 
         svg.selectAll(".bar").call(assign_bar_styles);
         svg.selectAll(".name").call(assign_name_text);
+        d3.selectAll(".game-item").call(assign_game_finder_item_text);
 
         sort_players();
     }
@@ -661,6 +638,36 @@ q.await(function(err, picks, games) {
         selection
             .text(function(d) {
                 return d.name + ": " + d.score_games + ' / ' + d.score_points;
+            })
+        ;
+    }
+
+    function assign_game_finder_item_text(selection) {
+        selection
+            .html(function(d) {
+                var matchup = '';
+                matchup += '<span class="game-date">' + d.datetime.format('MMM D') + '</span>';
+                if (d.bowl === 'Championship') {
+                    matchup += 'Championship';
+                }
+                else {
+                    if (d.winner === d.favorite) {
+                        matchup += '<span class="pick_right">' + d.favorite.abbrev + '</span>';
+                        matchup += ' / ';
+                        matchup += '<span class="pick_wrong">' + d.underdog.abbrev + '</span>';
+                    }
+                    else if (d.winner === d.underdog) {
+                        matchup += '<span class="pick_wrong">' + d.favorite.abbrev + '</span>';
+                        matchup += ' / ';
+                        matchup += '<span class="pick_right">' + d.underdog.abbrev + '</span>';
+                    }
+                    else {
+                        matchup += '<span class="pick_future">' + d.favorite.abbrev + '</span>';
+                        matchup += ' / ';
+                        matchup += '<span class="pick_future">' + d.underdog.abbrev + '</span>';
+                    }
+                }
+                return matchup;
             })
         ;
     }
