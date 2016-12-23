@@ -549,20 +549,7 @@ q.await(function(err, picks, games) {
         $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
         $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
         $('#highlighted-location').text(game.location);
-
-        if (game.winner === undefined) {
-            $('#highlighted-result').text('unplayed');
-        }
-        else {
-            $('#highlighted-result').html(
-                '<span class="pick_right">' +
-                    game.winner.name +
-                    '</span> ' +
-                    game.winner_score +
-                    '-' +
-                    game.loser_score
-            );
-        }
+        d3.select('#highlighted-result').call(assign_highlighted_result_text, game);
     }
 
     function unhighlightBars() {
@@ -604,6 +591,7 @@ q.await(function(err, picks, games) {
         svg.selectAll(".bar").call(assign_bar_styles);
         svg.selectAll(".name").call(assign_name_text);
         d3.selectAll(".game-item").call(assign_game_finder_item_text);
+        d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
         sort_players();
     }
@@ -670,5 +658,37 @@ q.await(function(err, picks, games) {
                 return matchup;
             })
         ;
+    }
+
+    function assign_highlighted_result_text(selection, game) {
+        if (game.winner === undefined) {
+            if (game.winner_real === undefined) {
+                selection.text('Unplayed');
+            }
+            else {
+                selection.text('What if unplayed?');
+            }
+        }
+        else {
+            if (game.winner === game.winner_real) {
+                selection.html(
+                    '<span class="pick_right">' +
+                        game.winner.name +
+                        '</span> ' +
+                        game.winner_score +
+                        '-' +
+                        game.loser_score
+                );
+            }
+            else {
+                selection.html(
+                    'What if ' +
+                    '<span class="pick_right">' +
+                        game.winner.name +
+                        '</span>' +
+                        '?'
+                );
+            }
+        }
     }
 });
