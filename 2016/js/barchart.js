@@ -608,14 +608,14 @@ q.await(function(err, picks, games) {
             bar.quickTip.hide();
         });
 
-        sort_players(function(player) {
-            gameBars.filter(function(bar) {
-                return bar.player === player;
-            })
-            .each(function(bar) {
-                bar.quickTip.show.call(this, bar, this);
-            });
-        });
+        // It's tempting to show the tooltips again after re-sorting the
+        // players. However, this can lead to two sets of tooltips being shown
+        // simultaneously. If the games are sorted by confidence, then the game
+        // under the mouse may change after the players are re-sorted. Firefox
+        // sees that as a new onhover event and highlights that game, so that
+        // games tooltips and the original game's tooltips are both shown.
+        // Chrome doesn't recognize this as an onhover event.
+        sort_players();
     }
 
     function assign_bar_styles(selection) {
