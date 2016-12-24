@@ -472,7 +472,7 @@ q.await(function(err, picks, games) {
         else return d.game[sort_game_method];
     }
 
-    function sort_players() {
+    function sort_players(on_each_end) {
         svg.selectAll('.player-row')
             .transition()
             .delay(function(d) {
@@ -483,6 +483,11 @@ q.await(function(err, picks, games) {
             })
             .attr('transform', function(d) {
                 return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
+            })
+            .each('end', function(d) {
+                if (on_each_end !== undefined) {
+                    on_each_end.apply(this, arguments);
+                }
             })
         ;
     }
@@ -588,12 +593,29 @@ q.await(function(err, picks, games) {
         compute_player_scores();
         compute_player_ranks();
 
-        svg.selectAll(".bar").call(assign_bar_styles);
+        var gameBars = svg.selectAll(".bar")
+            .filter(function(bar) {
+                return bar.game === game;
+            })
+        ;
+
+        gameBars.call(assign_bar_styles);
         svg.selectAll(".name").call(assign_name_text);
         d3.selectAll(".game-item").call(assign_game_finder_item_text);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
-        sort_players();
+        gameBars.each(function(bar) {
+            bar.quickTip.hide();
+        });
+
+        sort_players(function(player) {
+            gameBars.filter(function(bar) {
+                return bar.player === player;
+            })
+            .each(function(bar) {
+                bar.quickTip.show.call(this, bar, this);
+            });
+        });
     }
 
     function assign_bar_styles(selection) {
