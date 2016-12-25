@@ -207,6 +207,10 @@ body {
     color: rgb(0, 88, 0);
 }
 
+#game-finder .game-item-team {
+    cursor: pointer;
+}
+
 #graphic-container {
     float: left;
     width: calc(100% - 18em - 8px);
@@ -220,6 +224,10 @@ body {
 
 .name_bg {
     fill: rgba(0, 0, 0, 0.4);
+}
+
+#graphic .bar {
+    cursor: pointer;
 }
 
 .bar {
