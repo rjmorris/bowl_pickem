@@ -331,18 +331,68 @@ q.await(function(err, picks, games) {
         });
     }
 
-    d3.select('#game-list').selectAll('.game-item')
+    var game_items = d3.select('#game-list').selectAll('.game-item')
         .data(games)
         .enter()
         .append('li')
         .classed('game-item', true)
-        .call(assign_game_finder_item_text)
         .on('mouseover', function(game) {
             highlightBars(game);
         })
         .on('mouseout', function(game) {
             unhighlightBars();
         })
+    ;
+
+    game_items.append('span')
+        .classed('game-date', true)
+        .text(function(d) {
+            return d.datetime.format('MMM D');
+        })
+    ;
+
+    game_items.append('span')
+        .text(': ')
+    ;
+
+    game_items.append('span')
+        .classed('game-item-team', true)
+        .classed('game-item-team-favorite', true)
+        .text(function(d) {
+            return d.favorite.abbrev;
+        })
+        .on('click', function(d) {
+            if (d.winner === d.favorite) {
+                what_if(d, undefined);
+            }
+            else {
+                what_if(d, d.favorite);
+            }
+        })
+    ;
+
+    game_items.append('span')
+        .text(' / ')
+    ;
+
+    game_items.append('span')
+        .classed('game-item-team', true)
+        .classed('game-item-team-underdog', true)
+        .text(function(d) {
+            return d.underdog.abbrev;
+        })
+        .on('click', function(d) {
+            if (d.winner === d.underdog) {
+                what_if(d, undefined);
+            }
+            else {
+                what_if(d, d.underdog);
+            }
+        })
+    ;
+
+    d3.selectAll('.game-item-team')
+        .call(assign_game_finder_item_classes)
     ;
 
 
@@ -601,7 +651,7 @@ q.await(function(err, picks, games) {
 
         gameBars.call(assign_bar_styles);
         svg.selectAll(".name").call(assign_name_text);
-        d3.selectAll(".game-item").call(assign_game_finder_item_text);
+        d3.selectAll(".game-item-team").call(assign_game_finder_item_classes);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
         gameBars.each(function(bar) {
@@ -652,32 +702,20 @@ q.await(function(err, picks, games) {
         ;
     }
 
-    function assign_game_finder_item_text(selection) {
+    function assign_game_finder_item_classes(selection) {
         selection
-            .html(function(d) {
-                var matchup = '';
-                matchup += '<span class="game-date">' + d.datetime.format('MMM D') + '</span>';
-                if (d.bowl === 'Championship') {
-                    matchup += 'Championship';
-                }
-                else {
-                    if (d.winner === d.favorite) {
-                        matchup += '<span class="pick_right">' + d.favorite.abbrev + '</span>';
-                        matchup += ' / ';
-                        matchup += '<span class="pick_wrong">' + d.underdog.abbrev + '</span>';
-                    }
-                    else if (d.winner === d.underdog) {
-                        matchup += '<span class="pick_wrong">' + d.favorite.abbrev + '</span>';
-                        matchup += ' / ';
-                        matchup += '<span class="pick_right">' + d.underdog.abbrev + '</span>';
-                    }
-                    else {
-                        matchup += '<span class="pick_future">' + d.favorite.abbrev + '</span>';
-                        matchup += ' / ';
-                        matchup += '<span class="pick_future">' + d.underdog.abbrev + '</span>';
-                    }
-                }
-                return matchup;
+            .classed('pick_right', function(d) {
+                var favorite = d3.select(this).classed('game-item-team-favorite');
+                if (favorite) return d.winner === d.favorite;
+                else return d.winner === d.underdog;
+            })
+            .classed('pick_wrong', function(d) {
+                var underdog = d3.select(this).classed('game-item-team-underdog');
+                if (underdog) return d.winner === d.favorite;
+                else return d.winner === d.underdog;
+            })
+            .classed('pick_future', function(d) {
+                return d.winner === undefined;
             })
         ;
     }
