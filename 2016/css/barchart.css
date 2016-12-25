@@ -194,10 +194,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-#game-finder li span.game-date:after {
-    content: ': ';
-}
-
 #game-finder li span.pick_right {
     font-weight: bold;
     color: rgb(0, 144, 0);
