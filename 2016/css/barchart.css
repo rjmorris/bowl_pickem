@@ -194,10 +194,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-#game-finder li span.game-date:after {
-    content: ': ';
-}
-
 #game-finder li span.pick_right {
     font-weight: bold;
     color: rgb(0, 144, 0);
@@ -205,6 +201,10 @@ body {
 
 #game-finder li:hover span.pick_right {
     color: rgb(0, 88, 0);
+}
+
+#game-finder .game-item-team {
+    cursor: pointer;
 }
 
 #graphic-container {
@@ -220,6 +220,10 @@ body {
 
 .name_bg {
     fill: rgba(0, 0, 0, 0.4);
+}
+
+#graphic .bar {
+    cursor: pointer;
 }
 
 .bar {
@@ -248,6 +252,10 @@ body {
 
 .bar.unplayed.underdog.highlight {
     fill: #ce874c;
+}
+
+.bar.what-if {
+    mask: url(#mask-what-if);
 }
 
 .bar.right.lowlight,
