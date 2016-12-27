@@ -237,7 +237,7 @@ q.await(function(err, picks, games) {
             unhighlightBars();
         })
         .on('click', function(d) {
-            cycle_game_result(d);
+            cycle_game_result(d, sort_game_method !== 'confidence');
         })
         .each(function(d) {
             d3.select(this).call(d.quickTip);
@@ -362,12 +362,14 @@ q.await(function(err, picks, games) {
             return d.favorite.abbrev;
         })
         .on('click', function(d) {
+            var new_winner;
             if (d.winner === d.favorite) {
-                what_if(d, undefined);
+                new_winner = undefined;
             }
             else {
-                what_if(d, d.favorite);
+                new_winner = d.favorite;
             }
+            what_if(d, new_winner, true);
         })
     ;
 
@@ -382,12 +384,14 @@ q.await(function(err, picks, games) {
             return d.underdog.abbrev;
         })
         .on('click', function(d) {
+            var new_winner;
             if (d.winner === d.underdog) {
-                what_if(d, undefined);
+                new_winner = undefined;
             }
             else {
-                what_if(d, d.underdog);
+                new_winner = d.underdog;
             }
+            what_if(d, new_winner, true);
         })
     ;
 
@@ -502,7 +506,23 @@ q.await(function(err, picks, games) {
         });
     }
 
+    function transition_end(transition, callback) {
+        if (callback === undefined) callback = function() {};
+        var n = 0; 
+        transition 
+            .each('start', function() {
+                ++n;
+            }) 
+            .each('end', function() {
+                --n;
+                if (n === 0) callback.apply(this, arguments);
+            })
+        ;
+    }
+
     function sort_games() {
+        var deferred = $.Deferred();
+
         svg.selectAll('.bar-group')
             .transition()
             .delay(function(d) {
@@ -514,7 +534,12 @@ q.await(function(err, picks, games) {
             .attr('transform', function(d) {
                 return 'translate(' + xScale(get_sort_game_order(d)) + ',0)';
             })
+            .call(transition_end, function() {
+                deferred.resolve();
+            })
         ;
+
+        return deferred.promise();
     }
 
     function get_sort_game_order(d) {
@@ -522,7 +547,9 @@ q.await(function(err, picks, games) {
         else return d.game[sort_game_method];
     }
 
-    function sort_players(on_each_end) {
+    function sort_players() {
+        var deferred = $.Deferred();
+
         svg.selectAll('.player-row')
             .transition()
             .delay(function(d) {
@@ -534,12 +561,12 @@ q.await(function(err, picks, games) {
             .attr('transform', function(d) {
                 return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
             })
-            .each('end', function(d) {
-                if (on_each_end !== undefined) {
-                    on_each_end.apply(this, arguments);
-                }
+            .call(transition_end, function() {
+                deferred.resolve();
             })
         ;
+
+        return deferred.promise();
     }
 
     function get_sort_player_order(d) {
@@ -619,7 +646,7 @@ q.await(function(err, picks, games) {
         $('.game-value').text('');
     }
 
-    function cycle_game_result(pick) {
+    function cycle_game_result(pick, highlight_after) {
         var game = pick.game;
         var winner = undefined;
 
@@ -633,10 +660,10 @@ q.await(function(err, picks, games) {
             winner = undefined;
         }
 
-        what_if(game, winner);
+        what_if(game, winner, highlight_after);
     }
 
-    function what_if(game, winner) {
+    function what_if(game, winner, highlight_after) {
         game.winner = winner;
 
         compute_pick_results();
@@ -654,18 +681,19 @@ q.await(function(err, picks, games) {
         d3.selectAll(".game-item-team").call(assign_game_finder_item_classes);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
-        gameBars.each(function(bar) {
-            bar.quickTip.hide();
-        });
+        unhighlightBars();
 
         // It's tempting to show the tooltips again after re-sorting the
-        // players. However, this can lead to two sets of tooltips being shown
-        // simultaneously. If the games are sorted by confidence, then the game
-        // under the mouse may change after the players are re-sorted. Firefox
-        // sees that as a new onhover event and highlights that game, so that
-        // games tooltips and the original game's tooltips are both shown.
-        // Chrome doesn't recognize this as an onhover event.
-        sort_players();
+        // players. However, this can lead to problems. If the games are sorted
+        // by confidence, then the game under the mouse may change after the
+        // players are re-sorted. Firefox sees that as a new mouseover event and
+        // highlights the new game, while Chrome doesn't recognize the mouseover
+        // event.
+        $.when(sort_players()).then(function() {
+            if (highlight_after) {
+                highlightBars(game);
+            }
+        });
     }
 
     function assign_bar_styles(selection) {
