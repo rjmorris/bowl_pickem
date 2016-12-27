@@ -666,9 +666,17 @@ q.await(function(err, picks, games) {
     function what_if(game, winner, highlight_after) {
         game.winner = winner;
 
+        var player_ranks_pre = players.map(function(player) {
+            return get_sort_player_order(player);
+        });
+
         compute_pick_results();
         compute_player_scores();
         compute_player_ranks();
+
+        var player_ranks_post = players.map(function(player) {
+            return get_sort_player_order(player);
+        });
 
         var gameBars = svg.selectAll(".bar")
             .filter(function(bar) {
@@ -681,19 +689,23 @@ q.await(function(err, picks, games) {
         d3.selectAll(".game-item-team").call(assign_game_finder_item_classes);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
-        unhighlightBars();
+        var player_ranks_changed = player_ranks_pre.toString() !== player_ranks_post.toString();
 
-        // It's tempting to show the tooltips again after re-sorting the
-        // players. However, this can lead to problems. If the games are sorted
-        // by confidence, then the game under the mouse may change after the
-        // players are re-sorted. Firefox sees that as a new mouseover event and
-        // highlights the new game, while Chrome doesn't recognize the mouseover
-        // event.
-        $.when(sort_players()).then(function() {
-            if (highlight_after) {
-                highlightBars(game);
-            }
-        });
+        if (player_ranks_changed) {
+            unhighlightBars();
+
+            // It's tempting to show the tooltips again after re-sorting the
+            // players. However, this can lead to problems. If the games are sorted
+            // by confidence, then the game under the mouse may change after the
+            // players are re-sorted. Firefox sees that as a new mouseover event and
+            // highlights the new game, while Chrome doesn't recognize the mouseover
+            // event.
+            $.when(sort_players()).then(function() {
+                if (highlight_after) {
+                    highlightBars(game);
+                }
+            });
+        }
     }
 
     function assign_bar_styles(selection) {
