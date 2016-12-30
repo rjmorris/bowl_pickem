@@ -165,6 +165,91 @@ q.await(function(err, picks, games) {
 
 
     //--------------------------------------------------------------------------
+    // Define a class for managing the highlighted game.
+
+    function Highlighter(svg) {
+        var public = {};
+
+        var private = {};
+        private.highlighted_game = undefined;
+        private.paused = false;
+        private.svg = svg;
+
+        private.do_highlight = function() {
+            if (private.highlighted_game === undefined) return;
+
+            var game = private.highlighted_game;
+
+            private.svg.selectAll('.bar')
+                .filter(function(bar) {
+                    return bar.game === game;
+                })
+                .classed('highlight', true)
+                .each(function(bar) {
+                    bar.quickTip.show.call(this, bar, this);
+                })
+            ;
+
+            private.svg.selectAll('.bar:not(.highlight)')
+                .classed('lowlight', true)
+            ;
+
+            $('#highlighted-bowl').text(game.bowl);
+            $('#highlighted-favorite').text(game.favorite.name);
+            $('#highlighted-underdog').text(game.underdog.name);
+            $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
+            $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
+            $('#highlighted-location').text(game.location);
+            d3.select('#highlighted-result').call(assign_highlighted_result_text, game);
+        }
+
+        private.do_unhighlight = function() {
+            private.svg.selectAll('.bar')
+                .classed('highlight', false)
+                .classed('lowlight', false)
+                .each(function(bar) {
+                    bar.quickTip.hide.call(this, bar);
+                })
+            ;
+
+            $('.game-value').text('');
+        }
+
+        var highlight = function(game) {
+            private.highlighted_game = game;
+            if (!private.paused) {
+                private.do_highlight();
+            }
+        }
+        public.highlight = highlight;
+
+        var unhighlight = function() {
+            private.highlighted_game = undefined;
+            if (!private.paused) {
+                private.do_unhighlight();
+            }
+        }
+        public.unhighlight = unhighlight;
+
+        var pause = function() {
+            private.paused = true;
+            private.do_unhighlight();
+        }
+        public.pause = pause;
+
+        var resume = function() {
+            private.paused = false;
+            private.do_highlight();
+        }
+        public.resume = resume;
+
+        return public;
+    }
+
+    var highlighter = Highlighter(svg);
+
+
+    //--------------------------------------------------------------------------
     // Draw the visualization.
 
     var xScale = d3.scale.ordinal()
@@ -231,10 +316,10 @@ q.await(function(err, picks, games) {
         .attr("rx", 4)
         .attr("ry", 4)
         .on('mouseover', function(d) {
-            highlightBars(d.game);
+            highlighter.highlight(d.game);
         })
         .on('mouseout', function() {
-            unhighlightBars();
+            highlighter.unhighlight();
         })
         .on('click', function(d) {
             cycle_game_result(d, sort_game_method !== 'confidence');
@@ -337,10 +422,10 @@ q.await(function(err, picks, games) {
         .append('li')
         .classed('game-item', true)
         .on('mouseover', function(game) {
-            highlightBars(game);
+            highlighter.highlight(game);
         })
         .on('mouseout', function(game) {
-            unhighlightBars();
+            highlighter.unhighlight();
         })
     ;
 
@@ -369,7 +454,7 @@ q.await(function(err, picks, games) {
             else {
                 new_winner = d.favorite;
             }
-            what_if(d, new_winner, true);
+            what_if(d, new_winner);
         })
     ;
 
@@ -391,7 +476,7 @@ q.await(function(err, picks, games) {
             else {
                 new_winner = d.underdog;
             }
-            what_if(d, new_winner, true);
+            what_if(d, new_winner);
         })
     ;
 
@@ -523,6 +608,8 @@ q.await(function(err, picks, games) {
     function sort_games() {
         var deferred = $.Deferred();
 
+        highlighter.pause();
+
         svg.selectAll('.bar-group')
             .transition()
             .delay(function(d) {
@@ -535,6 +622,7 @@ q.await(function(err, picks, games) {
                 return 'translate(' + xScale(get_sort_game_order(d)) + ',0)';
             })
             .call(transition_end, function() {
+                highlighter.resume();
                 deferred.resolve();
             })
         ;
@@ -550,6 +638,8 @@ q.await(function(err, picks, games) {
     function sort_players() {
         var deferred = $.Deferred();
 
+        highlighter.pause();
+
         svg.selectAll('.player-row')
             .transition()
             .delay(function(d) {
@@ -562,6 +652,7 @@ q.await(function(err, picks, games) {
                 return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
             })
             .call(transition_end, function() {
+                highlighter.resume();
                 deferred.resolve();
             })
         ;
@@ -610,43 +701,7 @@ q.await(function(err, picks, games) {
         }
     }
 
-    function highlightBars(game) {
-        svg.selectAll('.bar')
-            .filter(function(bar) {
-                return bar.game === game;
-            })
-            .classed('highlight', true)
-            .each(function(bar) {
-                bar.quickTip.show.call(this, bar, this);
-            })
-                ;
-
-        svg.selectAll('.bar:not(.highlight)')
-            .classed('lowlight', true)
-        ;
-
-        $('#highlighted-bowl').text(game.bowl);
-        $('#highlighted-favorite').text(game.favorite.name);
-        $('#highlighted-underdog').text(game.underdog.name);
-        $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
-        $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
-        $('#highlighted-location').text(game.location);
-        d3.select('#highlighted-result').call(assign_highlighted_result_text, game);
-    }
-
-    function unhighlightBars() {
-        svg.selectAll('.bar')
-            .classed('highlight', false)
-            .classed('lowlight', false)
-            .each(function(bar) {
-                bar.quickTip.hide.call(this, bar);
-            })
-                ;
-
-        $('.game-value').text('');
-    }
-
-    function cycle_game_result(pick, highlight_after) {
+    function cycle_game_result(pick) {
         var game = pick.game;
         var winner = undefined;
 
@@ -660,10 +715,10 @@ q.await(function(err, picks, games) {
             winner = undefined;
         }
 
-        what_if(game, winner, highlight_after);
+        what_if(game, winner);
     }
 
-    function what_if(game, winner, highlight_after) {
+    function what_if(game, winner) {
         game.winner = winner;
 
         var player_ranks_pre = players.map(function(player) {
@@ -692,19 +747,7 @@ q.await(function(err, picks, games) {
         var player_ranks_changed = player_ranks_pre.toString() !== player_ranks_post.toString();
 
         if (player_ranks_changed) {
-            unhighlightBars();
-
-            // It's tempting to show the tooltips again after re-sorting the
-            // players. However, this can lead to problems. If the games are sorted
-            // by confidence, then the game under the mouse may change after the
-            // players are re-sorted. Firefox sees that as a new mouseover event and
-            // highlights the new game, while Chrome doesn't recognize the mouseover
-            // event.
-            $.when(sort_players()).then(function() {
-                if (highlight_after) {
-                    highlightBars(game);
-                }
-            });
+            sort_players();
         }
     }
 
