@@ -481,22 +481,6 @@ q.await(function(err, picks, games) {
         .text(': ')
     ;
 
-    // function append_teams(selection, attrib) {
-    //     var class_name = 'game-item-team-' + attrib
-    //     selection.selectAll('.' + class_name)
-    //         .data(function(d) {
-    //             return [{
-    //                 game: d,
-    //                 team: d[attrib]
-    //             }];
-    //         })
-    //         .enter()
-    //         .append('span')
-    //         .classed(class_name, true)
-    //         .classed('game-item-team', true)
-    //     ;
-    // }
-
     function append_teams(selection, num_teams) {
         for (var i = 0; i < num_teams; i++) {
             if (i > 0) {
