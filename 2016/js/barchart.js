@@ -752,6 +752,23 @@ q.await(function(err, picks, games) {
     }
 
     function cycle_game_result(pick) {
+        // Change the game's winner to make the selected pick right, wrong, or
+        // unplayed. Choose the winner so that the pick's next state advances
+        // from its current state according to these rules:
+        //
+        //   unplayed => right
+        //   right    => wrong
+        //   wrong    => unplayed
+        //
+        // The championship game is trickier, because it has 3 wrong picks. Its
+        // cycle looks like this:
+        //
+        //   unplayed => right
+        //   right    => wrong #1
+        //   wrong #1 => wrong #2
+        //   wrong #2 => wrong #3
+        //   wrong #3 => unplayed
+
         var game = pick.game;
         var winner = undefined;
 
@@ -759,10 +776,20 @@ q.await(function(err, picks, games) {
             winner = pick.selection;
         }
         else if (pick.result === true) {
-            winner = (pick.selection === game.favorite ? game.underdog : game.favorite);
+            // Find the first team in the game's team list that isn't the
+            // selection.
+            winner = game.teams.filter(function(team) {
+                return team !== pick.selection;
+            }).shift();
         }
         else {
-            winner = undefined;
+            // Find the first team in the game's team list that appears after
+            // the currently assigned winner and isn't the selection. If there
+            // is none, then choose undefined.
+            var winner_index = game.teams.indexOf(game.winner);
+            winner = game.teams.slice(winner_index + 1).filter(function(team) {
+                return team !== pick.selection;
+            }).shift();
         }
 
         what_if(game, winner);
