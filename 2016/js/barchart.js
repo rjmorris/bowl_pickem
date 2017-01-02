@@ -12,25 +12,31 @@ q.await(function(err, picks, games) {
 
     var teams_map = {};
 
-    games.forEach(function(game) {
+    games.filter(function(game) {
+        return game.bowl !== 'Championship';
+    }).forEach(function(game) {
         if (!(game.favorite in teams_map)) {
             var team = {};
             team.name = game.favorite;
-            team.abbrev = game.favorite_abbrev;
+            team.abbrev = game.favorite_abbrev || game.favorite;
+            team.tiny = game.favorite_tiny || team.abbrev;
             teams_map[game.favorite] = team;
         }
         game.favorite = teams_map[game.favorite];
         delete game.favorite_abbrev;
+        delete game.favorite_tiny;
         delete game.favorite_orig;
 
         if (!(game.underdog in teams_map)) {
             var team = {};
             team.name = game.underdog;
-            team.abbrev = game.underdog_abbrev;
+            team.abbrev = game.underdog_abbrev || game.underdog;
+            team.tiny = game.underdog_tiny || team.abbrev;
             teams_map[game.underdog] = team;
         }
         game.underdog = teams_map[game.underdog];
         delete game.underdog_abbrev;
+        delete game.underdog_tiny;
         delete game.underdog_orig;
     });
 
@@ -41,6 +47,7 @@ q.await(function(err, picks, games) {
     games.forEach(function(game) {
         games_map[game.bowl] = game;
 
+        game.championship = game.bowl === 'Championship';
         game.datetime = moment(game.datetime, "YYYYMMDDHHmmss");
         game.spread = +game.spread;
         game.date_order = +game.date_order;
@@ -48,6 +55,32 @@ q.await(function(err, picks, games) {
 
         game.winner = teams_map[game.winner];
         game.winner_real = game.winner;
+    });
+
+    games.forEach(function(game) {
+        game.feeders = [];
+        game.teams = [];
+
+        if (game.championship) {
+            game.feeders.push(games_map[game.favorite]);
+            game.favorite = undefined;
+            delete game.favorite_abbrev;
+            delete game.favorite_orig;
+
+            game.feeders.push(games_map[game.underdog]);
+            game.underdog = undefined;
+            delete game.underdog_abbrev;
+            delete game.underdog_orig;
+
+            game.feeders.forEach(function(feeder) {
+                game.teams.push(feeder.favorite);
+                game.teams.push(feeder.underdog);
+            });
+        }
+        else {
+            game.teams.push(game.favorite);
+            game.teams.push(game.underdog);
+        }
     });
 
     var num_games = games.length;
@@ -195,8 +228,16 @@ q.await(function(err, picks, games) {
             ;
 
             $('#highlighted-bowl').text(game.bowl);
-            $('#highlighted-favorite').text(game.favorite.name);
-            $('#highlighted-underdog').text(game.underdog.name);
+            $('#highlighted-favorite').text(
+                game.championship
+                    ? game.feeders[0].favorite.name + ' / ' + game.feeders[1].favorite.name
+                    : game.favorite.name
+            );
+            $('#highlighted-underdog').text(
+                game.championship
+                    ? game.feeders[0].underdog.name + ' / ' + game.feeders[1].underdog.name
+                    : game.underdog.name
+            );
             $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
             $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
             $('#highlighted-location').text(game.location);
@@ -440,47 +481,56 @@ q.await(function(err, picks, games) {
         .text(': ')
     ;
 
-    game_items.append('span')
-        .classed('game-item-team', true)
-        .classed('game-item-team-favorite', true)
-        .text(function(d) {
-            return d.favorite.abbrev;
-        })
-        .on('click', function(d) {
-            var new_winner;
-            if (d.winner === d.favorite) {
-                new_winner = undefined;
+    function append_teams(selection, num_teams) {
+        for (var i = 0; i < num_teams; i++) {
+            if (i > 0) {
+                selection
+                    .append('span')
+                    .text(' / ')
+                ;
             }
-            else {
-                new_winner = d.favorite;
-            }
-            what_if(d, new_winner);
-        })
-    ;
 
-    game_items.append('span')
-        .text(' / ')
-    ;
+            var class_name = 'game-item-team-' + i;
+            selection.selectAll('.' + class_name)
+                .data(function(d) {
+                    return [{
+                        game: d,
+                        team: d.teams[i]
+                    }];
+                })
+                .enter()
+                .append('span')
+                .classed(class_name, true)
+                .classed('game-item-team', true)
+            ;
+        }
+    }
 
-    game_items.append('span')
-        .classed('game-item-team', true)
-        .classed('game-item-team-underdog', true)
-        .text(function(d) {
-            return d.underdog.abbrev;
-        })
-        .on('click', function(d) {
-            var new_winner;
-            if (d.winner === d.underdog) {
-                new_winner = undefined;
-            }
-            else {
-                new_winner = d.underdog;
-            }
-            what_if(d, new_winner);
-        })
-    ;
+    game_items.filter(function(d) {
+        return !d.championship;
+    }).call(append_teams, 2);
+
+    game_items.filter(function(d) {
+        return d.championship;
+    }).call(append_teams, 4);
 
     d3.selectAll('.game-item-team')
+        .text(function(d) {
+            if (d.game.teams.length > 2) {
+                return d.team.tiny;
+            }
+            return d.team.abbrev;
+        })
+        .on('click', function(d) {
+            var new_winner;
+            if (d.game.winner === d.team) {
+                new_winner = undefined;
+            }
+            else {
+                new_winner = d.team;
+            }
+            what_if(d.game, new_winner);
+        })
         .call(assign_game_finder_item_classes)
     ;
 
@@ -702,6 +752,23 @@ q.await(function(err, picks, games) {
     }
 
     function cycle_game_result(pick) {
+        // Change the game's winner to make the selected pick right, wrong, or
+        // unplayed. Choose the winner so that the pick's next state advances
+        // from its current state according to these rules:
+        //
+        //   unplayed => right
+        //   right    => wrong
+        //   wrong    => unplayed
+        //
+        // The championship game is trickier, because it has 3 wrong picks. Its
+        // cycle looks like this:
+        //
+        //   unplayed => right
+        //   right    => wrong #1
+        //   wrong #1 => wrong #2
+        //   wrong #2 => wrong #3
+        //   wrong #3 => unplayed
+
         var game = pick.game;
         var winner = undefined;
 
@@ -709,10 +776,20 @@ q.await(function(err, picks, games) {
             winner = pick.selection;
         }
         else if (pick.result === true) {
-            winner = (pick.selection === game.favorite ? game.underdog : game.favorite);
+            // Find the first team in the game's team list that isn't the
+            // selection.
+            winner = game.teams.filter(function(team) {
+                return team !== pick.selection;
+            }).shift();
         }
         else {
-            winner = undefined;
+            // Find the first team in the game's team list that appears after
+            // the currently assigned winner and isn't the selection. If there
+            // is none, then choose undefined.
+            var winner_index = game.teams.indexOf(game.winner);
+            winner = game.teams.slice(winner_index + 1).filter(function(team) {
+                return team !== pick.selection;
+            }).shift();
         }
 
         what_if(game, winner);
@@ -788,17 +865,13 @@ q.await(function(err, picks, games) {
     function assign_game_finder_item_classes(selection) {
         selection
             .classed('pick_right', function(d) {
-                var favorite = d3.select(this).classed('game-item-team-favorite');
-                if (favorite) return d.winner === d.favorite;
-                else return d.winner === d.underdog;
+                return d.game.winner === d.team;
             })
             .classed('pick_wrong', function(d) {
-                var underdog = d3.select(this).classed('game-item-team-underdog');
-                if (underdog) return d.winner === d.favorite;
-                else return d.winner === d.underdog;
+                return d.game.winner !== undefined && d.game.winner !== d.team;
             })
             .classed('pick_future', function(d) {
-                return d.winner === undefined;
+                return d.game.winner === undefined;
             })
         ;
     }

@@ -1,42 +1,42 @@
-favorite_orig	underdog_orig	bowl_orig	bowl	year	month	day	hour	minute	datetime	date_order	spread_order	location	favorite	spread	underdog	favorite_abbrev	underdog_abbrev	winner	winner_score	loser_score
-New Mexico	Texas San Antonio	New Mexico 	New Mexico	2016	12	17	14	0	20161217140000	1	29	Albuquerque, NM	New Mexico	-7.5	Texas San Antonio	New Mexico	TX San Antonio	New Mexico	23	20
-Houston	San Diego State	Las Vegas 	Las Vegas	2016	12	17	15	30	20161217153000	2	19	Las Vegas, NV	Houston	-4	San Diego St.	Houston	San Diego St.	San Diego St.	34	10
-Toledo	Appalachian State	Camellia 	Camellia	2016	12	17	17	30	20161217173000	3	12	Montgomery, AL	Toledo	-2.5	Appalachian St.	Toledo	Appalachian St.	Appalachian St.	31	28
-UCF	Arkansas State	Cure	Cure	2016	12	17	17	30	20161217173000	4	26	Orlando, FL	Central Florida	-7	Arkansas St.	Central Florida	Arkansas St.	Arkansas St.	31	13
-Southern Mississippi	Louisiana Lafayette	New Orleans	New Orleans	2016	12	17	21	0	20161217210000	5	13	New Orleans, LA	Southern Miss	-2.5	Louisiana Lafayette	Southern Miss	LA Lafayette	Southern Miss	28	21
-Tulsa	Central Michigan	Miami Beach	Miami Beach	2016	12	19	14	30	20161219143000	6	37	Miami, FL	Tulsa	-12	Central Michigan	Tulsa	Central Michigan	Tulsa	55	10
-Western Kentucky	Memphis	Boca Raton 	Boca Raton	2016	12	20	19	0	20161220190000	7	23	Boca Raton, FL	Western Kentucky	-5.5	Memphis	Western Kentucky	Memphis	Western Kentucky	51	31
-BYU	Wyoming	Poinsettia 	Poinsettia	2016	12	21	21	0	20161221210000	8	32	San Diego, CA	BYU	-8	Wyoming	BYU	Wyoming	BYU	24	21
-Colorado State	Idaho	Potato 	Potato	2016	12	22	19	0	20161222190000	9	39	Boise, ID	Colorado St.	-13	Idaho	Colorado St.	Idaho	Idaho	61	50
-Old Dominion	Eastern Michigan	Bahamas	Bahamas	2016	12	23	13	0	20161223130000	10	14	Nassau, Bahamas	Old Dominion	-3	Eastern Michigan	Old Dominion	Eastern Mich.	Old Dominion	24	20
-Navy	Louisiana Tech	Armed Forces 	Armed Forces	2016	12	23	16	30	20161223163000	11	6	Fort Worth, TX	Navy	-1.5	Louisiana Tech	Navy	Louisiana Tech	Louisiana Tech	48	45
-Troy	Ohio	Dollar General	Dollar General	2016	12	23	20	0	20161223200000	12	21	Mobile, AL	Troy	-5	Ohio	Troy	Ohio	Troy	28	23
-Hawaii 	Middle Tennessee	Hawaii 	Hawaii	2016	12	24	20	0	20161224200000	13	3	Honolulu, HI	Hawaii	0	Middle Tennessee	Hawaii	Middle Tennessee	Hawaii	52	35
-Mississippi State	Miami (OH)	St. Petersburg 	St. Petersburg	2016	12	26	11	0	20161226110000	14	36	St. Petersburg, FL	Mississippi St.	-11	Miami (OH)	Mississippi St.	Miami (OH)	Mississippi St.	17	16
-Boston College	Maryland	Quick Lane	Quick Lane	2016	12	26	14	30	20161226143000	15	10	Detroit, MI	Boston College	-2	Maryland	Boston College	Maryland	Boston College	36	30
-NC State	Vanderbilt	Independence 	Independence	2016	12	26	17	0	20161226170000	16	18	Shreveport, LA	NC State	-4	Vanderbilt	NC State	Vanderbilt	NC State	41	17
-Army	North Texas	Heart of Dallas 	Heart of Dallas	2016	12	27	12	0	20161227120000	17	34	Dallas, TX	Army	-9.5	North Texas	Army	North Texas	Army	38	31
-Temple	Wake Forest	Military 	Military	2016	12	27	15	30	20161227153000	18	38	Annapolis, MD	Temple	-12	Wake Forest	Temple	Wake Forest	Wake Forest	34	26
-Washington State	Minnesota	Holiday 	Holiday	2016	12	27	19	0	20161227190000	19	20	San Diego, CA	Washington St.	-4.5	Minnesota	Washington St.	Minnesota	Minnesota	17	12
-Boise State	Baylor	Cactus	Cactus	2016	12	27	22	15	20161227221500	20	33	Phoenix, AZ	Boise St.	-9.5	Baylor	Boise St.	Baylor	Baylor	31	12
-Pittsburgh	Northwestern	Pinstripe	Pinstripe	2016	12	28	14	0	20161228140000	21	17	New York, NY	Pittsburgh	-3.5	Northwestern	Pittsburgh	Northwestern	Northwestern	31	24
-West Virginia	Miami	Russell Athletic 	Russell Athletic	2016	12	28	17	30	20161228173000	22	4	Orlando, FL	West Virginia	0	Miami (FL)	West Virginia	Miami (FL)	Miami (FL)	31	14
-Utah	Indiana	Foster Farms	Foster Farms	2016	12	28	20	30	20161228203000	23	25	Santa Clara, CA	Utah	-6.5	Indiana	Utah	Indiana	Utah	26	24
-Texas A&M	Kansas State	Texas 	Texas	2016	12	28	21	0	20161228210000	24	11	Houston, TX	Texas A&M	-2	Kansas St.	Texas A&M	Kansas St.	Kansas St.	33	28
-South Florida	South Carolina	Birmingham 	Birmingham	2016	12	29	14	0	20161229140000	25	35	Birmingham, AL	South Florida	-11	South Carolina	South Florida	South Carolina	South Florida	46	39
-Virginia Tech	Arkansas 	Belk 	Belk	2016	12	29	17	30	20161229173000	26	24	Charlotte, NC	Virginia Tech	-6	Arkansas	Virginia Tech	Arkansas	Virginia Tech	35	24
-Colorado	Oklahoma State	Alamo 	Alamo	2016	12	29	21	0	20161229210000	27	8	San Antonio, TX	Colorado	-2	Oklahoma St.	Colorado	Oklahoma St.	Oklahoma St.	38	8
-TCU	Georgia	Liberty  	Liberty	2016	12	30	12	0	20161230120000	28	7	Memphis, TN	TCU	-1.5	Georgia	TCU	Georgia	Georgia	31	23
-North Carolina	Stanford	Sun	Sun	2016	12	30	14	0	20161230140000	29	5	El Paso, TX	North Carolina	-1	Stanford	North Carolina	Stanford	Stanford	25	23
-Tennessee	Nebraska	Music City 	Music City	2016	12	30	15	30	20161230153000	30	16	Nashville, TN	Tennessee	-3	Nebraska	Tennessee	Nebraska	Tennessee	38	24
-Air Force	South Alabama	Arizona	Arizona	2016	12	30	17	30	20161230173000	31	41	Tucson, AZ	Air Force	-15	South Alabama	Air Force	South Alabama	Air Force	45	21
-Michigan 	Florida State	Orange 	Orange	2016	12	30	20	0	20161230200000	32	27	Miami Gardens, FL	Michigan	-7	Florida St.	Michigan	Florida St.	Florida St.	33	32
-LSU	Louisville	Citrus 	Citrus	2016	12	31	11	0	20161231110000	33	2	Orlando, FL	LSU	0	Louisville	LSU	Louisville	LSU	29	9
-Georgia Tech	Kentucky	Taxslayer 	TaxSlayer	2016	12	31	11	0	20161231110000	34	22	Jacksonville, FL	Georgia Tech	-5	Kentucky	Georgia Tech	Kentucky	Georgia Tech	33	18
-Alabama	Washington	Peach 	Peach	2016	12	31	15	0	20161231150000	35	40	Atlanta, GA	Alabama	-14	Washington	Alabama	Washington	Alabama	24	7
-Ohio State	Clemson	Fiesta 	Fiesta	2016	12	31	19	0	20161231190000	36	15	Glendale, AZ	Ohio St.	-3	Clemson	Ohio St.	Clemson	Clemson	31	0
-Wisconsin	Western Michigan	Cotton 	Cotton	2017	1	2	13	0	20170102130000	37	28	Arlington, TX	Wisconsin	-7.5	Western Michigan	Wisconsin	Western Michigan			
-Florida	Iowa	Outback 	Outback	2017	1	2	13	0	20170102130000	38	9	Tampa, FL	Florida	-2	Iowa	Florida	Iowa			
-USC	Penn State	Rose 	Rose	2017	1	2	17	0	20170102170000	39	30	Pasadena, CA	Southern Cal	-7.5	Penn St.	Southern Cal	Penn St.			
-Oklahoma	Auburn	Sugar 	Sugar	2017	1	2	20	30	20170102203000	40	31	New Orleans, LA	Oklahoma	-7.5	Auburn	Oklahoma	Auburn			
-Winner of Peach	Winner of Fiesta	National Championship	Championship	2017	1	9	20	30	20170109203000	41	1	Tampa, FL	Winner of Peach	0	Winner of Fiesta	Peach	Fiesta			
+favorite_orig	underdog_orig	bowl_orig	bowl	year	month	day	hour	minute	datetime	date_order	spread_order	location	favorite	spread	underdog	favorite_abbrev	underdog_abbrev	favorite_tiny	underdog_tiny	winner	winner_score	loser_score
+New Mexico	Texas San Antonio	New Mexico 	New Mexico	2016	12	17	14	0	20161217140000	1	29	Albuquerque, NM	New Mexico	-7.5	Texas San Antonio		TX San Antonio			New Mexico	23	20
+Houston	San Diego State	Las Vegas 	Las Vegas	2016	12	17	15	30	20161217153000	2	19	Las Vegas, NV	Houston	-4	San Diego St.					San Diego St.	34	10
+Toledo	Appalachian State	Camellia 	Camellia	2016	12	17	17	30	20161217173000	3	12	Montgomery, AL	Toledo	-2.5	Appalachian St.					Appalachian St.	31	28
+UCF	Arkansas State	Cure	Cure	2016	12	17	17	30	20161217173000	4	26	Orlando, FL	Central Florida	-7	Arkansas St.					Arkansas St.	31	13
+Southern Mississippi	Louisiana Lafayette	New Orleans	New Orleans	2016	12	17	21	0	20161217210000	5	13	New Orleans, LA	Southern Miss	-2.5	Louisiana Lafayette		LA Lafayette			Southern Miss	28	21
+Tulsa	Central Michigan	Miami Beach	Miami Beach	2016	12	19	14	30	20161219143000	6	37	Miami, FL	Tulsa	-12	Central Michigan					Tulsa	55	10
+Western Kentucky	Memphis	Boca Raton 	Boca Raton	2016	12	20	19	0	20161220190000	7	23	Boca Raton, FL	Western Kentucky	-5.5	Memphis					Western Kentucky	51	31
+BYU	Wyoming	Poinsettia 	Poinsettia	2016	12	21	21	0	20161221210000	8	32	San Diego, CA	BYU	-8	Wyoming					BYU	24	21
+Colorado State	Idaho	Potato 	Potato	2016	12	22	19	0	20161222190000	9	39	Boise, ID	Colorado St.	-13	Idaho					Idaho	61	50
+Old Dominion	Eastern Michigan	Bahamas	Bahamas	2016	12	23	13	0	20161223130000	10	14	Nassau, Bahamas	Old Dominion	-3	Eastern Michigan		Eastern Mich.			Old Dominion	24	20
+Navy	Louisiana Tech	Armed Forces 	Armed Forces	2016	12	23	16	30	20161223163000	11	6	Fort Worth, TX	Navy	-1.5	Louisiana Tech					Louisiana Tech	48	45
+Troy	Ohio	Dollar General	Dollar General	2016	12	23	20	0	20161223200000	12	21	Mobile, AL	Troy	-5	Ohio					Troy	28	23
+Hawaii 	Middle Tennessee	Hawaii 	Hawaii	2016	12	24	20	0	20161224200000	13	3	Honolulu, HI	Hawaii	0	Middle Tennessee					Hawaii	52	35
+Mississippi State	Miami (OH)	St. Petersburg 	St. Petersburg	2016	12	26	11	0	20161226110000	14	36	St. Petersburg, FL	Mississippi St.	-11	Miami (OH)					Mississippi St.	17	16
+Boston College	Maryland	Quick Lane	Quick Lane	2016	12	26	14	30	20161226143000	15	10	Detroit, MI	Boston College	-2	Maryland					Boston College	36	30
+NC State	Vanderbilt	Independence 	Independence	2016	12	26	17	0	20161226170000	16	18	Shreveport, LA	NC State	-4	Vanderbilt					NC State	41	17
+Army	North Texas	Heart of Dallas 	Heart of Dallas	2016	12	27	12	0	20161227120000	17	34	Dallas, TX	Army	-9.5	North Texas					Army	38	31
+Temple	Wake Forest	Military 	Military	2016	12	27	15	30	20161227153000	18	38	Annapolis, MD	Temple	-12	Wake Forest					Wake Forest	34	26
+Washington State	Minnesota	Holiday 	Holiday	2016	12	27	19	0	20161227190000	19	20	San Diego, CA	Washington St.	-4.5	Minnesota					Minnesota	17	12
+Boise State	Baylor	Cactus	Cactus	2016	12	27	22	15	20161227221500	20	33	Phoenix, AZ	Boise St.	-9.5	Baylor					Baylor	31	12
+Pittsburgh	Northwestern	Pinstripe	Pinstripe	2016	12	28	14	0	20161228140000	21	17	New York, NY	Pittsburgh	-3.5	Northwestern					Northwestern	31	24
+West Virginia	Miami	Russell Athletic 	Russell Athletic	2016	12	28	17	30	20161228173000	22	4	Orlando, FL	West Virginia	0	Miami (FL)					Miami (FL)	31	14
+Utah	Indiana	Foster Farms	Foster Farms	2016	12	28	20	30	20161228203000	23	25	Santa Clara, CA	Utah	-6.5	Indiana					Utah	26	24
+Texas A&M	Kansas State	Texas 	Texas	2016	12	28	21	0	20161228210000	24	11	Houston, TX	Texas A&M	-2	Kansas St.					Kansas St.	33	28
+South Florida	South Carolina	Birmingham 	Birmingham	2016	12	29	14	0	20161229140000	25	35	Birmingham, AL	South Florida	-11	South Carolina					South Florida	46	39
+Virginia Tech	Arkansas 	Belk 	Belk	2016	12	29	17	30	20161229173000	26	24	Charlotte, NC	Virginia Tech	-6	Arkansas					Virginia Tech	35	24
+Colorado	Oklahoma State	Alamo 	Alamo	2016	12	29	21	0	20161229210000	27	8	San Antonio, TX	Colorado	-2	Oklahoma St.					Oklahoma St.	38	8
+TCU	Georgia	Liberty  	Liberty	2016	12	30	12	0	20161230120000	28	7	Memphis, TN	TCU	-1.5	Georgia					Georgia	31	23
+North Carolina	Stanford	Sun	Sun	2016	12	30	14	0	20161230140000	29	5	El Paso, TX	North Carolina	-1	Stanford					Stanford	25	23
+Tennessee	Nebraska	Music City 	Music City	2016	12	30	15	30	20161230153000	30	16	Nashville, TN	Tennessee	-3	Nebraska					Tennessee	38	24
+Air Force	South Alabama	Arizona	Arizona	2016	12	30	17	30	20161230173000	31	41	Tucson, AZ	Air Force	-15	South Alabama					Air Force	45	21
+Michigan 	Florida State	Orange 	Orange	2016	12	30	20	0	20161230200000	32	27	Miami Gardens, FL	Michigan	-7	Florida St.					Florida St.	33	32
+LSU	Louisville	Citrus 	Citrus	2016	12	31	11	0	20161231110000	33	2	Orlando, FL	LSU	0	Louisville					LSU	29	9
+Georgia Tech	Kentucky	Taxslayer 	TaxSlayer	2016	12	31	11	0	20161231110000	34	22	Jacksonville, FL	Georgia Tech	-5	Kentucky					Georgia Tech	33	18
+Alabama	Washington	Peach 	Peach	2016	12	31	15	0	20161231150000	35	40	Atlanta, GA	Alabama	-14	Washington			Bama	Wash	Alabama	24	7
+Ohio State	Clemson	Fiesta 	Fiesta	2016	12	31	19	0	20161231190000	36	15	Glendale, AZ	Ohio St.	-3	Clemson			OSU	Clem	Clemson	31	0
+Wisconsin	Western Michigan	Cotton 	Cotton	2017	1	2	13	0	20170102130000	37	28	Arlington, TX	Wisconsin	-7.5	Western Michigan							
+Florida	Iowa	Outback 	Outback	2017	1	2	13	0	20170102130000	38	9	Tampa, FL	Florida	-2	Iowa							
+USC	Penn State	Rose 	Rose	2017	1	2	17	0	20170102170000	39	30	Pasadena, CA	Southern Cal	-7.5	Penn St.							
+Oklahoma	Auburn	Sugar 	Sugar	2017	1	2	20	30	20170102203000	40	31	New Orleans, LA	Oklahoma	-7.5	Auburn							
+Winner of Peach	Winner of Fiesta	National Championship	Championship	2017	1	9	20	30	20170109203000	41	1	Tampa, FL	Peach	0	Fiesta							
