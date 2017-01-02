@@ -12,7 +12,9 @@ q.await(function(err, picks, games) {
 
     var teams_map = {};
 
-    games.forEach(function(game) {
+    games.filter(function(game) {
+        return game.bowl !== 'Championship';
+    }).forEach(function(game) {
         if (!(game.favorite in teams_map)) {
             var team = {};
             team.name = game.favorite;
@@ -41,6 +43,7 @@ q.await(function(err, picks, games) {
     games.forEach(function(game) {
         games_map[game.bowl] = game;
 
+        game.championship = game.bowl === 'Championship';
         game.datetime = moment(game.datetime, "YYYYMMDDHHmmss");
         game.spread = +game.spread;
         game.date_order = +game.date_order;
@@ -48,6 +51,32 @@ q.await(function(err, picks, games) {
 
         game.winner = teams_map[game.winner];
         game.winner_real = game.winner;
+    });
+
+    games.forEach(function(game) {
+        game.feeders = [];
+        game.teams = [];
+
+        if (game.championship) {
+            game.feeders.push(games_map[game.favorite]);
+            game.favorite = undefined;
+            delete game.favorite_abbrev;
+            delete game.favorite_orig;
+
+            game.feeders.push(games_map[game.underdog]);
+            game.underdog = undefined;
+            delete game.underdog_abbrev;
+            delete game.underdog_orig;
+
+            game.feeders.forEach(function(feeder) {
+                game.teams.push(feeder.favorite);
+                game.teams.push(feeder.underdog);
+            });
+        }
+        else {
+            game.teams.push(game.favorite);
+            game.teams.push(game.underdog);
+        }
     });
 
     var num_games = games.length;
@@ -195,8 +224,16 @@ q.await(function(err, picks, games) {
             ;
 
             $('#highlighted-bowl').text(game.bowl);
-            $('#highlighted-favorite').text(game.favorite.name);
-            $('#highlighted-underdog').text(game.underdog.name);
+            $('#highlighted-favorite').text(
+                game.championship
+                    ? game.feeders[0].favorite.name + ' / ' + game.feeders[1].favorite.name
+                    : game.favorite.name
+            );
+            $('#highlighted-underdog').text(
+                game.championship
+                    ? game.feeders[0].underdog.name + ' / ' + game.feeders[1].underdog.name
+                    : game.underdog.name
+            );
             $('#highlighted-spread').text('(' + (game.spread === 0 ? 'even' : game.spread) + ')');
             $('#highlighted-datetime').text(game.datetime.format('MMM D, h:mm a'));
             $('#highlighted-location').text(game.location);
@@ -440,25 +477,54 @@ q.await(function(err, picks, games) {
         .text(': ')
     ;
 
-    function append_team(selection, attrib) {
-        var class_name = 'game-item-team-' + attrib
-        selection.selectAll('.' + class_name)
-            .data(function(d) {
-                return [{
-                    game: d,
-                    team: d[attrib]
-                }];
-            })
-            .enter()
-            .append('span')
-            .classed(class_name, true)
-            .classed('game-item-team', true)
-        ;
+    // function append_teams(selection, attrib) {
+    //     var class_name = 'game-item-team-' + attrib
+    //     selection.selectAll('.' + class_name)
+    //         .data(function(d) {
+    //             return [{
+    //                 game: d,
+    //                 team: d[attrib]
+    //             }];
+    //         })
+    //         .enter()
+    //         .append('span')
+    //         .classed(class_name, true)
+    //         .classed('game-item-team', true)
+    //     ;
+    // }
+
+    function append_teams(selection, num_teams) {
+        for (var i = 0; i < num_teams; i++) {
+            if (i > 0) {
+                selection
+                    .append('span')
+                    .text(' / ')
+                ;
+            }
+
+            var class_name = 'game-item-team-' + i;
+            selection.selectAll('.' + class_name)
+                .data(function(d) {
+                    return [{
+                        game: d,
+                        team: d.teams[i]
+                    }];
+                })
+                .enter()
+                .append('span')
+                .classed(class_name, true)
+                .classed('game-item-team', true)
+            ;
+        }
     }
 
-    append_team(game_items, 'favorite');
-    game_items.append('span').text(' / ');
-    append_team(game_items, 'underdog');
+    game_items.filter(function(d) {
+        return !d.championship;
+    }).call(append_teams, 2);
+
+    game_items.filter(function(d) {
+        return d.championship;
+    }).call(append_teams, 4);
 
     d3.selectAll('.game-item-team')
         .text(function(d) {
