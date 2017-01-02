@@ -18,7 +18,7 @@ q.await(function(err, picks, games) {
         if (!(game.favorite in teams_map)) {
             var team = {};
             team.name = game.favorite;
-            team.abbrev = game.favorite_abbrev;
+            team.abbrev = game.favorite_abbrev || game.favorite;
             teams_map[game.favorite] = team;
         }
         game.favorite = teams_map[game.favorite];
@@ -28,7 +28,7 @@ q.await(function(err, picks, games) {
         if (!(game.underdog in teams_map)) {
             var team = {};
             team.name = game.underdog;
-            team.abbrev = game.underdog_abbrev;
+            team.abbrev = game.underdog_abbrev || game.underdog;
             teams_map[game.underdog] = team;
         }
         game.underdog = teams_map[game.underdog];
