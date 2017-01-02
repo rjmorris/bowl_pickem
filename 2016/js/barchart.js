@@ -440,47 +440,40 @@ q.await(function(err, picks, games) {
         .text(': ')
     ;
 
-    game_items.append('span')
-        .classed('game-item-team', true)
-        .classed('game-item-team-favorite', true)
-        .text(function(d) {
-            return d.favorite.abbrev;
-        })
-        .on('click', function(d) {
-            var new_winner;
-            if (d.winner === d.favorite) {
-                new_winner = undefined;
-            }
-            else {
-                new_winner = d.favorite;
-            }
-            what_if(d, new_winner);
-        })
-    ;
+    function append_team(selection, attrib) {
+        var class_name = 'game-item-team-' + attrib
+        selection.selectAll('.' + class_name)
+            .data(function(d) {
+                return [{
+                    game: d,
+                    team: d[attrib]
+                }];
+            })
+            .enter()
+            .append('span')
+            .classed(class_name, true)
+            .classed('game-item-team', true)
+        ;
+    }
 
-    game_items.append('span')
-        .text(' / ')
-    ;
-
-    game_items.append('span')
-        .classed('game-item-team', true)
-        .classed('game-item-team-underdog', true)
-        .text(function(d) {
-            return d.underdog.abbrev;
-        })
-        .on('click', function(d) {
-            var new_winner;
-            if (d.winner === d.underdog) {
-                new_winner = undefined;
-            }
-            else {
-                new_winner = d.underdog;
-            }
-            what_if(d, new_winner);
-        })
-    ;
+    append_team(game_items, 'favorite');
+    game_items.append('span').text(' / ');
+    append_team(game_items, 'underdog');
 
     d3.selectAll('.game-item-team')
+        .text(function(d) {
+            return d.team.abbrev;
+        })
+        .on('click', function(d) {
+            var new_winner;
+            if (d.game.winner === d.team) {
+                new_winner = undefined;
+            }
+            else {
+                new_winner = d.team;
+            }
+            what_if(d.game, new_winner);
+        })
         .call(assign_game_finder_item_classes)
     ;
 
@@ -788,17 +781,13 @@ q.await(function(err, picks, games) {
     function assign_game_finder_item_classes(selection) {
         selection
             .classed('pick_right', function(d) {
-                var favorite = d3.select(this).classed('game-item-team-favorite');
-                if (favorite) return d.winner === d.favorite;
-                else return d.winner === d.underdog;
+                return d.game.winner === d.team;
             })
             .classed('pick_wrong', function(d) {
-                var underdog = d3.select(this).classed('game-item-team-underdog');
-                if (underdog) return d.winner === d.favorite;
-                else return d.winner === d.underdog;
+                return d.game.winner !== undefined && d.game.winner !== d.team;
             })
             .classed('pick_future', function(d) {
-                return d.winner === undefined;
+                return d.game.winner === undefined;
             })
         ;
     }
