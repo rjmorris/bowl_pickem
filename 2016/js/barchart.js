@@ -19,20 +19,24 @@ q.await(function(err, picks, games) {
             var team = {};
             team.name = game.favorite;
             team.abbrev = game.favorite_abbrev || game.favorite;
+            team.tiny = game.favorite_tiny || team.abbrev;
             teams_map[game.favorite] = team;
         }
         game.favorite = teams_map[game.favorite];
         delete game.favorite_abbrev;
+        delete game.favorite_tiny;
         delete game.favorite_orig;
 
         if (!(game.underdog in teams_map)) {
             var team = {};
             team.name = game.underdog;
             team.abbrev = game.underdog_abbrev || game.underdog;
+            team.tiny = game.underdog_tiny || team.abbrev;
             teams_map[game.underdog] = team;
         }
         game.underdog = teams_map[game.underdog];
         delete game.underdog_abbrev;
+        delete game.underdog_tiny;
         delete game.underdog_orig;
     });
 
@@ -528,6 +532,9 @@ q.await(function(err, picks, games) {
 
     d3.selectAll('.game-item-team')
         .text(function(d) {
+            if (d.game.teams.length > 2) {
+                return d.team.tiny;
+            }
             return d.team.abbrev;
         })
         .on('click', function(d) {
