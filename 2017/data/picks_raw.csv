@@ -1,0 +1,411 @@
+name,Selection,Bowl,Favorite,Underdog,Confidence_Score
+Caroline,Stanford,Alamo,TCU,Stanford,4
+Caroline,Utah State,Arizona,Utah State,New Mexico State,13
+Caroline,San Diego State,Armed Forces,San Diego State,Army,22
+Caroline,Ohio ,Bahamas,Ohio ,UAB,25
+Caroline,Wake Forest,Belk,Wake Forest,Texas A&M,15
+Caroline,USF,Birmingham,USF,Texas Tech,18
+Caroline,FAU,Boca Raton ,FAU,Akron,36
+Caroline,Clemson,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Caroline,UCLA,Cactus,Kansas State,UCLA,7
+Caroline,Middle Tennessee State,Camellia,Arkansas State,Middle Tennessee State,2
+Caroline,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,29
+Caroline,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,32
+Caroline,Notre Dame,Citrus,LSU,Notre Dame,12
+Caroline,USC,Cotton,Ohio State,USC,14
+Caroline,Georgia State,Cure,Western Kentucky,Georgia State,1
+Caroline,Toledo,Dollar General,Toledo,Appalachian State,24
+Caroline,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,10
+Caroline,Penn State,Fiesta,Penn State,Washington,38
+Caroline,Arizona,Foster Farms,Arizona,Purdue,23
+Caroline,SMU,Frisco,SMU,LA Tech,21
+Caroline,FIU,Gasparilla,Temple,FIU,19
+Caroline,Fresno State,Hawai'i ,Houston,Fresno State,9
+Caroline,Utah,Heart of Dallas,Utah,West Virginia,20
+Caroline,Michigan State,Holiday,Washington State,Michigan State,16
+Caroline,Florida State,Independence,Florida State,Southern Miss,37
+Caroline,Oregon,Las Vegas,Oregon,Boise State,27
+Caroline,Iowa State,Liberty,Memphis,Iowa State,11
+Caroline,Navy,Military,Virginia,Navy,6
+Caroline,Northwestern,Music City,Northwestern,Kentucky,35
+Caroline,Colorado State,New Mexico,Colorado State,Marshall,26
+Caroline,Troy,New Orleans,Troy,North Texas,28
+Caroline,Wisconsin,Orange,Wisconsin,Miami,31
+Caroline,South Carolina,Outback,Michigan,South Carolina,3
+Caroline,Auburn,Peach,Auburn,UCF,34
+Caroline,Boston College,Pinstripe,Iowa,Boston College,8
+Caroline,Northern Illinois,Quick Lane,Duke,Northern Illinois,17
+Caroline,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Caroline,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,40
+Caroline,NC State,Sun,NC State,Arizona State,33
+Caroline,Louisville,Taxslayer,Louisville,Mississippi State,30
+Caroline,Texas,Texas,Missouri,Texas,5
+Derick,TCU,Alamo,TCU,Stanford,16
+Derick,Utah State,Arizona,Utah State,New Mexico State,4
+Derick,San Diego State,Armed Forces,San Diego State,Army,23
+Derick,UAB,Bahamas,Ohio ,UAB,3
+Derick,Wake Forest,Belk,Wake Forest,Texas A&M,19
+Derick,USF,Birmingham,USF,Texas Tech,24
+Derick,FAU,Boca Raton ,FAU,Akron,36
+Derick,Georgia,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Derick,Kansas State,Cactus,Kansas State,UCLA,29
+Derick,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,13
+Derick,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,38
+Derick,Grambling State,Celebration,North Carolina A&T,Grambling State,2
+Derick,LSU,Citrus,LSU,Notre Dame,34
+Derick,USC,Cotton,Ohio State,USC,5
+Derick,Western Kentucky,Cure,Western Kentucky,Georgia State,12
+Derick,Toledo,Dollar General,Toledo,Appalachian State,15
+Derick,Wyoming,Famous Idaho Potato,Wyoming,Central Michigan,11
+Derick,Penn State,Fiesta,Penn State,Washington,27
+Derick,Arizona,Foster Farms,Arizona,Purdue,37
+Derick,LA Tech,Frisco,SMU,LA Tech,22
+Derick,Temple,Gasparilla,Temple,FIU,14
+Derick,Fresno State,Hawai'i ,Houston,Fresno State,7
+Derick,West Virginia,Heart of Dallas,Utah,West Virginia,21
+Derick,Washington State,Holiday,Washington State,Michigan State,20
+Derick,Florida State,Independence,Florida State,Southern Miss,25
+Derick,Boise State,Las Vegas,Oregon,Boise State,31
+Derick,Iowa State,Liberty,Memphis,Iowa State,18
+Derick,Navy,Military,Virginia,Navy,6
+Derick,Northwestern,Music City,Northwestern,Kentucky,28
+Derick,Colorado State,New Mexico,Colorado State,Marshall,17
+Derick,Troy,New Orleans,Troy,North Texas,35
+Derick,Wisconsin,Orange,Wisconsin,Miami,33
+Derick,South Carolina,Outback,Michigan,South Carolina,1
+Derick,Auburn,Peach,Auburn,UCF,30
+Derick,Boston College,Pinstripe,Iowa,Boston College,10
+Derick,Northern Illinois,Quick Lane,Duke,Northern Illinois,8
+Derick,Georgia,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Derick,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,40
+Derick,NC State,Sun,NC State,Arizona State,32
+Derick,Mississippi State,Taxslayer,Louisville,Mississippi State,26
+Derick,Texas,Texas,Missouri,Texas,9
+Jason,TCU,Alamo,TCU,Stanford,18
+Jason,Utah State,Arizona,Utah State,New Mexico State,13
+Jason,Army,Armed Forces,San Diego State,Army,21
+Jason,Ohio ,Bahamas,Ohio ,UAB,37
+Jason,Wake Forest,Belk,Wake Forest,Texas A&M,16
+Jason,Texas Tech,Birmingham,USF,Texas Tech,14
+Jason,FAU,Boca Raton ,FAU,Akron,38
+Jason,Alabama,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Jason,Kansas State,Cactus,Kansas State,UCLA,26
+Jason,Middle Tennessee State,Camellia,Arkansas State,Middle Tennessee State,6
+Jason,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,31
+Jason,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,19
+Jason,Notre Dame,Citrus,LSU,Notre Dame,7
+Jason,Ohio State,Cotton,Ohio State,USC,28
+Jason,Western Kentucky,Cure,Western Kentucky,Georgia State,5
+Jason,Toledo,Dollar General,Toledo,Appalachian State,22
+Jason,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,2
+Jason,Penn State,Fiesta,Penn State,Washington,20
+Jason,Arizona,Foster Farms,Arizona,Purdue,29
+Jason,SMU,Frisco,SMU,LA Tech,32
+Jason,Temple,Gasparilla,Temple,FIU,35
+Jason,Fresno State,Hawai'i ,Houston,Fresno State,1
+Jason,West Virginia,Heart of Dallas,Utah,West Virginia,24
+Jason,Washington State,Holiday,Washington State,Michigan State,17
+Jason,Florida State,Independence,Florida State,Southern Miss,33
+Jason,Boise State,Las Vegas,Oregon,Boise State,27
+Jason,Iowa State,Liberty,Memphis,Iowa State,10
+Jason,Virginia,Military,Virginia,Navy,3
+Jason,Northwestern,Music City,Northwestern,Kentucky,36
+Jason,Colorado State,New Mexico,Colorado State,Marshall,30
+Jason,North Texas,New Orleans,Troy,North Texas,23
+Jason,Wisconsin,Orange,Wisconsin,Miami,9
+Jason,South Carolina,Outback,Michigan,South Carolina,8
+Jason,Auburn,Peach,Auburn,UCF,34
+Jason,Iowa,Pinstripe,Iowa,Boston College,12
+Jason,Duke,Quick Lane,Duke,Northern Illinois,25
+Jason,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Jason,Alabama,Sugar (CFP Semifinals),Alabama,Clemson,40
+Jason,Arizona State,Sun,NC State,Arizona State,15
+Jason,Mississippi State,Taxslayer,Louisville,Mississippi State,11
+Jason,Missouri,Texas,Missouri,Texas,4
+Jeremy,Stanford,Alamo,TCU,Stanford,7
+Jeremy,Utah State,Arizona,Utah State,New Mexico State,18
+Jeremy,San Diego State,Armed Forces,San Diego State,Army,24
+Jeremy,Ohio ,Bahamas,Ohio ,UAB,34
+Jeremy,Wake Forest,Belk,Wake Forest,Texas A&M,19
+Jeremy,USF,Birmingham,USF,Texas Tech,23
+Jeremy,FAU,Boca Raton ,FAU,Akron,38
+Jeremy,Georgia,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Jeremy,UCLA,Cactus,Kansas State,UCLA,10
+Jeremy,Middle Tennessee State,Camellia,Arkansas State,Middle Tennessee State,13
+Jeremy,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,31
+Jeremy,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,37
+Jeremy,Notre Dame,Citrus,LSU,Notre Dame,6
+Jeremy,Ohio State,Cotton,Ohio State,USC,28
+Jeremy,Western Kentucky,Cure,Western Kentucky,Georgia State,27
+Jeremy,Appalachian State,Dollar General,Toledo,Appalachian State,4
+Jeremy,Wyoming,Famous Idaho Potato,Wyoming,Central Michigan,14
+Jeremy,Penn State,Fiesta,Penn State,Washington,15
+Jeremy,Arizona,Foster Farms,Arizona,Purdue,21
+Jeremy,SMU,Frisco,SMU,LA Tech,25
+Jeremy,FIU,Gasparilla,Temple,FIU,5
+Jeremy,Houston,Hawai'i ,Houston,Fresno State,12
+Jeremy,Utah,Heart of Dallas,Utah,West Virginia,33
+Jeremy,Washington State,Holiday,Washington State,Michigan State,20
+Jeremy,Florida State,Independence,Florida State,Southern Miss,32
+Jeremy,Oregon,Las Vegas,Oregon,Boise State,26
+Jeremy,Memphis,Liberty,Memphis,Iowa State,16
+Jeremy,Virginia,Military,Virginia,Navy,8
+Jeremy,Northwestern,Music City,Northwestern,Kentucky,29
+Jeremy,Colorado State,New Mexico,Colorado State,Marshall,35
+Jeremy,Troy,New Orleans,Troy,North Texas,36
+Jeremy,Miami,Orange,Wisconsin,Miami,3
+Jeremy,South Carolina,Outback,Michigan,South Carolina,2
+Jeremy,UCF,Peach,Auburn,UCF,1
+Jeremy,Iowa,Pinstripe,Iowa,Boston College,22
+Jeremy,Northern Illinois,Quick Lane,Duke,Northern Illinois,11
+Jeremy,Georgia,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Jeremy,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,40
+Jeremy,NC State,Sun,NC State,Arizona State,30
+Jeremy,Louisville,Taxslayer,Louisville,Mississippi State,17
+Jeremy,Texas,Texas,Missouri,Texas,9
+Jessica,Stanford,Alamo,TCU,Stanford,5
+Jessica,New Mexico State,Arizona,Utah State,New Mexico State,11
+Jessica,Army,Armed Forces,San Diego State,Army,24
+Jessica,UAB,Bahamas,Ohio ,UAB,30
+Jessica,Wake Forest,Belk,Wake Forest,Texas A&M,7
+Jessica,Texas Tech,Birmingham,USF,Texas Tech,8
+Jessica,FAU,Boca Raton ,FAU,Akron,37
+Jessica,Alabama,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Jessica,UCLA,Cactus,Kansas State,UCLA,13
+Jessica,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,14
+Jessica,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,27
+Jessica,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,34
+Jessica,LSU,Citrus,LSU,Notre Dame,6
+Jessica,USC,Cotton,Ohio State,USC,28
+Jessica,Georgia State,Cure,Western Kentucky,Georgia State,18
+Jessica,Appalachian State,Dollar General,Toledo,Appalachian State,29
+Jessica,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,2
+Jessica,Penn State,Fiesta,Penn State,Washington,9
+Jessica,Arizona,Foster Farms,Arizona,Purdue,16
+Jessica,SMU,Frisco,SMU,LA Tech,20
+Jessica,Temple,Gasparilla,Temple,FIU,31
+Jessica,Houston,Hawai'i ,Houston,Fresno State,4
+Jessica,West Virginia,Heart of Dallas,Utah,West Virginia,17
+Jessica,Michigan State,Holiday,Washington State,Michigan State,15
+Jessica,Florida State,Independence,Florida State,Southern Miss,36
+Jessica,Boise State,Las Vegas,Oregon,Boise State,21
+Jessica,Iowa State,Liberty,Memphis,Iowa State,10
+Jessica,Navy,Military,Virginia,Navy,1
+Jessica,Northwestern,Music City,Northwestern,Kentucky,33
+Jessica,Colorado State,New Mexico,Colorado State,Marshall,22
+Jessica,North Texas,New Orleans,Troy,North Texas,25
+Jessica,Miami,Orange,Wisconsin,Miami,26
+Jessica,Michigan,Outback,Michigan,South Carolina,32
+Jessica,Auburn,Peach,Auburn,UCF,35
+Jessica,Boston College,Pinstripe,Iowa,Boston College,12
+Jessica,Duke,Quick Lane,Duke,Northern Illinois,38
+Jessica,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,40
+Jessica,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,39
+Jessica,Arizona State,Sun,NC State,Arizona State,19
+Jessica,Louisville,Taxslayer,Louisville,Mississippi State,23
+Jessica,Texas,Texas,Missouri,Texas,3
+Jessie,Stanford,Alamo,TCU,Stanford,13
+Jessie,Utah State,Arizona,Utah State,New Mexico State,17
+Jessie,San Diego State,Armed Forces,San Diego State,Army,19
+Jessie,Ohio ,Bahamas,Ohio ,UAB,30
+Jessie,Texas A&M,Belk,Wake Forest,Texas A&M,26
+Jessie,Texas Tech,Birmingham,USF,Texas Tech,32
+Jessie,FAU,Boca Raton ,FAU,Akron,36
+Jessie,Oklahoma,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Jessie,Kansas State,Cactus,Kansas State,UCLA,16
+Jessie,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,20
+Jessie,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,33
+Jessie,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,10
+Jessie,Notre Dame,Citrus,LSU,Notre Dame,2
+Jessie,USC,Cotton,Ohio State,USC,14
+Jessie,Georgia State,Cure,Western Kentucky,Georgia State,18
+Jessie,Appalachian State,Dollar General,Toledo,Appalachian State,8
+Jessie,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,6
+Jessie,Washington,Fiesta,Penn State,Washington,25
+Jessie,Arizona,Foster Farms,Arizona,Purdue,23
+Jessie,SMU,Frisco,SMU,LA Tech,15
+Jessie,Temple,Gasparilla,Temple,FIU,28
+Jessie,Fresno State,Hawai'i ,Houston,Fresno State,9
+Jessie,Utah,Heart of Dallas,Utah,West Virginia,29
+Jessie,Michigan State,Holiday,Washington State,Michigan State,5
+Jessie,Florida State,Independence,Florida State,Southern Miss,37
+Jessie,Boise State,Las Vegas,Oregon,Boise State,3
+Jessie,Memphis,Liberty,Memphis,Iowa State,21
+Jessie,Navy,Military,Virginia,Navy,11
+Jessie,Northwestern,Music City,Northwestern,Kentucky,22
+Jessie,Marshall,New Mexico,Colorado State,Marshall,4
+Jessie,Troy,New Orleans,Troy,North Texas,12
+Jessie,Wisconsin,Orange,Wisconsin,Miami,35
+Jessie,Michigan,Outback,Michigan,South Carolina,38
+Jessie,Auburn,Peach,Auburn,UCF,31
+Jessie,Boston College,Pinstripe,Iowa,Boston College,1
+Jessie,Northern Illinois,Quick Lane,Duke,Northern Illinois,27
+Jessie,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Jessie,Alabama,Sugar (CFP Semifinals),Alabama,Clemson,40
+Jessie,NC State,Sun,NC State,Arizona State,34
+Jessie,Louisville,Taxslayer,Louisville,Mississippi State,24
+Jessie,Texas,Texas,Missouri,Texas,7
+JHajdin,TCU,Alamo,TCU,Stanford,2
+JHajdin,New Mexico State,Arizona,Utah State,New Mexico State,16
+JHajdin,Army,Armed Forces,San Diego State,Army,30
+JHajdin,Ohio ,Bahamas,Ohio ,UAB,32
+JHajdin,Texas A&M,Belk,Wake Forest,Texas A&M,3
+JHajdin,USF,Birmingham,USF,Texas Tech,4
+JHajdin,FAU,Boca Raton ,FAU,Akron,34
+JHajdin,Alabama,CFP National Championship,Winner of Rose,Winner of Sugar,41
+JHajdin,UCLA,Cactus,Kansas State,UCLA,14
+JHajdin,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,12
+JHajdin,Virginia Tech,Camping World,Oklahoma State,Virginia Tech,23
+JHajdin,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,33
+JHajdin,Notre Dame,Citrus,LSU,Notre Dame,11
+JHajdin,Ohio State,Cotton,Ohio State,USC,37
+JHajdin,Georgia State,Cure,Western Kentucky,Georgia State,21
+JHajdin,Appalachian State,Dollar General,Toledo,Appalachian State,6
+JHajdin,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,1
+JHajdin,Penn State,Fiesta,Penn State,Washington,20
+JHajdin,Purdue,Foster Farms,Arizona,Purdue,9
+JHajdin,SMU,Frisco,SMU,LA Tech,15
+JHajdin,Temple,Gasparilla,Temple,FIU,31
+JHajdin,Houston,Hawai'i ,Houston,Fresno State,13
+JHajdin,Utah,Heart of Dallas,Utah,West Virginia,7
+JHajdin,Washington State,Holiday,Washington State,Michigan State,10
+JHajdin,Southern Miss,Independence,Florida State,Southern Miss,26
+JHajdin,Boise State,Las Vegas,Oregon,Boise State,5
+JHajdin,Iowa State,Liberty,Memphis,Iowa State,19
+JHajdin,Virginia,Military,Virginia,Navy,24
+JHajdin,Northwestern,Music City,Northwestern,Kentucky,36
+JHajdin,Colorado State,New Mexico,Colorado State,Marshall,17
+JHajdin,North Texas,New Orleans,Troy,North Texas,27
+JHajdin,Wisconsin,Orange,Wisconsin,Miami,18
+JHajdin,Michigan,Outback,Michigan,South Carolina,28
+JHajdin,Auburn,Peach,Auburn,UCF,38
+JHajdin,Iowa,Pinstripe,Iowa,Boston College,25
+JHajdin,Duke,Quick Lane,Duke,Northern Illinois,35
+JHajdin,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,39
+JHajdin,Alabama,Sugar (CFP Semifinals),Alabama,Clemson,40
+JHajdin,NC State,Sun,NC State,Arizona State,29
+JHajdin,Louisville,Taxslayer,Louisville,Mississippi State,22
+JHajdin,Texas,Texas,Missouri,Texas,8
+Joel,TCU,Alamo,TCU,Stanford,15
+Joel,New Mexico State,Arizona,Utah State,New Mexico State,23
+Joel,San Diego State,Armed Forces,San Diego State,Army,34
+Joel,Ohio ,Bahamas,Ohio ,UAB,38
+Joel,Wake Forest,Belk,Wake Forest,Texas A&M,35
+Joel,Texas Tech,Birmingham,USF,Texas Tech,10
+Joel,FAU,Boca Raton ,FAU,Akron,32
+Joel,Oklahoma,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Joel,UCLA,Cactus,Kansas State,UCLA,9
+Joel,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,18
+Joel,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,5
+Joel,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,31
+Joel,LSU,Citrus,LSU,Notre Dame,24
+Joel,Ohio State,Cotton,Ohio State,USC,37
+Joel,Western Kentucky,Cure,Western Kentucky,Georgia State,11
+Joel,Appalachian State,Dollar General,Toledo,Appalachian State,20
+Joel,Wyoming,Famous Idaho Potato,Wyoming,Central Michigan,19
+Joel,Penn State,Fiesta,Penn State,Washington,13
+Joel,Arizona,Foster Farms,Arizona,Purdue,16
+Joel,SMU,Frisco,SMU,LA Tech,3
+Joel,Temple,Gasparilla,Temple,FIU,28
+Joel,Fresno State,Hawai'i ,Houston,Fresno State,29
+Joel,West Virginia,Heart of Dallas,Utah,West Virginia,21
+Joel,Washington State,Holiday,Washington State,Michigan State,7
+Joel,Southern Miss,Independence,Florida State,Southern Miss,1
+Joel,Boise State,Las Vegas,Oregon,Boise State,33
+Joel,Iowa State,Liberty,Memphis,Iowa State,6
+Joel,Virginia,Military,Virginia,Navy,27
+Joel,Northwestern,Music City,Northwestern,Kentucky,30
+Joel,Marshall,New Mexico,Colorado State,Marshall,17
+Joel,Troy,New Orleans,Troy,North Texas,26
+Joel,Wisconsin,Orange,Wisconsin,Miami,2
+Joel,Michigan,Outback,Michigan,South Carolina,25
+Joel,UCF,Peach,Auburn,UCF,14
+Joel,Boston College,Pinstripe,Iowa,Boston College,4
+Joel,Duke,Quick Lane,Duke,Northern Illinois,22
+Joel,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,40
+Joel,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,39
+Joel,NC State,Sun,NC State,Arizona State,36
+Joel,Louisville,Taxslayer,Louisville,Mississippi State,12
+Joel,Missouri,Texas,Missouri,Texas,8
+Joey,Stanford,Alamo,TCU,Stanford,24
+Joey,New Mexico State,Arizona,Utah State,New Mexico State,11
+Joey,San Diego State,Armed Forces,San Diego State,Army,28
+Joey,Ohio ,Bahamas,Ohio ,UAB,19
+Joey,Texas A&M,Belk,Wake Forest,Texas A&M,30
+Joey,USF,Birmingham,USF,Texas Tech,16
+Joey,FAU,Boca Raton ,FAU,Akron,37
+Joey,Alabama,CFP National Championship,Winner of Rose,Winner of Sugar,41
+Joey,UCLA,Cactus,Kansas State,UCLA,25
+Joey,Arkansas State,Camellia,Arkansas State,Middle Tennessee State,22
+Joey,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,33
+Joey,North Carolina A&T,Celebration,North Carolina A&T,Grambling State,17
+Joey,Notre Dame,Citrus,LSU,Notre Dame,15
+Joey,Ohio State,Cotton,Ohio State,USC,36
+Joey,Western Kentucky,Cure,Western Kentucky,Georgia State,10
+Joey,Toledo,Dollar General,Toledo,Appalachian State,31
+Joey,Wyoming,Famous Idaho Potato,Wyoming,Central Michigan,5
+Joey,Penn State,Fiesta,Penn State,Washington,20
+Joey,Arizona,Foster Farms,Arizona,Purdue,13
+Joey,LA Tech,Frisco,SMU,LA Tech,26
+Joey,Temple,Gasparilla,Temple,FIU,32
+Joey,Fresno State,Hawai'i ,Houston,Fresno State,6
+Joey,Utah,Heart of Dallas,Utah,West Virginia,12
+Joey,Washington State,Holiday,Washington State,Michigan State,7
+Joey,Florida State,Independence,Florida State,Southern Miss,27
+Joey,Boise State,Las Vegas,Oregon,Boise State,21
+Joey,Iowa State,Liberty,Memphis,Iowa State,8
+Joey,Virginia,Military,Virginia,Navy,14
+Joey,Kentucky,Music City,Northwestern,Kentucky,1
+Joey,Colorado State,New Mexico,Colorado State,Marshall,23
+Joey,North Texas,New Orleans,Troy,North Texas,2
+Joey,Wisconsin,Orange,Wisconsin,Miami,18
+Joey,Michigan,Outback,Michigan,South Carolina,35
+Joey,Auburn,Peach,Auburn,UCF,38
+Joey,Iowa,Pinstripe,Iowa,Boston College,29
+Joey,Northern Illinois,Quick Lane,Duke,Northern Illinois,9
+Joey,Oklahoma,Rose (CFP Semifinals),Oklahoma,Georgia,39
+Joey,Alabama,Sugar (CFP Semifinals),Alabama,Clemson,40
+Joey,Arizona State,Sun,NC State,Arizona State,3
+Joey,Louisville,Taxslayer,Louisville,Mississippi State,34
+Joey,Texas,Texas,Missouri,Texas,4
+JPearce,TCU,Alamo,TCU,Stanford,19
+JPearce,Utah State,Arizona,Utah State,New Mexico State,17
+JPearce,San Diego State,Armed Forces,San Diego State,Army,25
+JPearce,Ohio ,Bahamas,Ohio ,UAB,29
+JPearce,Wake Forest,Belk,Wake Forest,Texas A&M,18
+JPearce,USF,Birmingham,USF,Texas Tech,20
+JPearce,FAU,Boca Raton ,FAU,Akron,38
+JPearce,Clemson,CFP National Championship,Winner of Rose,Winner of Sugar,41
+JPearce,Kansas State,Cactus,Kansas State,UCLA,16
+JPearce,Middle Tennessee State,Camellia,Arkansas State,Middle Tennessee State,2
+JPearce,Oklahoma State,Camping World,Oklahoma State,Virginia Tech,37
+JPearce,Grambling State,Celebration,North Carolina A&T,Grambling State,1
+JPearce,Notre Dame,Citrus,LSU,Notre Dame,10
+JPearce,Ohio State,Cotton,Ohio State,USC,11
+JPearce,Western Kentucky,Cure,Western Kentucky,Georgia State,28
+JPearce,Toledo,Dollar General,Toledo,Appalachian State,26
+JPearce,Central Michigan,Famous Idaho Potato,Wyoming,Central Michigan,3
+JPearce,Penn State,Fiesta,Penn State,Washington,22
+JPearce,Purdue,Foster Farms,Arizona,Purdue,5
+JPearce,SMU,Frisco,SMU,LA Tech,21
+JPearce,FIU,Gasparilla,Temple,FIU,15
+JPearce,Fresno State,Hawai'i ,Houston,Fresno State,14
+JPearce,West Virginia,Heart of Dallas,Utah,West Virginia,13
+JPearce,Michigan State,Holiday,Washington State,Michigan State,24
+JPearce,Florida State,Independence,Florida State,Southern Miss,34
+JPearce,Boise State,Las Vegas,Oregon,Boise State,8
+JPearce,Iowa State,Liberty,Memphis,Iowa State,7
+JPearce,Navy,Military,Virginia,Navy,12
+JPearce,Northwestern,Music City,Northwestern,Kentucky,33
+JPearce,Colorado State,New Mexico,Colorado State,Marshall,23
+JPearce,Troy,New Orleans,Troy,North Texas,27
+JPearce,Wisconsin,Orange,Wisconsin,Miami,35
+JPearce,Michigan,Outback,Michigan,South Carolina,30
+JPearce,Auburn,Peach,Auburn,UCF,32
+JPearce,Boston College,Pinstripe,Iowa,Boston College,4
+JPearce,Northern Illinois,Quick Lane,Duke,Northern Illinois,9
+JPearce,Georgia,Rose (CFP Semifinals),Oklahoma,Georgia,39
+JPearce,Clemson,Sugar (CFP Semifinals),Alabama,Clemson,40
+JPearce,NC State,Sun,NC State,Arizona State,31
+JPearce,Louisville,Taxslayer,Louisville,Mississippi State,36
+JPearce,Texas,Texas,Missouri,Texas,6
