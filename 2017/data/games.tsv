@@ -1,10 +1,10 @@
 bowl_orig	bowl	location_orig	location	date	time	year	month	day	hour	minute	datetime	date_order	favorite_orig	underdog_orig	spread	spread_order	favorite	favorite_abbrev	favorite_tiny	underdog	underdog_abbrev	underdog_tiny	winner	winner_score	loser_score
-Celebration	Celebration	Atlanta, Ga.	Atlanta, GA	Dec. 16	Noon	2017	12	16	12	0	20171216120000	1	North Carolina A&T	Grambling State	-9.5	38	North Carolina A&T	NC A&T		Grambling St.					
-New Orleans	New Orleans	New Orleans, La.	New Orleans, LA	Dec. 16	1 p.m.	2017	12	16	13	0	20171216130000	2	Troy	North Texas	-6	27	Troy			North Texas					
-Cure	Cure	Orlando, Fla.	Orlando, FL	Dec. 16	2:30 p.m.	2017	12	16	14	30	20171216143000	3	Western Kentucky	Georgia State	-4.5	19	Western Kentucky	Western Kent.		Georgia St.					
-Las Vegas	Las Vegas	Las Vegas, Nevada	Las Vegas, NV	Dec. 16	3:30 p.m.	2017	12	16	15	30	20171216153000	4	Oregon	Boise State	-5	23	Oregon			Boise St.					
-New Mexico	New Mexico	Albuquerque, N.M.	Albuquerque, NM	Dec. 16	3:30 p.m.	2017	12	16	15	30	20171216153000	5	Colorado State	Marshall	-5.5	26	Colorado St.			Marshall					
-Camellia	Camellia	Montgomery, Ala.	Montgomery, AL	Dec. 16	8 p.m.	2017	12	16	20	0	20171216200000	6	Arkansas State	Middle Tennessee State	-3.5	18	Arkansas St.			Middle Tennessee	Middle Tenn.				
+Celebration	Celebration	Atlanta, Ga.	Atlanta, GA	Dec. 16	Noon	2017	12	16	12	0	20171216120000	1	North Carolina A&T	Grambling State	-9.5	38	North Carolina A&T	NC A&T		Grambling St.			North Carolina A&T	21	14
+New Orleans	New Orleans	New Orleans, La.	New Orleans, LA	Dec. 16	1 p.m.	2017	12	16	13	0	20171216130000	2	Troy	North Texas	-6	27	Troy			North Texas			Troy	50	30
+Cure	Cure	Orlando, Fla.	Orlando, FL	Dec. 16	2:30 p.m.	2017	12	16	14	30	20171216143000	3	Western Kentucky	Georgia State	-4.5	19	Western Kentucky	Western Kent.		Georgia St.			Georgia St.	27	17
+Las Vegas	Las Vegas	Las Vegas, Nevada	Las Vegas, NV	Dec. 16	3:30 p.m.	2017	12	16	15	30	20171216153000	4	Oregon	Boise State	-5	23	Oregon			Boise St.			Boise St.	38	28
+New Mexico	New Mexico	Albuquerque, N.M.	Albuquerque, NM	Dec. 16	3:30 p.m.	2017	12	16	15	30	20171216153000	5	Colorado State	Marshall	-5.5	26	Colorado St.			Marshall			Marshall	31	28
+Camellia	Camellia	Montgomery, Ala.	Montgomery, AL	Dec. 16	8 p.m.	2017	12	16	20	0	20171216200000	6	Arkansas State	Middle Tennessee State	-3.5	18	Arkansas St.			Middle Tennessee	Middle Tenn.		Middle Tennessee	35	30
 Boca Raton 	Boca Raton	Boca Raton, Fla.	Boca Raton, FL	Dec. 19	7 p.m.	2017	12	19	19	0	20171219190000	7	FAU	Akron	-17	41	Florida Atlantic			Akron					
 Frisco	Frisco	Frisco, Texas	Frisco, TX	Dec. 20	8 p.m.	2017	12	20	20	0	20171220200000	8	SMU	LA Tech	-5	24	SMU			Louisiana Tech					
 Gasparilla	Gasparilla	St. Petersburg, Fla.	St. Petersburg, FL	Dec. 21	8 p.m.	2017	12	21	20	0	20171221200000	9	Temple	FIU	-8	34	Temple			Florida International					
