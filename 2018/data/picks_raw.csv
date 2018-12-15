@@ -1,0 +1,401 @@
+name,Selection,Bowl,Favorite,Underdog,Confidence_Score
+Caroline,Wash. State,Alamo,Wash. State,Iowa State,11
+Caroline,Nevada,Arizona,Arkansas St.,Nevada,10
+Caroline,Houston,Armed Forces,Army,Houston,15
+Caroline,Toledo,Bahamas,Toledo,FIU,3
+Caroline,South Carolina,Belk,South Carolina,Virginia,13
+Caroline,Memphis,Birmingham,Memphis,Wake Forest,32
+Caroline,N. Illinois,Boca Raton,UAB,N. Illinois,17
+Caroline,Ga. Southern,Camellia,E. Michigan,Ga. Southern,1
+Caroline,W. Virginia,Camping World,W. Virginia,Syracuse,35
+Caroline,TCU,Cheez-It,California,TCU,28
+Caroline,Penn State,Citrus,Penn State,Kentucky,30
+Caroline,Clemson,Cotton,Clemson,Notre Dame,39
+Caroline,Tulane,Cure,Tulane,Louisiana,6
+Caroline,Buffalo,Dollar General,Buffalo,Troy,8
+Caroline,LSU,Fiesta,LSU,UCF,29
+Caroline,Boston College,First Responder,Boise State,Boston College,33
+Caroline,Ohio,Frisco,Ohio,San Diego State,4
+Caroline,S. Florida,Gasparilla,Marshall,S. Florida,18
+Caroline,Hawaii,Hawaii,Hawaii,La. Tech,2
+Caroline,Utah,Holiday,Utah,Northwestern,5
+Caroline,BYU,Idaho Potato,BYU,W. Michigan,27
+Caroline,Duke,Independence,Temple,Duke,34
+Caroline,Arizona State,Las Vegas,Fresno State,Arizona State,7
+Caroline,Missouri,Liberty,Missouri,Oklahoma State,24
+Caroline,Cincinnati,Military,Cincinnati,Virginia Tech,23
+Caroline,Purdue,Music City,Auburn,Purdue,14
+Caroline,Clemson,National Championship,Winner of Cotton,Winner of Orange,40
+Caroline,Utah State,New Mexico,Utah State,N. Texas,26
+Caroline,App. State,New Orleans,App. State,MTSU,31
+Caroline,Alabama,Orange,Alabama,Oklahoma,38
+Caroline,Iowa,Outback,Mississippi State,Iowa,21
+Caroline,Florida,Peach,Michigan,Florida,20
+Caroline,Wisconsin,Pinstripe,Miami,Wisconsin,19
+Caroline,Minnesota,Quick Lane,Georgia Tech,Minnesota,9
+Caroline,Michigan State,Redbox,Michigan State,Oregon,16
+Caroline,Ohio State,Rose,Ohio State,Washington,22
+Caroline,Georgia,Sugar,Georgia,Texas,36
+Caroline,Stanford,Sun,Stanford,Pittsburgh,25
+Caroline,Texas A&M,Taxslayer,Texas A&M,NC State,37
+Caroline,Baylor,Texas,Vanderbilt,Baylor,12
+Derick,Wash. State,Alamo,Wash. State,Iowa State,19
+Derick,Nevada,Arizona,Arkansas St.,Nevada,3
+Derick,Army,Armed Forces,Army,Houston,30
+Derick,Toledo,Bahamas,Toledo,FIU,6
+Derick,South Carolina,Belk,South Carolina,Virginia,23
+Derick,Wake Forest,Birmingham,Memphis,Wake Forest,21
+Derick,UAB,Boca Raton,UAB,N. Illinois,27
+Derick,Ga. Southern,Camellia,E. Michigan,Ga. Southern,13
+Derick,Syracuse,Camping World,W. Virginia,Syracuse,11
+Derick,California,Cheez-It,California,TCU,31
+Derick,Penn State,Citrus,Penn State,Kentucky,26
+Derick,Clemson,Cotton,Clemson,Notre Dame,39
+Derick,Louisiana,Cure,Tulane,Louisiana,9
+Derick,Troy,Dollar General,Buffalo,Troy,5
+Derick,UCF,Fiesta,LSU,UCF,10
+Derick,Boise State,First Responder,Boise State,Boston College,17
+Derick,Ohio,Frisco,Ohio,San Diego State,1
+Derick,Marshall,Gasparilla,Marshall,S. Florida,22
+Derick,Hawaii,Hawaii,Hawaii,La. Tech,7
+Derick,Northwestern,Holiday,Utah,Northwestern,8
+Derick,W. Michigan,Idaho Potato,BYU,W. Michigan,2
+Derick,Duke,Independence,Temple,Duke,15
+Derick,Fresno State,Las Vegas,Fresno State,Arizona State,14
+Derick,Oklahoma State,Liberty,Missouri,Oklahoma State,4
+Derick,Cincinnati,Military,Cincinnati,Virginia Tech,25
+Derick,Purdue,Music City,Auburn,Purdue,24
+Derick,Clemson,National Championship,Winner of Cotton,Winner of Orange,40
+Derick,Utah State,New Mexico,Utah State,N. Texas,35
+Derick,App. State,New Orleans,App. State,MTSU,34
+Derick,Alabama,Orange,Alabama,Oklahoma,38
+Derick,Mississippi State,Outback,Mississippi State,Iowa,32
+Derick,Michigan,Peach,Michigan,Florida,12
+Derick,Wisconsin,Pinstripe,Miami,Wisconsin,28
+Derick,Minnesota,Quick Lane,Georgia Tech,Minnesota,29
+Derick,Oregon,Redbox,Michigan State,Oregon,36
+Derick,Ohio State,Rose,Ohio State,Washington,33
+Derick,Georgia,Sugar,Georgia,Texas,37
+Derick,Stanford,Sun,Stanford,Pittsburgh,20
+Derick,Texas A&M,Taxslayer,Texas A&M,NC State,16
+Derick,Baylor,Texas,Vanderbilt,Baylor,18
+Harper,Wash. State,Alamo,Wash. State,Iowa State,32
+Harper,Nevada,Arizona,Arkansas St.,Nevada,13
+Harper,Army,Armed Forces,Army,Houston,25
+Harper,Toledo,Bahamas,Toledo,FIU,28
+Harper,South Carolina,Belk,South Carolina,Virginia,31
+Harper,Memphis,Birmingham,Memphis,Wake Forest,16
+Harper,UAB,Boca Raton,UAB,N. Illinois,19
+Harper,Ga. Southern,Camellia,E. Michigan,Ga. Southern,14
+Harper,Syracuse,Camping World,W. Virginia,Syracuse,2
+Harper,TCU,Cheez-It,California,TCU,12
+Harper,Kentucky,Citrus,Penn State,Kentucky,11
+Harper,Clemson,Cotton,Clemson,Notre Dame,39
+Harper,Louisiana,Cure,Tulane,Louisiana,6
+Harper,Buffalo,Dollar General,Buffalo,Troy,17
+Harper,UCF,Fiesta,LSU,UCF,4
+Harper,Boston College,First Responder,Boise State,Boston College,7
+Harper,San Diego State,Frisco,Ohio,San Diego State,5
+Harper,Marshall,Gasparilla,Marshall,S. Florida,21
+Harper,Hawaii,Hawaii,Hawaii,La. Tech,18
+Harper,Northwestern,Holiday,Utah,Northwestern,3
+Harper,BYU,Idaho Potato,BYU,W. Michigan,34
+Harper,Temple,Independence,Temple,Duke,23
+Harper,Arizona State,Las Vegas,Fresno State,Arizona State,10
+Harper,Missouri,Liberty,Missouri,Oklahoma State,36
+Harper,Cincinnati,Military,Cincinnati,Virginia Tech,29
+Harper,Auburn,Music City,Auburn,Purdue,24
+Harper,Clemson,National Championship,Winner of Cotton,Winner of Orange,40
+Harper,Utah State,New Mexico,Utah State,N. Texas,35
+Harper,App. State,New Orleans,App. State,MTSU,33
+Harper,Alabama,Orange,Alabama,Oklahoma,38
+Harper,Iowa,Outback,Mississippi State,Iowa,9
+Harper,Michigan,Peach,Michigan,Florida,27
+Harper,Wisconsin,Pinstripe,Miami,Wisconsin,8
+Harper,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,20
+Harper,Michigan State,Redbox,Michigan State,Oregon,15
+Harper,Ohio State,Rose,Ohio State,Washington,26
+Harper,Georgia,Sugar,Georgia,Texas,37
+Harper,Stanford,Sun,Stanford,Pittsburgh,30
+Harper,Texas A&M,Taxslayer,Texas A&M,NC State,22
+Harper,Baylor,Texas,Vanderbilt,Baylor,1
+JBrown,Wash. State,Alamo,Wash. State,Iowa State,19
+JBrown,Nevada,Arizona,Arkansas St.,Nevada,24
+JBrown,Army,Armed Forces,Army,Houston,31
+JBrown,FIU,Bahamas,Toledo,FIU,3
+JBrown,South Carolina,Belk,South Carolina,Virginia,26
+JBrown,Wake Forest,Birmingham,Memphis,Wake Forest,17
+JBrown,UAB,Boca Raton,UAB,N. Illinois,4
+JBrown,Ga. Southern,Camellia,E. Michigan,Ga. Southern,29
+JBrown,W. Virginia,Camping World,W. Virginia,Syracuse,27
+JBrown,California,Cheez-It,California,TCU,28
+JBrown,Penn State,Citrus,Penn State,Kentucky,5
+JBrown,Clemson,Cotton,Clemson,Notre Dame,38
+JBrown,Louisiana,Cure,Tulane,Louisiana,21
+JBrown,Troy,Dollar General,Buffalo,Troy,1
+JBrown,UCF,Fiesta,LSU,UCF,15
+JBrown,Boston College,First Responder,Boise State,Boston College,16
+JBrown,Ohio,Frisco,Ohio,San Diego State,30
+JBrown,S. Florida,Gasparilla,Marshall,S. Florida,8
+JBrown,La. Tech,Hawaii,Hawaii,La. Tech,25
+JBrown,Utah,Holiday,Utah,Northwestern,23
+JBrown,BYU,Idaho Potato,BYU,W. Michigan,2
+JBrown,Temple,Independence,Temple,Duke,12
+JBrown,Arizona State,Las Vegas,Fresno State,Arizona State,36
+JBrown,Missouri,Liberty,Missouri,Oklahoma State,6
+JBrown,Cincinnati,Military,Cincinnati,Virginia Tech,35
+JBrown,Purdue,Music City,Auburn,Purdue,7
+JBrown,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+JBrown,Utah State,New Mexico,Utah State,N. Texas,9
+JBrown,App. State,New Orleans,App. State,MTSU,10
+JBrown,Alabama,Orange,Alabama,Oklahoma,39
+JBrown,Iowa,Outback,Mississippi State,Iowa,20
+JBrown,Florida,Peach,Michigan,Florida,18
+JBrown,Wisconsin,Pinstripe,Miami,Wisconsin,37
+JBrown,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,11
+JBrown,Oregon,Redbox,Michigan State,Oregon,34
+JBrown,Ohio State,Rose,Ohio State,Washington,32
+JBrown,Georgia,Sugar,Georgia,Texas,33
+JBrown,Pittsburgh,Sun,Stanford,Pittsburgh,14
+JBrown,NC State,Taxslayer,Texas A&M,NC State,22
+JBrown,Vanderbilt,Texas,Vanderbilt,Baylor,13
+Jeremy,Wash. State,Alamo,Wash. State,Iowa State,32
+Jeremy,Nevada,Arizona,Arkansas St.,Nevada,10
+Jeremy,Houston,Armed Forces,Army,Houston,18
+Jeremy,FIU,Bahamas,Toledo,FIU,19
+Jeremy,Virginia,Belk,South Carolina,Virginia,3
+Jeremy,Wake Forest,Birmingham,Memphis,Wake Forest,2
+Jeremy,UAB,Boca Raton,UAB,N. Illinois,21
+Jeremy,Ga. Southern,Camellia,E. Michigan,Ga. Southern,22
+Jeremy,Syracuse,Camping World,W. Virginia,Syracuse,11
+Jeremy,TCU,Cheez-It,California,TCU,15
+Jeremy,Kentucky,Citrus,Penn State,Kentucky,7
+Jeremy,Clemson,Cotton,Clemson,Notre Dame,38
+Jeremy,Tulane,Cure,Tulane,Louisiana,29
+Jeremy,Troy,Dollar General,Buffalo,Troy,17
+Jeremy,LSU,Fiesta,LSU,UCF,6
+Jeremy,Boise State,First Responder,Boise State,Boston College,27
+Jeremy,Ohio,Frisco,Ohio,San Diego State,33
+Jeremy,Marshall,Gasparilla,Marshall,S. Florida,20
+Jeremy,Hawaii,Hawaii,Hawaii,La. Tech,28
+Jeremy,Northwestern,Holiday,Utah,Northwestern,5
+Jeremy,BYU,Idaho Potato,BYU,W. Michigan,35
+Jeremy,Temple,Independence,Temple,Duke,14
+Jeremy,Arizona State,Las Vegas,Fresno State,Arizona State,23
+Jeremy,Missouri,Liberty,Missouri,Oklahoma State,36
+Jeremy,Cincinnati,Military,Cincinnati,Virginia Tech,8
+Jeremy,Purdue,Music City,Auburn,Purdue,26
+Jeremy,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+Jeremy,Utah State,New Mexico,Utah State,N. Texas,34
+Jeremy,MTSU,New Orleans,App. State,MTSU,1
+Jeremy,Alabama,Orange,Alabama,Oklahoma,39
+Jeremy,Mississippi State,Outback,Mississippi State,Iowa,24
+Jeremy,Michigan,Peach,Michigan,Florida,31
+Jeremy,Wisconsin,Pinstripe,Miami,Wisconsin,13
+Jeremy,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,16
+Jeremy,Oregon,Redbox,Michigan State,Oregon,4
+Jeremy,Ohio State,Rose,Ohio State,Washington,30
+Jeremy,Georgia,Sugar,Georgia,Texas,37
+Jeremy,Stanford,Sun,Stanford,Pittsburgh,9
+Jeremy,Texas A&M,Taxslayer,Texas A&M,NC State,25
+Jeremy,Baylor,Texas,Vanderbilt,Baylor,12
+JHajdin,Wash. State,Alamo,Wash. State,Iowa State,21
+JHajdin,Nevada,Arizona,Arkansas St.,Nevada,3
+JHajdin,Army,Armed Forces,Army,Houston,6
+JHajdin,FIU,Bahamas,Toledo,FIU,22
+JHajdin,Virginia,Belk,South Carolina,Virginia,4
+JHajdin,Wake Forest,Birmingham,Memphis,Wake Forest,8
+JHajdin,UAB,Boca Raton,UAB,N. Illinois,15
+JHajdin,E. Michigan,Camellia,E. Michigan,Ga. Southern,5
+JHajdin,W. Virginia,Camping World,W. Virginia,Syracuse,32
+JHajdin,TCU,Cheez-It,California,TCU,9
+JHajdin,Penn State,Citrus,Penn State,Kentucky,30
+JHajdin,Notre Dame,Cotton,Clemson,Notre Dame,38
+JHajdin,Tulane,Cure,Tulane,Louisiana,19
+JHajdin,Buffalo,Dollar General,Buffalo,Troy,7
+JHajdin,UCF,Fiesta,LSU,UCF,34
+JHajdin,Boston College,First Responder,Boise State,Boston College,12
+JHajdin,Ohio,Frisco,Ohio,San Diego State,25
+JHajdin,S. Florida,Gasparilla,Marshall,S. Florida,17
+JHajdin,Hawaii,Hawaii,Hawaii,La. Tech,14
+JHajdin,Northwestern,Holiday,Utah,Northwestern,2
+JHajdin,BYU,Idaho Potato,BYU,W. Michigan,33
+JHajdin,Duke,Independence,Temple,Duke,10
+JHajdin,Fresno State,Las Vegas,Fresno State,Arizona State,16
+JHajdin,Missouri,Liberty,Missouri,Oklahoma State,27
+JHajdin,Virginia Tech,Military,Cincinnati,Virginia Tech,1
+JHajdin,Auburn,Music City,Auburn,Purdue,18
+JHajdin,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+JHajdin,Utah State,New Mexico,Utah State,N. Texas,28
+JHajdin,App. State,New Orleans,App. State,MTSU,29
+JHajdin,Alabama,Orange,Alabama,Oklahoma,39
+JHajdin,Iowa,Outback,Mississippi State,Iowa,13
+JHajdin,Michigan,Peach,Michigan,Florida,35
+JHajdin,Miami,Pinstripe,Miami,Wisconsin,11
+JHajdin,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,23
+JHajdin,Oregon,Redbox,Michigan State,Oregon,24
+JHajdin,Ohio State,Rose,Ohio State,Washington,36
+JHajdin,Georgia,Sugar,Georgia,Texas,37
+JHajdin,Stanford,Sun,Stanford,Pittsburgh,31
+JHajdin,Texas A&M,Taxslayer,Texas A&M,NC State,20
+JHajdin,Vanderbilt,Texas,Vanderbilt,Baylor,26
+Joel,Iowa State,Alamo,Wash. State,Iowa State,11
+Joel,Arkansas St.,Arizona,Arkansas St.,Nevada,17
+Joel,Houston,Armed Forces,Army,Houston,20
+Joel,Toledo,Bahamas,Toledo,FIU,21
+Joel,South Carolina,Belk,South Carolina,Virginia,22
+Joel,Memphis,Birmingham,Memphis,Wake Forest,2
+Joel,N. Illinois,Boca Raton,UAB,N. Illinois,18
+Joel,Ga. Southern,Camellia,E. Michigan,Ga. Southern,7
+Joel,Syracuse,Camping World,W. Virginia,Syracuse,32
+Joel,TCU,Cheez-It,California,TCU,6
+Joel,Penn State,Citrus,Penn State,Kentucky,13
+Joel,Clemson,Cotton,Clemson,Notre Dame,38
+Joel,Tulane,Cure,Tulane,Louisiana,4
+Joel,Troy,Dollar General,Buffalo,Troy,5
+Joel,UCF,Fiesta,LSU,UCF,10
+Joel,Boise State,First Responder,Boise State,Boston College,27
+Joel,San Diego State,Frisco,Ohio,San Diego State,3
+Joel,S. Florida,Gasparilla,Marshall,S. Florida,16
+Joel,Hawaii,Hawaii,Hawaii,La. Tech,24
+Joel,Northwestern,Holiday,Utah,Northwestern,34
+Joel,BYU,Idaho Potato,BYU,W. Michigan,36
+Joel,Duke,Independence,Temple,Duke,8
+Joel,Arizona State,Las Vegas,Fresno State,Arizona State,19
+Joel,Missouri,Liberty,Missouri,Oklahoma State,37
+Joel,Cincinnati,Military,Cincinnati,Virginia Tech,28
+Joel,Purdue,Music City,Auburn,Purdue,29
+Joel,Oklahoma,National Championship,Winner of Cotton,Winner of Orange,40
+Joel,Utah State,New Mexico,Utah State,N. Texas,23
+Joel,App. State,New Orleans,App. State,MTSU,9
+Joel,Oklahoma,Orange,Alabama,Oklahoma,39
+Joel,Iowa,Outback,Mississippi State,Iowa,15
+Joel,Florida,Peach,Michigan,Florida,12
+Joel,Wisconsin,Pinstripe,Miami,Wisconsin,14
+Joel,Minnesota,Quick Lane,Georgia Tech,Minnesota,25
+Joel,Michigan State,Redbox,Michigan State,Oregon,1
+Joel,Ohio State,Rose,Ohio State,Washington,30
+Joel,Georgia,Sugar,Georgia,Texas,33
+Joel,Stanford,Sun,Stanford,Pittsburgh,31
+Joel,Texas A&M,Taxslayer,Texas A&M,NC State,26
+Joel,Vanderbilt,Texas,Vanderbilt,Baylor,35
+Joey,Wash. State,Alamo,Wash. State,Iowa State,30
+Joey,Nevada,Arizona,Arkansas St.,Nevada,10
+Joey,Houston,Armed Forces,Army,Houston,9
+Joey,Toledo,Bahamas,Toledo,FIU,22
+Joey,South Carolina,Belk,South Carolina,Virginia,23
+Joey,Wake Forest,Birmingham,Memphis,Wake Forest,2
+Joey,N. Illinois,Boca Raton,UAB,N. Illinois,1
+Joey,Ga. Southern,Camellia,E. Michigan,Ga. Southern,7
+Joey,Syracuse,Camping World,W. Virginia,Syracuse,8
+Joey,TCU,Cheez-It,California,TCU,3
+Joey,Penn State,Citrus,Penn State,Kentucky,11
+Joey,Clemson,Cotton,Clemson,Notre Dame,39
+Joey,Louisiana,Cure,Tulane,Louisiana,6
+Joey,Buffalo,Dollar General,Buffalo,Troy,13
+Joey,LSU,Fiesta,LSU,UCF,31
+Joey,Boise State,First Responder,Boise State,Boston College,20
+Joey,Ohio,Frisco,Ohio,San Diego State,21
+Joey,Marshall,Gasparilla,Marshall,S. Florida,17
+Joey,Hawaii,Hawaii,Hawaii,La. Tech,14
+Joey,Northwestern,Holiday,Utah,Northwestern,12
+Joey,BYU,Idaho Potato,BYU,W. Michigan,34
+Joey,Duke,Independence,Temple,Duke,16
+Joey,Fresno State,Las Vegas,Fresno State,Arizona State,15
+Joey,Missouri,Liberty,Missouri,Oklahoma State,35
+Joey,Cincinnati,Military,Cincinnati,Virginia Tech,25
+Joey,Auburn,Music City,Auburn,Purdue,27
+Joey,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+Joey,Utah State,New Mexico,Utah State,N. Texas,36
+Joey,App. State,New Orleans,App. State,MTSU,33
+Joey,Alabama,Orange,Alabama,Oklahoma,38
+Joey,Mississippi State,Outback,Mississippi State,Iowa,28
+Joey,Michigan,Peach,Michigan,Florida,26
+Joey,Wisconsin,Pinstripe,Miami,Wisconsin,18
+Joey,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,19
+Joey,Oregon,Redbox,Michigan State,Oregon,5
+Joey,Ohio State,Rose,Ohio State,Washington,32
+Joey,Georgia,Sugar,Georgia,Texas,37
+Joey,Stanford,Sun,Stanford,Pittsburgh,29
+Joey,Texas A&M,Taxslayer,Texas A&M,NC State,24
+Joey,Baylor,Texas,Vanderbilt,Baylor,4
+JPearce,Wash. State,Alamo,Wash. State,Iowa State,31
+JPearce,Nevada,Arizona,Arkansas St.,Nevada,8
+JPearce,Army,Armed Forces,Army,Houston,20
+JPearce,FIU,Bahamas,Toledo,FIU,1
+JPearce,South Carolina,Belk,South Carolina,Virginia,32
+JPearce,Memphis,Birmingham,Memphis,Wake Forest,22
+JPearce,UAB,Boca Raton,UAB,N. Illinois,5
+JPearce,Ga. Southern,Camellia,E. Michigan,Ga. Southern,15
+JPearce,Syracuse,Camping World,W. Virginia,Syracuse,14
+JPearce,TCU,Cheez-It,California,TCU,16
+JPearce,Penn State,Citrus,Penn State,Kentucky,36
+JPearce,Clemson,Cotton,Clemson,Notre Dame,38
+JPearce,Louisiana,Cure,Tulane,Louisiana,6
+JPearce,Buffalo,Dollar General,Buffalo,Troy,17
+JPearce,UCF,Fiesta,LSU,UCF,29
+JPearce,Boise State,First Responder,Boise State,Boston College,25
+JPearce,San Diego State,Frisco,Ohio,San Diego State,2
+JPearce,Marshall,Gasparilla,Marshall,S. Florida,4
+JPearce,Hawaii,Hawaii,Hawaii,La. Tech,13
+JPearce,Utah,Holiday,Utah,Northwestern,27
+JPearce,BYU,Idaho Potato,BYU,W. Michigan,26
+JPearce,Temple,Independence,Temple,Duke,24
+JPearce,Fresno State,Las Vegas,Fresno State,Arizona State,21
+JPearce,Missouri,Liberty,Missouri,Oklahoma State,35
+JPearce,Cincinnati,Military,Cincinnati,Virginia Tech,19
+JPearce,Purdue,Music City,Auburn,Purdue,23
+JPearce,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+JPearce,Utah State,New Mexico,Utah State,N. Texas,3
+JPearce,App. State,New Orleans,App. State,MTSU,7
+JPearce,Alabama,Orange,Alabama,Oklahoma,39
+JPearce,Mississippi State,Outback,Mississippi State,Iowa,30
+JPearce,Michigan,Peach,Michigan,Florida,34
+JPearce,Wisconsin,Pinstripe,Miami,Wisconsin,9
+JPearce,Georgia Tech,Quick Lane,Georgia Tech,Minnesota,10
+JPearce,Oregon,Redbox,Michigan State,Oregon,33
+JPearce,Ohio State,Rose,Ohio State,Washington,18
+JPearce,Georgia,Sugar,Georgia,Texas,37
+JPearce,Stanford,Sun,Stanford,Pittsburgh,28
+JPearce,NC State,Taxslayer,Texas A&M,NC State,11
+JPearce,Vanderbilt,Texas,Vanderbilt,Baylor,12
+JRoycroft,Wash. State,Alamo,Wash. State,Iowa State,31
+JRoycroft,Nevada,Arizona,Arkansas St.,Nevada,12
+JRoycroft,Army,Armed Forces,Army,Houston,25
+JRoycroft,Toledo,Bahamas,Toledo,FIU,26
+JRoycroft,South Carolina,Belk,South Carolina,Virginia,30
+JRoycroft,Wake Forest,Birmingham,Memphis,Wake Forest,7
+JRoycroft,N. Illinois,Boca Raton,UAB,N. Illinois,3
+JRoycroft,Ga. Southern,Camellia,E. Michigan,Ga. Southern,2
+JRoycroft,W. Virginia,Camping World,W. Virginia,Syracuse,32
+JRoycroft,California,Cheez-It,California,TCU,10
+JRoycroft,Penn State,Citrus,Penn State,Kentucky,16
+JRoycroft,Clemson,Cotton,Clemson,Notre Dame,38
+JRoycroft,Tulane,Cure,Tulane,Louisiana,19
+JRoycroft,Troy,Dollar General,Buffalo,Troy,6
+JRoycroft,LSU,Fiesta,LSU,UCF,29
+JRoycroft,Boston College,First Responder,Boise State,Boston College,8
+JRoycroft,Ohio,Frisco,Ohio,San Diego State,18
+JRoycroft,S. Florida,Gasparilla,Marshall,S. Florida,4
+JRoycroft,La. Tech,Hawaii,Hawaii,La. Tech,5
+JRoycroft,Northwestern,Holiday,Utah,Northwestern,28
+JRoycroft,BYU,Idaho Potato,BYU,W. Michigan,34
+JRoycroft,Duke,Independence,Temple,Duke,17
+JRoycroft,Arizona State,Las Vegas,Fresno State,Arizona State,1
+JRoycroft,Missouri,Liberty,Missouri,Oklahoma State,36
+JRoycroft,Virginia Tech,Military,Cincinnati,Virginia Tech,21
+JRoycroft,Auburn,Music City,Auburn,Purdue,24
+JRoycroft,Alabama,National Championship,Winner of Cotton,Winner of Orange,40
+JRoycroft,Utah State,New Mexico,Utah State,N. Texas,35
+JRoycroft,App. State,New Orleans,App. State,MTSU,33
+JRoycroft,Alabama,Orange,Alabama,Oklahoma,39
+JRoycroft,Iowa,Outback,Mississippi State,Iowa,15
+JRoycroft,Michigan,Peach,Michigan,Florida,23
+JRoycroft,Miami,Pinstripe,Miami,Wisconsin,11
+JRoycroft,Minnesota,Quick Lane,Georgia Tech,Minnesota,9
+JRoycroft,Michigan State,Redbox,Michigan State,Oregon,13
+JRoycroft,Ohio State,Rose,Ohio State,Washington,20
+JRoycroft,Georgia,Sugar,Georgia,Texas,37
+JRoycroft,Stanford,Sun,Stanford,Pittsburgh,22
+JRoycroft,Texas A&M,Taxslayer,Texas A&M,NC State,14
+JRoycroft,Vanderbilt,Texas,Vanderbilt,Baylor,27
