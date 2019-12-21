@@ -1,6 +1,6 @@
 bowl_orig	bowl	date	time	year	month	day	hour	minute	datetime	date_order	location	favorite_orig	spread	spread_order	underdog_orig	favorite_abbrev	favorite_tiny	underdog_abbrev	underdog_tiny	favorite	underdog	winner	winner_score	loser_score
-Bahamas	Bahamas	Dec. 20	2 p.m. (ESPN)	2019	12	20	14	0	20191220140000	1	Nassau, Bahamas	Buffalo	-4.5	20	Charlotte					Buffalo	Charlotte			
-Frisco	Frisco	Dec. 20	7:30 p.m. (ESPN2)	2019	12	20	19	30	20191220193000	2	Frisco, TX	Utah State	-8	33	Kent State					Utah St.	Kent St.			
+Bahamas	Bahamas	Dec. 20	2 p.m. (ESPN)	2019	12	20	14	0	20191220140000	1	Nassau, Bahamas	Buffalo	-4.5	20	Charlotte					Buffalo	Charlotte	Buffalo	31	9
+Frisco	Frisco	Dec. 20	7:30 p.m. (ESPN2)	2019	12	20	19	30	20191220193000	2	Frisco, TX	Utah State	-8	33	Kent State					Utah St.	Kent St.	Kent St.	51	41
 New Mexico	New Mexico	Dec. 21	2 p.m. (ESPN)	2019	12	21	14	0	20191221140000	3	Albuquerque, NM	San Diego State	-4.5	21	Central Michigan			C. Michigan		San Diego St.	Central Michigan			
 Cure	Cure	Dec. 21	2:30 p.m. (CBSSN)	2019	12	21	14	30	20191221143000	4	Orlando, FL	Georgia Southern	-6	23	Liberty					Georgia Southern	Liberty			
 Boca Raton	Boca Raton	Dec. 21	3:30 p.m. (ABC)	2019	12	21	15	30	20191221153000	5	Boca Raton, FL	SMU	-3	9	FAU	SMU		FAU		Southern Methodist	Florida Atlantic			
