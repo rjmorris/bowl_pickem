@@ -1,12 +1,12 @@
 bowl_orig	bowl	date	time	year	month	day	hour	minute	datetime	date_order	location	favorite_orig	spread	spread_order	underdog_orig	favorite_abbrev	favorite_tiny	underdog_abbrev	underdog_tiny	favorite	underdog	winner	winner_score	loser_score
 Bahamas	Bahamas	Dec. 20	2 p.m. (ESPN)	2019	12	20	14	0	20191220140000	1	Nassau, Bahamas	Buffalo	-4.5	20	Charlotte					Buffalo	Charlotte	Buffalo	31	9
 Frisco	Frisco	Dec. 20	7:30 p.m. (ESPN2)	2019	12	20	19	30	20191220193000	2	Frisco, TX	Utah State	-8	33	Kent State					Utah St.	Kent St.	Kent St.	51	41
-New Mexico	New Mexico	Dec. 21	2 p.m. (ESPN)	2019	12	21	14	0	20191221140000	3	Albuquerque, NM	San Diego State	-4.5	21	Central Michigan			C. Michigan		San Diego St.	Central Michigan			
-Cure	Cure	Dec. 21	2:30 p.m. (CBSSN)	2019	12	21	14	30	20191221143000	4	Orlando, FL	Georgia Southern	-6	23	Liberty					Georgia Southern	Liberty			
-Boca Raton	Boca Raton	Dec. 21	3:30 p.m. (ABC)	2019	12	21	15	30	20191221153000	5	Boca Raton, FL	SMU	-3	9	FAU	SMU		FAU		Southern Methodist	Florida Atlantic			
-Camellia	Camellia	Dec. 21	5:30 p.m. (ESPN)	2019	12	21	17	30	20191221173000	6	Montgomery, AL	Arkansas State	-3	10	FIU			FIU		Arkansas St.	Florida International			
-Las Vegas	Las Vegas	Dec. 21	7:30 p.m. (ABC)	2019	12	21	19	30	20191221193000	7	Las Vegas, NV	Washington	-3	11	Boise State 					Washington	Boise St. 			
-New Orleans	New Orleans	Dec. 21	9 p.m. (ESPN)	2019	12	21	21	0	20191221210000	8	New Orleans, LA	Appalachian State	-17.5	39	UAB					Appalachian St.	UAB			
+New Mexico	New Mexico	Dec. 21	2 p.m. (ESPN)	2019	12	21	14	0	20191221140000	3	Albuquerque, NM	San Diego State	-4.5	21	Central Michigan			C. Michigan		San Diego St.	Central Michigan	San Diego St.	48	11
+Cure	Cure	Dec. 21	2:30 p.m. (CBSSN)	2019	12	21	14	30	20191221143000	4	Orlando, FL	Georgia Southern	-6	23	Liberty					Georgia Southern	Liberty	Liberty	23	16
+Boca Raton	Boca Raton	Dec. 21	3:30 p.m. (ABC)	2019	12	21	15	30	20191221153000	5	Boca Raton, FL	SMU	-3	9	FAU	SMU		FAU		Southern Methodist	Florida Atlantic	Florida Atlantic	52	28
+Camellia	Camellia	Dec. 21	5:30 p.m. (ESPN)	2019	12	21	17	30	20191221173000	6	Montgomery, AL	Arkansas State	-3	10	FIU			FIU		Arkansas St.	Florida International	Arkansas St.	34	26
+Las Vegas	Las Vegas	Dec. 21	7:30 p.m. (ABC)	2019	12	21	19	30	20191221193000	7	Las Vegas, NV	Washington	-3	11	Boise State 					Washington	Boise St. 	Washington	38	7
+New Orleans	New Orleans	Dec. 21	9 p.m. (ESPN)	2019	12	21	21	0	20191221210000	8	New Orleans, LA	Appalachian State	-17.5	39	UAB					Appalachian St.	UAB	Appalachian St.	31	17
 Gasparilla	Gasparilla	Dec. 23	2:30 p.m. (ESPN)	2019	12	23	14	30	20191223143000	9	Tampa, FL	UCF	-17.5	40	Marshall					Central Florida	Marshall			
 Hawaii	Hawaii	Dec. 24	8 p.m. (ESPN)	2019	12	24	20	0	20191224200000	10	Honolulu, HI	BYU	-2	5	Hawaii					BYU	Hawaii			
 Independence	Independence	Dec. 26	4 p.m. (ESPN)	2019	12	26	16	0	20191226160000	11	Shreveport, LA	Miami (FL)	-7.5	30	Louisiana Tech					Miami (FL)	Louisiana Tech			
