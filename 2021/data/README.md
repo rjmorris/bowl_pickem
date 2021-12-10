@@ -1,3 +1,5 @@
+Create a `picks.tsv` file containing nothing but a header row. The column names should be `player`, `bowl`, `selection`, and `confidence`.
+
 Store the original entry form sent by Derick. This is `BowlsYYYY.xlsx`.
 
 Open `BowlsYYYY.xlsx` in LibreOffice Calc and export it to `games.tsv`.
