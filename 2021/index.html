@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pickem Results</title>
+        <link rel="stylesheet" type="text/css" href="css/barchart.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+      <div id="side-panel">
+          <div id="contest-title" class="side-section">
+              <h1>Bowl Pick'em 2021-22</h1>
+          </div>
+          <div id="game-details" class="side-section">
+              <h1>Highlighted Game Details</h1>
+              <ul>
+                  <li><span class="game-attribute">Bowl</span><span id="highlighted-bowl" class="game-value"></span></li>
+                  <li><span class="game-attribute">Favorite</span><span id="highlighted-favorite" class="game-value"></span> <span id="highlighted-spread" class="game-value"></span></li>
+                  <li><span class="game-attribute">Underdog</span><span id="highlighted-underdog" class="game-value"></span></li>
+                  <li><span class="game-attribute">Result</span><span id="highlighted-result" class="game-value"></span></li>
+                  <li><span class="game-attribute">Date/Time</span><span id="highlighted-datetime" class="game-value"></span></li>
+                  <li><span class="game-attribute">Location</span><span id="highlighted-location" class="game-value"></span></li>
+              </ul>
+          </div>
+          <div id="game-finder" class="side-section">
+              <h1>All Games</h1>
+              <ul id="game-list"></ul>
+          </div>
+      </div>
+      <div id="header">
+        <div id="sort-control" class="control-group">
+            <p class="header">sort games by</p>
+            <ul>
+                <li id="sort-game-confidence" class="sort-game-option">confidence</li>
+                <li id="sort-game-date" class="sort-game-option">date</li>
+                <li id="sort-game-spread" class="sort-game-option">spread</li>
+            </ul>
+        </div>
+        <div id="sort-control" class="control-group">
+            <p class="header">sort players by</p>
+            <ul>
+                <li id="sort-player-points" class="sort-player-option">points</li>
+                <li id="sort-player-games" class="sort-player-option">games</li>
+                <li id="sort-player-name" class="sort-player-option">name</li>
+            </ul>
+        </div>
+        <div id="help-control" class="control-group">
+          <ul>
+              <li id="help-show" class="control">help</li>
+          </ul>
+        </div>
+      </div>
+      <div id="help">
+        <p>
+          Participants pick the winners of 43 bowl games. For each game, they
+          assign a confidence score in the range 1-43, with every score used
+          exactly once. Standings are based on the sum of the confidence scores
+          for the correctly picked games.
+        </p>
+        <p>
+          In the graphic, the height of a bar represents the confidence
+          score assigned to the game. The color represents whether the pick
+          was correct. Hovering over a bar will highlight the corresponding
+          game for all other participants.
+        </p>
+        <svg id="legend">
+          <rect class="bar right" />
+          <rect class="bar wrong" />
+          <rect class="bar unplayed" />
+          <text class="label">correct</text>
+          <text class="label">incorrect</text>
+          <text class="label">unplayed</text>
+        </svg>
+        <p id="close">close</p>
+      </div>
+      <div id="graphic-container">
+        <svg id="graphic">
+          <defs>
+            <pattern id="pattern-circles" height="4" width="4" patternUnits="userSpaceOnUse">
+              <circle stroke-width="0" stroke="#ffffff" fill="#ffffff" r="2" cy="2" cx="2"></circle>
+            </pattern>
+            <mask id="mask-what-if" x="0" y="0" width="1000" height="1000" >
+              <rect x="0" y="0" width="200" height="200" fill="url(#pattern-circles)" />
+            </mask>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript" src="lib/d3-3.5.9/d3.min.js"></script>
+      <script type="text/javascript" src="lib/d3-tip-rtidatascience-a1d0490-20151017/index.js"></script>
+      <script type="text/javascript" src="lib/jquery-2.1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="lib/queue-async-1.0.7/queue.js"></script>
+      <script type="text/javascript" src="lib/moment-2.10.6/moment.min.js"></script>
+      <script type="text/javascript" src="js/barchart.js"></script>
+    </body>
+</html>

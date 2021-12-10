@@ -1,0 +1,44 @@
+bowl	date	time	favorite	underdog	winner	winner_score	loser_score	order_orig	bowl_orig	year	month	day	hour	minute	datetime	date_order	location_orig	location	favorite_orig	underdog_orig	spread	spread_order	favorite_abbrev	underdog_abbrev	favorite_tiny	underdog_tiny
+Bahamas	Dec. 17	Noon (ESPN)	Toledo	Middle Tennessee				2	Bahamas	2021	12	17	12	00	202112171200	1	Nassau, Bahamas	Nassau, Bahamas	Toledo 	Middle Tenn. 	-9	40				
+Cure	Dec. 17	6 p.m. (ESPN2)	Coastal Carolina	Northern Illinois				1	Cure	2021	12	17	18	00	202112171800	2	Orlando, Fla.	Orlando, FL	C. Carolina 	N. Illinois 	-9.5	41		N. Illinois		
+Boca Raton	Dec. 18	11 a.m. (ESPN)	Appalachian State	Western Kentucky				8	Boca Raton	2021	12	18	11	00	202112181100	3	Boca Raton, Fla.	Boca Raton, FL	App. State 	W. Kentucky 	-2.5	11	App. State			
+New Mexico	Dec. 18	2:15 p.m. (ESPN)	Fresno State	UTEP				7	New Mexico	2021	12	18	14	15	202112181415	4	Albuquerque, N.M.	Albuquerque, NM	Fresno State 	UTEP 	-13	43				
+Independence	Dec. 18	3:30 p.m. (ABC)	BYU	UAB				6	Independence	2021	12	18	15	30	202112181530	5	Shreveport, La.	Shreveport, LA	BYU 	UAB 	-8	38				
+LendingTree	Dec. 18	5:45 p.m. (ESPN)	Liberty	Eastern Michigan				5	LendingTree	2021	12	18	17	45	202112181745	6	Mobile, Ala.	Mobile, AL	Liberty 	E. Michigan 	-7	34				
+LA	Dec. 18	7:30 p.m. (ABC)	Oregon State	Utah State				4	L.A.	2021	12	18	19	30	202112181930	7	Los Angeles	Los Angeles, CA	Oregon State 	Utah State 	-6.5	31				
+New Orleans	Dec. 18	9:15 p.m. (ESPN)	Louisiana	Marshall				3	New Orleans	2021	12	18	21	15	202112182115	8	New Orleans	New Orleans, LA	Louisiana-Lafayette	Marshall 	-5	28				
+Myrtle Beach	Dec. 20	2:30 p.m. (ESPN)	Tulsa	Old Dominion				9	Myrtle Beach	2021	12	20	14	30	202112201430	9	Conway, S.C.	Conway, SC	Tulsa 	Old Dominion 	-7	35				
+Famous Idaho Potato	Dec. 21	3:30 p.m. (ESPN)	Wyoming	Kent State				11	Famous Idaho Potato	2021	12	21	15	30	202112211530	10	Boise, Idaho        	Boise, ID	Wyoming 	Kent State 	-3.5	21				
+Frisco	Dec. 21	7:30 p.m. (ESPN)	UTSA	San Diego State				10	Frisco	2021	12	21	19	30	202112211930	11	Frisco, Tex.	Frisco, TX	UTSA 	San Diego State 	-2.5	12				
+Armed Forces	Dec. 22	8 p.m. (ESPN)	Army	Missouri				12	Armed Forces	2021	12	22	20	00	202112222000	12	Fort Worth, Tex.	Fort Worth, TX	Army 	Missouri 	-2.5	13				
+Frisco Classic	Dec. 23	3:30 p.m. (ESPN)	Miami (OH)	North Texas				14	Frisco Classic	2021	12	23	15	30	202112231530	13	Frisco, Tex.	Frisco, TX	Miami, OH	North Texas 	-4.5	26				
+Gasparilla	Dec. 23	7:30 p.m. (ABC)	Florida	UCF				13	Gasparilla	2021	12	23	19	30	202112231930	14	Tampa	Tampa, FL	Florida 	UCF 	-6	30				
+Hawai'i	Dec. 24	8 p.m. (ESPN)	Memphis	Hawai'i				15	Hawai'i	2021	12	24	20	00	202112242000	15	Honolulu, Hawai'i	Honolulu, HI	Memphis 	Hawaii 	-4	23				
+Camellia	Dec. 25	2:30 p.m. (ESPN)	Georgia State	Ball State				16	Camellia	2021	12	25	14	30	202112251430	16	Montgomery, Ala.	Montgomery, AL	Georgia State 	Ball State 	-3	17				
+Quick Lane	Dec. 27	11 a.m. (ESPN)	Nevada	Western Michigan				18	Quick Lane	2021	12	27	11	00	202112271100	17	Detroit	Detroit, MI	Nevada 	W. Michigan 	-6.5	32				
+Military	Dec. 27	2:30 p.m. (ESPN)	Boston College	East Carolina				17	Military	2021	12	27	14	30	202112271430	18	Annapolis, Md.	Annapolis, MD	Boston College 	ECU 	-3	18				
+Birmingham	Dec. 28	Noon (ESPN)	Auburn	Houston				23	Birmingham	2021	12	28	12	00	202112281200	19	Birmingham, Ala.	Birmingham, AL	Auburn	Houston 	-3	19				
+First Responder	Dec. 28	3:15 p.m. (ESPN)	Air Force	Louisville				22	First Responder	2021	12	28	15	15	202112281515	20	University Park, Tex.	University Park, TX	Air Force 	Louisville 	-1	6				
+Holiday	Dec. 28	5 p.m. (FOX)	NC State	UCLA				21	Holiday	2021	12	28	17	00	202112281700	21	San Diego	San Diego, CA	NC State 	UCLA 	-2.5	14				
+Liberty	Dec. 28	6:45 p.m. (ESPN)	Mississippi State	Texas Tech				20	Liberty	2021	12	28	18	45	202112281845	22	Memphis	Memphis, TN	Miss. State 	Texas Tech 	-8.5	39				
+Guaranteed Rate	Dec. 28	10:15 p.m. (ESPN)	Minnesota	West Virginia				19	Guaranteed Rate	2021	12	28	22	15	202112282215	23	Phoenix	Phoenix, AZ	Minnesota 	West Virginia 	-6.5	33				
+Fenway	Dec. 29	11 a.m. (ESPN)	Virginia	SMU				26	Fenway	2021	12	29	11	00	202112291100	24	Boston	Boston, MA	Virginia 	SMU 	0	1				
+Pinstripe	Dec. 29	2:15 p.m. (ESPN)	Virginia Tech	Maryland				25	Pinstripe	2021	12	29	14	15	202112291415	25	New York	New York, NY	Virginia Tech 	Maryland 	-3	20				
+Cheez-It	Dec. 29  	5:45 p.m. (ESPN)	Clemson	Iowa State				27	Cheez-It	2021	12	29	17	45	202112291745	26	Orlando, Fla.	Orlando, FL	Clemson 	Iowa State 	-1	7				
+Alamo	Dec. 29	9:15 p.m. (ESPN)	Oklahoma	Oregon				24	Alamo	2021	12	29	21	15	202112292115	27	San Antonio	San Antonio, TX	Oklahoma 	Oregon 	-4	24				
+Duke's Mayo	Dec. 30	11:30 a.m. (ESPN)	North Carolina	South Carolina				31	Duke's Mayo	2021	12	30	11	30	202112301130	28	Charlotte	Charlotte, NC	N. Carolina 	S. Carolina 	-5.5	29				
+Music City	Dec. 30	3 p.m. (ESPN)	Purdue	Tennessee				30	Music City	2021	12	30	15	00	202112301500	29	Nashville	Nashville, TN	Purdue 	Tennessee 	-2.5	15				
+Peach	Dec. 30	7 p.m. (ESPN)	Pittsburgh	Michigan State				28	Peach	2021	12	30	19	00	202112301900	30	Atlanta	Atlanta, GA	Pittsburgh	Michigan State 	-3.5	22				
+Las Vegas	Dec. 30	10:30 p.m. (ESPN)	Wisconsin	Arizona State				29	Las Vegas	2021	12	30	22	30	202112302230	31	Las Vegas	Las Vegas, NV	Wisconsin 	Arizona State 	-7	36				
+Gator	Dec. 31	11 a.m. (ESPN)	Texas A&M	Wake Forest				34	TaxSlayer	2021	12	31	11	00	202112311100	32	Jacksonville, Fla.	Jacksonville, FL	Texas A&M 	Wake Forest 	-4.5	27				
+Sun	Dec. 31	12:30 p.m. (CBS)	Miami (FL)	Washington State				32	Tony the Tiger	2021	12	31	12	30	202112311230	33	El Paso, Tex.	El Paso, TX	Miami 	Wash. State 	0	2				
+Cotton (Semis)	Dec. 31	3:30 p.m. (ESPN)	Alabama	Cincinnati				41	Cotton Bowl (CFP Semis)	2021	12	31	15	30	202112311530	34	Arlington, Texas	Arlington, TX	Alabama 	Cincinnati	0	3			Bama	Cincy
+Arizona	Dec. 31	4:30 p.m. (Barstool)	Boise State	Central Michigan				33	Arizona	2021	12	31	16	30	202112311630	35	Tucson, Ariz.	Tucson, AZ	Boise State 	C. Michigan 	-10	42				
+Orange (Semis)	Dec. 31	7:30 p.m. (ESPN)	Georgia	Michigan				42	Orange Bowl (CFP Semis)	2021	12	31	19	30	202112311930	36	Miami Gardens, Fla.	Miami Gardens, FL	Georgia	Michigan 	0	4			UGa	Mich
+Outback	Jan. 1	Noon (ESPN2)	Penn State	Arkansas				39	Outback	2022	01	01	12	00	202201011200	37	Tampa, Fla.	Tampa, FL	Penn State 	Arkansas 	-4	25				
+Fiesta	Jan. 1	1 p.m. (ESPN)	Notre Dame	Oklahoma State				35	Fiesta	2022	01	01	13	00	202201011300	38	Glendale, Ariz.	Glendale, AZ	Notre Dame 	Oklahoma State	-1.5	8				
+Citrus	Jan. 1	1 p.m. (ABC)	Iowa	Kentucky				38	Citrus	2022	01	01	13	00	202201011300	39	Orlando, Fla.	Orlando, FL	Iowa 	Kentucky 	-1.5	9				
+Rose	Jan. 1	5 p.m. (ESPN)	Ohio State	Utah				36	Rose	2022	01	01	17	00	202201011700	40	Pasadena, Calif.	Pasadena, CA	Ohio State 	Utah	-7	37				
+Sugar	Jan. 1	8:45 p.m. (ESPN)	Ole Miss	Baylor				37	Sugar	2022	01	01	20	45	202201012045	41	New Orleans	New Orleans, LA	Ole Miss	Baylor 	-2	10				
+Texas	Jan. 4	9 p.m. (ESPN)	LSU	Kansas State				40	Texas Bowl	2022	01	04	21	00	202201042100	42	Houston	Houston, TX	LSU 	Kansas State 	-2.5	16				
+Championship	Jan. 10	8 p.m. (ESPN)	Cotton (Semis)	Orange (Semis)				43	National Championship	2022	01	10	20	00	202201102000	43	Indianapolis	Indianapolis, IN			0	5				
