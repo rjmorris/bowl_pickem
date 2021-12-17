@@ -1,0 +1,646 @@
+name,Selection,Bowl,Favorite,Underdog,Confidence_Score
+Alex,Oregon,Alamo,Oklahoma,Oregon,1
+Alex,Boise State,Arizona,Boise State,C. Michigan,39
+Alex,Army,Armed Forces,Army,Missouri,18
+Alex,Toledo,Bahamas,Toledo,Middle Tenn.,37
+Alex,Auburn,Birmingham,Auburn,Houston,14
+Alex,App. State,Boca Raton,App. State,W. Kentucky,33
+Alex,Ball State,Camellia,Georgia State,Ball State,16
+Alex,Clemson,Cheez-It,Clemson,Iowa State,10
+Alex,Kentucky,Citrus,Iowa,Kentucky,7
+Alex,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Alex,C. Carolina,Cure,C. Carolina,N. Illinois,38
+Alex,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,32
+Alex,Wyoming,Famous Idaho Potato,Wyoming,Kent State,21
+Alex,Virginia,Fenway,Virginia,SMU,12
+Alex,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,9
+Alex,Louisville,First Responder,Air Force,Louisville,11
+Alex,San Diego State,Frisco,UTSA,San Diego State,19
+Alex,North Texas,Frisco Classic,"Miami, OH",North Texas,23
+Alex,Florida,Gasparilla,Florida,UCF,25
+Alex,Minnesota,Guaranteed Rate,Minnesota,West Virginia,29
+Alex,Memphis ,Hawai'i,Memphis ,Hawaii,22
+Alex,NC State,Holiday,NC State,UCLA,15
+Alex,BYU,Independence,BYU,UAB,35
+Alex,Utah State,L.A.,Oregon State,Utah State,26
+Alex,Wisconsin,Las Vegas,Wisconsin,Arizona State,31
+Alex,Liberty,LendingTree,Liberty,E. Michigan,34
+Alex,Miss. State,Liberty,Miss. State,Texas Tech,36
+Alex,ECU ,Military,Boston College,ECU ,2
+Alex,Tennessee,Music City,Purdue,Tennessee,4
+Alex,Tulsa,Myrtle Beach,Tulsa,Old Dominion,28
+Alex,Alabama,National Championship,Alabama,Georgia,43
+Alex,Fresno State,New Mexico,Fresno State,UTEP,40
+Alex,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,24
+Alex,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Alex,Penn State,Outback,Penn State,Arkansas,20
+Alex,Michigan State,Peach,Pittsburgh,Michigan State,3
+Alex,Virginia Tech,Pinstripe,Virginia Tech,Maryland,17
+Alex,Nevada,Quick Lane,Nevada,W. Michigan,27
+Alex,Ohio State,Rose,Ohio State,Utah,30
+Alex,Baylor,Sugar,Ole Miss,Baylor,8
+Alex,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,5
+Alex,Kansas State,Texas Bowl,LSU,Kansas State,6
+Alex,Miami,Tony the Tiger,Miami,Wash. State,13
+Caroline,Oregon,Alamo,Oklahoma,Oregon,32
+Caroline,Boise State,Arizona,Boise State,C. Michigan,40
+Caroline,Missouri,Armed Forces,Army,Missouri,3
+Caroline,Toledo,Bahamas,Toledo,Middle Tenn.,2
+Caroline,Auburn,Birmingham,Auburn,Houston,9
+Caroline,W. Kentucky,Boca Raton,App. State,W. Kentucky,4
+Caroline,Georgia State,Camellia,Georgia State,Ball State,6
+Caroline,Iowa State,Cheez-It,Clemson,Iowa State,5
+Caroline,Iowa,Citrus,Iowa,Kentucky,36
+Caroline,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Caroline,C. Carolina,Cure,C. Carolina,N. Illinois,39
+Caroline,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,25
+Caroline,Wyoming,Famous Idaho Potato,Wyoming,Kent State,12
+Caroline,Virginia,Fenway,Virginia,SMU,28
+Caroline,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,11
+Caroline,Louisville,First Responder,Air Force,Louisville,16
+Caroline,UTSA,Frisco,UTSA,San Diego State,38
+Caroline,North Texas,Frisco Classic,"Miami, OH",North Texas,15
+Caroline,UCF,Gasparilla,Florida,UCF,8
+Caroline,West Virginia,Guaranteed Rate,Minnesota,West Virginia,7
+Caroline,Hawaii,Hawai'i,Memphis ,Hawaii,21
+Caroline,NC State,Holiday,NC State,UCLA,27
+Caroline,BYU,Independence,BYU,UAB,19
+Caroline,Oregon State,L.A.,Oregon State,Utah State,30
+Caroline,Wisconsin,Las Vegas,Wisconsin,Arizona State,31
+Caroline,Liberty,LendingTree,Liberty,E. Michigan,17
+Caroline,Miss. State,Liberty,Miss. State,Texas Tech,33
+Caroline,Boston College,Military,Boston College,ECU ,20
+Caroline,Purdue,Music City,Purdue,Tennessee,23
+Caroline,Tulsa,Myrtle Beach,Tulsa,Old Dominion,18
+Caroline,Georgia,National Championship,,,43
+Caroline,Fresno State,New Mexico,Fresno State,UTEP,29
+Caroline,Marshall,New Orleans,Louisiana-Lafayette,Marshall,1
+Caroline,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Caroline,Penn State,Outback,Penn State,Arkansas,34
+Caroline,Michigan State,Peach,Pittsburgh,Michigan State,24
+Caroline,Virginia Tech,Pinstripe,Virginia Tech,Maryland,14
+Caroline,Nevada,Quick Lane,Nevada,W. Michigan,22
+Caroline,Ohio State,Rose,Ohio State,Utah,37
+Caroline,Baylor,Sugar,Ole Miss,Baylor,35
+Caroline,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,26
+Caroline,Kansas State,Texas Bowl,LSU,Kansas State,13
+Caroline,Miami,Tony the Tiger,Miami,Wash. State,10
+Derick,Oklahoma,Alamo,Oklahoma,Oregon,9
+Derick,Boise State,Arizona,Boise State,C. Michigan,34
+Derick,Army,Armed Forces,Army,Missouri,39
+Derick,Toledo,Bahamas,Toledo,Middle Tenn.,21
+Derick,Houston,Birmingham,Auburn,Houston,18
+Derick,W. Kentucky,Boca Raton,App. State,W. Kentucky,2
+Derick,Georgia State,Camellia,Georgia State,Ball State,19
+Derick,Iowa State,Cheez-It,Clemson,Iowa State,6
+Derick,Kentucky,Citrus,Iowa,Kentucky,37
+Derick,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Derick,C. Carolina,Cure,C. Carolina,N. Illinois,20
+Derick,S. Carolina,Duke's Mayo,N. Carolina,S. Carolina,10
+Derick,Kent State,Famous Idaho Potato,Wyoming,Kent State,1
+Derick,Virginia,Fenway,Virginia,SMU,7
+Derick,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,12
+Derick,Louisville,First Responder,Air Force,Louisville,15
+Derick,UTSA,Frisco,UTSA,San Diego State,30
+Derick,North Texas,Frisco Classic,"Miami, OH",North Texas,5
+Derick,UCF,Gasparilla,Florida,UCF,8
+Derick,Minnesota,Guaranteed Rate,Minnesota,West Virginia,35
+Derick,Memphis ,Hawai'i,Memphis ,Hawaii,14
+Derick,NC State,Holiday,NC State,UCLA,27
+Derick,BYU,Independence,BYU,UAB,40
+Derick,Oregon State,L.A.,Oregon State,Utah State,38
+Derick,Wisconsin,Las Vegas,Wisconsin,Arizona State,28
+Derick,Liberty,LendingTree,Liberty,E. Michigan,4
+Derick,Miss. State,Liberty,Miss. State,Texas Tech,24
+Derick,Boston College,Military,Boston College,ECU ,31
+Derick,Tennessee,Music City,Purdue,Tennessee,25
+Derick,Tulsa,Myrtle Beach,Tulsa,Old Dominion,23
+Derick,Michigan,National Championship,,,43
+Derick,Fresno State,New Mexico,Fresno State,UTEP,36
+Derick,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,22
+Derick,Michigan,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Derick,Arkansas,Outback,Penn State,Arkansas,17
+Derick,Michigan State,Peach,Pittsburgh,Michigan State,13
+Derick,Virginia Tech,Pinstripe,Virginia Tech,Maryland,29
+Derick,Nevada,Quick Lane,Nevada,W. Michigan,16
+Derick,Ohio State,Rose,Ohio State,Utah,3
+Derick,Baylor,Sugar,Ole Miss,Baylor,11
+Derick,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,32
+Derick,LSU,Texas Bowl,LSU,Kansas State,26
+Derick,Wash. State,Tony the Tiger,Miami,Wash. State,33
+Harper,Oklahoma,Alamo,Oklahoma,Oregon,27
+Harper,Boise State,Arizona,Boise State,C. Michigan,40
+Harper,Army,Armed Forces,Army,Missouri,19
+Harper,Toledo,Bahamas,Toledo,Middle Tenn.,38
+Harper,Houston,Birmingham,Auburn,Houston,8
+Harper,App. State,Boca Raton,App. State,W. Kentucky,18
+Harper,Georgia State,Camellia,Georgia State,Ball State,22
+Harper,Clemson,Cheez-It,Clemson,Iowa State,15
+Harper,Iowa,Citrus,Iowa,Kentucky,17
+Harper,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Harper,C. Carolina,Cure,C. Carolina,N. Illinois,39
+Harper,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,30
+Harper,Wyoming,Famous Idaho Potato,Wyoming,Kent State,25
+Harper,Virginia,Fenway,Virginia,SMU,12
+Harper,Notre Dame,Fiesta,Notre Dame,Oklahoma State,16
+Harper,Air Force,First Responder,Air Force,Louisville,14
+Harper,San Diego State,Frisco,UTSA,San Diego State,9
+Harper,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,29
+Harper,UCF,Gasparilla,Florida,UCF,4
+Harper,Minnesota,Guaranteed Rate,Minnesota,West Virginia,31
+Harper,Memphis ,Hawai'i,Memphis ,Hawaii,26
+Harper,NC State,Holiday,NC State,UCLA,20
+Harper,BYU,Independence,BYU,UAB,36
+Harper,Utah State,L.A.,Oregon State,Utah State,2
+Harper,Wisconsin,Las Vegas,Wisconsin,Arizona State,34
+Harper,Liberty,LendingTree,Liberty,E. Michigan,32
+Harper,Miss. State,Liberty,Miss. State,Texas Tech,37
+Harper,Boston College,Military,Boston College,ECU ,23
+Harper,Tennessee,Music City,Purdue,Tennessee,10
+Harper,Tulsa,Myrtle Beach,Tulsa,Old Dominion,33
+Harper,Georgia,National Championship,,,43
+Harper,UTEP,New Mexico,Fresno State,UTEP,1
+Harper,Marshall,New Orleans,Louisiana-Lafayette,Marshall,5
+Harper,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Harper,Penn State,Outback,Penn State,Arkansas,28
+Harper,Michigan State,Peach,Pittsburgh,Michigan State,7
+Harper,Virginia Tech,Pinstripe,Virginia Tech,Maryland,24
+Harper,W. Michigan,Quick Lane,Nevada,W. Michigan,3
+Harper,Ohio State,Rose,Ohio State,Utah,35
+Harper,Baylor,Sugar,Ole Miss,Baylor,11
+Harper,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,6
+Harper,LSU,Texas Bowl,LSU,Kansas State,21
+Harper,Wash. State,Tony the Tiger,Miami,Wash. State,13
+Jamie,Oklahoma,Alamo,Oklahoma,Oregon,19
+Jamie,Boise State,Arizona,Boise State,C. Michigan,39
+Jamie,Missouri,Armed Forces,Army,Missouri,5
+Jamie,Toledo,Bahamas,Toledo,Middle Tenn.,38
+Jamie,Auburn,Birmingham,Auburn,Houston,13
+Jamie,App. State,Boca Raton,App. State,W. Kentucky,12
+Jamie,Ball State,Camellia,Georgia State,Ball State,16
+Jamie,Clemson,Cheez-It,Clemson,Iowa State,10
+Jamie,Iowa,Citrus,Iowa,Kentucky,7
+Jamie,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,41
+Jamie,N. Illinois,Cure,C. Carolina,N. Illinois,31
+Jamie,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,26
+Jamie,Kent State,Famous Idaho Potato,Wyoming,Kent State,15
+Jamie,SMU,Fenway,Virginia,SMU,2
+Jamie,Notre Dame,Fiesta,Notre Dame,Oklahoma State,8
+Jamie,Louisville,First Responder,Air Force,Louisville,9
+Jamie,UTSA,Frisco,UTSA,San Diego State,6
+Jamie,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,18
+Jamie,Florida,Gasparilla,Florida,UCF,27
+Jamie,Minnesota,Guaranteed Rate,Minnesota,West Virginia,30
+Jamie,Hawaii,Hawai'i,Memphis ,Hawaii,23
+Jamie,NC State,Holiday,NC State,UCLA,21
+Jamie,UAB,Independence,BYU,UAB,32
+Jamie,Oregon State,L.A.,Oregon State,Utah State,28
+Jamie,Wisconsin,Las Vegas,Wisconsin,Arizona State,36
+Jamie,E. Michigan,LendingTree,Liberty,E. Michigan,33
+Jamie,Miss. State,Liberty,Miss. State,Texas Tech,37
+Jamie,ECU ,Military,Boston College,ECU ,14
+Jamie,Purdue,Music City,Purdue,Tennessee,11
+Jamie,Tulsa,Myrtle Beach,Tulsa,Old Dominion,34
+Jamie,Alabama,National Championship,,,43
+Jamie,Fresno State,New Mexico,Fresno State,UTEP,40
+Jamie,Marshall,New Orleans,Louisiana-Lafayette,Marshall,25
+Jamie,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,42
+Jamie,Penn State,Outback,Penn State,Arkansas,29
+Jamie,Michigan State,Peach,Pittsburgh,Michigan State,17
+Jamie,Virginia Tech,Pinstripe,Virginia Tech,Maryland,22
+Jamie,W. Michigan,Quick Lane,Nevada,W. Michigan,20
+Jamie,Ohio State,Rose,Ohio State,Utah,35
+Jamie,Ole Miss,Sugar,Ole Miss,Baylor,3
+Jamie,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,24
+Jamie,LSU,Texas Bowl,LSU,Kansas State,4
+Jamie,Wash. State,Tony the Tiger,Miami,Wash. State,1
+JBrown,Oregon,Alamo,Oklahoma,Oregon,9
+JBrown,Boise State,Arizona,Boise State,C. Michigan,29
+JBrown,Missouri,Armed Forces,Army,Missouri,7
+JBrown,Middle Tenn.,Bahamas,Toledo,Middle Tenn.,1
+JBrown,Auburn,Birmingham,Auburn,Houston,16
+JBrown,App. State,Boca Raton,App. State,W. Kentucky,10
+JBrown,Georgia State,Camellia,Georgia State,Ball State,5
+JBrown,Iowa State,Cheez-It,Clemson,Iowa State,35
+JBrown,Kentucky,Citrus,Iowa,Kentucky,13
+JBrown,Cincinnati,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+JBrown,C. Carolina,Cure,C. Carolina,N. Illinois,40
+JBrown,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,11
+JBrown,Kent State,Famous Idaho Potato,Wyoming,Kent State,17
+JBrown,SMU,Fenway,Virginia,SMU,30
+JBrown,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,22
+JBrown,Louisville,First Responder,Air Force,Louisville,15
+JBrown,San Diego State,Frisco,UTSA,San Diego State,3
+JBrown,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,25
+JBrown,Florida,Gasparilla,Florida,UCF,26
+JBrown,Minnesota,Guaranteed Rate,Minnesota,West Virginia,38
+JBrown,Hawaii,Hawai'i,Memphis ,Hawaii,6
+JBrown,NC State,Holiday,NC State,UCLA,21
+JBrown,BYU,Independence,BYU,UAB,18
+JBrown,Oregon State,L.A.,Oregon State,Utah State,34
+JBrown,Wisconsin,Las Vegas,Wisconsin,Arizona State,37
+JBrown,Liberty,LendingTree,Liberty,E. Michigan,19
+JBrown,Miss. State,Liberty,Miss. State,Texas Tech,39
+JBrown,Boston College,Military,Boston College,ECU ,33
+JBrown,Tennessee,Music City,Purdue,Tennessee,20
+JBrown,Tulsa,Myrtle Beach,Tulsa,Old Dominion,27
+JBrown,Cincinnati,National Championship,,,43
+JBrown,UTEP,New Mexico,Fresno State,UTEP,2
+JBrown,Marshall,New Orleans,Louisiana-Lafayette,Marshall,8
+JBrown,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+JBrown,Penn State,Outback,Penn State,Arkansas,36
+JBrown,Michigan State,Peach,Pittsburgh,Michigan State,24
+JBrown,Maryland,Pinstripe,Virginia Tech,Maryland,14
+JBrown,Nevada,Quick Lane,Nevada,W. Michigan,4
+JBrown,Ohio State,Rose,Ohio State,Utah,32
+JBrown,Ole Miss,Sugar,Ole Miss,Baylor,28
+JBrown,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,31
+JBrown,LSU,Texas Bowl,LSU,Kansas State,12
+JBrown,Wash. State,Tony the Tiger,Miami,Wash. State,23
+Jeremy,Oregon,Alamo,Oklahoma,Oregon,4
+Jeremy,Boise State,Arizona,Boise State,C. Michigan,39
+Jeremy,Missouri,Armed Forces,Army,Missouri,9
+Jeremy,Toledo,Bahamas,Toledo,Middle Tenn.,37
+Jeremy,Auburn,Birmingham,Auburn,Houston,22
+Jeremy,App. State,Boca Raton,App. State,W. Kentucky,21
+Jeremy,Ball State,Camellia,Georgia State,Ball State,6
+Jeremy,Clemson,Cheez-It,Clemson,Iowa State,15
+Jeremy,Kentucky,Citrus,Iowa,Kentucky,11
+Jeremy,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Jeremy,C. Carolina,Cure,C. Carolina,N. Illinois,38
+Jeremy,S. Carolina,Duke's Mayo,N. Carolina,S. Carolina,3
+Jeremy,Wyoming,Famous Idaho Potato,Wyoming,Kent State,24
+Jeremy,Virginia,Fenway,Virginia,SMU,14
+Jeremy,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,10
+Jeremy,Louisville,First Responder,Air Force,Louisville,12
+Jeremy,UTSA,Frisco,UTSA,San Diego State,20
+Jeremy,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,27
+Jeremy,Florida,Gasparilla,Florida,UCF,29
+Jeremy,Minnesota,Guaranteed Rate,Minnesota,West Virginia,30
+Jeremy,Memphis ,Hawai'i,Memphis ,Hawaii,25
+Jeremy,NC State,Holiday,NC State,UCLA,19
+Jeremy,BYU,Independence,BYU,UAB,35
+Jeremy,Utah State,L.A.,Oregon State,Utah State,1
+Jeremy,Wisconsin,Las Vegas,Wisconsin,Arizona State,32
+Jeremy,Liberty,LendingTree,Liberty,E. Michigan,34
+Jeremy,Miss. State,Liberty,Miss. State,Texas Tech,36
+Jeremy,ECU ,Military,Boston College,ECU ,7
+Jeremy,Purdue,Music City,Purdue,Tennessee,18
+Jeremy,Tulsa,Myrtle Beach,Tulsa,Old Dominion,33
+Jeremy,Georgia,National Championship,,,43
+Jeremy,Fresno State,New Mexico,Fresno State,UTEP,40
+Jeremy,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,28
+Jeremy,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Jeremy,Arkansas,Outback,Penn State,Arkansas,5
+Jeremy,Pittsburgh,Peach,Pittsburgh,Michigan State,23
+Jeremy,Maryland,Pinstripe,Virginia Tech,Maryland,8
+Jeremy,W. Michigan,Quick Lane,Nevada,W. Michigan,2
+Jeremy,Ohio State,Rose,Ohio State,Utah,31
+Jeremy,Ole Miss,Sugar,Ole Miss,Baylor,16
+Jeremy,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,26
+Jeremy,LSU,Texas Bowl,LSU,Kansas State,17
+Jeremy,Wash. State,Tony the Tiger,Miami,Wash. State,13
+JHajdin,Oklahoma,Alamo,Oklahoma,Oregon,10
+JHajdin,Boise State,Arizona,Boise State,C. Michigan,39
+JHajdin,Missouri,Armed Forces,Army,Missouri,27
+JHajdin,Middle Tenn.,Bahamas,Toledo,Middle Tenn.,31
+JHajdin,Auburn,Birmingham,Auburn,Houston,36
+JHajdin,App. State,Boca Raton,App. State,W. Kentucky,20
+JHajdin,Ball State,Camellia,Georgia State,Ball State,3
+JHajdin,Iowa State,Cheez-It,Clemson,Iowa State,26
+JHajdin,Iowa,Citrus,Iowa,Kentucky,34
+JHajdin,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+JHajdin,C. Carolina,Cure,C. Carolina,N. Illinois,38
+JHajdin,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,8
+JHajdin,Wyoming,Famous Idaho Potato,Wyoming,Kent State,24
+JHajdin,SMU,Fenway,Virginia,SMU,12
+JHajdin,Notre Dame,Fiesta,Notre Dame,Oklahoma State,33
+JHajdin,Air Force,First Responder,Air Force,Louisville,35
+JHajdin,UTSA,Frisco,UTSA,San Diego State,6
+JHajdin,North Texas,Frisco Classic,"Miami, OH",North Texas,5
+JHajdin,Florida,Gasparilla,Florida,UCF,4
+JHajdin,Minnesota,Guaranteed Rate,Minnesota,West Virginia,29
+JHajdin,Hawaii,Hawai'i,Memphis ,Hawaii,18
+JHajdin,UCLA,Holiday,NC State,UCLA,17
+JHajdin,UAB,Independence,BYU,UAB,7
+JHajdin,Utah State,L.A.,Oregon State,Utah State,15
+JHajdin,Arizona State,Las Vegas,Wisconsin,Arizona State,14
+JHajdin,E. Michigan,LendingTree,Liberty,E. Michigan,23
+JHajdin,Miss. State,Liberty,Miss. State,Texas Tech,30
+JHajdin,Boston College,Military,Boston College,ECU ,22
+JHajdin,Purdue,Music City,Purdue,Tennessee,19
+JHajdin,Tulsa,Myrtle Beach,Tulsa,Old Dominion,21
+JHajdin,Georgia,National Championship,,,43
+JHajdin,Fresno State,New Mexico,Fresno State,UTEP,16
+JHajdin,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,13
+JHajdin,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+JHajdin,Penn State,Outback,Penn State,Arkansas,1
+JHajdin,Michigan State,Peach,Pittsburgh,Michigan State,25
+JHajdin,Virginia Tech,Pinstripe,Virginia Tech,Maryland,11
+JHajdin,Nevada,Quick Lane,Nevada,W. Michigan,28
+JHajdin,Ohio State,Rose,Ohio State,Utah,40
+JHajdin,Baylor,Sugar,Ole Miss,Baylor,2
+JHajdin,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,32
+JHajdin,LSU,Texas Bowl,LSU,Kansas State,37
+JHajdin,Wash. State,Tony the Tiger,Miami,Wash. State,9
+Joey,Oklahoma,Alamo,Oklahoma,Oregon,22
+Joey,Boise State,Arizona,Boise State,C. Michigan,31
+Joey,Army,Armed Forces,Army,Missouri,20
+Joey,Toledo,Bahamas,Toledo,Middle Tenn.,40
+Joey,Auburn,Birmingham,Auburn,Houston,13
+Joey,App. State,Boca Raton,App. State,W. Kentucky,18
+Joey,Georgia State,Camellia,Georgia State,Ball State,23
+Joey,Clemson,Cheez-It,Clemson,Iowa State,3
+Joey,Kentucky,Citrus,Iowa,Kentucky,19
+Joey,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Joey,C. Carolina,Cure,C. Carolina,N. Illinois,36
+Joey,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,37
+Joey,Wyoming,Famous Idaho Potato,Wyoming,Kent State,15
+Joey,Virginia,Fenway,Virginia,SMU,16
+Joey,Notre Dame,Fiesta,Notre Dame,Oklahoma State,10
+Joey,Louisville,First Responder,Air Force,Louisville,11
+Joey,San Diego State,Frisco,UTSA,San Diego State,1
+Joey,North Texas,Frisco Classic,"Miami, OH",North Texas,4
+Joey,Florida,Gasparilla,Florida,UCF,28
+Joey,West Virginia,Guaranteed Rate,Minnesota,West Virginia,5
+Joey,Memphis ,Hawai'i,Memphis ,Hawaii,34
+Joey,UCLA,Holiday,NC State,UCLA,6
+Joey,BYU,Independence,BYU,UAB,29
+Joey,Oregon State,L.A.,Oregon State,Utah State,33
+Joey,Wisconsin,Las Vegas,Wisconsin,Arizona State,30
+Joey,Liberty,LendingTree,Liberty,E. Michigan,38
+Joey,Miss. State,Liberty,Miss. State,Texas Tech,32
+Joey,Boston College,Military,Boston College,ECU ,14
+Joey,Tennessee,Music City,Purdue,Tennessee,27
+Joey,Tulsa,Myrtle Beach,Tulsa,Old Dominion,39
+Joey,Alabama,National Championship,,,43
+Joey,Fresno State,New Mexico,Fresno State,UTEP,35
+Joey,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,21
+Joey,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Joey,Arkansas,Outback,Penn State,Arkansas,2
+Joey,Michigan State,Peach,Pittsburgh,Michigan State,12
+Joey,Maryland,Pinstripe,Virginia Tech,Maryland,9
+Joey,W. Michigan,Quick Lane,Nevada,W. Michigan,25
+Joey,Ohio State,Rose,Ohio State,Utah,24
+Joey,Baylor,Sugar,Ole Miss,Baylor,7
+Joey,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,26
+Joey,Kansas State,Texas Bowl,LSU,Kansas State,8
+Joey,Miami,Tony the Tiger,Miami,Wash. State,17
+JPearce,Oklahoma,Alamo,Oklahoma,Oregon,21
+JPearce,Boise State,Arizona,Boise State,C. Michigan,35
+JPearce,Army,Armed Forces,Army,Missouri,28
+JPearce,Toledo,Bahamas,Toledo,Middle Tenn.,39
+JPearce,Houston,Birmingham,Auburn,Houston,9
+JPearce,App. State,Boca Raton,App. State,W. Kentucky,7
+JPearce,Georgia State,Camellia,Georgia State,Ball State,24
+JPearce,Clemson,Cheez-It,Clemson,Iowa State,22
+JPearce,Kentucky,Citrus,Iowa,Kentucky,17
+JPearce,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+JPearce,C. Carolina,Cure,C. Carolina,N. Illinois,40
+JPearce,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,29
+JPearce,Kent State,Famous Idaho Potato,Wyoming,Kent State,5
+JPearce,SMU,Fenway,Virginia,SMU,10
+JPearce,Notre Dame,Fiesta,Notre Dame,Oklahoma State,19
+JPearce,Air Force,First Responder,Air Force,Louisville,14
+JPearce,San Diego State,Frisco,UTSA,San Diego State,8
+JPearce,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,23
+JPearce,Florida,Gasparilla,Florida,UCF,33
+JPearce,Minnesota,Guaranteed Rate,Minnesota,West Virginia,37
+JPearce,Memphis ,Hawai'i,Memphis ,Hawaii,12
+JPearce,NC State,Holiday,NC State,UCLA,26
+JPearce,BYU,Independence,BYU,UAB,15
+JPearce,Utah State,L.A.,Oregon State,Utah State,1
+JPearce,Wisconsin,Las Vegas,Wisconsin,Arizona State,30
+JPearce,Liberty,LendingTree,Liberty,E. Michigan,25
+JPearce,Miss. State,Liberty,Miss. State,Texas Tech,32
+JPearce,ECU ,Military,Boston College,ECU ,4
+JPearce,Tennessee,Music City,Purdue,Tennessee,31
+JPearce,Tulsa,Myrtle Beach,Tulsa,Old Dominion,36
+JPearce,Alabama,National Championship,,,43
+JPearce,Fresno State,New Mexico,Fresno State,UTEP,38
+JPearce,Marshall,New Orleans,Louisiana-Lafayette,Marshall,11
+JPearce,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+JPearce,Arkansas,Outback,Penn State,Arkansas,2
+JPearce,Pittsburgh,Peach,Pittsburgh,Michigan State,20
+JPearce,Maryland,Pinstripe,Virginia Tech,Maryland,3
+JPearce,W. Michigan,Quick Lane,Nevada,W. Michigan,6
+JPearce,Ohio State,Rose,Ohio State,Utah,27
+JPearce,Ole Miss,Sugar,Ole Miss,Baylor,18
+JPearce,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,34
+JPearce,Kansas State,Texas Bowl,LSU,Kansas State,16
+JPearce,Miami,Tony the Tiger,Miami,Wash. State,13
+JRoycroft,Oklahoma,Alamo,Oklahoma,Oregon,26
+JRoycroft,Boise State,Arizona,Boise State,C. Michigan,39
+JRoycroft,Army,Armed Forces,Army,Missouri,7
+JRoycroft,Toledo,Bahamas,Toledo,Middle Tenn.,37
+JRoycroft,Auburn,Birmingham,Auburn,Houston,25
+JRoycroft,W. Kentucky,Boca Raton,App. State,W. Kentucky,4
+JRoycroft,Ball State,Camellia,Georgia State,Ball State,8
+JRoycroft,Clemson,Cheez-It,Clemson,Iowa State,23
+JRoycroft,Kentucky,Citrus,Iowa,Kentucky,16
+JRoycroft,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+JRoycroft,C. Carolina,Cure,C. Carolina,N. Illinois,38
+JRoycroft,S. Carolina,Duke's Mayo,N. Carolina,S. Carolina,12
+JRoycroft,Kent State,Famous Idaho Potato,Wyoming,Kent State,6
+JRoycroft,Virginia,Fenway,Virginia,SMU,22
+JRoycroft,Notre Dame,Fiesta,Notre Dame,Oklahoma State,15
+JRoycroft,Air Force,First Responder,Air Force,Louisville,27
+JRoycroft,San Diego State,Frisco,UTSA,San Diego State,5
+JRoycroft,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,32
+JRoycroft,Florida,Gasparilla,Florida,UCF,33
+JRoycroft,Minnesota,Guaranteed Rate,Minnesota,West Virginia,28
+JRoycroft,Memphis ,Hawai'i,Memphis ,Hawaii,31
+JRoycroft,NC State,Holiday,NC State,UCLA,10
+JRoycroft,BYU,Independence,BYU,UAB,36
+JRoycroft,Utah State,L.A.,Oregon State,Utah State,3
+JRoycroft,Wisconsin,Las Vegas,Wisconsin,Arizona State,21
+JRoycroft,Liberty,LendingTree,Liberty,E. Michigan,35
+JRoycroft,Miss. State,Liberty,Miss. State,Texas Tech,30
+JRoycroft,ECU ,Military,Boston College,ECU ,9
+JRoycroft,Tennessee,Music City,Purdue,Tennessee,13
+JRoycroft,Tulsa,Myrtle Beach,Tulsa,Old Dominion,34
+JRoycroft,Georgia,National Championship,Alabama,Georgia,43
+JRoycroft,Fresno State,New Mexico,Fresno State,UTEP,40
+JRoycroft,Marshall,New Orleans,Louisiana-Lafayette,Marshall,2
+JRoycroft,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+JRoycroft,Penn State,Outback,Penn State,Arkansas,17
+JRoycroft,Michigan State,Peach,Pittsburgh,Michigan State,11
+JRoycroft,Virginia Tech,Pinstripe,Virginia Tech,Maryland,24
+JRoycroft,Nevada,Quick Lane,Nevada,W. Michigan,29
+JRoycroft,Ohio State,Rose,Ohio State,Utah,20
+JRoycroft,Ole Miss,Sugar,Ole Miss,Baylor,19
+JRoycroft,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,1
+JRoycroft,LSU,Texas Bowl,LSU,Kansas State,18
+JRoycroft,Miami,Tony the Tiger,Miami,Wash. State,14
+Kristen,Oregon,Alamo,Oklahoma,Oregon,24
+Kristen,Boise State,Arizona,Boise State,C. Michigan,40
+Kristen,Army,Armed Forces,Army,Missouri,20
+Kristen,Toledo,Bahamas,Toledo,Middle Tenn.,38
+Kristen,Auburn,Birmingham,Auburn,Houston,3
+Kristen,App. State,Boca Raton,App. State,W. Kentucky,21
+Kristen,Ball State,Camellia,Georgia State,Ball State,4
+Kristen,Iowa State,Cheez-It,Clemson,Iowa State,29
+Kristen,Iowa,Citrus,Iowa,Kentucky,9
+Kristen,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Kristen,C. Carolina,Cure,C. Carolina,N. Illinois,35
+Kristen,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,31
+Kristen,Kent State,Famous Idaho Potato,Wyoming,Kent State,16
+Kristen,Virginia,Fenway,Virginia,SMU,7
+Kristen,Notre Dame,Fiesta,Notre Dame,Oklahoma State,26
+Kristen,Louisville,First Responder,Air Force,Louisville,22
+Kristen,San Diego State,Frisco,UTSA,San Diego State,15
+Kristen,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,6
+Kristen,Florida,Gasparilla,Florida,UCF,13
+Kristen,Minnesota,Guaranteed Rate,Minnesota,West Virginia,37
+Kristen,Memphis ,Hawai'i,Memphis ,Hawaii,5
+Kristen,NC State,Holiday,NC State,UCLA,30
+Kristen,UAB,Independence,BYU,UAB,2
+Kristen,Oregon State,L.A.,Oregon State,Utah State,18
+Kristen,Wisconsin,Las Vegas,Wisconsin,Arizona State,32
+Kristen,Liberty,LendingTree,Liberty,E. Michigan,19
+Kristen,Miss. State,Liberty,Miss. State,Texas Tech,36
+Kristen,ECU ,Military,Boston College,ECU ,14
+Kristen,Tennessee,Music City,Purdue,Tennessee,12
+Kristen,Tulsa,Myrtle Beach,Tulsa,Old Dominion,33
+Kristen,Alabama,National Championship,,,43
+Kristen,Fresno State,New Mexico,Fresno State,UTEP,39
+Kristen,Marshall,New Orleans,Louisiana-Lafayette,Marshall,17
+Kristen,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Kristen,Arkansas,Outback,Penn State,Arkansas,10
+Kristen,Michigan State,Peach,Pittsburgh,Michigan State,1
+Kristen,Virginia Tech,Pinstripe,Virginia Tech,Maryland,28
+Kristen,Nevada,Quick Lane,Nevada,W. Michigan,34
+Kristen,Ohio State,Rose,Ohio State,Utah,27
+Kristen,Baylor,Sugar,Ole Miss,Baylor,8
+Kristen,Wake Forest,TaxSlayer,Texas A&M,Wake Forest,25
+Kristen,LSU,Texas Bowl,LSU,Kansas State,11
+Kristen,Miami,Tony the Tiger,Miami,Wash. State,23
+Peter,Oklahoma,Alamo,Oklahoma,Oregon,25
+Peter,Boise State,Arizona,Boise State,C. Michigan,37
+Peter,Army,Armed Forces,Army,Missouri,19
+Peter,Toledo,Bahamas,Toledo,Middle Tenn.,36
+Peter,Houston,Birmingham,Auburn,Houston,15
+Peter,App. State,Boca Raton,App. State,W. Kentucky,31
+Peter,Georgia State,Camellia,Georgia State,Ball State,27
+Peter,Clemson,Cheez-It,Clemson,Iowa State,22
+Peter,Kentucky,Citrus,Iowa,Kentucky,13
+Peter,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Peter,C. Carolina,Cure,C. Carolina,N. Illinois,40
+Peter,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,23
+Peter,Wyoming,Famous Idaho Potato,Wyoming,Kent State,28
+Peter,SMU,Fenway,Virginia,SMU,8
+Peter,Notre Dame,Fiesta,Notre Dame,Oklahoma State,29
+Peter,Louisville,First Responder,Air Force,Louisville,21
+Peter,San Diego State,Frisco,UTSA,San Diego State,18
+Peter,North Texas,Frisco Classic,"Miami, OH",North Texas,9
+Peter,UCF,Gasparilla,Florida,UCF,2
+Peter,Minnesota,Guaranteed Rate,Minnesota,West Virginia,26
+Peter,Memphis ,Hawai'i,Memphis ,Hawaii,20
+Peter,UCLA,Holiday,NC State,UCLA,7
+Peter,BYU,Independence,BYU,UAB,35
+Peter,Utah State,L.A.,Oregon State,Utah State,3
+Peter,Wisconsin,Las Vegas,Wisconsin,Arizona State,32
+Peter,Liberty,LendingTree,Liberty,E. Michigan,34
+Peter,Miss. State,Liberty,Miss. State,Texas Tech,38
+Peter,ECU ,Military,Boston College,ECU ,17
+Peter,Tennessee,Music City,Purdue,Tennessee,5
+Peter,Tulsa,Myrtle Beach,Tulsa,Old Dominion,33
+Peter,Alabama,National Championship,,,43
+Peter,Fresno State,New Mexico,Fresno State,UTEP,39
+Peter,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,30
+Peter,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Peter,Arkansas,Outback,Penn State,Arkansas,11
+Peter,Michigan State,Peach,Pittsburgh,Michigan State,6
+Peter,Maryland,Pinstripe,Virginia Tech,Maryland,14
+Peter,Nevada,Quick Lane,Nevada,W. Michigan,16
+Peter,Utah,Rose,Ohio State,Utah,1
+Peter,Ole Miss,Sugar,Ole Miss,Baylor,24
+Peter,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,10
+Peter,Kansas State,Texas Bowl,LSU,Kansas State,12
+Peter,Miami,Tony the Tiger,Miami,Wash. State,4
+Peyton,Oregon,Alamo,Oklahoma,Oregon,7
+Peyton,Boise State,Arizona,Boise State,C. Michigan,38
+Peyton,Army,Armed Forces,Army,Missouri,19
+Peyton,Toledo,Bahamas,Toledo,Middle Tenn.,37
+Peyton,Auburn,Birmingham,Auburn,Houston,23
+Peyton,App. State,Boca Raton,App. State,W. Kentucky,18
+Peyton,Georgia State,Camellia,Georgia State,Ball State,25
+Peyton,Clemson,Cheez-It,Clemson,Iowa State,17
+Peyton,Kentucky,Citrus,Iowa,Kentucky,11
+Peyton,Alabama,Cotton Bowl (CFP Semis),Alabama,Cincinnati,42
+Peyton,C. Carolina,Cure,C. Carolina,N. Illinois,39
+Peyton,S. Carolina,Duke's Mayo,N. Carolina,S. Carolina,9
+Peyton,Kent State,Famous Idaho Potato,Wyoming,Kent State,4
+Peyton,Virginia,Fenway,Virginia,SMU,16
+Peyton,Notre Dame,Fiesta,Notre Dame,Oklahoma State,15
+Peyton,Air Force,First Responder,Air Force,Louisville,14
+Peyton,San Diego State,Frisco,UTSA,San Diego State,5
+Peyton,North Texas,Frisco Classic,"Miami, OH",North Texas,6
+Peyton,Florida,Gasparilla,Florida,UCF,30
+Peyton,Minnesota,Guaranteed Rate,Minnesota,West Virginia,32
+Peyton,Memphis ,Hawai'i,Memphis ,Hawaii,27
+Peyton,UCLA,Holiday,NC State,UCLA,8
+Peyton,UAB,Independence,BYU,UAB,1
+Peyton,Oregon State,L.A.,Oregon State,Utah State,33
+Peyton,Wisconsin,Las Vegas,Wisconsin,Arizona State,34
+Peyton,E. Michigan,LendingTree,Liberty,E. Michigan,3
+Peyton,Miss. State,Liberty,Miss. State,Texas Tech,36
+Peyton,Boston College,Military,Boston College,ECU ,24
+Peyton,Purdue,Music City,Purdue,Tennessee,20
+Peyton,Old Dominion,Myrtle Beach,Tulsa,Old Dominion,2
+Peyton,Georgia,National Championship,,,43
+Peyton,Fresno State,New Mexico,Fresno State,UTEP,40
+Peyton,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,29
+Peyton,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,41
+Peyton,Penn State,Outback,Penn State,Arkansas,26
+Peyton,Michigan State,Peach,Pittsburgh,Michigan State,10
+Peyton,Virginia Tech,Pinstripe,Virginia Tech,Maryland,22
+Peyton,Nevada,Quick Lane,Nevada,W. Michigan,31
+Peyton,Ohio State,Rose,Ohio State,Utah,35
+Peyton,Baylor,Sugar,Ole Miss,Baylor,12
+Peyton,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,28
+Peyton,LSU,Texas Bowl,LSU,Kansas State,21
+Peyton,Miami,Tony the Tiger,Miami,Wash. State,13
+Rebekah,Oregon,Alamo,Oklahoma,Oregon,2
+Rebekah,C. Michigan,Arizona,Boise State,C. Michigan,35
+Rebekah,Army,Armed Forces,Army,Missouri,25
+Rebekah,Middle Tenn.,Bahamas,Toledo,Middle Tenn.,28
+Rebekah,Houston,Birmingham,Auburn,Houston,33
+Rebekah,W. Kentucky,Boca Raton,App. State,W. Kentucky,10
+Rebekah,Ball State,Camellia,Georgia State,Ball State,12
+Rebekah,Iowa State,Cheez-It,Clemson,Iowa State,1
+Rebekah,Kentucky,Citrus,Iowa,Kentucky,36
+Rebekah,Cincinnati,Cotton Bowl (CFP Semis),Alabama,Cincinnati,41
+Rebekah,N. Illinois,Cure,C. Carolina,N. Illinois,39
+Rebekah,N. Carolina,Duke's Mayo,N. Carolina,S. Carolina,32
+Rebekah,Wyoming,Famous Idaho Potato,Wyoming,Kent State,6
+Rebekah,Virginia,Fenway,Virginia,SMU,30
+Rebekah,Oklahoma State,Fiesta,Notre Dame,Oklahoma State,8
+Rebekah,Louisville,First Responder,Air Force,Louisville,38
+Rebekah,UTSA,Frisco,UTSA,San Diego State,29
+Rebekah,"Miami, OH",Frisco Classic,"Miami, OH",North Texas,16
+Rebekah,Florida,Gasparilla,Florida,UCF,37
+Rebekah,West Virginia,Guaranteed Rate,Minnesota,West Virginia,24
+Rebekah,Hawaii,Hawai'i,Memphis ,Hawaii,17
+Rebekah,NC State,Holiday,NC State,UCLA,40
+Rebekah,BYU,Independence,BYU,UAB,23
+Rebekah,Utah State,L.A.,Oregon State,Utah State,21
+Rebekah,Wisconsin,Las Vegas,Wisconsin,Arizona State,5
+Rebekah,Liberty,LendingTree,Liberty,E. Michigan,31
+Rebekah,Texas Tech,Liberty,Miss. State,Texas Tech,11
+Rebekah,Boston College,Military,Boston College,ECU ,22
+Rebekah,Tennessee,Music City,Purdue,Tennessee,27
+Rebekah,Old Dominion,Myrtle Beach,Tulsa,Old Dominion,4
+Rebekah,Michigan,National Championship,,,43
+Rebekah,UTEP,New Mexico,Fresno State,UTEP,34
+Rebekah,Louisiana-Lafayette,New Orleans,Louisiana-Lafayette,Marshall,26
+Rebekah,Georgia,Orange Bowl (CFP Semis),Georgia,Michigan,42
+Rebekah,Penn State,Outback,Penn State,Arkansas,3
+Rebekah,Pittsburgh,Peach,Pittsburgh,Michigan State,20
+Rebekah,Maryland,Pinstripe,Virginia Tech,Maryland,7
+Rebekah,W. Michigan,Quick Lane,Nevada,W. Michigan,9
+Rebekah,Ohio State,Rose,Ohio State,Utah,18
+Rebekah,Ole Miss,Sugar,Ole Miss,Baylor,13
+Rebekah,Texas A&M,TaxSlayer,Texas A&M,Wake Forest,15
+Rebekah,Kansas State,Texas Bowl,LSU,Kansas State,14
+Rebekah,Miami,Tony the Tiger,Miami,Wash. State,19

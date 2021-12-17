@@ -1,1 +1,646 @@
 player	bowl	selection	confidence
+Alex	Alamo	Oregon	1
+Alex	Arizona	Boise State	39
+Alex	Armed Forces	Army	18
+Alex	Bahamas	Toledo	37
+Alex	Birmingham	Auburn	14
+Alex	Boca Raton	Appalachian State	33
+Alex	Camellia	Ball State	16
+Alex	Cheez-It	Clemson	10
+Alex	Citrus	Kentucky	7
+Alex	Cotton (Semis)	Alabama	42
+Alex	Cure	Coastal Carolina	38
+Alex	Duke's Mayo	North Carolina	32
+Alex	Famous Idaho Potato	Wyoming	21
+Alex	Fenway	Virginia	12
+Alex	Fiesta	Oklahoma State	9
+Alex	First Responder	Louisville	11
+Alex	Frisco	San Diego State	19
+Alex	Frisco Classic	North Texas	23
+Alex	Gasparilla	Florida	25
+Alex	Guaranteed Rate	Minnesota	29
+Alex	Hawai'i	Memphis	22
+Alex	Holiday	NC State	15
+Alex	Independence	BYU	35
+Alex	LA	Utah State	26
+Alex	Las Vegas	Wisconsin	31
+Alex	LendingTree	Liberty	34
+Alex	Liberty	Mississippi State	36
+Alex	Military	East Carolina	2
+Alex	Music City	Tennessee	4
+Alex	Myrtle Beach	Tulsa	28
+Alex	Championship	Alabama	43
+Alex	New Mexico	Fresno State	40
+Alex	New Orleans	Louisiana	24
+Alex	Orange (Semis)	Georgia	41
+Alex	Outback	Penn State	20
+Alex	Peach	Michigan State	3
+Alex	Pinstripe	Virginia Tech	17
+Alex	Quick Lane	Nevada	27
+Alex	Rose	Ohio State	30
+Alex	Sugar	Baylor	8
+Alex	Gator	Wake Forest	5
+Alex	Texas	Kansas State	6
+Alex	Sun	Miami (FL)	13
+Caroline	Alamo	Oregon	32
+Caroline	Arizona	Boise State	40
+Caroline	Armed Forces	Missouri	3
+Caroline	Bahamas	Toledo	2
+Caroline	Birmingham	Auburn	9
+Caroline	Boca Raton	Western Kentucky	4
+Caroline	Camellia	Georgia State	6
+Caroline	Cheez-It	Iowa State	5
+Caroline	Citrus	Iowa	36
+Caroline	Cotton (Semis)	Alabama	42
+Caroline	Cure	Coastal Carolina	39
+Caroline	Duke's Mayo	North Carolina	25
+Caroline	Famous Idaho Potato	Wyoming	12
+Caroline	Fenway	Virginia	28
+Caroline	Fiesta	Oklahoma State	11
+Caroline	First Responder	Louisville	16
+Caroline	Frisco	UTSA	38
+Caroline	Frisco Classic	North Texas	15
+Caroline	Gasparilla	UCF	8
+Caroline	Guaranteed Rate	West Virginia	7
+Caroline	Hawai'i	Hawai'i	21
+Caroline	Holiday	NC State	27
+Caroline	Independence	BYU	19
+Caroline	LA	Oregon State	30
+Caroline	Las Vegas	Wisconsin	31
+Caroline	LendingTree	Liberty	17
+Caroline	Liberty	Mississippi State	33
+Caroline	Military	Boston College	20
+Caroline	Music City	Purdue	23
+Caroline	Myrtle Beach	Tulsa	18
+Caroline	Championship	Georgia	43
+Caroline	New Mexico	Fresno State	29
+Caroline	New Orleans	Marshall	1
+Caroline	Orange (Semis)	Georgia	41
+Caroline	Outback	Penn State	34
+Caroline	Peach	Michigan State	24
+Caroline	Pinstripe	Virginia Tech	14
+Caroline	Quick Lane	Nevada	22
+Caroline	Rose	Ohio State	37
+Caroline	Sugar	Baylor	35
+Caroline	Gator	Texas A&M	26
+Caroline	Texas	Kansas State	13
+Caroline	Sun	Miami (FL)	10
+Derick	Alamo	Oklahoma	9
+Derick	Arizona	Boise State	34
+Derick	Armed Forces	Army	39
+Derick	Bahamas	Toledo	21
+Derick	Birmingham	Houston	18
+Derick	Boca Raton	Western Kentucky	2
+Derick	Camellia	Georgia State	19
+Derick	Cheez-It	Iowa State	6
+Derick	Citrus	Kentucky	37
+Derick	Cotton (Semis)	Alabama	42
+Derick	Cure	Coastal Carolina	20
+Derick	Duke's Mayo	South Carolina	10
+Derick	Famous Idaho Potato	Kent State	1
+Derick	Fenway	Virginia	7
+Derick	Fiesta	Oklahoma State	12
+Derick	First Responder	Louisville	15
+Derick	Frisco	UTSA	30
+Derick	Frisco Classic	North Texas	5
+Derick	Gasparilla	UCF	8
+Derick	Guaranteed Rate	Minnesota	35
+Derick	Hawai'i	Memphis	14
+Derick	Holiday	NC State	27
+Derick	Independence	BYU	40
+Derick	LA	Oregon State	38
+Derick	Las Vegas	Wisconsin	28
+Derick	LendingTree	Liberty	4
+Derick	Liberty	Mississippi State	24
+Derick	Military	Boston College	31
+Derick	Music City	Tennessee	25
+Derick	Myrtle Beach	Tulsa	23
+Derick	Championship	Michigan	43
+Derick	New Mexico	Fresno State	36
+Derick	New Orleans	Louisiana	22
+Derick	Orange (Semis)	Michigan	41
+Derick	Outback	Arkansas	17
+Derick	Peach	Michigan State	13
+Derick	Pinstripe	Virginia Tech	29
+Derick	Quick Lane	Nevada	16
+Derick	Rose	Ohio State	3
+Derick	Sugar	Baylor	11
+Derick	Gator	Texas A&M	32
+Derick	Texas	LSU	26
+Derick	Sun	Washington State	33
+Harper	Alamo	Oklahoma	27
+Harper	Arizona	Boise State	40
+Harper	Armed Forces	Army	19
+Harper	Bahamas	Toledo	38
+Harper	Birmingham	Houston	8
+Harper	Boca Raton	Appalachian State	18
+Harper	Camellia	Georgia State	22
+Harper	Cheez-It	Clemson	15
+Harper	Citrus	Iowa	17
+Harper	Cotton (Semis)	Alabama	42
+Harper	Cure	Coastal Carolina	39
+Harper	Duke's Mayo	North Carolina	30
+Harper	Famous Idaho Potato	Wyoming	25
+Harper	Fenway	Virginia	12
+Harper	Fiesta	Notre Dame	16
+Harper	First Responder	Air Force	14
+Harper	Frisco	San Diego State	9
+Harper	Frisco Classic	Miami (OH)	29
+Harper	Gasparilla	UCF	4
+Harper	Guaranteed Rate	Minnesota	31
+Harper	Hawai'i	Memphis	26
+Harper	Holiday	NC State	20
+Harper	Independence	BYU	36
+Harper	LA	Utah State	2
+Harper	Las Vegas	Wisconsin	34
+Harper	LendingTree	Liberty	32
+Harper	Liberty	Mississippi State	37
+Harper	Military	Boston College	23
+Harper	Music City	Tennessee	10
+Harper	Myrtle Beach	Tulsa	33
+Harper	Championship	Georgia	43
+Harper	New Mexico	UTEP	1
+Harper	New Orleans	Marshall	5
+Harper	Orange (Semis)	Georgia	41
+Harper	Outback	Penn State	28
+Harper	Peach	Michigan State	7
+Harper	Pinstripe	Virginia Tech	24
+Harper	Quick Lane	Western Michigan	3
+Harper	Rose	Ohio State	35
+Harper	Sugar	Baylor	11
+Harper	Gator	Wake Forest	6
+Harper	Texas	LSU	21
+Harper	Sun	Washington State	13
+Jamie	Alamo	Oklahoma	19
+Jamie	Arizona	Boise State	39
+Jamie	Armed Forces	Missouri	5
+Jamie	Bahamas	Toledo	38
+Jamie	Birmingham	Auburn	13
+Jamie	Boca Raton	Appalachian State	12
+Jamie	Camellia	Ball State	16
+Jamie	Cheez-It	Clemson	10
+Jamie	Citrus	Iowa	7
+Jamie	Cotton (Semis)	Alabama	41
+Jamie	Cure	Northern Illinois	31
+Jamie	Duke's Mayo	North Carolina	26
+Jamie	Famous Idaho Potato	Kent State	15
+Jamie	Fenway	SMU	2
+Jamie	Fiesta	Notre Dame	8
+Jamie	First Responder	Louisville	9
+Jamie	Frisco	UTSA	6
+Jamie	Frisco Classic	Miami (OH)	18
+Jamie	Gasparilla	Florida	27
+Jamie	Guaranteed Rate	Minnesota	30
+Jamie	Hawai'i	Hawai'i	23
+Jamie	Holiday	NC State	21
+Jamie	Independence	UAB	32
+Jamie	LA	Oregon State	28
+Jamie	Las Vegas	Wisconsin	36
+Jamie	LendingTree	Eastern Michigan	33
+Jamie	Liberty	Mississippi State	37
+Jamie	Military	East Carolina	14
+Jamie	Music City	Purdue	11
+Jamie	Myrtle Beach	Tulsa	34
+Jamie	Championship	Alabama	43
+Jamie	New Mexico	Fresno State	40
+Jamie	New Orleans	Marshall	25
+Jamie	Orange (Semis)	Georgia	42
+Jamie	Outback	Penn State	29
+Jamie	Peach	Michigan State	17
+Jamie	Pinstripe	Virginia Tech	22
+Jamie	Quick Lane	Western Michigan	20
+Jamie	Rose	Ohio State	35
+Jamie	Sugar	Ole Miss	3
+Jamie	Gator	Wake Forest	24
+Jamie	Texas	LSU	4
+Jamie	Sun	Washington State	1
+JBrown	Alamo	Oregon	9
+JBrown	Arizona	Boise State	29
+JBrown	Armed Forces	Missouri	7
+JBrown	Bahamas	Middle Tennessee	1
+JBrown	Birmingham	Auburn	16
+JBrown	Boca Raton	Appalachian State	10
+JBrown	Camellia	Georgia State	5
+JBrown	Cheez-It	Iowa State	35
+JBrown	Citrus	Kentucky	13
+JBrown	Cotton (Semis)	Cincinnati	42
+JBrown	Cure	Coastal Carolina	40
+JBrown	Duke's Mayo	North Carolina	11
+JBrown	Famous Idaho Potato	Kent State	17
+JBrown	Fenway	SMU	30
+JBrown	Fiesta	Oklahoma State	22
+JBrown	First Responder	Louisville	15
+JBrown	Frisco	San Diego State	3
+JBrown	Frisco Classic	Miami (OH)	25
+JBrown	Gasparilla	Florida	26
+JBrown	Guaranteed Rate	Minnesota	38
+JBrown	Hawai'i	Hawai'i	6
+JBrown	Holiday	NC State	21
+JBrown	Independence	BYU	18
+JBrown	LA	Oregon State	34
+JBrown	Las Vegas	Wisconsin	37
+JBrown	LendingTree	Liberty	19
+JBrown	Liberty	Mississippi State	39
+JBrown	Military	Boston College	33
+JBrown	Music City	Tennessee	20
+JBrown	Myrtle Beach	Tulsa	27
+JBrown	Championship	Cincinnati	43
+JBrown	New Mexico	UTEP	2
+JBrown	New Orleans	Marshall	8
+JBrown	Orange (Semis)	Georgia	41
+JBrown	Outback	Penn State	36
+JBrown	Peach	Michigan State	24
+JBrown	Pinstripe	Maryland	14
+JBrown	Quick Lane	Nevada	4
+JBrown	Rose	Ohio State	32
+JBrown	Sugar	Ole Miss	28
+JBrown	Gator	Texas A&M	31
+JBrown	Texas	LSU	12
+JBrown	Sun	Washington State	23
+Jeremy	Alamo	Oregon	4
+Jeremy	Arizona	Boise State	39
+Jeremy	Armed Forces	Missouri	9
+Jeremy	Bahamas	Toledo	37
+Jeremy	Birmingham	Auburn	22
+Jeremy	Boca Raton	Appalachian State	21
+Jeremy	Camellia	Ball State	6
+Jeremy	Cheez-It	Clemson	15
+Jeremy	Citrus	Kentucky	11
+Jeremy	Cotton (Semis)	Alabama	42
+Jeremy	Cure	Coastal Carolina	38
+Jeremy	Duke's Mayo	South Carolina	3
+Jeremy	Famous Idaho Potato	Wyoming	24
+Jeremy	Fenway	Virginia	14
+Jeremy	Fiesta	Oklahoma State	10
+Jeremy	First Responder	Louisville	12
+Jeremy	Frisco	UTSA	20
+Jeremy	Frisco Classic	Miami (OH)	27
+Jeremy	Gasparilla	Florida	29
+Jeremy	Guaranteed Rate	Minnesota	30
+Jeremy	Hawai'i	Memphis	25
+Jeremy	Holiday	NC State	19
+Jeremy	Independence	BYU	35
+Jeremy	LA	Utah State	1
+Jeremy	Las Vegas	Wisconsin	32
+Jeremy	LendingTree	Liberty	34
+Jeremy	Liberty	Mississippi State	36
+Jeremy	Military	East Carolina	7
+Jeremy	Music City	Purdue	18
+Jeremy	Myrtle Beach	Tulsa	33
+Jeremy	Championship	Georgia	43
+Jeremy	New Mexico	Fresno State	40
+Jeremy	New Orleans	Louisiana	28
+Jeremy	Orange (Semis)	Georgia	41
+Jeremy	Outback	Arkansas	5
+Jeremy	Peach	Pittsburgh	23
+Jeremy	Pinstripe	Maryland	8
+Jeremy	Quick Lane	Western Michigan	2
+Jeremy	Rose	Ohio State	31
+Jeremy	Sugar	Ole Miss	16
+Jeremy	Gator	Texas A&M	26
+Jeremy	Texas	LSU	17
+Jeremy	Sun	Washington State	13
+JHajdin	Alamo	Oklahoma	10
+JHajdin	Arizona	Boise State	39
+JHajdin	Armed Forces	Missouri	27
+JHajdin	Bahamas	Middle Tennessee	31
+JHajdin	Birmingham	Auburn	36
+JHajdin	Boca Raton	Appalachian State	20
+JHajdin	Camellia	Ball State	3
+JHajdin	Cheez-It	Iowa State	26
+JHajdin	Citrus	Iowa	34
+JHajdin	Cotton (Semis)	Alabama	42
+JHajdin	Cure	Coastal Carolina	38
+JHajdin	Duke's Mayo	North Carolina	8
+JHajdin	Famous Idaho Potato	Wyoming	24
+JHajdin	Fenway	SMU	12
+JHajdin	Fiesta	Notre Dame	33
+JHajdin	First Responder	Air Force	35
+JHajdin	Frisco	UTSA	6
+JHajdin	Frisco Classic	North Texas	5
+JHajdin	Gasparilla	Florida	4
+JHajdin	Guaranteed Rate	Minnesota	29
+JHajdin	Hawai'i	Hawai'i	18
+JHajdin	Holiday	UCLA	17
+JHajdin	Independence	UAB	7
+JHajdin	LA	Utah State	15
+JHajdin	Las Vegas	Arizona State	14
+JHajdin	LendingTree	Eastern Michigan	23
+JHajdin	Liberty	Mississippi State	30
+JHajdin	Military	Boston College	22
+JHajdin	Music City	Purdue	19
+JHajdin	Myrtle Beach	Tulsa	21
+JHajdin	Championship	Georgia	43
+JHajdin	New Mexico	Fresno State	16
+JHajdin	New Orleans	Louisiana	13
+JHajdin	Orange (Semis)	Georgia	41
+JHajdin	Outback	Penn State	1
+JHajdin	Peach	Michigan State	25
+JHajdin	Pinstripe	Virginia Tech	11
+JHajdin	Quick Lane	Nevada	28
+JHajdin	Rose	Ohio State	40
+JHajdin	Sugar	Baylor	2
+JHajdin	Gator	Wake Forest	32
+JHajdin	Texas	LSU	37
+JHajdin	Sun	Washington State	9
+Joey	Alamo	Oklahoma	22
+Joey	Arizona	Boise State	31
+Joey	Armed Forces	Army	20
+Joey	Bahamas	Toledo	40
+Joey	Birmingham	Auburn	13
+Joey	Boca Raton	Appalachian State	18
+Joey	Camellia	Georgia State	23
+Joey	Cheez-It	Clemson	3
+Joey	Citrus	Kentucky	19
+Joey	Cotton (Semis)	Alabama	42
+Joey	Cure	Coastal Carolina	36
+Joey	Duke's Mayo	North Carolina	37
+Joey	Famous Idaho Potato	Wyoming	15
+Joey	Fenway	Virginia	16
+Joey	Fiesta	Notre Dame	10
+Joey	First Responder	Louisville	11
+Joey	Frisco	San Diego State	1
+Joey	Frisco Classic	North Texas	4
+Joey	Gasparilla	Florida	28
+Joey	Guaranteed Rate	West Virginia	5
+Joey	Hawai'i	Memphis	34
+Joey	Holiday	UCLA	6
+Joey	Independence	BYU	29
+Joey	LA	Oregon State	33
+Joey	Las Vegas	Wisconsin	30
+Joey	LendingTree	Liberty	38
+Joey	Liberty	Mississippi State	32
+Joey	Military	Boston College	14
+Joey	Music City	Tennessee	27
+Joey	Myrtle Beach	Tulsa	39
+Joey	Championship	Alabama	43
+Joey	New Mexico	Fresno State	35
+Joey	New Orleans	Louisiana	21
+Joey	Orange (Semis)	Georgia	41
+Joey	Outback	Arkansas	2
+Joey	Peach	Michigan State	12
+Joey	Pinstripe	Maryland	9
+Joey	Quick Lane	Western Michigan	25
+Joey	Rose	Ohio State	24
+Joey	Sugar	Baylor	7
+Joey	Gator	Texas A&M	26
+Joey	Texas	Kansas State	8
+Joey	Sun	Miami (FL)	17
+JPearce	Alamo	Oklahoma	21
+JPearce	Arizona	Boise State	35
+JPearce	Armed Forces	Army	28
+JPearce	Bahamas	Toledo	39
+JPearce	Birmingham	Houston	9
+JPearce	Boca Raton	Appalachian State	7
+JPearce	Camellia	Georgia State	24
+JPearce	Cheez-It	Clemson	22
+JPearce	Citrus	Kentucky	17
+JPearce	Cotton (Semis)	Alabama	42
+JPearce	Cure	Coastal Carolina	40
+JPearce	Duke's Mayo	North Carolina	29
+JPearce	Famous Idaho Potato	Kent State	5
+JPearce	Fenway	SMU	10
+JPearce	Fiesta	Notre Dame	19
+JPearce	First Responder	Air Force	14
+JPearce	Frisco	San Diego State	8
+JPearce	Frisco Classic	Miami (OH)	23
+JPearce	Gasparilla	Florida	33
+JPearce	Guaranteed Rate	Minnesota	37
+JPearce	Hawai'i	Memphis	12
+JPearce	Holiday	NC State	26
+JPearce	Independence	BYU	15
+JPearce	LA	Utah State	1
+JPearce	Las Vegas	Wisconsin	30
+JPearce	LendingTree	Liberty	25
+JPearce	Liberty	Mississippi State	32
+JPearce	Military	East Carolina	4
+JPearce	Music City	Tennessee	31
+JPearce	Myrtle Beach	Tulsa	36
+JPearce	Championship	Alabama	43
+JPearce	New Mexico	Fresno State	38
+JPearce	New Orleans	Marshall	11
+JPearce	Orange (Semis)	Georgia	41
+JPearce	Outback	Arkansas	2
+JPearce	Peach	Pittsburgh	20
+JPearce	Pinstripe	Maryland	3
+JPearce	Quick Lane	Western Michigan	6
+JPearce	Rose	Ohio State	27
+JPearce	Sugar	Ole Miss	18
+JPearce	Gator	Texas A&M	34
+JPearce	Texas	Kansas State	16
+JPearce	Sun	Miami (FL)	13
+JRoycroft	Alamo	Oklahoma	26
+JRoycroft	Arizona	Boise State	39
+JRoycroft	Armed Forces	Army	7
+JRoycroft	Bahamas	Toledo	37
+JRoycroft	Birmingham	Auburn	25
+JRoycroft	Boca Raton	Western Kentucky	4
+JRoycroft	Camellia	Ball State	8
+JRoycroft	Cheez-It	Clemson	23
+JRoycroft	Citrus	Kentucky	16
+JRoycroft	Cotton (Semis)	Alabama	42
+JRoycroft	Cure	Coastal Carolina	38
+JRoycroft	Duke's Mayo	South Carolina	12
+JRoycroft	Famous Idaho Potato	Kent State	6
+JRoycroft	Fenway	Virginia	22
+JRoycroft	Fiesta	Notre Dame	15
+JRoycroft	First Responder	Air Force	27
+JRoycroft	Frisco	San Diego State	5
+JRoycroft	Frisco Classic	Miami (OH)	32
+JRoycroft	Gasparilla	Florida	33
+JRoycroft	Guaranteed Rate	Minnesota	28
+JRoycroft	Hawai'i	Memphis	31
+JRoycroft	Holiday	NC State	10
+JRoycroft	Independence	BYU	36
+JRoycroft	LA	Utah State	3
+JRoycroft	Las Vegas	Wisconsin	21
+JRoycroft	LendingTree	Liberty	35
+JRoycroft	Liberty	Mississippi State	30
+JRoycroft	Military	East Carolina	9
+JRoycroft	Music City	Tennessee	13
+JRoycroft	Myrtle Beach	Tulsa	34
+JRoycroft	Championship	Georgia	43
+JRoycroft	New Mexico	Fresno State	40
+JRoycroft	New Orleans	Marshall	2
+JRoycroft	Orange (Semis)	Georgia	41
+JRoycroft	Outback	Penn State	17
+JRoycroft	Peach	Michigan State	11
+JRoycroft	Pinstripe	Virginia Tech	24
+JRoycroft	Quick Lane	Nevada	29
+JRoycroft	Rose	Ohio State	20
+JRoycroft	Sugar	Ole Miss	19
+JRoycroft	Gator	Wake Forest	1
+JRoycroft	Texas	LSU	18
+JRoycroft	Sun	Miami (FL)	14
+Kristen	Alamo	Oregon	24
+Kristen	Arizona	Boise State	40
+Kristen	Armed Forces	Army	20
+Kristen	Bahamas	Toledo	38
+Kristen	Birmingham	Auburn	3
+Kristen	Boca Raton	Appalachian State	21
+Kristen	Camellia	Ball State	4
+Kristen	Cheez-It	Iowa State	29
+Kristen	Citrus	Iowa	9
+Kristen	Cotton (Semis)	Alabama	42
+Kristen	Cure	Coastal Carolina	35
+Kristen	Duke's Mayo	North Carolina	31
+Kristen	Famous Idaho Potato	Kent State	16
+Kristen	Fenway	Virginia	7
+Kristen	Fiesta	Notre Dame	26
+Kristen	First Responder	Louisville	22
+Kristen	Frisco	San Diego State	15
+Kristen	Frisco Classic	Miami (OH)	6
+Kristen	Gasparilla	Florida	13
+Kristen	Guaranteed Rate	Minnesota	37
+Kristen	Hawai'i	Memphis	5
+Kristen	Holiday	NC State	30
+Kristen	Independence	UAB	2
+Kristen	LA	Oregon State	18
+Kristen	Las Vegas	Wisconsin	32
+Kristen	LendingTree	Liberty	19
+Kristen	Liberty	Mississippi State	36
+Kristen	Military	East Carolina	14
+Kristen	Music City	Tennessee	12
+Kristen	Myrtle Beach	Tulsa	33
+Kristen	Championship	Alabama	43
+Kristen	New Mexico	Fresno State	39
+Kristen	New Orleans	Marshall	17
+Kristen	Orange (Semis)	Georgia	41
+Kristen	Outback	Arkansas	10
+Kristen	Peach	Michigan State	1
+Kristen	Pinstripe	Virginia Tech	28
+Kristen	Quick Lane	Nevada	34
+Kristen	Rose	Ohio State	27
+Kristen	Sugar	Baylor	8
+Kristen	Gator	Wake Forest	25
+Kristen	Texas	LSU	11
+Kristen	Sun	Miami (FL)	23
+Peter	Alamo	Oklahoma	25
+Peter	Arizona	Boise State	37
+Peter	Armed Forces	Army	19
+Peter	Bahamas	Toledo	36
+Peter	Birmingham	Houston	15
+Peter	Boca Raton	Appalachian State	31
+Peter	Camellia	Georgia State	27
+Peter	Cheez-It	Clemson	22
+Peter	Citrus	Kentucky	13
+Peter	Cotton (Semis)	Alabama	42
+Peter	Cure	Coastal Carolina	40
+Peter	Duke's Mayo	North Carolina	23
+Peter	Famous Idaho Potato	Wyoming	28
+Peter	Fenway	SMU	8
+Peter	Fiesta	Notre Dame	29
+Peter	First Responder	Louisville	21
+Peter	Frisco	San Diego State	18
+Peter	Frisco Classic	North Texas	9
+Peter	Gasparilla	UCF	2
+Peter	Guaranteed Rate	Minnesota	26
+Peter	Hawai'i	Memphis	20
+Peter	Holiday	UCLA	7
+Peter	Independence	BYU	35
+Peter	LA	Utah State	3
+Peter	Las Vegas	Wisconsin	32
+Peter	LendingTree	Liberty	34
+Peter	Liberty	Mississippi State	38
+Peter	Military	East Carolina	17
+Peter	Music City	Tennessee	5
+Peter	Myrtle Beach	Tulsa	33
+Peter	Championship	Alabama	43
+Peter	New Mexico	Fresno State	39
+Peter	New Orleans	Louisiana	30
+Peter	Orange (Semis)	Georgia	41
+Peter	Outback	Arkansas	11
+Peter	Peach	Michigan State	6
+Peter	Pinstripe	Maryland	14
+Peter	Quick Lane	Nevada	16
+Peter	Rose	Utah	1
+Peter	Sugar	Ole Miss	24
+Peter	Gator	Texas A&M	10
+Peter	Texas	Kansas State	12
+Peter	Sun	Miami (FL)	4
+Peyton	Alamo	Oregon	7
+Peyton	Arizona	Boise State	38
+Peyton	Armed Forces	Army	19
+Peyton	Bahamas	Toledo	37
+Peyton	Birmingham	Auburn	23
+Peyton	Boca Raton	Appalachian State	18
+Peyton	Camellia	Georgia State	25
+Peyton	Cheez-It	Clemson	17
+Peyton	Citrus	Kentucky	11
+Peyton	Cotton (Semis)	Alabama	42
+Peyton	Cure	Coastal Carolina	39
+Peyton	Duke's Mayo	South Carolina	9
+Peyton	Famous Idaho Potato	Kent State	4
+Peyton	Fenway	Virginia	16
+Peyton	Fiesta	Notre Dame	15
+Peyton	First Responder	Air Force	14
+Peyton	Frisco	San Diego State	5
+Peyton	Frisco Classic	North Texas	6
+Peyton	Gasparilla	Florida	30
+Peyton	Guaranteed Rate	Minnesota	32
+Peyton	Hawai'i	Memphis	27
+Peyton	Holiday	UCLA	8
+Peyton	Independence	UAB	1
+Peyton	LA	Oregon State	33
+Peyton	Las Vegas	Wisconsin	34
+Peyton	LendingTree	Eastern Michigan	3
+Peyton	Liberty	Mississippi State	36
+Peyton	Military	Boston College	24
+Peyton	Music City	Purdue	20
+Peyton	Myrtle Beach	Old Dominion	2
+Peyton	Championship	Georgia	43
+Peyton	New Mexico	Fresno State	40
+Peyton	New Orleans	Louisiana	29
+Peyton	Orange (Semis)	Georgia	41
+Peyton	Outback	Penn State	26
+Peyton	Peach	Michigan State	10
+Peyton	Pinstripe	Virginia Tech	22
+Peyton	Quick Lane	Nevada	31
+Peyton	Rose	Ohio State	35
+Peyton	Sugar	Baylor	12
+Peyton	Gator	Texas A&M	28
+Peyton	Texas	LSU	21
+Peyton	Sun	Miami (FL)	13
+Rebekah	Alamo	Oregon	2
+Rebekah	Arizona	Central Michigan	35
+Rebekah	Armed Forces	Army	25
+Rebekah	Bahamas	Middle Tennessee	28
+Rebekah	Birmingham	Houston	33
+Rebekah	Boca Raton	Western Kentucky	10
+Rebekah	Camellia	Ball State	12
+Rebekah	Cheez-It	Iowa State	1
+Rebekah	Citrus	Kentucky	36
+Rebekah	Cotton (Semis)	Cincinnati	41
+Rebekah	Cure	Northern Illinois	39
+Rebekah	Duke's Mayo	North Carolina	32
+Rebekah	Famous Idaho Potato	Wyoming	6
+Rebekah	Fenway	Virginia	30
+Rebekah	Fiesta	Oklahoma State	8
+Rebekah	First Responder	Louisville	38
+Rebekah	Frisco	UTSA	29
+Rebekah	Frisco Classic	Miami (OH)	16
+Rebekah	Gasparilla	Florida	37
+Rebekah	Guaranteed Rate	West Virginia	24
+Rebekah	Hawai'i	Hawai'i	17
+Rebekah	Holiday	NC State	40
+Rebekah	Independence	BYU	23
+Rebekah	LA	Utah State	21
+Rebekah	Las Vegas	Wisconsin	5
+Rebekah	LendingTree	Liberty	31
+Rebekah	Liberty	Texas Tech	11
+Rebekah	Military	Boston College	22
+Rebekah	Music City	Tennessee	27
+Rebekah	Myrtle Beach	Old Dominion	4
+Rebekah	Championship	Michigan	43
+Rebekah	New Mexico	UTEP	34
+Rebekah	New Orleans	Louisiana	26
+Rebekah	Orange (Semis)	Georgia	42
+Rebekah	Outback	Penn State	3
+Rebekah	Peach	Pittsburgh	20
+Rebekah	Pinstripe	Maryland	7
+Rebekah	Quick Lane	Western Michigan	9
+Rebekah	Rose	Ohio State	18
+Rebekah	Sugar	Ole Miss	13
+Rebekah	Gator	Texas A&M	15
+Rebekah	Texas	Kansas State	14
+Rebekah	Sun	Miami (FL)	19

@@ -41,3 +41,9 @@ Open `games.tsv` in LibreOffice Calc and make a number of edits. In some cases, 
 1. Add new columns named `favorite_tiny` and `underdog_tiny`. The values are displayed for the championship game in the All Games list component of the visualization, where all four potential team names appear side-by-side and space is very tight. Leave these columns blank to start with. After setting up the `favorite_abbrev` and `underdog_abbrev` columns, load the visualization again, inspect the championship game in the All Games list, and see if the names are too long. If so, enter even shorter forms for the four playoff semifinal teams in these columns. If you have to shorten one, try to shorten all of them, unless they're already really short like LSU. They may end up looking pretty ugly, like "Clem" for Clemson or "Mich" for Michigan.
 1. Add new columns named `winner`, `winner_score`, and `loser_score`.
 1. Arrange the columns so that `bowl`, `date`, `time`, `favorite`, `underdog`, `winner`, `winner_score`, and `loser_score` appear together and in that order. That will make for easier data entry later when recording results.
+
+Store the list of participant picks sent by Derick as `picks_raw.csv`.
+
+Run `python prep_picks.py` to create `picks.tsv`. You will get errors if any of the team names in `picks_raw.csv` don't match the original team names in `games.tsv`.
+
+Reload the visualization to make sure everything looks OK.
