@@ -1,8 +1,8 @@
 bowl	date	time	favorite	underdog	winner	winner_score	loser_score	order_orig	bowl_orig	year	month	day	hour	minute	datetime	date_order	location_orig	location	favorite_orig	underdog_orig	spread	spread_order	favorite_abbrev	underdog_abbrev	favorite_tiny	underdog_tiny
 Bahamas	Dec. 17	Noon (ESPN)	Toledo	Middle Tennessee	Middle Tennessee	31	24	2	Bahamas	2021	12	17	12	0	202112171200	1	Nassau, Bahamas	Nassau, Bahamas	Toledo 	Middle Tenn. 	-9	40				
 Cure	Dec. 17	6 p.m. (ESPN2)	Coastal Carolina	Northern Illinois	Coastal Carolina	47	41	1	Cure	2021	12	17	18	0	202112171800	2	Orlando, Fla.	Orlando, FL	C. Carolina 	N. Illinois 	-9.5	41		N. Illinois		
-Boca Raton	Dec. 18	11 a.m. (ESPN)	Appalachian State	Western Kentucky				8	Boca Raton	2021	12	18	11	0	202112181100	3	Boca Raton, Fla.	Boca Raton, FL	App. State 	W. Kentucky 	-2.5	11	App. State			
-New Mexico	Dec. 18	2:15 p.m. (ESPN)	Fresno State	UTEP				7	New Mexico	2021	12	18	14	15	202112181415	4	Albuquerque, N.M.	Albuquerque, NM	Fresno State 	UTEP 	-13	43				
+Boca Raton	Dec. 18	11 a.m. (ESPN)	Appalachian State	Western Kentucky	Western Kentucky	59	38	8	Boca Raton	2021	12	18	11	0	202112181100	3	Boca Raton, Fla.	Boca Raton, FL	App. State 	W. Kentucky 	-2.5	11	App. State			
+New Mexico	Dec. 18	2:15 p.m. (ESPN)	Fresno State	UTEP	Fresno State	31	24	7	New Mexico	2021	12	18	14	15	202112181415	4	Albuquerque, N.M.	Albuquerque, NM	Fresno State 	UTEP 	-13	43				
 Independence	Dec. 18	3:30 p.m. (ABC)	BYU	UAB				6	Independence	2021	12	18	15	30	202112181530	5	Shreveport, La.	Shreveport, LA	BYU 	UAB 	-8	38				
 LendingTree	Dec. 18	5:45 p.m. (ESPN)	Liberty	Eastern Michigan				5	LendingTree	2021	12	18	17	45	202112181745	6	Mobile, Ala.	Mobile, AL	Liberty 	E. Michigan 	-7	34				
 LA	Dec. 18	7:30 p.m. (ABC)	Oregon State	Utah State				4	L.A.	2021	12	18	19	30	202112181930	7	Los Angeles	Los Angeles, CA	Oregon State 	Utah State 	-6.5	31				
