@@ -124,6 +124,7 @@ q.await(function(err, picks, games) {
     var name_offset_y = -10;
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
+    var min_hover_bar_height = 20;
 
     var sort_game_method = "confidence";
     if (localStorage.getItem('sort_game_method') !== null) {
@@ -356,6 +357,35 @@ q.await(function(err, picks, games) {
         })
         .attr("rx", 4)
         .attr("ry", 4)
+    ;
+
+    // Add an invisible bar for receiving mouse events. Some of the real bars
+    // are so tiny that it's hard to get your pointer over them. The invisible
+    // bar should match the size of the larger bars but should be a little
+    // taller than the smaller bars.
+    barGroups.append('rect')
+        .attr("visibility", "hidden")
+        .attr("pointer-events", "painted")
+        .attr("data-bar-height", function(d) {
+            return Math.min(
+                yScale.rangeBand(),
+                Math.max(
+                    barHeightScale(d.confidence),
+                    min_hover_bar_height
+                )
+            );
+        })
+        .attr('x', 0)
+        .attr('y', function(d) {
+            return (
+                yScale.rangeBand() / 2 -
+                d3.select(this).attr("data-bar-height") / 2
+            );
+        })
+        .attr('width', xScale.rangeBand())
+        .attr('height', function(d) {
+            return d3.select(this).attr("data-bar-height");
+        })
         .on('mouseover', function(d) {
             highlighter.highlight(d.game);
         })
