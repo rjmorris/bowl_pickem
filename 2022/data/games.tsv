@@ -1,0 +1,43 @@
+bowl	year	month	day	hour	minute	favorite	underdog	winner	winner_score	loser_score	order_orig	bowl_orig	date_orig	time_orig	datetime	date_order	location_orig	location	favorite_orig	underdog_orig	spread	spread_order	favorite_abbrev	underdog_abbrev	favorite_tiny	underdog_tiny
+Bahamas	2022	12	16	11	30	Miami (OH)	UAB				42	Bahamas	12/16/22	11:30 a.m. (ESPN)	202212161130	1	Nassau, Bahamas	Nassau, Bahamas	Miami (Ohio)	UAB	-11	42				
+Cure	2022	12	16	15	0	UTSA	Troy				41	Cure	12/16/22	3 p.m. (ESPN)	202212161500	2	Orlando, Fla.	Orlando, FL	UTSA	Troy	-1.5	7				
+Fenway	2022	12	17	11	0	Louisville	Cincinnati				40	Fenway	12/17/22	11 a.m. (ABC)	202212171100	3	Boston	Boston, MA	Louisville	Cincinnati	-2.5	11				
+Las Vegas	2022	12	17	14	30	Oregon State	Florida				39	Las Vegas	12/17/22	2:30 p.m. (ESPN)	202212171430	4	Las Vegas, Nev.	Las Vegas, NV	Oregon State	Florida	-6.5	32				
+Jimmy Kimmel L.A.	2022	12	17	15	30	Washington State	Fresno State				38	Jimmy Kimmel L.A.	12/17/22	3:30 p.m. (ABC)	202212171530	5	Inglewood, Calif.	Inglewood, CA	Washington State	Fresno State	-2.5	12	Washington St.	Fresno St.		
+LendingTree	2022	12	17	17	45	Southern Miss	Rice				37	LendingTree	12/17/22	5:45 p.m. (ESPN)	202212171745	6	Mobile, Ala.	Mobile, AL	Southern Miss	Rice	-6	31				
+New Mexico	2022	12	17	19	30	BYU	SMU				36	New Mexico	12/17/22	7:30 p.m. (ESPN)	202212171930	7	Albuquerque, N.M.	Albuquerque, NM	BYU	SMU	-1.5	8				
+Frisco	2022	12	17	21	15	Boise State	North Texas				35	Frisco	12/17/22	9:15 p.m. (ESPN)-9	202212172115	8	Frisco, Texas	Frisco, TX	Boise State	North Texas	-9	38				
+Myrtle Beach	2022	12	19	14	30	Marshall	UConn				34	Myrtle Beach	12/19/22	2:30 p.m. (ESPN)	202212191430	9	Conway, S.C.         	Conway, SC	Marshall	UConn	-10.5	40				
+Potato	2022	12	20	15	30	San José State	Eastern Michigan				33	Potato	12/20/22	3:30 p.m. (ESPN)	202212201530	10	Boise, Idaho  	Boise, ID	San Jose State	Eastern Michigan	-4.5	25	San José St.	E. Michigan		
+Boca Raton	2022	12	20	19	30	Toledo	Liberty				32	Boca Raton	12/20/22	7:30 p.m. (ESPN)	202212201930	11	Boca Raton, Fla.	Boca Raton, FL	Toledo	Liberty	-1	5				
+New Orleans	2022	12	21	21	0	South Alabama	Western Kentucky				31	New Orleans	12/21/22	9 p.m. (ESPN)	202212212100	12	New Orleans	New Orleans, LA	South Alabama	Western Kentucky	-5	26	S. Alabama	W. Kentucky		
+Armed Forces	2022	12	22	19	30	Baylor	Air Force				30	Armed Forces	12/22/22	7:30 p.m. (ESPN)	202212221930	13	Fort Worth, Texas	Fort Worth, TX	Baylor	Air Force	-6.5	33				
+Independence	2022	12	23	15	0	Houston	Louisiana				29	Independence	12/23/22	3 p.m. (ESPN)	202212231500	14	Shreveport, La.	Shreveport, LA	Houston	Louisiana	-5	27				
+Gasparilla	2022	12	23	18	30	Wake Forest	Missouri				28	Gasparilla	12/23/22	6:30 p.m. (ESPN)	202212231830	15	Tampa, Fla.	Tampa, FL	Wake Forest	Missouri	-3.5	17				
+Hawai'i	2022	12	24	20	0	San Diego State	Middle Tennessee				27	Hawai'i	12/24/22	8 p.m. (ESPN)	202212242000	16	Honolulu	Honolulu, HA	San Diego State	Middle Tennessee	-3.5	18	San Diego St.	Middle Tenn.		
+Quick Lane	2022	12	26	14	30	New Mexico State	Bowling Green				26	Quick Lane	12/26/22	2:30 p.m. (ESPN)	202212261430	17	Detroit	Detroit, MI	New Mexico State	Bowling Green	-1	6	New Mex. St.	Bowling Green		
+Camellia	2022	12	27	12	0	Georgia Southern	Buffalo				25	Camellia	12/27/22	Noon (ESPN)	202212271200	18	Montgomery, Ala.	Montgomery, AL	Georgia Southern	Buffalo	-4	21				
+First Responder	2022	12	27	15	15	Memphis	Utah State				24	First Responder	12/27/22	3:15 p.m. (ESPN)	202212271515	19	University Park, Texas	University Park, TX	Memphis	Utah State	-9.5	39				
+Birmingham	2022	12	27	18	45	East Carolina	Coastal Carolina				23	Birmingham	12/27/22	6:45 p.m. (ESPN)	202212271845	20	Birmingham, Ala.	Birmingham, AL	East Carolina	Coastal Carolina	-7	35	E. Carolina	Coastal Carolina		
+Guaranteed Rate	2022	12	27	22	15	Wisconsin	Oklahoma State				22	Guaranteed Rate	12/27/22	10:15 p.m. (ESPN)	202212272215	21	Phoenix	Phoenix, AZ	Wisconsin	Oklahoma State	-3.5	19				
+Military	2022	12	28	14	0	UCF	Duke				21	Military	12/28/22	2 p.m. (ESPN)	202212281400	22	Annapolis, Md.	Annapolis, MD	UCF	Duke	-2.5	13				
+Liberty	2022	12	28	17	30	Arkansas	Kansas				20	Liberty	12/28/22	5:30 p.m. (ESPN)	202212281730	23	Memphis, Tenn.	Memphis, TN	Arkansas	Kansas	-5	28				
+Holiday	2022	12	28	20	0	Oregon	North Carolina				19	Holiday	12/28/22	8 p.m. (Fox)	202212282000	24	San Diego	San Diego, CA	Oregon	North Carolina	-10.5	41				
+Texas	2022	12	28	21	0	Ole Miss	Texas Tech				18	Texas	12/28/22	9 p.m. (ESPN)	202212282100	25	Houston	Houston, TX	Ole Miss	Texas Tech	-4	22				
+Pinstripe	2022	12	29	14	0	Minnesota	Syracuse				17	Pinstripe	12/29/22	2 p.m. (ESPN)	202212291400	26	New York	New York, NY	Minnesota	Syracuse	-7	36				
+Cheez-It	2022	12	29	17	30	Florida State	Oklahoma				16	Cheez-It	12/29/22	5:30 p.m. (ESPN)                       	202212291730	27	Orlando, Fla.	Orlando, FL	Florida State	Oklahoma	-8	37				
+Alamo	2022	12	29	21	0	Texas	Washington				15	Alamo	12/29/22	9 p.m. (ESPN)	202212292100	28	San Antonio	San Antonio, TX	Texas	Washington	-3.5	20				
+Duke's Mayo	2022	12	30	12	0	Maryland	NC State				14	Duke's Mayo	12/30/22	Noon (ESPN)	202212301200	29	Charlotte, N.C.	Charlotte, NC	Maryland	NC State	-1.5	9				
+Sun 	2022	12	30	14	0	UCLA	Pittsburgh				13	Sun 	12/30/22	2 p.m. (CBS)	202212301400	30	El Paso, Texas	El Paso, TX	UCLA	Pitt	-4	23				
+Gator	2022	12	30	15	30	Notre Dame	South Carolina				12	Gator	12/30/22	3:30 p.m. (ESPN)	202212301530	31	Jacksonville, Fla.	Jacksonville, FL	Notre Dame	South Carolina	-5.5	30				
+Arizona	2022	12	30	16	30	Ohio	Wyoming				11	Arizona	12/30/22	4:30 p.m. (Barstool)	202212301630	32	Tucson, Ariz.	Tucson, AZ	Ohio	Wyoming	-3	15				
+Orange	2022	12	30	20	0	Clemson	Tennessee				7	Orange	12/30/22	8 p.m. (ESPN)	202212302000	33	Miami Gardens, Fla.	Miami Gardens, FL	Clemson	Tennessee	-4	24				
+Sugar	2022	12	31	12	0	Alabama	Kansas State				6	Sugar	12/31/22	Noon (ESPN)	202212311200	34	New Orleans	New Orleans, LA	Alabama	Kansas State	-5	29				
+Music City	2022	12	31	12	0	Kentucky	Iowa				10	Music City	12/31/22	Noon (ABC)	202212311200	35	Nashville, Tenn.	Nashville, TN	Kentucky	Iowa	-3	16				
+Fiesta (Semis)	2022	12	31	16	0	Michigan	TCU				3	Fiesta semifinal	12/31/22	4 p.m. (ESPN)	202212311600	36	Glendale, Ariz.	Glendale, AZ	Michigan	TCU	0	1			Mich	TCU
+Peach (Semis)	2022	12	31	20	0	Georgia	Ohio State				2	Peach semifinal	12/31/22	8 p.m. (ESPN)	202212312000	37	Atlanta	Atlanta, GA	Georgia	Ohio State	0	2			UGa	Ohio St.
+ReliaQuest	2023	1	2	12	0	Illinois	Mississippi State				9	ReliaQuest	01/02/22	Noon (ESPN2)	202301021200	38	Tampa, Fla.	Tampa, FL	Illinois	Mississippi State	0	3				
+Cotton	2023	1	2	13	0	USC	Tulane				5	Cotton	01/02/22	1 p.m. (ESPN)	202301021300	39	Arlington, Texas	Arlington, TX	USC	Tulane	-2.5	14				
+Citrus	2023	1	2	13	0	LSU	Purdue				8	Citrus	01/02/22	1 p.m. (ABC)	202301021300	40	Orlando, Fla.	Orlando, FL	LSU	Purdue 	-6.5	34				
+Rose	2023	1	2	17	0	Utah	Penn State				4	Rose	01/02/22	5 p.m. (ESPN)	202301021700	41	Pasadena, Calif.	Pasadena, CA	Utah	Penn State 	-2	10				
+Championship	2023	1	9	19	30	Peach (Semis)	Fiesta (Semis)				1	National Championship	01/09/22	TBD	202301091930	42	Inglewood, Calif.	Inglewood, CA	Winner of Peach	Winner of Fiesta	0	4				
