@@ -1,6 +1,6 @@
 bowl	year	month	day	hour	minute	favorite	underdog	winner	winner_score	loser_score	order_orig	bowl_orig	date_orig	time_orig	datetime	date_order	location_orig	location	favorite_orig	underdog_orig	spread	spread_order	favorite_abbrev	underdog_abbrev	favorite_tiny	underdog_tiny
 Bahamas	2022	12	16	11	30	Miami (OH)	UAB	UAB	24	20	42	Bahamas	12/16/22	11:30 a.m. (ESPN)	202212161130	1	Nassau, Bahamas	Nassau, Bahamas	Miami (Ohio)	UAB	-11	42				
-Cure	2022	12	16	15	0	UTSA	Troy				41	Cure	12/16/22	3 p.m. (ESPN)	202212161500	2	Orlando, Fla.	Orlando, FL	UTSA	Troy	-1.5	7				
+Cure	2022	12	16	15	0	UTSA	Troy	Troy	18	12	41	Cure	12/16/22	3 p.m. (ESPN)	202212161500	2	Orlando, Fla.	Orlando, FL	UTSA	Troy	-1.5	7				
 Fenway	2022	12	17	11	0	Louisville	Cincinnati				40	Fenway	12/17/22	11 a.m. (ABC)	202212171100	3	Boston	Boston, MA	Louisville	Cincinnati	-2.5	11				
 Las Vegas	2022	12	17	14	30	Oregon State	Florida				39	Las Vegas	12/17/22	2:30 p.m. (ESPN)	202212171430	4	Las Vegas, Nev.	Las Vegas, NV	Oregon State	Florida	-6.5	32				
 Jimmy Kimmel L.A.	2022	12	17	15	30	Washington State	Fresno State				38	Jimmy Kimmel L.A.	12/17/22	3:30 p.m. (ABC)	202212171530	5	Inglewood, Calif.	Inglewood, CA	Washington State	Fresno State	-2.5	12	Washington St.	Fresno St.		
