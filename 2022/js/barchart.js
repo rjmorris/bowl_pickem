@@ -121,7 +121,8 @@ q.await(function(err, picks, games) {
     // Define UI options.
 
     var tip_offset_x = 8;
-    var name_offset_y = -10;
+    var name_offset_y = 0;
+    var name_width = 60;
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
     var min_hover_bar_height = 20;
@@ -156,7 +157,7 @@ q.await(function(err, picks, games) {
         top: 0,
         right: 0,
         bottom: 0,
-        left: 0
+        left: name_width
     };
 
     var svgWidth = $('#graphic-container').width();
@@ -403,7 +404,7 @@ q.await(function(err, picks, games) {
     var nameGroups = rows.append("g")
         .classed("name-group", true)
         .attr('transform', function(d) {
-            return 'translate(0,' + (yScale.rangeBand()/2 + name_offset_y) + ')';
+            return 'translate(' + (-name_width) + ',' + (yScale.rangeBand()/2 + name_offset_y) + ')';
         })
     ;
 
@@ -411,35 +412,16 @@ q.await(function(err, picks, games) {
         .classed("name", true)
         .attr("x", 0)
         .attr("y", 0)
-        // dominant-baseline=hanging puts the top of the text at the y-coord.
-        //.attr("dominant-baseline", "hanging")
-        .call(assign_name_text)
+        .attr("dy", "-0.25em")
+        .text(function(d) { return d.name; })
     ;
 
-    // Place a rectangle behind the names to give them some contrast when
-    // they overlap bars. This must be defined after the names, because it
-    // uses the names variable. However, the background rect element must be
-    // defined before the the name text element in the svg, because
-    // otherwise the background would be displayed on top of the name. Use
-    // the d3.insert function to insert the background rect elements before
-    // the name text elements. For the d3.insert function to work, we need
-    // the name and its background to be defined within a group (which is
-    // probably a good idea anyway).
-
-    nameGroups.insert("rect", ".name")
-        .classed("name_bg", true)
-        .attr("x", function(d, i) {
-            return names[0][i].getBBox().x - 2;
-        })
-        .attr("y", function(d, i) {
-            return names[0][i].getBBox().y - 2;
-        })
-        .attr("width", function(d, i) {
-            return names[0][i].getBBox().width + 4;
-        })
-        .attr("height", function(d, i) {
-            return names[0][i].getBBox().height + 4;
-        })
+    var nameScores = nameGroups.append("text")
+        .classed("name-score", true)
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("dy", "1em")
+        .call(assign_name_score_text)
     ;
 
 
@@ -847,7 +829,7 @@ q.await(function(err, picks, games) {
         ;
 
         gameBars.call(assign_bar_styles);
-        svg.selectAll(".name").call(assign_name_text);
+        svg.selectAll(".name-score").call(assign_name_score_text);
         d3.selectAll(".game-item-team").call(assign_game_finder_item_classes);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
 
@@ -884,10 +866,10 @@ q.await(function(err, picks, games) {
         ;
     }
 
-    function assign_name_text(selection) {
+    function assign_name_score_text(selection) {
         selection
             .text(function(d) {
-                return d.name + ": " + d.score_games + ' / ' + d.score_points;
+                return d.score_games + ' / ' + d.score_points;
             })
         ;
     }
