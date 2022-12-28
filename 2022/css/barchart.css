@@ -213,13 +213,9 @@ body {
     height: 100%;
 }
 
-.name {
+.name, .name-score {
     font-size: 0.75rem;
     fill: rgb(192, 192, 192);
-}
-
-.name_bg {
-    fill: rgba(0, 0, 0, 0.4);
 }
 
 #graphic .bar {
