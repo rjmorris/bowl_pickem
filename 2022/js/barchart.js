@@ -121,11 +121,11 @@ q.await(function(err, picks, games) {
     // Define UI options.
 
     var tip_offset_x = 8;
-    var name_offset_y = 0;
     var name_width = 60;
     var legend_label_offset = 10;
     var legend_symbol_pad = 4;
     var min_hover_bar_height = 20;
+    var player_score_line_height = 2;
 
     var sort_game_method = "confidence";
     if (localStorage.getItem('sort_game_method') !== null) {
@@ -156,7 +156,7 @@ q.await(function(err, picks, games) {
     var margin = {
         top: 0,
         right: 0,
-        bottom: 0,
+        bottom: player_score_line_height / 2,
         left: name_width
     };
 
@@ -307,7 +307,7 @@ q.await(function(err, picks, games) {
 
     var barHeightScale = d3.scale.linear()
         .domain([0, num_games])
-        .range([0, yScale.rangeBand()])
+        .range([0, yScale.rangeBand() - player_score_line_height])
     ;
 
     var rows = svg.selectAll('.player-row')
@@ -317,6 +317,26 @@ q.await(function(err, picks, games) {
         .classed('player-row', true)
         .attr('transform', function(d) {
             return 'translate(0,' + yScale(get_sort_player_order(d)) + ')';
+        })
+    ;
+
+    var playerScoreLines = rows.append('line')
+        .classed('player-score-line', true)
+        .attr('x1', 0)
+        .attr('x2', 0)
+        .attr('y1', yScale.rangeBand())
+        .attr('y2', yScale.rangeBand())
+    ;
+
+    playerScoreLines.transition()
+        .delay(function(d) {
+            return 1000 * (get_sort_player_order(d) - 1) / num_players;
+        })
+        .duration(function(d) {
+            return 250 + 25 * games.length;
+        })
+        .attr('x2', function(d) {
+            return get_score_line_length(d);
         })
     ;
 
@@ -350,7 +370,7 @@ q.await(function(err, picks, games) {
         .call(assign_bar_styles)
         .attr('x', 0)
         .attr('y', function(d) {
-            return yScale.rangeBand()/2 - barHeightScale(d.confidence)/2;
+            return yScale.rangeBand() - player_score_line_height - barHeightScale(d.confidence);
         })
         .attr('width', xScale.rangeBand())
         .attr('height', function(d) {
@@ -378,14 +398,11 @@ q.await(function(err, picks, games) {
         })
         .attr('x', 0)
         .attr('y', function(d) {
-            return (
-                yScale.rangeBand() / 2 -
-                d3.select(this).attr("data-bar-height") / 2
-            );
+            return yScale.rangeBand() - d3.select(this).attr("data-bar-height");
         })
         .attr('width', xScale.rangeBand())
         .attr('height', function(d) {
-            return d3.select(this).attr("data-bar-height");
+            return parseFloat(d3.select(this).attr("data-bar-height")) + player_score_line_height;
         })
         .on('mouseover', function(d) {
             highlighter.highlight(d.game);
@@ -404,7 +421,7 @@ q.await(function(err, picks, games) {
     var nameGroups = rows.append("g")
         .classed("name-group", true)
         .attr('transform', function(d) {
-            return 'translate(' + (-name_width) + ',' + (yScale.rangeBand()/2 + name_offset_y) + ')';
+            return 'translate(' + (-name_width) + ',' + yScale.rangeBand() + ')';
         })
     ;
 
@@ -412,7 +429,7 @@ q.await(function(err, picks, games) {
         .classed("name", true)
         .attr("x", 0)
         .attr("y", 0)
-        .attr("dy", "-0.25em")
+        .attr("dy", "-1.25em")
         .text(function(d) { return d.name; })
     ;
 
@@ -420,8 +437,13 @@ q.await(function(err, picks, games) {
         .classed("name-score", true)
         .attr("x", 0)
         .attr("y", 0)
-        .attr("dy", "1em")
         .call(assign_name_score_text)
+        .on("mouseover", function() {
+            svg.selectAll('.bar').classed('lowlight', true);
+        })
+        .on("mouseout", function() {
+            svg.selectAll('.bar').classed('lowlight', false);
+        })
     ;
 
 
@@ -618,6 +640,7 @@ q.await(function(err, picks, games) {
         players.forEach(function(player) {
             player.score_games = 0;
             player.score_points = 0;
+            player.score_points_relative = 1;
         });
 
         picks.forEach(function(pick) {
@@ -626,6 +649,16 @@ q.await(function(err, picks, games) {
                 pick.player.score_points += pick.confidence;
             }
         });
+
+        var max_points = d3.max(players.map(function(p) {
+            return p.score_points;
+        }));
+
+        if (max_points > 0) {
+            players.forEach(function(player) {
+                player.score_points_relative = player.score_points / max_points;
+            });
+        }
     }
 
     function rank_players(rank_var, comparison) {
@@ -829,6 +862,7 @@ q.await(function(err, picks, games) {
         ;
 
         gameBars.call(assign_bar_styles);
+        svg.selectAll(".player-score-line").call(assign_player_score_line_length);
         svg.selectAll(".name-score").call(assign_name_score_text);
         d3.selectAll(".game-item-team").call(assign_game_finder_item_classes);
         d3.select("#highlighted-result").call(assign_highlighted_result_text, game);
@@ -870,6 +904,20 @@ q.await(function(err, picks, games) {
         selection
             .text(function(d) {
                 return d.score_games + ' / ' + d.score_points;
+            })
+        ;
+    }
+
+    function get_score_line_length(player) {
+        return width * player.score_points_relative;
+    }
+
+    function assign_player_score_line_length(selection) {
+        selection
+            .transition()
+            .duration(2000)
+            .attr('x2', function(d) {
+                return get_score_line_length(d);
             })
         ;
     }

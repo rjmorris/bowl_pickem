@@ -218,8 +218,18 @@ body {
     fill: rgb(192, 192, 192);
 }
 
+.name-score {
+    cursor: default;
+}
+
 #graphic .bar {
     cursor: pointer;
+}
+
+.player-score-line {
+    stroke: rgb(112, 112, 112);
+    stroke-width: 2;
+    shape-rendering: crispEdges;
 }
 
 .bar {
